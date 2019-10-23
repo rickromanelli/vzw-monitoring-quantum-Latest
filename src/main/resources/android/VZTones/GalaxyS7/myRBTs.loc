@@ -1,0 +1,2 @@
+myRBTs.currentPlay.btn=//*[@resourceid="22424"]
+myRBTs.myJukeboxes.btn=//*[@text="My Jukeboxes"]

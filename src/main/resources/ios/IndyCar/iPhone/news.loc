@@ -1,0 +1,4 @@
+news.altNews.button=//*[@label="News"]
+news.exclusiveNews.button=//*[@label="Exclusive News"]
+news.2ndStory.button=//XCUIElementTypeCollectionView/XCUIElementTypeCell[2]
+news.exclusiveBanner=PUBLIC:Prod/Indycar/VideoShareButtoniphone.png

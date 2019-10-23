@@ -1,0 +1,3 @@
+call.clickToCall=//*[@text="Call"]
+call.clickToEndCall=//*[@text="call end"]
+call.speakerOff=//*[@content-desc="speaker off,"]

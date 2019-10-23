@@ -1,0 +1,5 @@
+call.callButton=//*[@resource-id="com.android.contacts:id/dialButton"]
+call.clickToEndCall=//*[@resource-id="com.android.incallui:id/endButton"]
+call.dailTab=//*[@content-desc="Keypad, Tab 1 of 4."]
+call.phNumField=//*[@resource-id="com.android.contacts:id/digits"]
+call.digit=//*[@text='%s']

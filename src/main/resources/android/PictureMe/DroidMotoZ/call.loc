@@ -1,0 +1,8 @@
+call.callButton=//*[@resource-id="com.android.contacts:id/btnLogsCall"]
+call.clickToEndCall=//*[@text="call end"]
+call.speakerOff=//*[@content-desc="speaker off,"]
+call.dailTab=//*[@text="DIALER"]
+call.phNumField=//*[@resource-id="com.android.contacts:id/digits"]
+call.digit=//*[@resource-id='com.android.dialer:id/dialpad_key_number' and @text='%s']
+call.contacts=//*[translate(@text,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz') = 'contacts']
+

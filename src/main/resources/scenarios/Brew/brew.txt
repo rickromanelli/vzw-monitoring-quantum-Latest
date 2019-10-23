@@ -1,0 +1,13 @@
+@brew
+Feature: Brew_Feature 
+#Sample Test Scenario Description
+
+	@brew
+	Scenario: Brew
+	Then I go to Casio Home
+	Then I open Brew App
+	#Then Transaction "1 Brew App opened?" description: "Checking to see if Opera app opened." SLA: "60000" - OCR Checkpoint: "my web" Timeout: "60" Threshold: "90"
+	#Then I open ESPN App
+	#Then Transaction "2 ESPN available?" description: "Checking to see if Opera ESPN opens" SLA: "60000" - OCR Checkpoint: "Scores" Timeout: "60" Threshold: "80"
+	#Then I go to Casio Home
+		

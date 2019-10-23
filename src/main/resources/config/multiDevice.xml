@@ -1,0 +1,60 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Appium Demo Suite" verbose="0" thread-count="2" parallel="tests">
+	<listeners>
+		<listener class-name="com.quantum.listerners.VZWQuantumReportiumListener2" />
+		<listener class-name="com.quantum.listerners.TestListener" /> 
+	</listeners>
+	
+	<method-selectors>
+        <method-selector>
+            <selector-class name="com.quantum.listerners.ScenarioSelector"
+                priority="9">
+            </selector-class>
+        </method-selector>
+    </method-selectors>
+
+	<parameter name="driver.name" value="perfectoDriver" />
+
+	<test name="${app} ${platform} ${model}-A" enabled="true">
+	<parameter name="driverNameList" value="perfecto,perfecto2"></parameter>
+		<parameter name="perfecto.env.resources" value="src/main/resources/${platform}/${app}/${model}"/>
+		<!-- <parameter name="perfecto.capabilities.deviceName" value="ZY222VGHCR" />  -->
+		<parameter name="perfecto.capabilities.driverClass" value="io.appium.java_client.AppiumDriver"></parameter>
+		<!--   <parameter name="perfecto.capabilities.browserName" value=""></parameter>
+		<parameter name="perfecto.myContactName" value="Galaxy-8072"></parameter>-->
+		
+		<parameter name="perfecto2.env.resources" value="src/main/resources/${platform2}/${app}/${model2}" />
+		<!--  <parameter name="perfecto2.capabilities.deviceName" value="60CFAF2A" />  -->
+		<parameter name="perfecto2.capabilities.driverClass" value="io.appium.java_client.AppiumDriver"></parameter>
+		<!--  <parameter name="perfecto2.capabilities.browserName" value=""></parameter>
+		<parameter name="perfecto2.myContactName" value="DroidMini-9873"></parameter> -->
+
+		
+		
+		<classes>
+			<class
+				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
+		</classes>
+	</test>
+	
+	 <test name="${app} ${platform} ${model}-B" enabled="false">
+	 <parameter name="driverNameList" value="perfecto,perfecto2"></parameter>
+		<parameter name="perfecto.env.resources" value="src/main/resources/${platform}/${app}/${model}"/>
+<!--  <parameter name="perfecto.capabilities.description" value="ZY222V5TRR" /> -->
+		<parameter name="perfecto.capabilities.driverClass" value="io.appium.java_client.AppiumDriver"></parameter>
+		 <!--   <parameter name="perfecto.capabilities.browserName" value=""></parameter>-->
+		<!--  <parameter name="perfecto.myContactName" value="Galaxy-5192"></parameter> -->
+		
+		<parameter name="perfecto2.env.resources" value="src/main/resources/${platform2}/${app}/${model2}" />
+		<!--  <parameter name="perfecto2.capabilities.description2" value="15809F24" /> -->
+		<parameter name="perfecto2.capabilities.driverClass" value="io.appium.java_client.AppiumDriver"></parameter>
+		<!--  <parameter name="perfecto2.capabilities.browserName" value=""></parameter> -->
+		<!--  <parameter name="perfecto2.myContactName" value="DroidMini-8858"></parameter> -->
+
+		
+		<classes>
+			<class
+				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
+		</classes>
+	</test>
+</suite>

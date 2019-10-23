@@ -1,0 +1,5 @@
+call.callButton=//*[@resource-id="com.samsung.android.contacts:id/dialButton"]
+call.clickToEndCall=//*[@resource-id="com.samsung.android.incallui:id/end_call_button"]
+call.dailTab
+call.phNumField=//*[@text="Dial"]
+call.digit=//*[@text='%s']

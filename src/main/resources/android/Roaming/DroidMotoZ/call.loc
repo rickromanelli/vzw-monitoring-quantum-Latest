@@ -1,0 +1,7 @@
+call.callButton=//*[@resource-id="com.android.dialer:id/dialpad_floating_action_button"]
+call.clickToEndCall=//*[@resource-id="com.android.dialer:id/incall_end_call"]
+call.speakerOff=//*[@content-desc="speaker off,"]
+call.dailTab=//*[translate(@text,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz') = 'dialer']
+call.phNumField=//*[@resource-id="com.android.dialer:id/digits"]
+call.digit=//*[@label='%s']
+call.contacts=//*[@text,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz') = 'contacts']

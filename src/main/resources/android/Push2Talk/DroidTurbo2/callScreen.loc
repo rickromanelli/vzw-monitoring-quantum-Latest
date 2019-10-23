@@ -1,0 +1,2 @@
+phone.push2talk.callScreen.clickToCall=//*[@content-desc="call"]
+phone.push2talk.callscreen.speakerOff=//*[@content-desc="speaker off,"]

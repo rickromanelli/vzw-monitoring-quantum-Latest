@@ -1,0 +1,8 @@
+video.playFirst.button=//XCUIElementTypeCollectionView/XCUIElementTypeCell[1]
+video.playFinal.button=xpath=//*[@label="pause button"]
+video.window.button=//*[@resource-id="com.vzw.indycar:id/video_view_surface"]//*[@password="false"]
+video.stop.button=//*[@resource-id="com.vzw.indycar:id/video_view_surface"]//*[@password="false"]
+video.altVideo.button=//*[@label="Videos"]
+video.teamVideo.button=//*[@label="Teams Videos"]
+video.videoTitle=//*[@label="INDYCAR"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]
+video.share=//*[@label="share button"]

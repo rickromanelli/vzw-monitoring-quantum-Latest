@@ -1,0 +1,6 @@
+menu.button=//*[@content-desc="Open"]
+menu.video.button=//*[@label="Videos"]
+menu.back.button=//*[@content-desc="Navigate up"]
+menu.social.button=//*[@label="Social"]
+menu.news.button=//*[@label="News"]
+menu.photos.button=//*[@label="Photos"]

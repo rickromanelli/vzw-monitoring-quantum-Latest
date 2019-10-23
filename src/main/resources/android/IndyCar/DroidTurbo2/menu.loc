@@ -1,0 +1,7 @@
+menu.button=//*[@content-desc="Open"]
+menu.video.button=//*[@resource-id="com.vzw.indycar:id/navigation_item_title" and @text="Videos"]
+menu.back.button=//*[@content-desc="Navigate up"]
+menu.social.button=//*[@text="Social"]
+menu.news.button=//*[@text="News"]
+menu.live.button =//*[@label="live race button"]
+menu.liveDrawer.button=//*[@resource-id="com.vzw.indycar:id/navigation_items"]/android.widget.LinearLayout[1]

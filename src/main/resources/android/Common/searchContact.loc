@@ -1,0 +1,2 @@
+searchContact.resultList=//*[@resource-id="android:id/list"]/android.view.ViewGroup
+searchContact.firstResult=//*[@resource-id="android:id/list"]/android.view.ViewGroup[1]

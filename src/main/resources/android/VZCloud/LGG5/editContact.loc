@@ -1,0 +1,3 @@
+galaxyS5.editContact.more.menu=//*[@content-desc="More options"]
+galaxyS5.editContact.delete.btn=//*[@text="Delete"]
+galaxyS5.editContact.deleteConfirm.btn=//*[@resource-id="android:id/button1"]

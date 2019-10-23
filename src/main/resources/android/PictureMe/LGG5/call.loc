@@ -1,0 +1,5 @@
+call.clickToCall=//*[@text="Call"]
+call.clickToEndCall=//*[@text="call end"]
+call.speakerOff=//*[@content-desc="speaker off,"]
+call.dailTab=//*[@text="Dial"]
+call.digit=//*[@text="%s"]

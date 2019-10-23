@@ -1,0 +1,8 @@
+menu.button=//*[@label="nav non live button"]
+menu.live.button=//*[@label="live race button"]
+menu.video.button=//*[@label="Videos"]
+menu.back.button=//*[@label="back arrow button"]
+menu.social.button=//*[@label="Social"]
+menu.news.button=//*[@label="News"]
+menu.photos.button=//*[@label="Photos"]
+menu.liveDrawer.button=//AppiumAUT/UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableGroup[1]/UIAElement[1]

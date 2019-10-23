@@ -1,0 +1,8 @@
+video.playFirst.button=//*[@label="play icon"]
+video.playFinal.button=xpath=//*[@resource-id="com.vzw.indycar:id/video_view_play_pause_btn"]
+video.window.button=//*[@resource-id="com.vzw.indycar:id/video_view_surface"]//*[@password="false"]
+video.stop.button=//*[@resource-id="com.vzw.indycar:id/video_view_surface"]//*[@password="false"]
+video.altVideo.button=//*[@label="INDYCAR"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeButton[1]
+video.teamVideo.button=//*[@label="Teams Videos"]
+video.videoTitle=xpath=//*[@label="INDYCAR"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]
+video.noVideoBackground="PUBLIC:Prod/IndycarVideo/ConfirmVideoPlay.png"

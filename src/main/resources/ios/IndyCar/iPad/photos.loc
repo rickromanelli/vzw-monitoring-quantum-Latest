@@ -1,0 +1,6 @@
+photos.noPhotosBackground=PUBLIC:Prod/Indycar/NoPhotosBackgroundiPad.png
+photos.1stPhoto.button=//AppiumAUT/UIAApplication[1]/UIAWindow[1]/UIACollectionView[1]/UIACollectionCell[1]
+#photos.altCategory.button={\"locator\":\"xpath=(//XCUIElementTypeStaticText[@label='Photos'])[2]//preceding-sibling::XCUIElementTypeButton\"}
+photos.altCategory.button=//UIAApplication/UIAWindow[1]/UIAStaticText[4]
+photos.back.button=//*[@label="back arrow button"]
+photos.1stCategory.button=//*[@label="Mid-Ohio Test - Tuesday, July 17, 2018"]

@@ -1,0 +1,15 @@
+/target/
+/test-output/
+/test-results/
+/img/
+/logs/
+/DOC/
+/.classpath
+/.settings/
+/stepbacklog.log
+/bin/
+mop.xml
+pom2.xml
+pom3.xml
+props.txt
+MonitorProperties.txt

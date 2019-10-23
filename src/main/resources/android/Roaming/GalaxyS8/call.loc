@@ -1,0 +1,7 @@
+call.callButton=//*[@label="Call"]
+call.clickToEndCall=//*[@resource-id="com.samsung.android.incallui:id/end_call_button"]
+call.dailTab=//*[@resource-id="com.samsung.android.contacts:id/floating_action_button"]
+call.phNumField=//*[@resource-id="com.samsung.android.contacts:id/dialpad_spacer_view"]
+call.digit=//*[@label='%s']
+call.contacts=//*[@text="CONTACTS"]
+call.deleteDigit=//*[@resource-id="com.samsung.android.contacts:id/deleteButton"]

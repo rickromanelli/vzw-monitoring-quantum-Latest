@@ -1,0 +1,2 @@
+home.addContact.btn=//*[@resource-id="com.android.contacts:id/floating_action_button"]
+home.search.box=//*[@resource-id="android:id/search_src_text"]

@@ -1,0 +1,4774 @@
+<handsets modelVersion="2.21.0.0" productVersion="18.5" time="2018-04-25:19-37-43 GMT" timeStamp="1524685063618" items="98">
+	<handset>
+		<deviceId>81D649D1</deviceId>
+		<manufacturer>Samsung</manufacturer>
+		<model>Galaxy S5</model>
+		<distributer>Unlocked</distributer>
+		<description>Former-S5-2</description>
+		<firmware>kltevzw-user 5.0 LRX21T G900VVRU2BPB1 release-keys</firmware>
+		<imsi/>
+		<nativeImei>990004868409230</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>98:f1:70:8d:ac:4f</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+			<name/>
+			<country/>
+			<code/>
+		</operator>
+		<phoneNumber>+17812920555</phoneNumber>
+		<location>NA-US-PHX</location>
+		<lastCradleId>PHX-4180-1-3/VIRTUAL/02</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>PHX-4180-1-3/VIRTUAL/02</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>6.0.1</osVersion>
+		<resolution>1080x1920</resolution>
+		
+	</handset>
+	<handset>
+		<deviceId>ZY222T8SFZ</deviceId>
+		<manufacturer>Motorola</manufacturer>
+		<model>Droid Turbo 2</model>
+		<distributer>Generic</distributer>
+		<description>AP-DroidTurbo-DC7</description>
+		<firmware>
+kinzie_verizon-user 6.0.1 MCK24.183-22 22 release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>990005748921682</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>84:10:0d:0d:76:fb</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+			<name/>
+			<country/>
+			<code/>
+		</operator>
+		<phoneNumber>+19088923769</phoneNumber>
+		<location>NA-US-PHX</location>
+		<lastCradleId>PHX-4680-4-7/VIRTUAL/02</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>PHX-4680-4-7/VIRTUAL/02</cradleId>
+		<position>
+			<id>portrait</id>
+			<method>rotate</method>
+			<rotation>0</rotation>
+		</position>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>7.0</osVersion>
+		<resolution>1440x2560</resolution>
+	
+	</handset>
+	<handset>
+		<deviceId>60CFAF2A</deviceId>
+		<manufacturer>Samsung</manufacturer>
+		<model>Galaxy S5</model>
+		<distributer>Unlocked</distributer>
+		<description>AP-GalaxyS5-Pair2</description>
+		<firmware>kltevzw-user 5.0 LRX21T G900VVRU2BOK3 release-keys</firmware>
+		<imsi/>
+		<nativeImei>990004853204133</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>90:b6:86:69:c7:fd</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+			<name/>
+			<country/>
+			<code/>
+		</operator>
+		<phoneNumber>+18562858072</phoneNumber>
+		<location>NA-US-PHX</location>
+		<lastCradleId>PHX-4680-1-4/007578/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>PHX-4680-1-4/007578/01</cradleId>
+		<position>
+			<id>portrait</id>
+			<method>rotate</method>
+			<rotation>0</rotation>
+		</position>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>6.0.1</osVersion>
+		<resolution>1080x1920</resolution>
+		
+	</handset>
+	<handset>
+		<deviceId>VK8104G9FE62CA8</deviceId>
+		<manufacturer>LG</manufacturer>
+		<model>G Pad 8.3-GPE</model>
+		<distributer>Unlocked-US</distributer>
+		<description>AT-Gpad-Pair1</description>
+		<firmware>
+altev_vzw-user 5.0.2 LRX22G 1705411561114 release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>99000262289182</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>48:59:29:c3:d6:ba</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Verizon-United States of America
+			<name>Verizon</name>
+			<country>United States of America</country>
+			<code>310004</code>
+		</operator>
+		<phoneNumber>+19083230906</phoneNumber>
+		<location>NA-US-PHX</location>
+		<lastCradleId>PHX-4680-1-5/VIRTUAL/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>false</available>
+		<reserved>false</reserved>
+		<inUse>true</inUse>
+		<operabilityRating>
+			<score>0</score>
+			<description>
+handset server: the device is recovering or disconnected., User Name: jeremyp@perfectomobile.com, Session Id: jeremyp@perfectomobile.com_RemoteWebDriver_18-04-25_19_35_59_3660, Operation Source: SYSTEM, Backend Command Name: deviceStateClose, Backend Command Destination: hs/, Reference Time: 2018-04-25 19:37:08, Error Code: 132373, Error Level: ERROR, Scope 1: [Execution ID: jeremyp@perfectomobile.com_RemoteWebDriver_18-04-25_19_35_59_3660, Execution Source: command, User Name: jeremyp@perfectomobile.com, Document Name: RemoteWebDriver, Step Type: action, Step Name: Close device, Step Parameters: {Device ID=VK8104G9FE62CA8}, Report Key: PRIVATE:RemoteWebDriver/180425/RemoteWebDriver_18-04-25_19_35_59_3660.xml, Report URL: http://vzw.perfectomobile.com/nexperience/main.jsp?applicationName=Reporting&id=PRIVATE%3ARemoteWebDriver%2F180425%2FRemoteWebDriver_18-04-25_19_35_59_3660.xml&username=jeremyp@perfectomobile.com], Reset Operability Url: http://vzw.perfectomobile.com/nexperience/OperabilityRatingReset.service?cradleId=PHX-4680-1-5/VIRTUAL/01
+			</description>
+			<referenceTimestamp>1524685028426</referenceTimestamp>
+		</operabilityRating>
+		<cradleId>PHX-4680-1-5/VIRTUAL/01</cradleId>
+		<position>
+			<id>portrait</id>
+			<method>rotate</method>
+			<rotation>0</rotation>
+		</position>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>5.0.2</osVersion>
+		<resolution>1200x1920</resolution>
+		
+	</handset>
+	<handset>
+		<deviceId>330033CAB3498223</deviceId>
+		<manufacturer>Samsung</manufacturer>
+		<model>Galaxy Tab S2 9.7</model>
+		<distributer>Generic</distributer>
+		<description/>
+		<firmware>
+gts210ltevzw-user 6.0.1 MMB29K T817VVRS2BPL1 release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>990005902449769</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>d0:87:e2:1e:fb:44</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+			<name/>
+			<country/>
+			<code/>
+		</operator>
+		<phoneNumber>+1-908-285-8310</phoneNumber>
+		<location>NA-US-BOS</location>
+		<lastCradleId>BOS-D1-5-7/VIRTUAL/02</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>BOS-D1-5-7/VIRTUAL/02</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>6.0.1</osVersion>
+		<resolution>1536x2048</resolution>
+		
+	</handset>
+	<handset>
+		<deviceId>4DB12538</deviceId>
+		<manufacturer>Samsung</manufacturer>
+		<model>SCH-I705 Galaxy Tab 2</model>
+		<distributer>Verizon-US</distributer>
+		<description>Asp_Adhoc11</description>
+		<firmware>
+espressovzw-user 4.1.2 JZO54K I705VRBMI1 release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>NOT-AVAILABLE</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>18:e2:c2:86:04:8b</wifiMacAddress>
+		<link>
+			<type>unknown</type>
+		</link>
+		<operator>
+Verizon-United States of America
+			<name>Verizon</name>
+			<country>United States of America</country>
+			<code>310004</code>
+		</operator>
+		<phoneNumber>+19082559841</phoneNumber>
+		<location>NA-US-PHX</location>
+		<lastCradleId/>
+		<language>English</language>
+		<status>Ready to connect</status>
+		<mode>READY_TO_CONNECT</mode>
+		<available>false</available>
+		<reserved>false</reserved>
+		<os>Android</os>
+		<osVersion>4.1.2</osVersion>
+		<resolution>600x1024</resolution>
+		
+	</handset>
+	<handset>
+		<deviceId>ZY222VDFPK</deviceId>
+		<manufacturer>Motorola</manufacturer>
+		<model>Droid Turbo</model>
+		<distributer>Verizon-US</distributer>
+		<description>AP-DroidTurbo-Pair1</description>
+		<firmware>quark_verizon-user 5.1 SU4TL-49 5 release-keys</firmware>
+		<imsi/>
+		<nativeImei>990005289585771</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>84:10:0d:9d:c0:d9</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+			<name/>
+			<country/>
+			<code/>
+		</operator>
+		<phoneNumber>+19082685613</phoneNumber>
+		<location>NA-US-PHX</location>
+		<lastCradleId>PHX-4680-4-4/VIRTUAL/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>PHX-4680-4-4/VIRTUAL/01</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>6.0.1</osVersion>
+		<resolution>1440x2560</resolution>
+		
+	</handset>
+	<handset>
+		<deviceId>1115FB8840B12505</deviceId>
+		<manufacturer>Samsung</manufacturer>
+		<model>Galaxy S6</model>
+		<distributer>Generic</distributer>
+		<description>IC-Sprint-GalaxyS6</description>
+		<firmware>
+zerofltespr-user 6.0.1 MMB29K G920PVPU3CPB6 release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>99000697518428</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>00:ae:fa:e7:3c:2d</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Sprint-United States of America
+			<name>Sprint</name>
+			<country>United States of America</country>
+			<code>310120</code>
+		</operator>
+		<phoneNumber>+17816988457</phoneNumber>
+		<location>NA-US-BOS</location>
+		<lastCradleId>BOS-D1-5-1/VIRTUAL/02</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>BOS-D1-5-1/VIRTUAL/02</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>7.0</osVersion>
+		<resolution>1440x2560</resolution>
+		
+	</handset>
+	<handset>
+		<deviceId>990004220846798</deviceId>
+		<manufacturer>Kyocera</manufacturer>
+		<model>Brigadier</model>
+		<distributer>Generic</distributer>
+		<description>AP-Brigadier-Pair2</description>
+		<firmware>E6782-user 5.1.1 LMY47V 0627_0250 release-keys</firmware>
+		<imsi/>
+		<nativeImei>990004220846798</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>6c:76:60:3c:7a:0b</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+			<name/>
+			<country/>
+			<code/>
+		</operator>
+		<phoneNumber>+6028262831</phoneNumber>
+		<location>NA-US-BOS</location>
+		<lastCradleId>BOS-D1-4-3/VIRTUAL/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>BOS-D1-4-3/VIRTUAL/01</cradleId>
+		<position>
+			<id>portrait</id>
+			<method>rotate</method>
+			<rotation>0</rotation>
+		</position>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>5.1.1</osVersion>
+		<resolution>720x1280</resolution>
+		
+	</handset>
+	<handset>
+		<deviceId>E677645D7D5E82EF955B9DCCCBEFFA7E2B3BDD59</deviceId>
+		<manufacturer>Apple</manufacturer>
+		<model>iPad Mini 4</model>
+		<distributer>IOS11</distributer>
+		<description>IT-iPadMini-Pair1</description>
+		<firmware>11.2.6</firmware>
+		<imsi/>
+		<nativeImei>359274062309230</nativeImei>
+		<osBuild>15D100</osBuild>
+		<cpuArch>arm64</cpuArch>
+		<wifiMacAddress>34:12:98:64:70:be</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+			<name/>
+			<country/>
+			<code/>
+		</operator>
+		<phoneNumber>+19085141376</phoneNumber>
+		<location>NA-US-PHX</location>
+		<lastCradleId>PHX-4280-4-6/VIRTUAL/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>PHX-4280-4-6/VIRTUAL/01</cradleId>
+		<position>
+			<id>portrait</id>
+			<method>rotate</method>
+			<rotation>0</rotation>
+		</position>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>iOS</os>
+		<osVersion>11.2.6</osVersion>
+		<resolution>1536x2048</resolution>
+		
+	</handset>
+	<handset>
+		<deviceId>VK8104G48E73853</deviceId>
+		<manufacturer>LG</manufacturer>
+		<model>G Pad 8.3-GPE</model>
+		<distributer>Unlocked-US</distributer>
+		<description>AT-Gpad-Pair1</description>
+		<firmware>
+altev_vzw-user 5.0.2 LRX22G 152191337b230 release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>99000262375945</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>f8:a9:d0:93:ce:63</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Verizon-United States of America
+			<name>Verizon</name>
+			<country>United States of America</country>
+			<code>310004</code>
+		</operator>
+		<phoneNumber>+19083285265</phoneNumber>
+		<location>NA-US-PHX</location>
+		<lastCradleId>PHX-4680-6-6/VIRTUAL/02</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>false</available>
+		<reserved>false</reserved>
+		<inUse>true</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>PHX-4680-6-6/VIRTUAL/02</cradleId>
+		<position>
+			<id>portrait</id>
+			<method>rotate</method>
+			<rotation>0</rotation>
+		</position>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>5.0.2</osVersion>
+		<resolution>1200x1920</resolution>
+		
+	</handset>
+	<handset>
+		<deviceId>869C3606</deviceId>
+		<manufacturer>Samsung</manufacturer>
+		<model>Galaxy S IV</model>
+		<distributer>ATT-US</distributer>
+		<description>CH-GalaxyS4-1</description>
+		<firmware>
+jfltevzw-user 5.0.1 LRX22C I545VRUGOC1 release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>990004422540363</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>f0:25:b7:2c:38:48</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+1O1O / One2Free / New World Mobility / SUNMobile-Hong Kong
+			<name>1O1O / One2Free / New World Mobility / SUNMobile</name>
+			<country>Hong Kong</country>
+			<code>45400</code>
+		</operator>
+		<phoneNumber>+12673140322</phoneNumber>
+		<location>APAC-CN-CAN</location>
+		<lastCradleId>CN-6C03-13/VIRTUAL/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>CN-6C03-13/VIRTUAL/01</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>5.0.1</osVersion>
+		<resolution>1080x1920</resolution>
+		
+	</handset>
+	<handset>
+		<deviceId>CF3823E6</deviceId>
+		<manufacturer>Samsung</manufacturer>
+		<model>Galaxy S7</model>
+		<distributer>Generic</distributer>
+		<description>AP-GalaxyS7-Pair2</description>
+		<firmware>
+heroqltevzw-user 6.0.1 MMB29M G930VVRS2APB4 release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>355301070329175</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>ac:5f:3e:24:4a:a2</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Verizon-United States of America
+			<name>Verizon</name>
+			<country>United States of America</country>
+			<code>310004</code>
+		</operator>
+		<phoneNumber>+14085686770</phoneNumber>
+		<location>NA-US-PHX</location>
+		<lastCradleId>PHX-4180-1-5/VIRTUAL/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>PHX-4180-1-5/VIRTUAL/01</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>6.0.1</osVersion>
+		<resolution>1440x2560</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Phoenix</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">AdHoc</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>VS98794EA3FE7</deviceId>
+		<manufacturer>LG</manufacturer>
+		<model>G5</model>
+		<distributer>Generic</distributer>
+		<description>AP-LG-G5-1</description>
+		<firmware>h1_vzw-user 7.0 NRD90U 172330924f08a release-keys</firmware>
+		<imsi/>
+		<nativeImei>355858070884731</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>ac:0d:1b:d1:f6:29</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+			<name/>
+			<country/>
+			<code/>
+		</operator>
+		<phoneNumber>+18643609010</phoneNumber>
+		<location>NA-US-PHX</location>
+		<lastCradleId>PHX-4680-4-8/VIRTUAL/02</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>PHX-4680-4-8/VIRTUAL/02</cradleId>
+		<position>
+			<id>portrait</id>
+			<method>rotate</method>
+			<rotation>0</rotation>
+		</position>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>7.0</osVersion>
+		<resolution>1440x2560</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Phoenix</property>
+			<property name="Scripts" category="Device tags">VM2Text,PictureMe,Family Base,Family Locator</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>122D979B</deviceId>
+		<manufacturer>Samsung</manufacturer>
+		<model>Galaxy Tab 4-8.0</model>
+		<distributer>ATT-US</distributer>
+		<description/>
+		<firmware>
+milletltevzw-user 4.4.4 KTU84P T337VVRU2ANK1 release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>990004903211120</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>60:8f:5c:50:5f:12</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Verizon-United States of America
+			<name>Verizon</name>
+			<country>United States of America</country>
+			<code>310004</code>
+		</operator>
+		<phoneNumber>+19086665313</phoneNumber>
+		<location>NA-US-PHX</location>
+		<lastCradleId>PHX-4680-1-1/VIRTUAL/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>PHX-4680-1-1/VIRTUAL/01</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>4.4.4</osVersion>
+		<resolution>800x1280</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Phoenix</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">AdHoc</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>ZY222T8SFX</deviceId>
+		<manufacturer>Motorola</manufacturer>
+		<model>Droid Turbo 2</model>
+		<distributer>Generic</distributer>
+		<description>AP-DroidTurbo-DC6</description>
+		<firmware>
+kinzie_verizon-user 6.0.1 MCK24.183-22 22 release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>990005748929982</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>84:10:0d:0d:8c:10</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+			<name/>
+			<country/>
+			<code/>
+		</operator>
+		<phoneNumber>+19088927823</phoneNumber>
+		<location>NA-US-PHX</location>
+		<lastCradleId>PHX-4180-1-3/VIRTUAL/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>PHX-4180-1-3/VIRTUAL/01</cradleId>
+		<position>
+			<id>portrait</id>
+			<method>rotate</method>
+			<rotation>0</rotation>
+		</position>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>7.0</osVersion>
+		<resolution>1440x2560</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Phoenix</property>
+			<property name="Phone Number" category="Device tags">+19088927823</property>
+			<property name="Scripts" category="Device tags">IndyCar</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>17073FFF</deviceId>
+		<manufacturer>Samsung</manufacturer>
+		<model>Galaxy S III</model>
+		<distributer>Unlocked-US</distributer>
+		<description>VVM_G3</description>
+		<firmware>d2vzw-user 4.0.4 IMM76D I535VRALG1 release-keys</firmware>
+		<imsi/>
+		<nativeImei>99000116625683</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>5c:0a:5b:88:d1:ae</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Verizon-United States of America
+			<name>Verizon</name>
+			<country>United States of America</country>
+			<code>310004</code>
+		</operator>
+		<phoneNumber>+19787353757</phoneNumber>
+		<location>NA-US-BOS</location>
+		<lastCradleId>BOS-D1-3-1/VIRTUAL/02</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>BOS-D1-3-1/VIRTUAL/02</cradleId>
+		<position>
+			<id>portrait</id>
+			<method>rotate</method>
+			<rotation>0</rotation>
+		</position>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>4.0.4</osVersion>
+		<resolution>720x1280</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Boston</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">AdHoc</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>C4526F30</deviceId>
+		<manufacturer>Samsung</manufacturer>
+		<model>Galaxy S7 Edge</model>
+		<distributer>Generic</distributer>
+		<description>CA-S7Edge-1</description>
+		<firmware>
+hero2qltevzw-user 7.0 NRD90M G935VVRS4BQH1 release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>355300075389143</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>2c:0e:3d:30:cd:13</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+			<name/>
+			<country/>
+			<code/>
+		</operator>
+		<phoneNumber>+19084489023</phoneNumber>
+		<location>NA-CA-YYZ</location>
+		<lastCradleId>YYZ-AS34-1-6/VIRTUAL/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>YYZ-AS34-1-6/VIRTUAL/01</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>7.0</osVersion>
+		<resolution>1440x2560</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">Canada</property>
+			<property name="Scripts" category="Device tags">Roaming</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>2A5DB260</deviceId>
+		<manufacturer>Samsung</manufacturer>
+		<model>Galaxy Note III SM-N900V</model>
+		<distributer>Verizon-US</distributer>
+		<description>AP-Note3-Pair1</description>
+		<firmware>hltevzw-user 5.0 LRX21V N900VVRSEPL1 release-keys</firmware>
+		<imsi/>
+		<nativeImei>990004413878988</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>1c:99:4c:ba:9f:36</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Verizon-United States of America
+			<name>Verizon</name>
+			<country>United States of America</country>
+			<code>310004</code>
+		</operator>
+		<phoneNumber>+18174221467</phoneNumber>
+		<location>NA-US-BOS</location>
+		<lastCradleId>BOS-D1-5-3/VIRTUAL/02</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>BOS-D1-5-3/VIRTUAL/02</cradleId>
+		<position>
+			<id>portrait</id>
+			<method>rotate</method>
+			<rotation>0</rotation>
+		</position>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>5.0</osVersion>
+		<resolution>1080x1920</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Boston</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">SplunkTrial</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>7F17BFB9A3FBA18107167EC22EB73B84437BF351</deviceId>
+		<manufacturer>Apple</manufacturer>
+		<model>iPhone-4S</model>
+		<distributer>IOS9</distributer>
+		<description>IP-4S-Pair1</description>
+		<firmware>9.3.5</firmware>
+		<imsi/>
+		<nativeImei>990000864921350</nativeImei>
+		<osBuild>13G36</osBuild>
+		<cpuArch>armv7f</cpuArch>
+		<wifiMacAddress>60:c5:47:29:6d:95</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Verizon-United States of America
+			<name>Verizon</name>
+			<country>United States of America</country>
+			<code>310004</code>
+		</operator>
+		<phoneNumber>+19082859460</phoneNumber>
+		<location>NA-US-PHX</location>
+		<lastCradleId>PHX-4680-6-1/VIRTUAL/02</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>false</available>
+		<reserved>false</reserved>
+		<inUse>true</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>PHX-4680-6-1/VIRTUAL/02</cradleId>
+		<position>
+			<id>portrait</id>
+			<method>rotate</method>
+			<rotation>0</rotation>
+		</position>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>iOS</os>
+		<osVersion>9.3.5</osVersion>
+		<resolution>640x960</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Phoenix</property>
+			<property name="Scripts" category="Device tags">GizmoPal,Glympse</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>AA1FD7B2CF71859ADEC5DC79FC4CC1CD38C798C2</deviceId>
+		<manufacturer>Apple</manufacturer>
+		<model>iPhone-4S</model>
+		<distributer>IOS9</distributer>
+		<description>IP-4S-Pair1</description>
+		<firmware>9.3.5</firmware>
+		<imsi/>
+		<nativeImei>990002653719730</nativeImei>
+		<osBuild>13G36</osBuild>
+		<cpuArch>armv7f</cpuArch>
+		<wifiMacAddress>e0:f5:c6:7c:aa:31</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Verizon-United States of America
+			<name>Verizon</name>
+			<country>United States of America</country>
+			<code>310004</code>
+		</operator>
+		<phoneNumber>+17813152413</phoneNumber>
+		<location>NA-US-PHX</location>
+		<lastCradleId>PHX-4680-6-2/VIRTUAL/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>PHX-4680-6-2/VIRTUAL/01</cradleId>
+		<position>
+			<id>portrait</id>
+			<method>rotate</method>
+			<rotation>0</rotation>
+		</position>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>iOS</os>
+		<osVersion>9.3.5</osVersion>
+		<resolution>640x960</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Phoenix</property>
+			<property name="Scripts" category="Device tags">GizmoPal,Glympse</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>A05DB855</deviceId>
+		<manufacturer>Samsung</manufacturer>
+		<model>Galaxy S5</model>
+		<distributer>Unlocked</distributer>
+		<description>IC-TMobile-GalaxyS5</description>
+		<firmware>
+kltetmo-user 5.1.1 LMY47X G900TUVU1FOF6 release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>357536060584515</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>98:f1:70:97:d1:d1</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+			<name/>
+			<country/>
+			<code/>
+		</operator>
+		<phoneNumber>+7813668432</phoneNumber>
+		<location>NA-US-BOS</location>
+		<lastCradleId>BOS-D1-4-8/VIRTUAL/02</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>BOS-D1-4-8/VIRTUAL/02</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>6.0.1</osVersion>
+		<resolution>1080x1920</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">T-Mobile</property>
+			<property name="Location" category="Device tags">USA-Boston</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">AdHoc</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>489502C5</deviceId>
+		<manufacturer>Samsung</manufacturer>
+		<model>I545 Galaxy S IV 4.4</model>
+		<distributer>Verizon-US</distributer>
+		<description>MX-GalaxyS4-1</description>
+		<firmware>
+jfltevzw-user 5.0.1 LRX22C I545VRUGOF1 release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>990003452285741</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>40:0e:85:01:ea:db</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Verizon-United States of America
+			<name>Verizon</name>
+			<country>United States of America</country>
+			<code>310004</code>
+		</operator>
+		<phoneNumber>+19086356836</phoneNumber>
+		<location>NA-MX-GDL</location>
+		<lastCradleId>MX-16-4-3/VIRTUAL/02</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>MX-16-4-3/VIRTUAL/02</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>5.0.1</osVersion>
+		<resolution>1080x1920</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">Mexico</property>
+			<property name="Scripts" category="Device tags">Roaming</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>358565040879306</deviceId>
+		<manufacturer>BlackBerry</manufacturer>
+		<model>9930</model>
+		<distributer>Unlocked</distributer>
+		<description>BB-9930</description>
+		<firmware>v7.1.0.1066(Platform 5.1.0.699)</firmware>
+		<imsi/>
+		<nativeImei>NOT-AVAILABLE</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress/>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Verizon-United States of America
+			<name>Verizon</name>
+			<country>United States of America</country>
+			<code>310004</code>
+		</operator>
+		<phoneNumber>+19082564770</phoneNumber>
+		<location>NA-US-BOS</location>
+		<lastCradleId>BOS-B8-6-2/004507/02</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>BOS-B8-6-2/004507/02</cradleId>
+		<position>
+			<method>rotateView</method>
+			<rotation>0</rotation>
+		</position>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>BlackBerry</os>
+		<osVersion>7.0</osVersion>
+		<resolution>640x480</resolution>
+		<dynamicFields>
+			<property name="BES Email">VZNETASPBES@verizonwireless.com</property>
+			<property name="Blackberry PW">aspengineering1</property>
+			<property name="Blackberry Screen Name">VZWASPBBold2</property>
+			<property name="Blackberry Username">aspengineeringblackberrybold2@gmail.com</property>
+			<property name="BUA PIN">3479841</property>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Google Email">vzwaspbbperfecto@gmail.com</property>
+			<property name="Google PW">aspengineering1</property>
+			<property name="Location" category="Device tags">USA-Boston</property>
+			<property name="PASB Password">Vzw1234!</property>
+			<property name="PASB Username">ASPEngPerfecto01</property>
+			<property name="Pin">32FC7151</property>
+			<property name="Scripts" category="Device tags">
+Yahoo2Gmail-BB7,BUA+Contacts-SyncContacts-BB,BB10toBB7-PIN2PIN-BB9930,BB7toBB10-PIN2PIN-BB9930,Blackberry7-Browser
+			</property>
+			<property name="SSO PW">aspengineering1</property>
+			<property name="SSO Username">aspengineeringblackberrybold2</property>
+			<property name="Status" category="Device tags">KnownIssue-PendingSupport</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+			<property name="Voicemail PW">277277</property>
+			<property name="Yahoo Email">vzwperfecto9930@yahoo.com</property>
+			<property name="Yahoo PW">Verizon01</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>VS987E5639702</deviceId>
+		<manufacturer>LG</manufacturer>
+		<model>G5</model>
+		<distributer>Generic</distributer>
+		<description>AP-LG-G5-DC5</description>
+		<firmware>h1_vzw-user 7.0 NRD90U 1736121063d54 release-keys</firmware>
+		<imsi/>
+		<nativeImei>355858076183054</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>80:5a:04:d0:e7:95</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+			<name/>
+			<country/>
+			<code/>
+		</operator>
+		<phoneNumber>+19088929229</phoneNumber>
+		<location>NA-US-PHX</location>
+		<lastCradleId>PHX-4680-4-7/VIRTUAL/01</lastCradleId>
+		<language>English</language>
+		<status>Not Connected</status>
+		<mode>NOT_CONNECTED</mode>
+		<available>false</available>
+		<reserved>false</reserved>
+		<os>Android</os>
+		<osVersion>7.0</osVersion>
+		<resolution>1440x2560</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Phoenix</property>
+			<property name="Scripts" category="Device tags">VZCloud-DC3</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>990004220676039</deviceId>
+		<manufacturer>Kyocera</manufacturer>
+		<model>Brigadier</model>
+		<distributer>Generic</distributer>
+		<description>AP-Brigadier-Pair1</description>
+		<firmware>E6782-user 5.1.1 LMY47V 0128_0149 release-keys</firmware>
+		<imsi/>
+		<nativeImei>990004220676039</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>6c:76:60:3c:37:57</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+			<name/>
+			<country/>
+			<code/>
+		</operator>
+		<phoneNumber>+16028262830</phoneNumber>
+		<location>NA-US-PHX</location>
+		<lastCradleId>PHX-4280-4-5/VIRTUAL/02</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>PHX-4280-4-5/VIRTUAL/02</cradleId>
+		<position>
+			<id>portrait</id>
+			<method>rotate</method>
+			<rotation>0</rotation>
+		</position>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>5.1.1</osVersion>
+		<resolution>720x1280</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Phoenix</property>
+			<property name="Scripts" category="Device tags">PTTPlus</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>ZY222V5TRR</deviceId>
+		<manufacturer>Motorola</manufacturer>
+		<model>Droid Turbo</model>
+		<distributer>Verizon-US</distributer>
+		<description>AP-DroidTurbo-Pair4</description>
+		<firmware>
+quark_verizon-user 6.0.1 MCG24.251-5-5 5 release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>990005289225139</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>84:10:0d:9d:be:0b</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Verizon-United States of America
+			<name>Verizon</name>
+			<country>United States of America</country>
+			<code>310004</code>
+		</operator>
+		<phoneNumber>+19082688858</phoneNumber>
+		<location>NA-US-BOS</location>
+		<lastCradleId>BOS-D1-3-2/VIRTUAL/02</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>BOS-D1-3-2/VIRTUAL/02</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>6.0.1</osVersion>
+		<resolution>1440x2560</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Gmail/Play store email">vzwaspandroid@gmail.com</property>
+			<property name="Gmail/Play store pwd">vzw@$P01</property>
+			<property name="Location" category="Device tags">USA-Boston</property>
+			<property name="Scripts" category="Device tags">PictureMe,PTTPlus</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>VS98782366CF0</deviceId>
+		<manufacturer>LG</manufacturer>
+		<model>G5</model>
+		<distributer>Generic</distributer>
+		<description>AP-G5-Adhoc</description>
+		<firmware>
+h1_vzw-user 6.0.1 MMB29M 162711806542d release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>355858073238679</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>ac:0d:1b:f3:c3:91</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Verizon-United States of America
+			<name>Verizon</name>
+			<country>United States of America</country>
+			<code>310004</code>
+		</operator>
+		<phoneNumber>+19082976993</phoneNumber>
+		<location>NA-US-BOS</location>
+		<lastCradleId>BOS-D1-4-4/VIRTUAL/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>BOS-D1-4-4/VIRTUAL/01</cradleId>
+		<position>
+			<id>portrait</id>
+			<method>rotate</method>
+			<rotation>0</rotation>
+		</position>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>7.0</osVersion>
+		<resolution>1440x2560</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Boston</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">AdHoc</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>VS9804GCF98C36B</deviceId>
+		<manufacturer>LG</manufacturer>
+		<model>G2</model>
+		<distributer>Unlocked-US</distributer>
+		<description>AP-G2-Pair1</description>
+		<firmware>
+g2_vzw-user 5.0.2 LRX22G 1525214396c4d release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>99000259545128</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>cc:fa:00:aa:ba:16</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Verizon-United States of America
+			<name>Verizon</name>
+			<country>United States of America</country>
+			<code>310004</code>
+		</operator>
+		<phoneNumber>+19082681363</phoneNumber>
+		<location>NA-US-PHX</location>
+		<lastCradleId>PHX-4680-6-2/VIRTUAL/02</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>PHX-4680-6-2/VIRTUAL/02</cradleId>
+		<position>
+			<id>portrait</id>
+			<method>rotate</method>
+			<rotation>0</rotation>
+		</position>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>5.0.2</osVersion>
+		<resolution>1080x1920</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Phoenix</property>
+			<property name="Scripts" category="Device tags">VM2Text, Glympse,VZNav</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>352016051174217</deviceId>
+		<manufacturer>BlackBerry</manufacturer>
+		<model>9930</model>
+		<distributer>Unlocked</distributer>
+		<description>BR-BB9930-1</description>
+		<firmware>v7.1.0.1066(Platform 5.1.0.699)</firmware>
+		<imsi/>
+		<nativeImei>NOT-AVAILABLE</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress/>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Verizon-United States of America
+			<name>Verizon</name>
+			<country>United States of America</country>
+			<code>310004</code>
+		</operator>
+		<phoneNumber>+9082000219</phoneNumber>
+		<location>SA-BR-GIG</location>
+		<lastCradleId>BR-HS-21/004573/02</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>BR-HS-21/004573/02</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>BlackBerry</os>
+		<osVersion>7.0</osVersion>
+		<resolution>640x480</resolution>
+		<dynamicFields>
+			<property name="asdfasdfasd">asdfasdfsadf</property>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">Brazil</property>
+			<property name="Scripts" category="Device tags">Roaming</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>HT5A3SV00401</deviceId>
+		<manufacturer>HTC</manufacturer>
+		<model>One M9</model>
+		<distributer>Generic</distributer>
+		<description>AP-OneM9-Pair1</description>
+		<firmware>4.27.651.4 CL870580 release-keys</firmware>
+		<imsi/>
+		<nativeImei>99000502766978</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>80:01:84:75:67:9e</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Sprint-United States of America
+			<name>Sprint</name>
+			<country>United States of America</country>
+			<code>310120</code>
+		</operator>
+		<phoneNumber>+17816081079</phoneNumber>
+		<location>NA-US-BOS</location>
+		<lastCradleId>BOS-D1-5-8/VIRTUAL/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>BOS-D1-5-8/VIRTUAL/01</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>7.0</osVersion>
+		<resolution>1080x1920</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Sprint</property>
+			<property name="Location" category="Device tags">USA-Boston</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">AdHoc</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>1215FCA3A70A1605</deviceId>
+		<manufacturer>Samsung</manufacturer>
+		<model>Galaxy S6</model>
+		<distributer>ATT-US</distributer>
+		<description>IC-ATT-GalaxyS6</description>
+		<firmware>
+zeroflteuc-user 7.0 NRD90M G920AUCS6EQE1 release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>351808070463477</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>ac:5f:3e:1f:3a:82</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+AT&T-United States of America
+			<name>AT&T</name>
+			<country>United States of America</country>
+			<code>310016</code>
+		</operator>
+		<phoneNumber>+17816067152</phoneNumber>
+		<location>NA-US-BOS</location>
+		<lastCradleId>BOS-D1-5-8/VIRTUAL/02</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>BOS-D1-5-8/VIRTUAL/02</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>7.0</osVersion>
+		<resolution>1440x2560</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">ATT</property>
+			<property name="Location" category="Device tags">USA-Boston</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">AdHoc</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>ZY222T8TP7</deviceId>
+		<manufacturer>Motorola</manufacturer>
+		<model>Droid Turbo 2</model>
+		<distributer>Generic</distributer>
+		<description>AP-DroidTurbo-DC7</description>
+		<firmware>
+kinzie_verizon-user 7.0 NCK25.118-10.2 2 release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>990005748921120</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>84:10:0d:0d:90:b4</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+			<name/>
+			<country/>
+			<code/>
+		</operator>
+		<phoneNumber>+19088922359</phoneNumber>
+		<location>NA-US-BOS</location>
+		<lastCradleId>BOS-D1-4-4/VIRTUAL/02</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>BOS-D1-4-4/VIRTUAL/02</cradleId>
+		<position>
+			<id>portrait</id>
+			<method>rotate</method>
+			<rotation>0</rotation>
+		</position>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>7.0</osVersion>
+		<resolution>1440x2560</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Boston</property>
+			<property name="Phone Number" category="Device tags">+19088922359</property>
+			<property name="Scripts" category="Device tags">IndyCar</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>VS9804G149299E1</deviceId>
+		<manufacturer>LG</manufacturer>
+		<model>G2</model>
+		<distributer>Unlocked-US</distributer>
+		<description>AP-G2-Pair1</description>
+		<firmware>
+g2_vzw-user 5.0.2 LRX22G 1525214396c4d release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>99000259545095</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>cc:fa:00:aa:a8:e2</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Verizon-United States of America
+			<name>Verizon</name>
+			<country>United States of America</country>
+			<code>310004</code>
+		</operator>
+		<phoneNumber>+19082681336</phoneNumber>
+		<location>NA-US-PHX</location>
+		<lastCradleId>PHX-4680-4-7/VIRTUAL/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>PHX-4680-4-7/VIRTUAL/01</cradleId>
+		<position>
+			<id>portrait</id>
+			<method>rotate</method>
+			<rotation>0</rotation>
+		</position>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>5.0.2</osVersion>
+		<resolution>1080x1920</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Phoenix</property>
+			<property name="Scripts" category="Device tags">VM2Text, Glympse,VZNav</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>FA53TYJ01203</deviceId>
+		<manufacturer>HTC</manufacturer>
+		<model>One M9</model>
+		<distributer>Generic</distributer>
+		<description>AP-OneM9-Pair2</description>
+		<firmware>3.39.531.41 CL690290 release-keys</firmware>
+		<imsi/>
+		<nativeImei>357228060303324</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>90:e7:c4:d7:4d:38</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+			<name/>
+			<country/>
+			<code/>
+		</operator>
+		<phoneNumber>+17813636494</phoneNumber>
+		<location>NA-US-BOS</location>
+		<lastCradleId>BOS-D1-4-3/VIRTUAL/02</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>BOS-D1-4-3/VIRTUAL/02</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>7.0</osVersion>
+		<resolution>1080x1920</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">T-Mobile</property>
+			<property name="Location" category="Device tags">USA-Boston</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">AdHoc</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>1BD78B33ABBEF6939B74889063C2A08F9E88160F</deviceId>
+		<manufacturer>Apple</manufacturer>
+		<model>iPhone-5C</model>
+		<distributer>IOS10</distributer>
+		<description>MX-iPhone5C</description>
+		<firmware>10.3.3</firmware>
+		<imsi/>
+		<nativeImei>358824055575535</nativeImei>
+		<osBuild>14G60</osBuild>
+		<cpuArch>armv7s</cpuArch>
+		<wifiMacAddress>6c:94:f8:7e:8a:9f</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Verizon-United States of America
+			<name>Verizon</name>
+			<country>United States of America</country>
+			<code>310004</code>
+		</operator>
+		<phoneNumber>+19082856890</phoneNumber>
+		<location>NA-MX-GDL</location>
+		<lastCradleId>MX-16-4-3/VIRTUAL/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>MX-16-4-3/VIRTUAL/01</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>iOS</os>
+		<osVersion>10.3.3</osVersion>
+		<resolution>640x1136</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">Mexico</property>
+			<property name="Scripts" category="Device tags">Roaming</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>ZX1F23P8QQ</deviceId>
+		<manufacturer>Motorola</manufacturer>
+		<model>Droid Turbo</model>
+		<distributer>Verizon-US</distributer>
+		<description>AP-DroidTurbo-AdHoc</description>
+		<firmware>
+quark_verizon-user 6.0.1 MCG24.251-5-5 5 release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>990005281307851</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>44:80:eb:78:d7:12</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Verizon-United States of America
+			<name>Verizon</name>
+			<country>United States of America</country>
+			<code>310004</code>
+		</operator>
+		<phoneNumber>+19085073513</phoneNumber>
+		<location>NA-US-BOS</location>
+		<lastCradleId>BOS-D1-3-6/VIRTUAL/02</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>BOS-D1-3-6/VIRTUAL/02</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>6.0.1</osVersion>
+		<resolution>1440x2560</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Boston</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">AdHoc</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>ZY222TQZLT</deviceId>
+		<manufacturer>Motorola</manufacturer>
+		<model>Droid Turbo 2</model>
+		<distributer>Generic</distributer>
+		<description>AP-DroidTurbo-DC6</description>
+		<firmware>
+kinzie_verizon-user 7.0 NCK25.118-10.5 6 release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>990005748934776</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>84:10:0d:0d:8c:b5</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+			<name/>
+			<country/>
+			<code/>
+		</operator>
+		<phoneNumber>+19088948680</phoneNumber>
+		<location>NA-US-BOS</location>
+		<lastCradleId>BOS-D1-4-1/VIRTUAL/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>BOS-D1-4-1/VIRTUAL/01</cradleId>
+		<position>
+			<id>portrait</id>
+			<method>rotate</method>
+			<rotation>0</rotation>
+		</position>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>7.0</osVersion>
+		<resolution>1440x2560</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Boston</property>
+			<property name="Phone Number" category="Device tags">+19088948680</property>
+			<property name="Scripts" category="Device tags">IndyCar</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>E33C4ED7</deviceId>
+		<manufacturer>Samsung</manufacturer>
+		<model>Galaxy Note 10.1 (2014) SM-P605V 4.4</model>
+		<distributer>Verizon-US</distributer>
+		<description>ASP_Adhoc5-Note10</description>
+		<firmware>
+lt03ltevzw-user 5.1.1 LMY47X P605VVRSDPL1 release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>990004460850054</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>94:01:c2:71:52:21</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Verizon-United States of America
+			<name>Verizon</name>
+			<country>United States of America</country>
+			<code>310004</code>
+		</operator>
+		<phoneNumber>+19084583440</phoneNumber>
+		<location>NA-US-BOS</location>
+		<lastCradleId>BOS-D1-4-7/VIRTUAL/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>BOS-D1-4-7/VIRTUAL/01</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>5.1.1</osVersion>
+		<resolution>2560x1600</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Boston</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">AdHoc</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>03DDB270</deviceId>
+		<manufacturer>Samsung</manufacturer>
+		<model>Galaxy Note III SM-N900V</model>
+		<distributer>Verizon-US</distributer>
+		<description>AP-Note3-Pair1</description>
+		<firmware>hltevzw-user 5.0 LRX21V N900VVRSEPL1 release-keys</firmware>
+		<imsi/>
+		<nativeImei>990004387377132</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>1c:99:4c:79:7f:b6</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Verizon-United States of America
+			<name>Verizon</name>
+			<country>United States of America</country>
+			<code>310004</code>
+		</operator>
+		<phoneNumber>+18174558145</phoneNumber>
+		<location>NA-US-PHX</location>
+		<lastCradleId>PHX-4680-4-8/VIRTUAL/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>PHX-4680-4-8/VIRTUAL/01</cradleId>
+		<position>
+			<id>portrait</id>
+			<method>rotate</method>
+			<rotation>0</rotation>
+		</position>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>5.0</osVersion>
+		<resolution>1080x1920</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Phoenix</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">SplunkTrial</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>358565046665220</deviceId>
+		<manufacturer>BlackBerry</manufacturer>
+		<model>9930</model>
+		<distributer>Unlocked</distributer>
+		<description>UK-BB-1</description>
+		<firmware>v7.1.0.1066(Platform 5.1.0.699)</firmware>
+		<imsi/>
+		<nativeImei>NOT-AVAILABLE</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress/>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Verizon-United States of America
+			<name>Verizon</name>
+			<country>United States of America</country>
+			<code>310004</code>
+		</operator>
+		<phoneNumber>+18627632215</phoneNumber>
+		<location>NA-US-BOS</location>
+		<lastCradleId>BOS-A1-6-1/004551/03</lastCradleId>
+		<language>English</language>
+		<status>Error</status>
+		<mode>ERROR</mode>
+		<available>false</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>BOS-A1-6-1/004551/03</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>BlackBerry</os>
+		<osVersion>7.0</osVersion>
+		<resolution>640x480</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Google Email">aspengineeringblackberrybold3@gmail.com</property>
+			<property name="Google PW">aspengineering1</property>
+			<property name="Location" category="Device tags">UK</property>
+			<property name="PASB Password">Vzw1234!</property>
+			<property name="PASB Username">ASPEngPerfecto02</property>
+			<property name="Scripts" category="Device tags">Roaming</property>
+			<property name="Status" category="Device tags">KnownIssue-PendingSupport</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>ZY222VK39J</deviceId>
+		<manufacturer>Motorola</manufacturer>
+		<model>Droid Turbo</model>
+		<distributer>Verizon-US</distributer>
+		<description>AP-DroidTurbo-Pair3</description>
+		<firmware>quark_verizon-user 5.1 SU4TL-49 5 release-keys</firmware>
+		<imsi/>
+		<nativeImei>990005289498918</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>84:10:0d:9d:c0:f3</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+			<name/>
+			<country/>
+			<code/>
+		</operator>
+		<phoneNumber>+19082685874</phoneNumber>
+		<location>NA-US-PHX</location>
+		<lastCradleId>PHX-4680-2-2/VIRTUAL/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>PHX-4680-2-2/VIRTUAL/01</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>6.0.1</osVersion>
+		<resolution>1440x2560</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Gmail/Play store email">vzwaspandroid@gmail.com</property>
+			<property name="Gmail/Play store pwd">vzw@$P01</property>
+			<property name="Location" category="Device tags">USA-Phoenix</property>
+			<property name="Scripts" category="Device tags">GizmoPal</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>44267051</deviceId>
+		<manufacturer>Samsung</manufacturer>
+		<model>Galaxy S7</model>
+		<distributer>Generic</distributer>
+		<description>BR-GalaxyS7-1</description>
+		<firmware>
+heroqltevzw-user 6.0.1 MMB29M G930VVRU4API3 release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>353425080789979</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>2c:0e:3d:09:4f:16</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+			<name/>
+			<country/>
+			<code/>
+		</operator>
+		<phoneNumber>+19082856292</phoneNumber>
+		<location>SA-BR-GIG</location>
+		<lastCradleId>BR-HS-21/004573/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>BR-HS-21/004573/01</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>6.0.1</osVersion>
+		<resolution>1440x2560</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">Brazil</property>
+			<property name="Scripts" category="Device tags">Roaming</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>251733-14480-16-1131182729301021-101</deviceId>
+		<manufacturer>BlackBerry</manufacturer>
+		<model>Z30</model>
+		<distributer>Unlocked</distributer>
+		<description>BB-Z30-Pair1</description>
+		<firmware/>
+		<imsi/>
+		<nativeImei>NOT-AVAILABLE</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress/>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Verizon-United States of America
+			<name>Verizon</name>
+			<country>United States of America</country>
+			<code>310004</code>
+		</operator>
+		<phoneNumber>+19085525161</phoneNumber>
+		<location>NA-US-PHX</location>
+		<lastCradleId>PHX-4480-6-1/VIRTUAL/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>PHX-4480-6-1/VIRTUAL/01</cradleId>
+		<position>
+			<method>rotateView</method>
+			<rotation>0</rotation>
+		</position>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>BlackBerry</os>
+		<osVersion/>
+		<resolution>720x1280</resolution>
+		<dynamicFields>
+			<property name="Blackberry ID">vzwperfectobb@gmail.com</property>
+			<property name="Blackberry ID password">vzw@$P01</property>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Gmail address">vzwperfectobb@gmail.com</property>
+			<property name="Gmail password">vzw@$P01</property>
+			<property name="Location" category="Device tags">USA-Phoenix</property>
+			<property name="Scripts" category="Device tags">
+BIS-Yahoo2Gmail-BB10,Blackberry10-Browser-Z30,Blackberry7-to-BB10-PIN2PIN,Blackberry10-to-BB7-PIN2PIN
+			</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>2155524268</deviceId>
+		<manufacturer>Samsung</manufacturer>
+		<model>SCH-U660 Convoy 2</model>
+		<distributer>Verizon-US</distributer>
+		<description>AdHocConvoy2</description>
+		<firmware>Q6085BSNACAZ4394_02E 1</firmware>
+		<imsi/>
+		<nativeImei>NOT-AVAILABLE</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress/>
+		<link>
+			<type>unknown</type>
+		</link>
+		<operator>
+			<name/>
+			<country/>
+			<code/>
+		</operator>
+		<phoneNumber>+19085479966</phoneNumber>
+		<location>NA-US-BOS</location>
+		<lastCradleId>WF-CD20-3-1/004526/02</lastCradleId>
+		<language>English</language>
+		<status>Not Connected</status>
+		<mode>NOT_CONNECTED</mode>
+		<available>false</available>
+		<reserved>false</reserved>
+		<os>Samsung</os>
+		<osVersion/>
+		<resolution>240x320</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Boston</property>
+			<property name="Status" category="Device tags">Decomm-Pending</property>
+			<property name="Use" category="Device tags">AdHoc</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>0DDFC550</deviceId>
+		<manufacturer>Samsung</manufacturer>
+		<model>Galaxy S5</model>
+		<distributer>Unlocked</distributer>
+		<description>AP-GalaxyS5-Pair4</description>
+		<firmware>
+kltevzw-user 6.0.1 MMB29M G900VVRU2DPF4 release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>990004853202269</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>90:b6:86:4b:ed:de</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+FirstNet-United States of America
+			<name>FirstNet</name>
+			<country>United States of America</country>
+			<code>313100</code>
+		</operator>
+		<phoneNumber>+18568164924</phoneNumber>
+		<location>NA-US-PHX</location>
+		<lastCradleId>PHX-4680-4-4/VIRTUAL/02</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>PHX-4680-4-4/VIRTUAL/02</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>6.0.1</osVersion>
+		<resolution>1080x1920</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Phoenix</property>
+			<property name="Phone Number" category="Device tags">+18568164924</property>
+			<property name="Scripts" category="Device tags">FamilyBase</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>343435-1102834-11-1731182729301021-101</deviceId>
+		<manufacturer>BlackBerry</manufacturer>
+		<model>Z30</model>
+		<distributer>Unlocked</distributer>
+		<description>CA-BB-Z30-1</description>
+		<firmware/>
+		<imsi/>
+		<nativeImei>NOT-AVAILABLE</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress/>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+			<name/>
+			<country/>
+			<code/>
+		</operator>
+		<phoneNumber>+19085525270</phoneNumber>
+		<location>NA-CA-YYZ</location>
+		<lastCradleId>YYZ-AS34-1-7/VIRTUAL/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>YYZ-AS34-1-7/VIRTUAL/01</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>BlackBerry</os>
+		<osVersion/>
+		<resolution>720x1280</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">Canada</property>
+			<property name="Scripts" category="Device tags">Roaming</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>A5B5643625F8F0D369756F7761492D0CFF6BFC66</deviceId>
+		<manufacturer>Apple</manufacturer>
+		<model>iPad Mini 4</model>
+		<distributer>IOS11</distributer>
+		<description>IT-iPadMini-Pair1</description>
+		<firmware>11.2.6</firmware>
+		<imsi/>
+		<nativeImei>359274061985196</nativeImei>
+		<osBuild>15D100</osBuild>
+		<cpuArch>arm64</cpuArch>
+		<wifiMacAddress>34:12:98:30:6c:41</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Verizon-United States of America
+			<name>Verizon</name>
+			<country>United States of America</country>
+			<code>310004</code>
+		</operator>
+		<phoneNumber>+19085072918</phoneNumber>
+		<location>NA-US-BOS</location>
+		<lastCradleId>BOS-D1-3-5/VIRTUAL/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>BOS-D1-3-5/VIRTUAL/01</cradleId>
+		<position>
+			<id>portrait</id>
+			<method>rotate</method>
+			<rotation>0</rotation>
+		</position>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>iOS</os>
+		<osVersion>11.2.6</osVersion>
+		<resolution>1536x2048</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Boston</property>
+			<property name="Scripts" category="Device tags">IndyCar</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>50B86452E8464C2BAE58F52A9992C1A315F8D0D6</deviceId>
+		<manufacturer>Apple</manufacturer>
+		<model>iPhone-6 Plus</model>
+		<distributer>MacCam10</distributer>
+		<description>PerfectoTestDevice</description>
+		<firmware>10.3.1</firmware>
+		<imsi/>
+		<nativeImei>355877064789078</nativeImei>
+		<osBuild>14E304</osBuild>
+		<cpuArch>arm64</cpuArch>
+		<wifiMacAddress>a0:18:28:3f:30:03</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+			<name/>
+			<country/>
+			<code/>
+		</operator>
+		<phoneNumber>+7817992746</phoneNumber>
+		<location>NA-US-BOS</location>
+		<lastCradleId>BOS-D1-3-1/VIRTUAL/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>BOS-D1-3-1/VIRTUAL/01</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>iOS</os>
+		<osVersion>10.3.1</osVersion>
+		<resolution>1242x2208</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">None</property>
+			<property name="Device-Description">Yosemite-Phone</property>
+			<property name="Location" category="Device tags">USA-Boston</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">Perfecto-owned for Testing</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>F262C4E8</deviceId>
+		<manufacturer>Samsung</manufacturer>
+		<model>Galaxy S7</model>
+		<distributer>Generic</distributer>
+		<description>AP-GalaxyS7-Pair2</description>
+		<firmware>
+heroqltevzw-user 6.0.1 MMB29M G930VVRS2APB4 release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>355301070430049</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>ac:5f:3e:27:ba:7e</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Verizon-United States of America
+			<name>Verizon</name>
+			<country>United States of America</country>
+			<code>310004</code>
+		</operator>
+		<phoneNumber>+14172293466</phoneNumber>
+		<location>NA-US-PHX</location>
+		<lastCradleId>PHX-4180-1-4/VIRTUAL/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>PHX-4180-1-4/VIRTUAL/01</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>6.0.1</osVersion>
+		<resolution>1440x2560</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Phoenix</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">AdHoc</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>VS987CE191979</deviceId>
+		<manufacturer>LG</manufacturer>
+		<model>G5</model>
+		<distributer>Generic</distributer>
+		<description>AP-LG-G5-DC2</description>
+		<firmware>h1_vzw-user 7.0 NRD90U 1731709545c4a release-keys</firmware>
+		<imsi/>
+		<nativeImei>355858076206970</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>80:5a:04:d0:fb:27</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+			<name/>
+			<country/>
+			<code/>
+		</operator>
+		<phoneNumber>+19088928714</phoneNumber>
+		<location>NA-US-PHX</location>
+		<lastCradleId>PHX-4680-4-8/VIRTUAL/01</lastCradleId>
+		<language>English</language>
+		<status>Not Connected</status>
+		<mode>NOT_CONNECTED</mode>
+		<available>false</available>
+		<reserved>false</reserved>
+		<os>Android</os>
+		<osVersion>7.0</osVersion>
+		<resolution>1440x2560</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Phoenix</property>
+			<property name="Scripts" category="Device tags">VZCloud-DC2</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>988667334F4446324B</deviceId>
+		<manufacturer>Samsung</manufacturer>
+		<model>Galaxy S7</model>
+		<distributer>Generic</distributer>
+		<description>IC-TMobile-GalaxyS7</description>
+		<firmware>
+heroltexx-user 6.0.1 MMB29K G930FXXU1APD1 release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>359467075626281</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>ac:5f:3e:d7:29:0d</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+			<name/>
+			<country/>
+			<code/>
+		</operator>
+		<phoneNumber>+17813668432</phoneNumber>
+		<location>NA-US-BOS</location>
+		<lastCradleId>BOS-D1-5-1/VIRTUAL/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>BOS-D1-5-1/VIRTUAL/01</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>7.0</osVersion>
+		<resolution>1440x2560</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">T-Mobile</property>
+			<property name="Location" category="Device tags">USA-Boston</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">AdHoc</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>CA7168A0</deviceId>
+		<manufacturer>Samsung</manufacturer>
+		<model>Galaxy S5</model>
+		<distributer>Unlocked</distributer>
+		<description>UK-Galaxys5-1</description>
+		<firmware>kltevzw-user 5.0 LRX21T G900VVRU2BPB1 release-keys</firmware>
+		<imsi/>
+		<nativeImei>NOT-AVAILABLE</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>98:f1:70:7a:85:34</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Verizon-United States of America
+			<name>Verizon</name>
+			<country>United States of America</country>
+			<code>310004</code>
+		</operator>
+		<phoneNumber>+18174568649</phoneNumber>
+		<location>EU-UK-LON</location>
+		<lastCradleId>UK-O17-60/004508/03</lastCradleId>
+		<language>English</language>
+		<status>Not Connected</status>
+		<mode>NOT_CONNECTED</mode>
+		<available>false</available>
+		<reserved>false</reserved>
+		<os>Android</os>
+		<osVersion>5.0</osVersion>
+		<resolution>1080x1920</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">UK</property>
+			<property name="Scripts" category="Device tags">Roaming</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>90955268F3B0E27B3EAEAB87A1685A80B761DFBF</deviceId>
+		<manufacturer>Apple</manufacturer>
+		<model>iPhone-6</model>
+		<distributer>IOS10</distributer>
+		<description>IP-6-Pair1</description>
+		<firmware>10.3.1</firmware>
+		<imsi/>
+		<nativeImei>359234068004094</nativeImei>
+		<osBuild>14E304</osBuild>
+		<cpuArch>arm64</cpuArch>
+		<wifiMacAddress>d0:25:98:53:08:30</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+			<name/>
+			<country/>
+			<code/>
+		</operator>
+		<phoneNumber>+19087211203</phoneNumber>
+		<location>NA-US-BOS</location>
+		<lastCradleId>BOS-D1-5-3/VIRTUAL/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>BOS-D1-5-3/VIRTUAL/01</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>iOS</os>
+		<osVersion>10.3.1</osVersion>
+		<resolution>750x1334</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Boston</property>
+			<property name="Scripts" category="Device tags">IndyCar</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>A72447E403B4B13E16D4C8EA8A4C6134A7D5E8A0</deviceId>
+		<manufacturer>Apple</manufacturer>
+		<model>iPhone-4S</model>
+		<distributer>IOS9</distributer>
+		<description>CA-iPhone4s-1</description>
+		<firmware>9.3.5</firmware>
+		<imsi/>
+		<nativeImei>990000865064655</nativeImei>
+		<osBuild>13G36</osBuild>
+		<cpuArch>armv7f</cpuArch>
+		<wifiMacAddress>60:c5:47:29:04:96</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Verizon-United States of America
+			<name>Verizon</name>
+			<country>United States of America</country>
+			<code>310004</code>
+		</operator>
+		<phoneNumber>+13343017977</phoneNumber>
+		<location>NA-CA-YYZ</location>
+		<lastCradleId>YYZ-AS34-1-5/VIRTUAL/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>YYZ-AS34-1-5/VIRTUAL/01</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>iOS</os>
+		<osVersion>9.3.5</osVersion>
+		<resolution>640x960</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">Canada</property>
+			<property name="Scripts" category="Device tags">Roaming</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>5E56D152</deviceId>
+		<manufacturer>Samsung</manufacturer>
+		<model>SCH-I545 Galaxy S IV</model>
+		<distributer>Unlocked</distributer>
+		<description>Asp_Adhoc4_DineshMaybe</description>
+		<firmware>
+jfltevzw-user 5.0.1 LRX22C I545VRUGOF1 release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>990003431382338</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>cc:3a:61:c3:ac:07</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Verizon-United States of America
+			<name>Verizon</name>
+			<country>United States of America</country>
+			<code>310004</code>
+		</operator>
+		<phoneNumber>+19084582193</phoneNumber>
+		<location>NA-US-PHX</location>
+		<lastCradleId>PHX-4680-4-1/VIRTUAL/02</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>PHX-4680-4-1/VIRTUAL/02</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>5.0.1</osVersion>
+		<resolution>1080x1920</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Google Email">aspgalaxys4.2@gmail.com</property>
+			<property name="Google PW">aspengineering1</property>
+			<property name="ISIS PIN">4747 (ISIS)</property>
+			<property name="Location" category="Device tags">USA-Phoenix</property>
+			<property name="Status" category="Device tags">AdHoc</property>
+			<property name="VZW SSO Password">Verizon01</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>33002F69B2198271</deviceId>
+		<manufacturer>Samsung</manufacturer>
+		<model>Galaxy Tab S2 9.7</model>
+		<distributer>Generic</distributer>
+		<description/>
+		<firmware>
+gts210ltevzw-user 5.1.1 LMY47X T817VVRU2AOL2 release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>990005902451831</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>d0:87:e2:1e:fc:e2</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Verizon-United States of America
+			<name>Verizon</name>
+			<country>United States of America</country>
+			<code>310004</code>
+		</operator>
+		<phoneNumber>+19082852533</phoneNumber>
+		<location>NA-US-BOS</location>
+		<lastCradleId>BOS-D1-3-5/VIRTUAL/02</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>BOS-D1-3-5/VIRTUAL/02</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>5.1.1</osVersion>
+		<resolution>1536x2048</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Boston</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">AdHoc</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>VS987B61E3672</deviceId>
+		<manufacturer>LG</manufacturer>
+		<model>G5</model>
+		<distributer>Generic</distributer>
+		<description>AP-LG-G5-1</description>
+		<firmware>h1_vzw-user 7.0 NRD90U 172330924f08a release-keys</firmware>
+		<imsi/>
+		<nativeImei>355858072353875</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>ac:0d:1b:d6:98:0b</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Verizon-United States of America
+			<name>Verizon</name>
+			<country>United States of America</country>
+			<code>310004</code>
+		</operator>
+		<phoneNumber>+18643613551</phoneNumber>
+		<location>NA-US-PHX</location>
+		<lastCradleId>PHX-4680-1-2/VIRTUAL/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>PHX-4680-1-2/VIRTUAL/01</cradleId>
+		<position>
+			<id>portrait</id>
+			<method>rotate</method>
+			<rotation>0</rotation>
+		</position>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>7.0</osVersion>
+		<resolution>1440x2560</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Phoenix</property>
+			<property name="Scripts" category="Device tags">VM2Text,PictureMe,FamilyBase,FamilyLocator</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>B473DB5FFEB198509DB79915FAD4FDF02B2D1ACF</deviceId>
+		<manufacturer>Apple</manufacturer>
+		<model>iPhone-6</model>
+		<distributer>IOS11</distributer>
+		<description>IP-6-Pair1</description>
+		<firmware>11.1.2</firmware>
+		<imsi/>
+		<nativeImei>359234068121740</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>d0:25:98:4e:ec:28</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+			<name/>
+			<country/>
+			<code/>
+		</operator>
+		<phoneNumber>+19085817493</phoneNumber>
+		<location>NA-US-PHX</location>
+		<lastCradleId>PHX-4180-1-2/VIRTUAL/02</lastCradleId>
+		<language>English</language>
+		<status>Not Connected</status>
+		<mode>NOT_CONNECTED</mode>
+		<available>false</available>
+		<reserved>false</reserved>
+		<os>iOS</os>
+		<osVersion>11.1.2</osVersion>
+		<resolution>750x1334</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Phoenix</property>
+			<property name="Scripts" category="Device tags">IndyCar</property>
+			<property name="Status" category="Device tags">KnownIssue-PendingSupport</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>VS9874A8722EA</deviceId>
+		<manufacturer>LG</manufacturer>
+		<model>G5</model>
+		<distributer>Generic</distributer>
+		<description>AP-LG-G5-DC2</description>
+		<firmware>h1_vzw-user 7.0 NRD90U 172330924f08a release-keys</firmware>
+		<imsi/>
+		<nativeImei>355858076197336</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>80:5a:04:d0:f3:f2</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+			<name/>
+			<country/>
+			<code/>
+		</operator>
+		<phoneNumber>+19088940647</phoneNumber>
+		<location>NA-US-BOS</location>
+		<lastCradleId>BOS-D1-3-2/VIRTUAL/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>BOS-D1-3-2/VIRTUAL/01</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>7.0</osVersion>
+		<resolution>1440x2560</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Boston</property>
+			<property name="Scripts" category="Device tags">VZCloud-DC2</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>330033EA9B4D8209</deviceId>
+		<manufacturer>Samsung</manufacturer>
+		<model>Galaxy Tab S2 9.7</model>
+		<distributer>Generic</distributer>
+		<description/>
+		<firmware>
+gts210ltevzw-user 5.1.1 LMY47X T817VVRS2APB2 release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>990005902449017</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>d0:87:e2:1e:fa:ae</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Verizon-United States of America
+			<name>Verizon</name>
+			<country>United States of America</country>
+			<code>310004</code>
+		</operator>
+		<phoneNumber>+19082009990</phoneNumber>
+		<location>NA-US-BOS</location>
+		<lastCradleId>BOS-D1-4-7/VIRTUAL/02</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>BOS-D1-4-7/VIRTUAL/02</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>5.1.1</osVersion>
+		<resolution>1536x2048</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Boston</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">AdHoc</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>VS9804G16069182</deviceId>
+		<manufacturer>LG</manufacturer>
+		<model>G2</model>
+		<distributer>Unlocked-US</distributer>
+		<description>AdHoc-FormerG2-Pair2</description>
+		<firmware>
+g2_vzw-user 5.0.2 LRX22G 1525214396c4d release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>35385206039195</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>f8:a9:d0:82:51:52</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Verizon-United States of America
+			<name>Verizon</name>
+			<country>United States of America</country>
+			<code>310004</code>
+		</operator>
+		<phoneNumber>+18643607976</phoneNumber>
+		<location>NA-US-BOS</location>
+		<lastCradleId>BOS-D1-4-2/VIRTUAL/02</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>BOS-D1-4-2/VIRTUAL/02</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>5.0.2</osVersion>
+		<resolution>1080x1920</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Boston</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">AdHoc</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>5E134F3A</deviceId>
+		<manufacturer>LG</manufacturer>
+		<model>Intuition VS950</model>
+		<distributer>Verizon-US</distributer>
+		<description>AP-LGIntuition-Pair1</description>
+		<firmware>
+batman_vzw_us-user 4.0.4 IMM76D VS95011D.4ddae51c release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>99000151175114</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>f8:0c:f3:f9:98:ff</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Verizon-United States of America
+			<name>Verizon</name>
+			<country>United States of America</country>
+			<code>310004</code>
+		</operator>
+		<phoneNumber/>
+		<location>NA-US-BOS</location>
+		<lastCradleId>BOS-D1-5-4/VIRTUAL/02</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>BOS-D1-5-4/VIRTUAL/02</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>4.0.4</osVersion>
+		<resolution>768x1024</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Boston</property>
+			<property name="Stats" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">AdHoc</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>F66EACED19F4161006657AB0A8E6B6C95AFC9C53</deviceId>
+		<manufacturer>Apple</manufacturer>
+		<model>iPhone-SE</model>
+		<distributer>IOS11</distributer>
+		<description>CA-Iphone-SE</description>
+		<firmware>11.2.2</firmware>
+		<imsi/>
+		<nativeImei>355436075062981</nativeImei>
+		<osBuild>15C202</osBuild>
+		<cpuArch>arm64</cpuArch>
+		<wifiMacAddress>2c:f0:a2:9e:c3:9f</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+			<name/>
+			<country/>
+			<code/>
+		</operator>
+		<phoneNumber>+13343017977</phoneNumber>
+		<location>NA-CA-YYZ</location>
+		<lastCradleId>YYZ-AS34-1-5/VIRTUAL/02</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>YYZ-AS34-1-5/VIRTUAL/02</cradleId>
+		<position>
+			<id>portrait</id>
+			<method>rotate</method>
+			<rotation>0</rotation>
+		</position>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>iOS</os>
+		<osVersion>11.2.2</osVersion>
+		<resolution>640x1136</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">Canada</property>
+			<property name="Scripts" category="Device tags">Roaming</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>83090BABE658FA3DCD4A43770A8E530B801CB605</deviceId>
+		<manufacturer>Apple</manufacturer>
+		<model>iPhone-5</model>
+		<distributer>IOS10</distributer>
+		<description>BR-iPhone5s-1</description>
+		<firmware>10.3.3</firmware>
+		<imsi/>
+		<nativeImei>990002796843249</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>c0:63:94:21:34:16</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Brasil Telecom GSM-Brazil
+			<name>Brasil Telecom GSM</name>
+			<country>Brazil</country>
+			<code>72416</code>
+		</operator>
+		<phoneNumber>+19082108806</phoneNumber>
+		<location>SA-BR-GIG</location>
+		<lastCradleId>BR-HS-22/004573/03</lastCradleId>
+		<language>English</language>
+		<status>Not Connected</status>
+		<mode>NOT_CONNECTED</mode>
+		<available>false</available>
+		<reserved>false</reserved>
+		<os>iOS</os>
+		<osVersion>10.3.3</osVersion>
+		<resolution>640x1136</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">Brazil</property>
+			<property name="Scripts" category="Device tags">Roaming</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>ZX1F23TCXV</deviceId>
+		<manufacturer>Motorola</manufacturer>
+		<model>Droid Turbo</model>
+		<distributer>Verizon-US</distributer>
+		<description>AP-DroidTurbo-Pair2-DC4Replacement</description>
+		<firmware>quark_verizon-user 5.1 SU4TL-49 5 release-keys</firmware>
+		<imsi/>
+		<nativeImei>990005280187999</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>f8:cf:c5:8f:f5:63</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+			<name/>
+			<country/>
+			<code/>
+		</operator>
+		<phoneNumber>+19083348058</phoneNumber>
+		<location>NA-US-PHX</location>
+		<lastCradleId>PHX-4480-6-1/VIRTUAL/02</lastCradleId>
+		<language>English</language>
+		<status>Not Connected</status>
+		<mode>NOT_CONNECTED</mode>
+		<available>false</available>
+		<reserved>false</reserved>
+		<os>Android</os>
+		<osVersion>6.0.1</osVersion>
+		<resolution>1440x2560</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Phoenix</property>
+			<property name="Status" category="Device tags">Swollen Battery</property>
+			<property name="Use" category="Device tags">AdHoc</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>990004220844769</deviceId>
+		<manufacturer>Kyocera</manufacturer>
+		<model>Brigadier</model>
+		<distributer>Generic</distributer>
+		<description>AP-Brigadier-Pair2</description>
+		<firmware>E6782-user 5.1.1 LMY47V 0128_0149 release-keys</firmware>
+		<imsi/>
+		<nativeImei>990004220844769</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>6c:76:60:3c:79:40</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+			<name/>
+			<country/>
+			<code/>
+		</operator>
+		<phoneNumber>+19362521226</phoneNumber>
+		<location>NA-US-PHX</location>
+		<lastCradleId>PHX-4280-4-7/VIRTUAL/02</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>PHX-4280-4-7/VIRTUAL/02</cradleId>
+		<position>
+			<id>portrait</id>
+			<method>rotate</method>
+			<rotation>0</rotation>
+		</position>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>5.1.1</osVersion>
+		<resolution>720x1280</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Phoenix</property>
+			<property name="Scripts" category="Device tags">PTTPlus</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>90CED207</deviceId>
+		<manufacturer>Samsung</manufacturer>
+		<model>Galaxy S5</model>
+		<distributer>Unlocked</distributer>
+		<description>AP-GalaxyS5-Pair4</description>
+		<firmware>
+kltevzw-user 6.0.1 MMB29M G900VVRU2DPG2 release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>990004868365846</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>90:b6:86:ec:07:bf</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+			<name/>
+			<country/>
+			<code/>
+		</operator>
+		<phoneNumber>+19082559043</phoneNumber>
+		<location>NA-US-PHX</location>
+		<lastCradleId>PHX-4280-4-7/VIRTUAL/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>PHX-4280-4-7/VIRTUAL/01</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>6.0.1</osVersion>
+		<resolution>1080x1920</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Phoenix</property>
+			<property name="Scripts" category="Device tags">FamilyBase</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>251733-14680-11-14007602-101</deviceId>
+		<manufacturer>BlackBerry</manufacturer>
+		<model>Z30</model>
+		<distributer>Unlocked</distributer>
+		<description>BB-Z30-Pair1</description>
+		<firmware/>
+		<imsi/>
+		<nativeImei>NOT-AVAILABLE</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress/>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+			<name/>
+			<country/>
+			<code/>
+		</operator>
+		<phoneNumber>+19085525265</phoneNumber>
+		<location>NA-US-PHX</location>
+		<lastCradleId>PHX-4680-1-4/007602/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>PHX-4680-1-4/007602/01</cradleId>
+		<position>
+			<method>rotateView</method>
+			<rotation>0</rotation>
+		</position>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>BlackBerry</os>
+		<osVersion/>
+		<resolution>720x1280</resolution>
+		<dynamicFields>
+			<property name="Blackberry ID">vzwperfectobb@gmail.com</property>
+			<property name="Blackberry ID password">vzw@$P01</property>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Gmail address">vzwperfectobb@gmail.com</property>
+			<property name="Gmail password">vzw@$P01</property>
+			<property name="Location" category="Device tags">USA-Phoenix</property>
+			<property name="Pin">335FF8A8</property>
+			<property name="Scripts" category="Device tags">
+BIS-Yahoo2Gmail-BB10,Blackberry10-Browser-Z30,Blackberry7-to-BB10-PIN2PIN,Blackberry10-to-BB7-PIN2PIN
+			</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>0X80B64399</deviceId>
+		<manufacturer>Casio</manufacturer>
+		<model>G'zOne Ravine 2</model>
+		<distributer>Verizon-US</distributer>
+		<description>Feature-Ravine-Pair1</description>
+		<firmware>WC781VWF211F.252 1 [Oct 14 2011 03:00:00]</firmware>
+		<imsi>310009082501059</imsi>
+		<nativeImei>NOT-AVAILABLE</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress/>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+			<name/>
+			<country/>
+			<code/>
+		</operator>
+		<phoneNumber>+19085149045</phoneNumber>
+		<location>NA-US-BOS</location>
+		<lastCradleId>BOS-B8-6-2/004507/03</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>BOS-B8-6-2/004507/03</cradleId>
+		<position>
+			<method>rotateView</method>
+			<rotation>0</rotation>
+		</position>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Casio</os>
+		<osVersion/>
+		<resolution>240x320</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Boston</property>
+			<property name="Scripts" category="Device tags">Opera-ESPN,Opera-MW3HomePage</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>0X8029762D</deviceId>
+		<manufacturer>Casio</manufacturer>
+		<model>G'zOne Ravine 2</model>
+		<distributer>Verizon-US</distributer>
+		<description>Feature-Ravine-Pair1</description>
+		<firmware>WC781VWF211F.252 1 [Oct 14 2011 03:00:00]</firmware>
+		<imsi>310009082504621</imsi>
+		<nativeImei>NOT-AVAILABLE</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress/>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Verizon-United States of America
+			<name>Verizon</name>
+			<country>United States of America</country>
+			<code>310004</code>
+		</operator>
+		<phoneNumber>+19085146203</phoneNumber>
+		<location>NA-US-BOS</location>
+		<lastCradleId>BOS-A1-6-1/004551/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>BOS-A1-6-1/004551/01</cradleId>
+		<position>
+			<method>rotateView</method>
+			<rotation>0</rotation>
+		</position>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Casio</os>
+		<osVersion/>
+		<resolution>240x320</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Phoenix</property>
+			<property name="Scripts" category="Device tags">Opera-ESPN,Opera-MW3HomePage</property>
+			<property name="Status" category="Device tags">KnownIssue-PendingSupport</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>ZY222TGM2T</deviceId>
+		<manufacturer>Motorola</manufacturer>
+		<model>Droid Turbo 2</model>
+		<distributer>Generic</distributer>
+		<description>AP-DroidTurbo-DC4-Swollen</description>
+		<firmware>
+kinzie_verizon-user 6.0.1 MCK24.183-22 22 release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>990005748953453</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>84:10:0d:09:5e:9b</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+			<name/>
+			<country/>
+			<code/>
+		</operator>
+		<phoneNumber>+19088942270</phoneNumber>
+		<location>NA-US-PHX</location>
+		<lastCradleId>PHX-4680-4-6/VIRTUAL/02</lastCradleId>
+		<language>English</language>
+		<status>Not Connected</status>
+		<mode>NOT_CONNECTED</mode>
+		<available>false</available>
+		<reserved>false</reserved>
+		<os>Android</os>
+		<osVersion>7.0</osVersion>
+		<resolution>1440x2560</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Phoenix</property>
+			<property name="Scripts" category="Device tags">VZCloud-DC4</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>15809F24</deviceId>
+		<manufacturer>Samsung</manufacturer>
+		<model>Galaxy S5</model>
+		<distributer>Unlocked</distributer>
+		<description>AP-GalaxyS5-Adhoc</description>
+		<firmware>
+kltevzw-user 6.0.1 MMB29M G900VVRU2DQL1 release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>990004853081473</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>90:b6:86:50:1d:5e</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Verizon-United States of America
+			<name>Verizon</name>
+			<country>United States of America</country>
+			<code>310004</code>
+		</operator>
+		<phoneNumber/>
+		<location>NA-US-PHX</location>
+		<lastCradleId>PHX-4680-4-1/VIRTUAL/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>PHX-4680-4-1/VIRTUAL/01</cradleId>
+		<position>
+			<id>portrait</id>
+			<method>rotate</method>
+			<rotation>0</rotation>
+		</position>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>6.0.1</osVersion>
+		<resolution>1080x1920</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Phoenix</property>
+			<property name="Scripts" category="Device tags">PTTPlus,VZTones</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>HT53SYJ06866</deviceId>
+		<manufacturer>HTC</manufacturer>
+		<model>One M9</model>
+		<distributer>Generic</distributer>
+		<description>AP-OneM9-Pair3</description>
+		<firmware>4.27.502.7 CL870623 release-keys</firmware>
+		<imsi/>
+		<nativeImei>357227061235949</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>90:e7:c4:d2:f3:96</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+AT&T-United States of America
+			<name>AT&T</name>
+			<country>United States of America</country>
+			<code>310016</code>
+		</operator>
+		<phoneNumber>+14804792072</phoneNumber>
+		<location>NA-US-PHX</location>
+		<lastCradleId>PHX-4680-4-2/VIRTUAL/02</lastCradleId>
+		<language>English</language>
+		<status>Not Connected</status>
+		<mode>NOT_CONNECTED</mode>
+		<available>false</available>
+		<reserved>false</reserved>
+		<os>Android</os>
+		<osVersion>7.0</osVersion>
+		<resolution>1080x1920</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">ATT</property>
+			<property name="Location" category="Device tags">USA-Phoenix</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">AdHoc</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>3638CF3BE9EF7F08BE35E80372849AB863414BEF</deviceId>
+		<manufacturer>Apple</manufacturer>
+		<model>iPhone-SE</model>
+		<distributer>MacCam11</distributer>
+		<description>ip-SE-1</description>
+		<firmware>11.0.3</firmware>
+		<imsi/>
+		<nativeImei>355436075037827</nativeImei>
+		<osBuild>15A432</osBuild>
+		<cpuArch>arm64</cpuArch>
+		<wifiMacAddress>2c:f0:a2:9f:05:2f</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Verizon-United States of America
+			<name>Verizon</name>
+			<country>United States of America</country>
+			<code>310004</code>
+		</operator>
+		<phoneNumber>+19082681379</phoneNumber>
+		<location>NA-US-PHX</location>
+		<lastCradleId>PHX-4180-1-1/VIRTUAL/02</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>PHX-4180-1-1/VIRTUAL/02</cradleId>
+		<position>
+			<id>portrait</id>
+			<method>rotate</method>
+			<rotation>0</rotation>
+		</position>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>iOS</os>
+		<osVersion>11.0.3</osVersion>
+		<resolution>640x1136</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Phoenix</property>
+			<property name="Scripts" category="Device tags">VZNav, CheckGasFeed</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>358565049255987</deviceId>
+		<manufacturer>BlackBerry</manufacturer>
+		<model>9930</model>
+		<distributer>Unlocked</distributer>
+		<description>BB-9930</description>
+		<firmware>v7.1.0.1066(Platform 5.1.0.699)</firmware>
+		<imsi/>
+		<nativeImei>NOT-AVAILABLE</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress/>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Verizon-United States of America
+			<name>Verizon</name>
+			<country>United States of America</country>
+			<code>310004</code>
+		</operator>
+		<phoneNumber>+13392234584</phoneNumber>
+		<location>NA-US-BOS</location>
+		<lastCradleId>BOS-A3-6-1/004509/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>BOS-A3-6-1/004509/01</cradleId>
+		<position>
+			<method>rotateView</method>
+			<rotation>0</rotation>
+		</position>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>BlackBerry</os>
+		<osVersion>7.0</osVersion>
+		<resolution>640x480</resolution>
+		<dynamicFields>
+			<property name="BB ID">vzwperfecto9930@yahoo.com</property>
+			<property name="BB Password">Verizon01</property>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Google Email">vzwaspbbperfecto@gmail.com</property>
+			<property name="Google PW">aspengineering1</property>
+			<property name="Location" category="Device tags">USA-Boston</property>
+			<property name="Pin">331F5ABF</property>
+			<property name="Scripts" category="Device tags">
+Yahoo2Gmail-BB7,BUA+Contacts-SyncContacts-BB,BB10toBB7-PIN2PIN-BB9930,BB7toBB10-PIN2PIN-BB9930,Blackberry7-Browser
+			</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+			<property name="Yahoo Email">vzwperfecto9930@yahoo.com</property>
+			<property name="Yahoo PW">Verizon01</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>ZY22272ZXB</deviceId>
+		<manufacturer>Motorola</manufacturer>
+		<model>Droid Turbo 2</model>
+		<distributer>Generic</distributer>
+		<description>AP-DroidTurbo-DC3</description>
+		<firmware>
+kinzie_verizon-user 7.0 NCK25.118-10.5 6 release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>990005748922730</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>84:10:0d:0d:71:2e</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+			<name/>
+			<country/>
+			<code/>
+		</operator>
+		<phoneNumber>+19088942716</phoneNumber>
+		<location>NA-US-BOS</location>
+		<lastCradleId>BOS-D1-4-1/VIRTUAL/02</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>BOS-D1-4-1/VIRTUAL/02</cradleId>
+		<position>
+			<id>portrait</id>
+			<method>rotate</method>
+			<rotation>0</rotation>
+		</position>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>7.0</osVersion>
+		<resolution>1440x2560</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Boston</property>
+			<property name="Scripts" category="Device tags">VZCloudDC5</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>FE40A335</deviceId>
+		<manufacturer>Samsung</manufacturer>
+		<model>Galaxy S7</model>
+		<distributer>Generic</distributer>
+		<description>AP-GalaxyS7-Pair1</description>
+		<firmware>
+heroqltevzw-user 6.0.1 MMB29M G930VVRU2APD2 release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>355301070834018</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>ac:5f:3e:5d:8c:a2</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Verizon-United States of America
+			<name>Verizon</name>
+			<country>United States of America</country>
+			<code>310004</code>
+		</operator>
+		<phoneNumber>+19083311865</phoneNumber>
+		<location>NA-US-PHX</location>
+		<lastCradleId>PHX-4180-1-2/VIRTUAL/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>PHX-4180-1-2/VIRTUAL/01</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>6.0.1</osVersion>
+		<resolution>1440x2560</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Phoenix</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">AdHoc</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>ZY222TTLGK</deviceId>
+		<manufacturer>Motorola</manufacturer>
+		<model>Droid Turbo 2</model>
+		<distributer>Generic</distributer>
+		<description>AP-DroidTurbo-DC3</description>
+		<firmware>
+kinzie_verizon-user 6.0.1 MCK24.183-22 22 release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>990005748925774</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>84:10:0d:0d:7a:a6</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+			<name/>
+			<country/>
+			<code/>
+		</operator>
+		<phoneNumber>+19088928980</phoneNumber>
+		<location>NA-US-PHX</location>
+		<lastCradleId>PHX-4680-4-5/VIRTUAL/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>PHX-4680-4-5/VIRTUAL/01</cradleId>
+		<position>
+			<id>portrait</id>
+			<method>rotate</method>
+			<rotation>0</rotation>
+		</position>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>7.0</osVersion>
+		<resolution>1440x2560</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Phoenix</property>
+			<property name="Scripts" category="Device tags">VZCloud-DC5</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>990004220840726</deviceId>
+		<manufacturer>Kyocera</manufacturer>
+		<model>Brigadier</model>
+		<distributer>Generic</distributer>
+		<description>AP-Brigadier-Pair1</description>
+		<firmware>E6782-user 5.1.1 LMY47V 0627_0250 release-keys</firmware>
+		<imsi/>
+		<nativeImei>990004220840726</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>6c:76:60:3c:77:ac</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+			<name/>
+			<country/>
+			<code/>
+		</operator>
+		<phoneNumber>+9362520827</phoneNumber>
+		<location>NA-US-BOS</location>
+		<lastCradleId>BOS-D1-5-4/VIRTUAL/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>BOS-D1-5-4/VIRTUAL/01</cradleId>
+		<position>
+			<id>portrait</id>
+			<method>rotate</method>
+			<rotation>0</rotation>
+		</position>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>5.1.1</osVersion>
+		<resolution>720x1280</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Boston</property>
+			<property name="Scripts" category="Device tags">PTTPlus</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>0A71A495</deviceId>
+		<manufacturer>Samsung</manufacturer>
+		<model>Galaxy S5</model>
+		<distributer>Unlocked</distributer>
+		<description>IC-TMobile-GalaxyS5</description>
+		<firmware>kltetmo-user 5.0 LRX21T G900TUVU1DOB1 release-keys</firmware>
+		<imsi/>
+		<nativeImei>357536060559616</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>98:f1:70:97:04:01</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+			<name/>
+			<country/>
+			<code/>
+		</operator>
+		<phoneNumber/>
+		<location>NA-US-PHX</location>
+		<lastCradleId>PHX-4280-4-6/VIRTUAL/02</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>PHX-4280-4-6/VIRTUAL/02</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>5.1.1</osVersion>
+		<resolution>1080x1920</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">T-Mobile</property>
+			<property name="Location" category="Device tags">USA-Phoenix</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">AdHoc</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>BA72B1D1</deviceId>
+		<manufacturer>Samsung</manufacturer>
+		<model>Galaxy S7</model>
+		<distributer>Generic</distributer>
+		<description>AP-GalaxyS7-Pair1</description>
+		<firmware>
+heroqltevzw-user 6.0.1 MMB29M G930VVRS2APB4 release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>355301070713188</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>ac:5f:3e:65:25:dd</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Verizon-United States of America
+			<name>Verizon</name>
+			<country>United States of America</country>
+			<code>310004</code>
+		</operator>
+		<phoneNumber>+19082563158</phoneNumber>
+		<location>NA-US-PHX</location>
+		<lastCradleId>PHX-4680-6-6/VIRTUAL/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>PHX-4680-6-6/VIRTUAL/01</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>6.0.1</osVersion>
+		<resolution>1440x2560</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Phoenix</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">AdHoc</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>D07BB153</deviceId>
+		<manufacturer>Samsung</manufacturer>
+		<model>Galaxy S5 SM-G900A</model>
+		<distributer>ATT-US</distributer>
+		<description>Gomez Parent</description>
+		<firmware>
+kltevzw-user 6.0.1 MMB29M G900VVRU2DPF4 release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>990004852320203</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>90:b6:86:4f:c2:e1</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Verizon-United States of America
+			<name>Verizon</name>
+			<country>United States of America</country>
+			<code>310004</code>
+		</operator>
+		<phoneNumber>+19085140525</phoneNumber>
+		<location>NA-US-PHX</location>
+		<lastCradleId>PHX-4280-4-4/VIRTUAL/02</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>PHX-4280-4-4/VIRTUAL/02</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>6.0.1</osVersion>
+		<resolution>1080x1920</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Phoenix</property>
+			<property name="Scripts" category="Device tags">FamilyBase,FamilyLocator</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>ZY222VGHCR</deviceId>
+		<manufacturer>Motorola</manufacturer>
+		<model>Droid Turbo</model>
+		<distributer>Verizon-US</distributer>
+		<description>AP-DroidTurbo-Pair4</description>
+		<firmware>quark_verizon-user 5.1 SU4TL-49 5 release-keys</firmware>
+		<imsi/>
+		<nativeImei>990005289417710</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>84:10:0d:9d:c2:78</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+			<name/>
+			<country/>
+			<code/>
+		</operator>
+		<phoneNumber>+19082009873</phoneNumber>
+		<location>NA-US-PHX</location>
+		<lastCradleId>PHX-4680-4-3/VIRTUAL/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>PHX-4680-4-3/VIRTUAL/01</cradleId>
+		<position>
+			<id>portrait</id>
+			<method>rotate</method>
+			<rotation>0</rotation>
+		</position>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>6.0.1</osVersion>
+		<resolution>1440x2560</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Gmail/Play store email">vzwaspandroid@gmail.com</property>
+			<property name="Gmail/Play store pwd">vzw@$P01</property>
+			<property name="Location" category="Device tags">USA-Phoenix</property>
+			<property name="Scripts" category="Device tags">PTTPlus,PictureMe,</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>VS987B1A9CD76</deviceId>
+		<manufacturer>LG</manufacturer>
+		<model>G5</model>
+		<distributer>Generic</distributer>
+		<description>AP-LG-G5-DC5</description>
+		<firmware>h1_vzw-user 7.0 NRD90U 1736121063d54 release-keys</firmware>
+		<imsi/>
+		<nativeImei>355858076208356</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>80:5a:04:d1:04:35</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+			<name/>
+			<country/>
+			<code/>
+		</operator>
+		<phoneNumber>+19088927913</phoneNumber>
+		<location>NA-US-BOS</location>
+		<lastCradleId>BOS-D1-4-8/VIRTUAL/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>BOS-D1-4-8/VIRTUAL/01</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>7.0</osVersion>
+		<resolution>1440x2560</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Boston</property>
+			<property name="Scripts" category="Device tags">VZCloudDC3</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>FA549YJ06612</deviceId>
+		<manufacturer>HTC</manufacturer>
+		<model>One M9</model>
+		<distributer>Generic</distributer>
+		<description>AP-OneM9-Pair2</description>
+		<firmware>4.27.531.6 CL869604 release-keys</firmware>
+		<imsi/>
+		<nativeImei>357228060486319</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>90:e7:c4:d7:8d:da</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+			<name/>
+			<country/>
+			<code/>
+		</operator>
+		<phoneNumber>+17813637119</phoneNumber>
+		<location>NA-US-PHX</location>
+		<lastCradleId>PHX-4680-2-2/VIRTUAL/02</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>PHX-4680-2-2/VIRTUAL/02</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>7.0</osVersion>
+		<resolution>1080x1920</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">T-Mobile</property>
+			<property name="Location" category="Device tags">USA-Phoenix</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">AdHoc</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>A19865BF</deviceId>
+		<manufacturer>Samsung</manufacturer>
+		<model>I545 Galaxy S IV</model>
+		<distributer>Verizon-US</distributer>
+		<description>AP-GalaxyS4-AdHoc</description>
+		<firmware>
+jfltevzw-user 5.0.1 LRX22C I545VRUGOF1 release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>990004421315452</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>f0:25:b7:09:3e:d9</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Verizon-United States of America
+			<name>Verizon</name>
+			<country>United States of America</country>
+			<code>310004</code>
+		</operator>
+		<phoneNumber>+19082009871</phoneNumber>
+		<location>NA-US-PHX</location>
+		<lastCradleId>PHX-4180-1-4/VIRTUAL/02</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>PHX-4180-1-4/VIRTUAL/02</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>5.0.1</osVersion>
+		<resolution>1080x1920</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Google Email">verizonasps41@gmail.com</property>
+			<property name="Google PW">verizon5c$P</property>
+			<property name="Location" category="Device tags">USA-Phoenix</property>
+			<property name="SSO PW">Verizonasp</property>
+			<property name="SSO UN">Verizonasp1</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">AdHoc</property>
+			<property name="VVM PW">12369</property>
+			<property name="Yahoo Email">verizonasps41@yahoo.com</property>
+			<property name="Yahoo PW">Perfecto5c$P</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>ZY222TCDNN</deviceId>
+		<manufacturer>Motorola</manufacturer>
+		<model>Droid Turbo 2</model>
+		<distributer>Generic</distributer>
+		<description>AP-DroidTurbo-DC4</description>
+		<firmware>
+kinzie_verizon-user 7.0 NCK25.118-10.2 2 release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>990005748930642</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>84:10:0d:0d:75:d2</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+			<name/>
+			<country/>
+			<code/>
+		</operator>
+		<phoneNumber>+19088940648</phoneNumber>
+		<location>NA-US-BOS</location>
+		<lastCradleId>BOS-D1-5-2/VIRTUAL/02</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>BOS-D1-5-2/VIRTUAL/02</cradleId>
+		<position>
+			<id>portrait</id>
+			<method>rotate</method>
+			<rotation>0</rotation>
+		</position>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>7.0</osVersion>
+		<resolution>1440x2560</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Boston</property>
+			<property name="Scripts" category="Device tags">VZCloud-DC4</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>505B37F8</deviceId>
+		<manufacturer>Samsung</manufacturer>
+		<model>Galaxy S5</model>
+		<distributer>Unlocked</distributer>
+		<description>IC-Sprint-GalaxyS5</description>
+		<firmware>kltespr-user 5.0 LRX21T G900PVPU3BOK4 release-keys</firmware>
+		<imsi/>
+		<nativeImei>99000474798968</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>98:f1:70:4f:de:f4</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Sprint-United States of America
+			<name>Sprint</name>
+			<country>United States of America</country>
+			<code>310120</code>
+		</operator>
+		<phoneNumber>+17816087851</phoneNumber>
+		<location>NA-US-BOS</location>
+		<lastCradleId>BOS-D1-5-2/VIRTUAL/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>BOS-D1-5-2/VIRTUAL/01</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>6.0.1</osVersion>
+		<resolution>1080x1920</resolution>
+	</handset>
+	<handset>
+		<deviceId>ZY222TBNXK</deviceId>
+		<manufacturer>Motorola</manufacturer>
+		<model>Droid Turbo</model>
+		<distributer>Verizon-US</distributer>
+		<description>AP-DroidTurbo-Pair3</description>
+		<firmware>
+quark_verizon-user 6.0.1 MCG24.251-5-5 5 release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>990005289981384</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>84:10:0d:9d:ba:43</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Verizon-United States of America
+			<name>Verizon</name>
+			<country>United States of America</country>
+			<code>310004</code>
+		</operator>
+		<phoneNumber>+19082686323</phoneNumber>
+		<location>NA-US-PHX</location>
+		<lastCradleId>PHX-4680-4-3/VIRTUAL/02</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>PHX-4680-4-3/VIRTUAL/02</cradleId>
+		<position>
+			<id>portrait</id>
+			<method>rotate</method>
+			<rotation>0</rotation>
+		</position>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>6.0.1</osVersion>
+		<resolution>1440x2560</resolution>
+	</handset>
+	<handset>
+		<deviceId>59CAC3BF</deviceId>
+		<manufacturer>Samsung</manufacturer>
+		<model>Galaxy S7 Edge</model>
+		<distributer>Generic</distributer>
+		<description>CA-S7Edge-3</description>
+		<firmware>
+hero2qltevzw-user 7.0 NRD90M G935VVRS4BQH1 release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>355300071697275</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>60:f1:89:7d:69:14</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+			<name/>
+			<country/>
+			<code/>
+		</operator>
+		<phoneNumber>+17126350358</phoneNumber>
+		<location>NA-CA-YYZ</location>
+		<lastCradleId>YYZ-AS34-1-8/VIRTUAL/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>YYZ-AS34-1-8/VIRTUAL/01</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>7.0</osVersion>
+		<resolution>1440x2560</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">Canada</property>
+			<property name="Scripts" category="Device tags">Roaming</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">Monitoring</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>33002BCEA4A58283</deviceId>
+		<manufacturer>Samsung</manufacturer>
+		<model>Galaxy Tab S2 9.7</model>
+		<distributer>Generic</distributer>
+		<description/>
+		<firmware>
+gts210ltevzw-user 6.0.1 MMB29K T817VVRU2BPE1 release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>990005902452755</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>d0:87:e2:1e:fd:9a</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+			<name/>
+			<country/>
+			<code/>
+		</operator>
+		<phoneNumber>+1-908-297-2491</phoneNumber>
+		<location>NA-US-BOS</location>
+		<lastCradleId>BOS-D1-5-7/VIRTUAL/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>BOS-D1-5-7/VIRTUAL/01</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>6.0.1</osVersion>
+		<resolution>1536x2048</resolution>
+		<dynamicFields>
+			<property name="Carrier" category="Device tags">Verizon</property>
+			<property name="Location" category="Device tags">USA-Boston</property>
+			<property name="Status" category="Device tags">Healthy</property>
+			<property name="Use" category="Device tags">AdHoc</property>
+		</dynamicFields>
+	</handset>
+	<handset>
+		<deviceId>ZY222VDZ8Q</deviceId>
+		<manufacturer>Motorola</manufacturer>
+		<model>Droid Turbo</model>
+		<distributer>Verizon-US</distributer>
+		<description>AP-DroidTurbo-Pair1</description>
+		<firmware>
+quark_verizon-user 6.0.1 MCG24.251-5-5 5 release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>990005289452840</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>84:10:0d:9d:c2:03</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Verizon-United States of America
+			<name>Verizon</name>
+			<country>United States of America</country>
+			<code>310004</code>
+		</operator>
+		<phoneNumber>+19082686371</phoneNumber>
+		<location>NA-US-BOS</location>
+		<lastCradleId>BOS-D1-4-2/VIRTUAL/01</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>BOS-D1-4-2/VIRTUAL/01</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>6.0.1</osVersion>
+		<resolution>1440x2560</resolution>
+	</handset>
+	<handset>
+		<deviceId>358758040709520</deviceId>
+		<manufacturer>BlackBerry</manufacturer>
+		<model>9370</model>
+		<distributer>Unlocked</distributer>
+		<description>ASP_Adhoc3</description>
+		<firmware>v7.1.0.1066(Platform 5.1.0.699)</firmware>
+		<imsi/>
+		<nativeImei>NOT-AVAILABLE</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress/>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Verizon-United States of America
+			<name>Verizon</name>
+			<country>United States of America</country>
+			<code>310004</code>
+		</operator>
+		<phoneNumber>+19095187148</phoneNumber>
+		<location>NA-US-BOS</location>
+		<lastCradleId>BOS-B8-6-2/004507/04</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>BOS-B8-6-2/004507/04</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>BlackBerry</os>
+		<osVersion>7.0</osVersion>
+		<resolution>480x360</resolution>
+	</handset>
+	<handset>
+		<deviceId>186A8C82</deviceId>
+		<manufacturer>Samsung</manufacturer>
+		<model>Galaxy S7 Edge</model>
+		<distributer>Generic</distributer>
+		<description>CA-S7Edge-2</description>
+		<firmware>
+hero2qltevzw-user 7.0 NRD90M G935VVRS4BQH1 release-keys
+		</firmware>
+		<imsi/>
+		<nativeImei>355300070307124</nativeImei>
+		<osBuild/>
+		<cpuArch/>
+		<wifiMacAddress>60:f1:89:16:a1:98</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+			<name/>
+			<country/>
+			<code/>
+		</operator>
+		<phoneNumber>+15702344312</phoneNumber>
+		<location>NA-CA-YYZ</location>
+		<lastCradleId>YYZ-AS34-1-6/VIRTUAL/02</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>100</score>
+		</operabilityRating>
+		<cradleId>YYZ-AS34-1-6/VIRTUAL/02</cradleId>
+		<debugLogs>
+			<collecting>false</collecting>
+		</debugLogs>
+		<os>Android</os>
+		<osVersion>7.0</osVersion>
+		<resolution>1440x2560</resolution>
+	</handset>
+	<handset>
+		<deviceId>DEF85757F4FBD0DDDF6CA234974AC1D843DF4F43</deviceId>
+		<manufacturer>Apple</manufacturer>
+		<model>iPhone-SE</model>
+		<distributer>IOS10</distributer>
+		<description>ip-SE-1</description>
+		<firmware>10.3.3</firmware>
+		<imsi/>
+		<nativeImei>355436072317230</nativeImei>
+		<osBuild>14G60</osBuild>
+		<cpuArch>arm64</cpuArch>
+		<wifiMacAddress>e0:c7:67:80:18:2e</wifiMacAddress>
+		<link>
+			<type>lab</type>
+		</link>
+		<operator>
+Verizon-United States of America
+			<name>Verizon</name>
+			<country>United States of America</country>
+			<code>310004</code>
+		</operator>
+		<phoneNumber>+19082009869</phoneNumber>
+		<location>NA-US-PHX</location>
+		<lastCradleId>PHX-4680-1-5/VIRTUAL/02</lastCradleId>
+		<language>English</language>
+		<status>Connected</status>
+		<mode>CONNECTED</mode>
+		<available>true</available>
+		<reserved>false</reserved>
+		<inUse>false</inUse>
+		<operabilityRating>
+			<score>0</score>
+		</description>
+		<referenceTimestamp>1524684699445</referenceTimestamp>
+	</operabilityRating>
+	<cradleId>PHX-4680-1-5/VIRTUAL/02</cradleId>
+	<position>
+		<id>portrait</id>
+		<method>rotate</method>
+		<rotation>0</rotation>
+	</position>
+	<debugLogs>
+		<collecting>false</collecting>
+	</debugLogs>
+	<os>iOS</os>
+	<osVersion>10.3.3</osVersion>
+	<resolution>640x1136</resolution>
+</handset>
+<handset>
+	<deviceId>D18E276FB0DB0F1361832E74983C84E941B84F72</deviceId>
+	<manufacturer>Apple</manufacturer>
+	<model>iPhone-5C</model>
+	<distributer>IOS10</distributer>
+	<description>CH-iPhone5c</description>
+	<firmware>10.3.3</firmware>
+	<imsi/>
+	<nativeImei>358534052898711</nativeImei>
+	<osBuild>14G60</osBuild>
+	<cpuArch>armv7s</cpuArch>
+	<wifiMacAddress>24:a2:e1:d5:d1:18</wifiMacAddress>
+	<link>
+		<type>lab</type>
+	</link>
+	<operator>
+		<name>SUNMobile</name>
+		<country>Hong Kong</country>
+		<code>45400</code>
+	</operator>
+	<phoneNumber>+19082009477</phoneNumber>
+	<location>APAC-CN-CAN</location>
+	<lastCradleId>CN-6C03-13/VIRTUAL/02</lastCradleId>
+	<language>English</language>
+	<status>Connected</status>
+	<mode>CONNECTED</mode>
+	<available>true</available>
+	<reserved>false</reserved>
+	<inUse>false</inUse>
+	<operabilityRating>
+		<score>0</score>
+		<referenceTimestamp>1524683628959</referenceTimestamp>
+	</operabilityRating>
+	<cradleId>CN-6C03-13/VIRTUAL/02</cradleId>
+	<debugLogs>
+		<collecting>false</collecting>
+	</debugLogs>
+	<os>iOS</os>
+	<osVersion>10.3.3</osVersion>
+	<resolution>640x1136</resolution>
+</handset>
+<handset>
+	<deviceId>F5B245F6</deviceId>
+	<manufacturer>Samsung</manufacturer>
+	<model>Galaxy S5</model>
+	<distributer>Unlocked</distributer>
+	<description>AP-GalaxyS5-Pair2</description>
+	<firmware>
+kltevzw-user 6.0.1 MMB29M G900VVRU2DQI2 release-keys
+	</firmware>
+	<imsi/>
+	<nativeImei>990004868401369</nativeImei>
+	<osBuild/>
+	<cpuArch/>
+	<wifiMacAddress>98:f1:70:8d:ea:7b</wifiMacAddress>
+	<link>
+		<type>lab</type>
+	</link>
+	<operator>
+Verizon-United States of America
+		<name>Verizon</name>
+		<country>United States of America</country>
+		<code>310004</code>
+	</operator>
+	<phoneNumber>+18568165192</phoneNumber>
+	<location>NA-US-PHX</location>
+	<lastCradleId>PHX-4680-4-6/VIRTUAL/01</lastCradleId>
+	<language>English</language>
+	<status>Connected</status>
+	<mode>CONNECTED</mode>
+	<available>true</available>
+	<reserved>false</reserved>
+	<inUse>false</inUse>
+	<operabilityRating>
+		<score>100</score>
+	</operabilityRating>
+	<cradleId>PHX-4680-4-6/VIRTUAL/01</cradleId>
+	<position>
+		<id>portrait</id>
+		<method>rotate</method>
+		<rotation>0</rotation>
+	</position>
+	<debugLogs>
+		<collecting>false</collecting>
+	</debugLogs>
+	<os>Android</os>
+	<osVersion>6.0.1</osVersion>
+	<resolution>1080x1920</resolution>
+</handset>
+</handsets>

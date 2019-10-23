@@ -1,0 +1,6 @@
+call.callButton=//*[@label="Call"]
+call.speakerOff=//*[@content-desc="speaker off,"]
+call.dailTab=//*[@text="Dialer"]
+call.phNumField=//*[@resource-id="com.android.contacts:id/digits"]
+call.digit=//*[@label='%s']
+call.contacts=//*[translate(@text,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz') = 'contacts']

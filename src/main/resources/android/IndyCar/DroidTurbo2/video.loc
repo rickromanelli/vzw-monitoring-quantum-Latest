@@ -1,0 +1,9 @@
+video.playFirst.button=xpath=(//*[@resource-id="com.vzw.indycar:id/play_icon"])[2]
+video.playFinal.button=xpath=//*[@resource-id="com.vzw.indycar:id/video_view_play_pause_btn"]
+video.window.button=//*[@resource-id="com.vzw.indycar:id/video_view_surface"]//*[@password="false"]
+video.stop.button=//*[@resource-id="com.vzw.indycar:id/video_view_surface"]//*[@password="false"]
+video.altVideo.button=//*[@resource-id="com.vzw.indycar:id/common_spinner_secondary_text"]
+video.teamVideo.button=//*[@text="Teams Videos"]
+video.videoTitle=//*[@resource-id="com.vzw.indycar:id/video_title"]
+video.noVideoBackground=PUBLIC:Prod/Indycar/TempNoVideoBackground.jpg
+video.share=//*[@resource-id="com.vzw.indycar:id/action_share"]

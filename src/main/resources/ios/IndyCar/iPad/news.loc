@@ -1,0 +1,6 @@
+#news.altNews.button=(//XCUIElementTypeStaticText[@value='News'])[2]//preceding-sibling::XCUIElementTypeButton 
+news.altNews.button = {\"locator\":\"xpath=(//XCUIElementTypeStaticText[@value='News'])[2]//preceding-sibling::XCUIElementTypeButton\",\"desc\":\"news text\"}
+news.exclusiveBanner=PUBLIC:Prod/Indycar/VideoShareButtoniphone.png
+news.exclusiveNews.button=//*[@label="Exclusive News"]
+#news.2ndStory.button=(//XCUIElementTypeCollectionView/XCUIElementTypeCell)[2]
+news.2ndStory.button={\"locator\":\"xpath=(//XCUIElementTypeCollectionView/XCUIElementTypeCell)[2]\",\"desc\":\"news text\"}

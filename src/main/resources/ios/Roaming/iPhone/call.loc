@@ -1,0 +1,9 @@
+#ios
+call.callButton=//*[@label="Call"]
+call.clickToEndCall=//*[@label="End call"]
+call.speakerOff=//*[@content-desc="speaker off,"]
+call.dailTab=//*[@label="Keypad"]
+call.phNumField=//*[@resource-id="com.android.contacts:id/digits"]
+call.digit=//*[@label='%s']
+call.contacts=//*[@value="1"]
+call.contactsCall=PUBLIC:Prod/International/CallButtoniPhone7.png

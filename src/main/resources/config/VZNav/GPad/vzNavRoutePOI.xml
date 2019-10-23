@@ -1,0 +1,47 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Appium Demo Suite" verbose="0" thread-count="2"
+	parallel="tests">
+	<listeners>
+		<listener class-name="com.quantum.listerners.QuantumReportiumListener" />
+		<listener class-name="com.quantum.listerners.TestListener" />
+	</listeners>
+
+	<parameter name="driver.name" value="perfectoRemoteDriver" />
+
+	<test name="Android VZNav RoutePOI GPad Test1" enabled="true">
+		<parameter name="perfecto.env.resources" value="src/main/resources/android" />
+		<parameter name="perfecto.capabilities.deviceName" value="VK8104G48E73853" />
+		<parameter name="perfecto.capabilities.driverClass" value="io.appium.java_client.AppiumDriver"></parameter>
+		<parameter name="perfecto.capabilities.browserName" value=""></parameter>
+
+		<groups>
+			<run>
+				<include name="@vzNavRoutePOITablet" />
+			</run>
+		</groups>
+
+		<classes>
+			<class
+				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
+		</classes>
+	</test>
+	
+	<test name="Android VZNav RoutePOI GPad Test2" enabled="true">
+		<parameter name="perfecto.env.resources" value="src/main/resources/android" />
+		<parameter name="perfecto.capabilities.deviceName" value="VK8104G9FE62CA8" />
+		<parameter name="perfecto.capabilities.driverClass" value="io.appium.java_client.AppiumDriver"></parameter>
+		<parameter name="perfecto.capabilities.browserName" value=""></parameter>
+
+		<groups>
+			<run>
+				<include name="@vzNavRoutePOITablet" />
+			</run>
+		</groups>
+
+		<classes>
+			<class
+				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
+		</classes>
+	</test>
+
+</suite>

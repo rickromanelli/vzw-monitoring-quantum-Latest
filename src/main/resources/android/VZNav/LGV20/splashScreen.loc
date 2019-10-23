@@ -1,0 +1,5 @@
+splash.letsGo=//*[@resource-id="com.vznavigator.Generic:id/first_start_enter_button"]
+splash.skip=//*[@resource-id="com.vznavigator.Generic:id/skip"]
+splash.start=//*[@resource-id="com.vznavigator.Generic:id/tutorial_button"]
+splash.maps=//*[@resource-id="com.vznavigator.Generic:id/goto_textview"]
+splash.tablet.initial.accept=//*[@resource-id="android:id/button1"]

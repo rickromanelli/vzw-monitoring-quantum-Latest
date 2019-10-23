@@ -1,0 +1,3 @@
+addContact.name.box=//*[@text="Name"]
+addContact.save.btn=//*[@resource-id="com.android.contacts:id/tv_save_menu_item"]
+addContact.confirm.txt=//*[@resource-id="com.android.contacts:id/large_title"]

@@ -1,0 +1,4 @@
+home.helpBox=//*[@resource-id="com.vznavigator.Generic:id/tips_2"]
+home.gasStation=//*[@resource-id="com.vznavigator.Generic:id/ltk_suk_explore_grid"]/android.widget.RelativeLayout[3]/android.widget.ImageView[1]
+home.searchBox=//*[@resource-id="android:id/search_src_text"]
+home.searchContext=//*[@resource-id="com.vznavigator.Generic:id/ltk_suk_explore_header"]

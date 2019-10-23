@@ -1,0 +1,2 @@
+settings.home.wifi.btn=//*[@value="Wi-Fi"]
+settings.wifi.toggle=//*[@label="Wi-Fi" and @value="1"]

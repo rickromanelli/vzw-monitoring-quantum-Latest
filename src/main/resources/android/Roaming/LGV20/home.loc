@@ -1,0 +1,2 @@
+home.browser: name=Safari
+home.phone=//*[@text="Phone"]

@@ -1,0 +1,2 @@
+home.search.input=//*[@resource-id="pSearch"]
+home.search.button=//*[@resource-id='searchControl']

@@ -1,0 +1,6 @@
+photos.noPhotosBackground=PUBLIC:Prod/Indycar/NoPhotosBackgroundiPhone.png
+photos.1stPhoto.button=//XCUIElementTypeCollectionView/XCUIElementTypeCell[1]
+photos.altCategory.button=//*[@label="Photos"]
+photos.back.button=//*[@label="back arrow button"]
+photos.1stCategory.button=//XCUIElementTypeTable/XCUIElementTypeCell[2]
+

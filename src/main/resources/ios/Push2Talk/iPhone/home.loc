@@ -1,0 +1,4 @@
+home.available.txt=//*[@text="Available"]
+home.missedCall.decline=//*[@label="Not now"]
+home.search=//XCUIElementTypeSearchField
+home.contacts=//*[@resource-id="ext-element-100"]

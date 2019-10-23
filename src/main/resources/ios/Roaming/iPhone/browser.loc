@@ -1,0 +1,2 @@
+browser.addressBar=//*[@label="Address"]
+browser.go=//*[@label="Go"]
