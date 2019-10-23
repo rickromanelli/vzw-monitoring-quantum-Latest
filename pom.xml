@@ -12,7 +12,8 @@
 
 	<properties>
 		<testngXmlDir>src/main/resources/config</testngXmlDir>
-		<testngXmlFile>multiDevice.xml</testngXmlFile>
+		<testngXmlFile></testngXmlFile>
+		<password></password>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<reportium-sdk.version>2.3</reportium-sdk.version>
 		<testng.version>6.10</testng.version>
@@ -24,21 +25,21 @@
 		<org.json.version>20160810</org.json.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<platform>android</platform>
+		<platform></platform>
 		<bundleId></bundleId>
 		<bundleId2></bundleId2>
-		<platform2>android</platform2>
+		<platform2></platform2>
 		<appPackage></appPackage>
 		<appPackage2></appPackage2>
 		<description></description>
 		<description2></description2>
-		<deviceName>VS9951F489C05</deviceName>
-		<deviceName2>VS995969D00DF</deviceName2>
+		<deviceName></deviceName>
+		<deviceName2></deviceName2>
 		<cloudURL>https://vzw.perfectomobile.com/nexperience/perfectomobile/wd/hub</cloudURL>
-		<deviceModel>LGV20</deviceModel>
-		<deviceModel2>LGV20</deviceModel2>
-		<app>VVM</app>
-		<monitorTag>@VM2Text</monitorTag>
+		<deviceModel></deviceModel>
+		<deviceModel2></deviceModel2>
+		<app></app>
+		<monitorTag></monitorTag>
 	</properties>
    
     
