@@ -37,7 +37,7 @@
 		</classes>
 	</test>
 	
-	 <test name="${app} ${platform} ${model}-B" enabled="false">
+	 <test name="${app} ${platform} ${model}-B" enabled="true">
 	 <parameter name="driverNameList" value="perfecto,perfecto2"></parameter>
 		<parameter name="perfecto.env.resources" value="src/main/resources/${platform}/${app}/${model}"/>
 <!--  <parameter name="perfecto.capabilities.description" value="ZY222V5TRR" /> -->
