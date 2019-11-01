@@ -228,7 +228,7 @@ public class VZNavStepsPhone {
 		we = (QAFExtendedWebElement) driver.findElement("routeResult.go");
 		we.waitForPresent(10000);
 		
-		pgs.textClick("Go", "10", "100");
+		pgs.textClick("Go To", "10", "100");
 		
 
 		/*we = (QAFExtendedWebElement) driver.findElement("routeResult.go");
