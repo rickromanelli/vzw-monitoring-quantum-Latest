@@ -89,7 +89,6 @@
 						-Dperfecto2.capabilities.appPackage=${appPackage2}
 						-Dperfecto.capabilities.bundleId=${bundleId}
 						-Dperfecto2.capabilities.bundleId=${bundleId2}
-						-Ddriver.capabilities.securityToken=${security-token}
 						-Dmodel=${deviceModel}
 						-Dmodel2=${deviceModel2}
 						-Dperfecto.capabilities.deviceName=${deviceName}
