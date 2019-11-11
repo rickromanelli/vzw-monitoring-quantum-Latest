@@ -45,7 +45,7 @@ import com.quantum.steps.CommonSteps.PerfectoGenericSteps;
 
 public class TestListener implements ISuiteListener, ITestListener {
 
-	private static final String SECURITY_TOKEN = System.getProperty("security-token");
+	private static final String SECURITY_TOKEN = ConfigurationManager.getBundle().getString("driver.capabilities.securityToken");
 	private static final String CQL_NAME = System.getProperty("CQL_NAME", "vzw"); // TODO put your Continuous Quality
 																					// Lab name here
 	private static final String REPORTING_SERVER_URL = "https://" + CQL_NAME + ".reporting.perfectomobile.com";
