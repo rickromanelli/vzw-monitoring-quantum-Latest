@@ -14,6 +14,7 @@ import com.qmetry.qaf.automation.ui.WebDriverTestBase;
 import com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver;
 import com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement;
 import com.quantum.listerners.SplunkHelper;
+import com.quantum.steps.PerfectoApplicationSteps;
 import com.quantum.steps.CommonSteps.PerfectoGenericSteps;
 import com.quantum.steps.CommonSteps.PerfectoSplunkSteps;
 import com.quantum.utils.DeviceUtils;
@@ -83,7 +84,7 @@ public class Push2TalkStepsPhone {
 		 */
 
 		String model = DeviceUtils.getDeviceProperty("model");
-		if (model.equalsIgnoreCase("iPhone-7")) {
+		/*if (model.equalsIgnoreCase("iPhone-7")) {
 
 			Map<String, Object> params3 = new HashMap<>();
 			params3.put("label", "PUBLIC:Prod/PTTPlus/ContactsBtniPhone7.png");
@@ -91,9 +92,9 @@ public class Push2TalkStepsPhone {
 			params3.put("threshold", "90");
 			Object result3 = getDriver().executeScript("mobile:button-image:click", params3);
 
-		} else {
+		} else {*/
 			iswitchToContactsTabPTT(device);
-		}
+		//}
 		model = DeviceUtils.getDeviceProperty("model");
 		String cn = "";
 		if (model.equalsIgnoreCase("iPhone-7")) {
@@ -261,7 +262,7 @@ public class Push2TalkStepsPhone {
 	}
 
 	@Then("^I click to call on \"([^\"]*)\"$")
-	public void iClickToCallp2t(String device) {
+	public void iClickToCallp2t(String device) throws InterruptedException {
 
 		String driverName = "perfecto";
 		if (device.equalsIgnoreCase("dut2")) {
@@ -270,11 +271,26 @@ public class Push2TalkStepsPhone {
 
 		PerfectoGenericSteps.switchToDriver(driverName);
 
+		String model = DeviceUtils.getDeviceProperty("model");
+
+		if (model.equals("iPhone-7")) {
+			
+			Map<String, Object> params3 = new HashMap<>();
+			params3.put("location", "50%,60%");
+			params3.put("operation", "down");
+			params3.put("duration", "6");
+			Object result3 = driver.executeScript("mobile:touch:tap", params3);
+			
+			
+			
+		} else {
+			
 		Map<String, Object> params1 = new HashMap<>();
 		params1.put("location", "50%,50%");
 		params1.put("operation", "down");
 		Object result1 = getDriver().executeScript("mobile:touch:tap", params1);
-
+		}
+		
 		/*
 		 * we = (QAFExtendedWebElement) driver.findElement("call.clickToCall");
 		 * we.waitForPresent(20000); we.click();
@@ -291,11 +307,14 @@ public class Push2TalkStepsPhone {
 
 		PerfectoGenericSteps.switchToDriver(driverName);
 
+		
 		Map<String, Object> params1 = new HashMap<>();
 		params1.put("location", "50%,50%");
 		params1.put("operation", "down");
 		Object result1 = getDriver().executeScript("mobile:touch:tap", params1);
 
+		
+		
 	}
 
 	@Then("^I click to end call on \"([^\"]*)\"$")
@@ -420,12 +439,18 @@ public class Push2TalkStepsPhone {
 			try {
 				//pgs.imageClick("PUBLIC:Prod/PTTPlus/PTTCall-iPhone.png", "20", "85");
 				
-				Map<String, Object> params1 = new HashMap<>();
+				/*Map<String, Object> params1 = new HashMap<>();
 				params1.put("label", "PUBLIC:Prod/PTTPlus/PTTCall-iPhone.png");
 				params1.put("timeout", "20");
 				params1.put("threshold", "80");
 				params1.put("operation", "long");
 				Object result1 = getDriver().executeScript("mobile:button-image:click", params1);
+				*/
+				Map<String, Object> params1 = new HashMap<>();
+				params1.put("location", "50%, 60%");
+				params1.put("duration", "20");
+				Object result1 = driver.executeScript("mobile:touch:tap", params1);
+				
 				
 				
 			} catch (Exception e) {
