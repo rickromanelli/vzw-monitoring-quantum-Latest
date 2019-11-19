@@ -110,7 +110,7 @@ Scenario: Push_to_Talk_iPhone2Duraforce
 	#Then I increase to max volume
 	Then I inject audio file "PUBLIC:Prod/VVM/VM2TXT3.mp3" on "DUT2"
 	Then I send audio on "DUT2"	
-	Then Transaction: "7 Audio Received?" on PTT Device: "DUT1" Description: "Audio Checkpoint" SLA: "60000" Volume: "-140" Timeout: "30" Duration: "3"
+	#Then Transaction: "7 Audio Received?" on PTT Device: "DUT1" Description: "Audio Checkpoint" SLA: "60000" Volume: "-140" Timeout: "30" Duration: "3"
 	Then I stop sending audio on "DUT2"
 	Then I click to end call on "DUT2"
 	
