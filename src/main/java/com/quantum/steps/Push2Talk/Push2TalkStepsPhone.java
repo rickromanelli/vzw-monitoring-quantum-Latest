@@ -388,14 +388,17 @@ public class Push2TalkStepsPhone {
 			cn = ConfigurationManager.getBundle().getString("contactName1");
 		}
 
-		/*
-		 * Map<String, Object> params1 = new HashMap<>(); params1.put("content", cn);
-		 * params1.put("timeout", "30"); params1.put("threshold", "80"); ArrayList
-		 * genericOptions2 = new ArrayList();
-		 * genericOptions2.add("natural-language=true"); params1.put("ocr",
-		 * genericOptions2); Object result1 =
-		 * driver.executeScript("mobile:checkpoint:text", params1);
-		 */
+		String model = DeviceUtils.getDeviceProperty("model");
+
+		if (model.equals("iPhone-7")) {
+		
+		  Map<String, Object> params1 = new HashMap<>(); params1.put("content", cn);
+		  params1.put("timeout", "30"); params1.put("threshold", "80"); ArrayList
+		  genericOptions2 = new ArrayList();
+		  genericOptions2.add("natural-language=true"); params1.put("ocr",
+		  genericOptions2); Object result1 =
+		  driver.executeScript("mobile:checkpoint:text", params1);
+		}
 
 		try {
 			we1 = new QAFExtendedWebElement("//*[contains(@text,\"" + cn + "\")]");
