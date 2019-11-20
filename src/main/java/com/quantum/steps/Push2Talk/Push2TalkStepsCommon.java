@@ -135,9 +135,7 @@ public class Push2TalkStepsCommon extends WebDriverTestCase {
 		break;
 		case "ZY222VGHCR": ConfigurationManager.getBundle().setProperty("contactName1", "DroidMini-9873");
 		break;
-		case "F5B245F6": ConfigurationManager.getBundle().setProperty("contactName2", "Galaxy-5192");
-		break;
-		case "60CFAF2A" : ConfigurationManager.getBundle().setProperty("contactName2", "Galaxy-8072");
+		case "988B5C3151455A4B58" : ConfigurationManager.getBundle().setProperty("contactName1", "5192");
 		break;
 		case "990004220676039" : ConfigurationManager.getBundle().setProperty("contactName1", "2830");
 		break;
