@@ -112,48 +112,49 @@ public class Push2TalkStepsCommon extends WebDriverTestCase {
 	public static void setPTTContactNames(String driverName) {
 
 		String currentDut = DeviceUtils.getDeviceProperty("deviceId");
-		
-		/*if (driverName.equalsIgnoreCase("perfecto")) {
-			ConfigurationManager.getBundle().setProperty("dut1", currentDut);
+		String dutNum = "";
+		if (driverName.equalsIgnoreCase("perfecto")) {
+			dutNum = "1";
 		
 		}else if (driverName.equalsIgnoreCase("perfecto2")) {
 			
-			ConfigurationManager.getBundle().setProperty("dut2", currentDut);
-		}*/
+			dutNum = "2";
+		}
 		System.out.println("DDDDDDDDDDDDDDDDD: " + currentDut);
 		
 		switch (currentDut) {
-		case "ZY222TQZLT" : ConfigurationManager.getBundle().setProperty("contactName1", "8680");
+		
+		//DuraForce
+		case "613539899" : ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "4058");
 		break;
-		case "ZY222T8SFX" : ConfigurationManager.getBundle().setProperty("contactName1", "7823");
+		case "613540154" : ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "4727");
 		break;
-		case "613539899" : ConfigurationManager.getBundle().setProperty("contactName2", "4058");
+		//Brig
+		case "990004220676039" : ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "2830");
 		break;
-		case "613540154" : ConfigurationManager.getBundle().setProperty("contactName2", "4727");
+		case "990004220840726" : ConfigurationManager.getBundle().setProperty("contactName"  + dutNum, "0827");
 		break;
-		case "ZY222V5TRR": ConfigurationManager.getBundle().setProperty("contactName1", "DroidMini-8858");
+		case "990004220844769" : ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "1226");
 		break;
-		case "ZY222VGHCR": ConfigurationManager.getBundle().setProperty("contactName1", "DroidMini-9873");
+		case "990004220846798" : ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "2831");
 		break;
-		case "988B5C3151455A4B58" : ConfigurationManager.getBundle().setProperty("contactName1", "5192");
+		//S8
+		case "988B5C413545374847" : ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "5140");
 		break;
-		case "990004220676039" : ConfigurationManager.getBundle().setProperty("contactName1", "2830");
+		case "988B9A38575930324C" : ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "4924");
+		break;	
+		case "988B5C3151455A4B58" : ConfigurationManager.getBundle().setProperty("contactName"  + dutNum, "5192");
 		break;
-		case "990004220840726" : ConfigurationManager.getBundle().setProperty("contactName1", "0827");
+		case "988B5C355456374F48" : ConfigurationManager.getBundle().setProperty("contactName"  + dutNum, "8072");
 		break;
-		case "990004220844769" : ConfigurationManager.getBundle().setProperty("contactName2", "1226");
+		//iP7
+		case "9958153C7DC2380B9D68690989B7AC5E973964AB" : ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "1203");
 		break;
-		case "990004220846798" : ConfigurationManager.getBundle().setProperty("contactName2", "2831");
+		case "31D4632F6CA8F7417734A08B8E1DF7C1995C0840" : ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "7493");
 		break;
-		case "988B5C413545374847" : ConfigurationManager.getBundle().setProperty("contactName1", "5140");
+		case "FB9D601560B829B2B1AE615B86D5963DA80DE928" : ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "1379");
 		break;
-		case "9958153C7DC2380B9D68690989B7AC5E973964AB" : ConfigurationManager.getBundle().setProperty("contactName1", "1203");
-		break;
-		case "31D4632F6CA8F7417734A08B8E1DF7C1995C0840" : ConfigurationManager.getBundle().setProperty("contactName1", "7493");
-		break;
-		case "FB9D601560B829B2B1AE615B86D5963DA80DE928" : ConfigurationManager.getBundle().setProperty("contactName1", "1379");
-		break;
-		case "233CFDB6B9E44FCFAC45562D37C92E5B8E84FA88" : ConfigurationManager.getBundle().setProperty("contactName1", "9869");
+		case "233CFDB6B9E44FCFAC45562D37C92E5B8E84FA88" : ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "9869");
 		break;
 		default: break;
 		}
