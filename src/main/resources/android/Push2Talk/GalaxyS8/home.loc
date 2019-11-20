@@ -1,4 +1,4 @@
 home.available.txt=//*[@text="Available"]
 home.missedCall.decline=//*[@content-desc="Not now"]
-home.search=//*[@resource-id="ext-uxsearchfield-2"]
+home.search=//*[@resource-id="ext-textinput-3"]/android.view.View[2]
 home.contacts=//*[@resource-id="ext-tab-3"]

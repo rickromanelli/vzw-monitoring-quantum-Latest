@@ -93,16 +93,19 @@ public class Push2TalkStepsPhone {
 			Object result3 = getDriver().executeScript("mobile:button-image:click", params3);
 
 		} else {*/
+		String cn = "";
+		if (device.equalsIgnoreCase("DUT1")) {
+			cn = cn2;
+		} else if (device.equalsIgnoreCase("DUT2")) {
+			cn = cn1;
+		}
+		
 			iswitchToContactsTabPTT(device);
 		//}
 		model = DeviceUtils.getDeviceProperty("model");
-		String cn = "";
+		
 		if (model.equalsIgnoreCase("iPhone-7")) {
-			if (device.equalsIgnoreCase("DUT1")) {
-				cn = cn2;
-			} else if (device.equalsIgnoreCase("DUT2")) {
-				cn = cn1;
-			}
+		
 
 			Map<String, Object> params1 = new HashMap<>();
 			params1.put("label", "Search Contacts");
@@ -111,6 +114,15 @@ public class Push2TalkStepsPhone {
 			params1.put("threshold", "90");
 			Object result1 = getDriver().executeScript("mobile:edit-text:set", params1);
 
+		} else if (model.equalsIgnoreCase("Galaxy S8")) {
+			
+			Map<String, Object> params1 = new HashMap<>();
+			params1.put("label", "Search Contacts");
+			params1.put("text", cn);
+			params1.put("timeout", "20");
+			params1.put("threshold", "90");
+			Object result1 = getDriver().executeScript("mobile:edit-text:set", params1);
+			
 		} else {
 			/*Map<String, Object> params2 = new HashMap<>();
 			params2.put("location", "263,762");
@@ -331,8 +343,8 @@ public class Push2TalkStepsPhone {
 		if (model.equals("Z30")) {
 			pgs.textClick("End Call", "20", "90");
 
-		} else if (model.equals("Droid Turbo 2")) {
-			pgs.imageClick("PUBLIC:Prod/PTTPlus/EndCallTurbo.png", "30", "90");
+		} else if (model.equals("Galaxy S8")) {
+			pgs.imageClick("PUBLIC:Prod/PTTPlus/EndCallS8.png", "30", "90");
 		} else if (model.equals("E6810")) {
 			pgs.imageClick("PUBLIC:Prod/PTTPlus/EndCallDura.png", "30", "90");
 		} else {
