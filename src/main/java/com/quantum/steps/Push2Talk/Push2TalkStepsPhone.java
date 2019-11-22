@@ -344,7 +344,12 @@ public class Push2TalkStepsPhone {
 			pgs.textClick("End Call", "20", "90");
 
 		} else if (model.equals("Galaxy S8")) {
-			pgs.imageClick("PUBLIC:Prod/PTTPlus/EndCallS8.png", "30", "90");
+			try {
+				pgs.imageClick("PUBLIC:Prod/PTTPlus/EndCallS8.png", "30", "90");
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		} else if (model.equals("E6810")) {
 			pgs.imageClick("PUBLIC:Prod/PTTPlus/EndCallDura.png", "30", "90");
 		} else {
