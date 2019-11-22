@@ -104,7 +104,7 @@ Scenario: Push_to_Talk_GalaxyS8_2_GalaxyS8
 	#Then I click to end call on "DUT1"
 	Then I send audio on "DUT1"	
 	Then I inject audio file "PUBLIC:Prod/VVM/VM2TXT3.mp3" on "DUT1"
-	Then Transaction: "5 Audio Received?" on PTT Device: "DUT2" Description: "Audio Checkpoint" SLA: "60000" Volume: "-140" Timeout: "30" Duration: "9"
+	#Then Transaction: "5 Audio Received?" on PTT Device: "DUT2" Description: "Audio Checkpoint" SLA: "60000" Volume: "-140" Timeout: "30" Duration: "9"
 	Then I stop sending audio on "DUT1"
 	#Then I click to end call on "DUT1"
 	Then I click to call on "DUT2"
