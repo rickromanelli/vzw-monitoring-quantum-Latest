@@ -31,8 +31,8 @@ Scenario: Push_to_Talk_Turbo2Duraforce
 	Then I click to end call on "DUT2"
 	#Then I close application by name "Push To Talk"
 	
-	@push2talkGalaxyS8ToDuraForce
-Scenario: Push_to_Talk_Turbo2Duraforce
+	@push2talkDuraForceToGalaxyS8
+Scenario: Push_to_Talk_DuraForce2Duraforce
 	Then I open Push2Talk on "DUT1"
 	Then Transaction "1 PTT opened DUT1?" description: "Did PTT App open DUT1?" SLA: "60000" - OCR Checkpoint: "Available" Timeout: "30" Threshold: "90"
 	Then I open Push2Talk on "DUT2"	
@@ -47,7 +47,6 @@ Scenario: Push_to_Talk_Turbo2Duraforce
 	Then I send audio on "DUT1"	
 	Then I inject audio file "PUBLIC:Prod/VVM/VM2TXT3.mp3" on "DUT1"
 	Then Transaction: "5 Audio Received?" on PTT Device: "DUT2" Description: "Audio Checkpoint" SLA: "60000" Volume: "-140" Timeout: "30" Duration: "9"
-	
 	Then I stop sending audio on "DUT1"
 	#Then I click to end call on "DUT1"
 	Then I click to call on "DUT2"

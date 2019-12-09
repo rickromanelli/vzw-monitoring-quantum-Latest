@@ -114,7 +114,7 @@ public class Push2TalkStepsPhone {
 			params1.put("threshold", "90");
 			Object result1 = getDriver().executeScript("mobile:edit-text:set", params1);
 
-		} else if (model.equalsIgnoreCase("Galaxy S8")) {
+		} else if (model.equalsIgnoreCase("Galaxy S8") || model.equalsIgnoreCase("E6810")) {
 			
 			Map<String, Object> params1 = new HashMap<>();
 			params1.put("label", "Search Contacts");
