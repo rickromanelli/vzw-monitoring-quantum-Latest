@@ -32,7 +32,7 @@ Scenario: Push_to_Talk_Turbo2Duraforce
 	#Then I close application by name "Push To Talk"
 	
 	@push2talkDuraForceToGalaxyS8
-Scenario: Push_to_Talk_DuraForce2Duraforce
+Scenario: Push_to_Talk_DuraForce2GalaxyS8
 	Then I open Push2Talk on "DUT1"
 	Then Transaction "1 PTT opened DUT1?" description: "Did PTT App open DUT1?" SLA: "60000" - OCR Checkpoint: "Available" Timeout: "30" Threshold: "90"
 	Then I open Push2Talk on "DUT2"	
