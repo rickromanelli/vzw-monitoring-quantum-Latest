@@ -44,17 +44,20 @@ Scenario: Push_to_Talk_DuraForce2GalaxyS8
 	Then Transaction "4 Call Received?" call received on "DUT2" SLA: "60000"
 	Then I increase to max volume
 	#Then I click to end call on "DUT1"
-	Then I send audio on "DUT1"	
 	Then I inject audio file "PUBLIC:Prod/VVM/VM2TXT3.mp3" on "DUT1"
+	
+	Then I send audio on "DUT1"	
+	
 	Then Transaction: "5 Audio Received?" on PTT Device: "DUT2" Description: "Audio Checkpoint" SLA: "60000" Volume: "-140" Timeout: "30" Duration: "9"
 	Then I stop sending audio on "DUT1"
 	#Then I click to end call on "DUT1"
 	Then I click to call on "DUT2"
 	Then Transaction "6 Call Received?" call received on "DUT1" SLA: "60000"
-	Then I increase to max volume
-	Then I inject audio file "PUBLIC:Prod/VVM/VM2TXT3.mp3" on "DUT2"
-	Then I send audio on "DUT2"	
-	Then Transaction: "7 Audio Received?" on PTT Device: "DUT1" Description: "Audio Checkpoint" SLA: "60000" Volume: "-140" Timeout: "30" Duration: "9"
+	#Then I increase to max volume
+	
+	#Then I send audio on "DUT2"
+	#Then I inject audio file "PUBLIC:Prod/VVM/VM2TXT3.mp3" on "DUT2"
+	#Then Transaction: "7 Audio Received?" on PTT Device: "DUT1" Description: "Audio Checkpoint" SLA: "60000" Volume: "-140" Timeout: "30" Duration: "9"
 	Then I stop sending audio on "DUT2"
 	Then I click to end call on "DUT2"
 	#Then I close application by name "Push To Talk"
