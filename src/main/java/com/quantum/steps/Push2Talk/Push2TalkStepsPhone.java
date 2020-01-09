@@ -284,6 +284,14 @@ public class Push2TalkStepsPhone {
 		PerfectoGenericSteps.switchToDriver(driverName);
 
 		String model = DeviceUtils.getDeviceProperty("model");
+		
+		try {
+			we = (QAFExtendedWebElement) driver.findElement("home.missedCall.decline");
+			we.waitForPresent(5000);
+			we.click();
+		} catch (Exception ex2) {
+
+		}
 
 		if (model.equals("iPhone-7")) {
 			
@@ -456,6 +464,15 @@ public class Push2TalkStepsPhone {
 		String model = DeviceUtils.getDeviceProperty("model");
 
 		if (model.equals("iPhone-7")) {
+			
+			try {
+				we = (QAFExtendedWebElement) driver.findElement("home.missedCall.decline");
+				we.waitForPresent(5000);
+				we.click();
+			} catch (Exception ex2) {
+
+			}
+			
 			try {
 				//pgs.imageClick("PUBLIC:Prod/PTTPlus/PTTCall-iPhone.png", "20", "85");
 				
@@ -479,6 +496,14 @@ public class Push2TalkStepsPhone {
 			}
 		} else {
 			//PUBLIC:Prod/PTTPlus/PTTCall-iPhone.png
+			
+			try {
+				we = (QAFExtendedWebElement) driver.findElement("home.missedCall.decline");
+				we.waitForPresent(5000);
+				we.click();
+			} catch (Exception ex2) {
+
+			}
 
 			Map<String, Object> params5 = new HashMap<>();
 			params5.put("location", "50%,70%");
