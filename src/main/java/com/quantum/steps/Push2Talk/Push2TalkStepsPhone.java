@@ -117,7 +117,7 @@ public class Push2TalkStepsPhone {
 		} else if (model.equalsIgnoreCase("Galaxy S8") || model.equalsIgnoreCase("E6810")) {
 			
 			Map<String, Object> params1 = new HashMap<>();
-			params1.put("label", "Search Contacts");
+			params1.put("label", "Search");
 			params1.put("text", cn);
 			params1.put("timeout", "20");
 			params1.put("threshold", "90");
