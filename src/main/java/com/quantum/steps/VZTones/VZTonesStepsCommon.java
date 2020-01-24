@@ -34,6 +34,8 @@ public class VZTonesStepsCommon {
 	
 		
 		PerfectoApplicationSteps.startAppByName("Verizon Tones");
+		
+		we.wait(15);
 
 		we = (QAFExtendedWebElement) driver.findElement("home.signin");
 		if(we.isPresent()) {
