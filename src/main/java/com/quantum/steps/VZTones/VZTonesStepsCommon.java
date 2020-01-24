@@ -23,14 +23,22 @@ public class VZTonesStepsCommon {
 	@When("^I initialize VZTones app")
 	public void InitializeApp() throws Exception {
 
+		
 		try {
 			PerfectoApplicationSteps.closeAppByName("Verizon Tones");
 			PerfectoApplicationSteps.closeAppByName("Verizon Tones");
 		} catch (Exception ex) {
 
 		}
+		
+	
+		
 		PerfectoApplicationSteps.startAppByName("Verizon Tones");
 
+		we = (QAFExtendedWebElement) driver.findElement("home.signin");
+		if(we.isPresent()) {
+			we.click();
+		}
 	}
 
 	
