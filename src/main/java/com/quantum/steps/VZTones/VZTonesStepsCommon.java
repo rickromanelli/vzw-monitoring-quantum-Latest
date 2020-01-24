@@ -11,6 +11,7 @@ import com.qmetry.qaf.automation.ui.WebDriverTestBase;
 import com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver;
 import com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement;
 import com.quantum.steps.PerfectoApplicationSteps;
+import com.quantum.steps.CommonSteps.PerfectoGenericSteps;
 
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -19,6 +20,7 @@ import cucumber.api.java.en.When;
 public class VZTonesStepsCommon {
 	QAFExtendedWebDriver driver = new WebDriverTestBase().getDriver();
 	QAFExtendedWebElement we;
+	PerfectoGenericSteps pgs = new PerfectoGenericSteps();
 
 	@When("^I initialize VZTones app")
 	public void InitializeApp() throws Exception {
@@ -35,7 +37,7 @@ public class VZTonesStepsCommon {
 		
 		PerfectoApplicationSteps.startAppByName("Verizon Tones");
 		
-		we.wait(15);
+		pgs.wait(15);
 
 		we = (QAFExtendedWebElement) driver.findElement("home.signin");
 		if(we.isPresent()) {
