@@ -9,9 +9,9 @@ Scenario: VZ_Tones_Search_Android
 	Then I initialize VZTones app 	
 	Then Transaction: "1 Tones Opened?" Description: "Opening VZ Tones App" SLA: "60000" - OCR checkpoint: "Ring" Timeout: "30" Threshold: "90"
 	Then I search for "Jurassic 5" phone
-	Then I perform an Image click "PUBLIC:Prod/VZTones/Play_Button_S5.png" with a timeout of "20" and a threshold of "90"
+	Then I perform an Image click "PUBLIC:Prod/VZTones/Play_Button_S7.png" with a timeout of "20" and a threshold of "90"
 	Then Transaction: "2 Audio Played?" Description: "Verifying audio loaded" SLA: "60000" - Image checkpoint: "PUBLIC:Prod/VZTones/Stop_Button_S5.png" Timeout: "60" Threshold: "50"
-	Then I perform an Image click "PUBLIC:Prod/VZTones/Play_Button_S5.png" with a timeout of "30" and a threshold of "90"
+	Then I perform an Image click "PUBLIC:Prod/VZTones/Play_Button_S7.png" with a timeout of "30" and a threshold of "90"
 	Then Transaction: "3 Check Audio" Description: "Checking if audio was played" SLA: "60000" Volume: "-120" Timeout: "16" Duration: "7"
 	
 @vzTonesWhatsNew
