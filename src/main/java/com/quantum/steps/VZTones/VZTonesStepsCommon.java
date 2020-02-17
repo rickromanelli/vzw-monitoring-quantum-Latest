@@ -40,6 +40,7 @@ public class VZTonesStepsCommon {
 		PerfectoApplicationSteps.waitFor(10);
 
 		we = (QAFExtendedWebElement) driver.findElement("home.signin");
+		PerfectoApplicationSteps.waitFor(10);
 		if(we.isPresent()) {
 			we.click();
 		}
