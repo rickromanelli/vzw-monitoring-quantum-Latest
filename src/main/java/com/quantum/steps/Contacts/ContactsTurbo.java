@@ -130,7 +130,7 @@ public class ContactsTurbo extends WebDriverTestCase {
 			we.waitForPresent(20000);
 			we.click();*/
 
-			we = (QAFExtendedWebElement) driver.findElement("contact.deleteConfirm");
+			we = (QAFExtendedWebElement) driver.findElement("contact.deleteConfirm.btn");
 			we.waitForPresent(20000);
 			we.click();
 			
