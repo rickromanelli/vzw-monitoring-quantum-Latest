@@ -147,16 +147,22 @@ public class PerfectoGenericSteps {
 
 		} else if (model.equals("Galaxy S8")) {
 			
-			if (textFindHaystack("CONTACTS", "20", "90", "0%", "0%", "100%", "100%")) {
+			if (textFindHaystack("Contacts", "20", "90", "0%", "0%", "100%", "100%")) {
 				
 				Map<String, Object> params1 = new HashMap<>();
-				params1.put("label", "CONTACTS");
+				params1.put("label", "Contacts");
 				params1.put("timeout", "20");
 				params1.put("threshold", "90");
 				Object result1 = driver.executeScript("mobile:button-text:click", params1);
 				
 				
 			}
+			
+			/*we = (QAFExtendedWebElement) driver.findElement("call.contacts.search");
+			we.waitForPresent(20000);
+			we.click();*/
+			
+			imageClick("PUBLIC:Prod/Roaming/GalaxyS10SearchButton.png", "20", "85");
 			
 			
 			Map<String, Object> params5 = new HashMap<>();
@@ -183,7 +189,12 @@ public class PerfectoGenericSteps {
 			//String contactName = ConfigurationManager.getBundle().getString("contactDesc2");
 			//textClick(contactName, "20", "90");
 			PerfectoApplicationSteps.waitFor(3);
-			textClick("Call", "20", "90");
+			
+			we = (QAFExtendedWebElement) driver.findElement("call.callButton");
+			we.waitForPresent(20000);
+			we.click();
+			
+			//textClick("Call", "20", "90");
 
 
 			
