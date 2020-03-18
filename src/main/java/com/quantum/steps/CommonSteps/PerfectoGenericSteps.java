@@ -119,7 +119,10 @@ public class PerfectoGenericSteps {
 			// textClick("Call Mobile", "20", "90");
 
 			//imageClick("PUBLIC:Prod/International/CallButtoniPhone7.png", "30", "90");
-
+			we = (QAFExtendedWebElement) driver.findElement("call.callButton");
+			we.waitForPresent(20000);
+			we.click();
+			
 		} else if (model.equals("Galaxy S7")) {
 			we = (QAFExtendedWebElement) driver.findElement("call.dailTab");
 			we.waitForPresent(20000);

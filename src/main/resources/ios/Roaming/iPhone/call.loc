@@ -1,5 +1,5 @@
 #ios
-call.callButton=//*[@label="Call"]
+call.callButton=//*[@label="home, Call"]
 call.clickToEndCall=//*[@label="End call"]
 call.speakerOff=//*[@content-desc="speaker off,"]
 call.dailTab=//*[@label="Keypad"]
