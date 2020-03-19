@@ -13,6 +13,8 @@ import com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement;
 import com.qmetry.qaf.automation.ui.webdriver.QAFWebElement;
 import com.quantum.listerners.SplunkHelper;
 import com.quantum.steps.PerfectoApplicationSteps;
+import com.quantum.steps.CommonSteps.PerfectoGenericSteps;
+
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
@@ -22,6 +24,7 @@ import cucumber.api.java.en.When;
 public class GizmoStepsCommon {
 	QAFExtendedWebDriver driver = new WebDriverTestBase().getDriver();
 	QAFExtendedWebElement we;
+	PerfectoGenericSteps pgs = new PerfectoGenericSteps();
 	
 	@When("^I initialize Gizmo app")
 	public void InitializeGizmoApp() throws Exception {
@@ -36,20 +39,29 @@ public class GizmoStepsCommon {
 
 	}
 	
-	@When("^I navigate to Maps Phone")
-	public void NavigatetoMapsGizmoApp() throws Exception {
+	@When("^I click to show location Phone")
+	public void showLocationGizmoApp() throws Exception {
 		
 		we = (QAFExtendedWebElement) driver.findElement("menu.maps.button");
 		we.click();
 	}
 	
+	@When("^I click to show location iPhone")
+	public void showLocationiPhoneGizmoApp() throws Exception {
+		
+		pgs.imageClick("PUBLIC:Prod/Gizmo/iPhonelocateButton.png", "20", "85");
+		
+	}
+	
 	@When("^I search for Child Phone")
 	public void SearchForChildGizmoApp() throws Exception {
 		
-		we = (QAFExtendedWebElement) driver.findElement("maps.locate.button");
-		we.click();
+		//we = (QAFExtendedWebElement) driver.findElement("maps.locate.button");
+		//we.click();
 		
-		textCheckpoint("look", "20", "90");
+		pgs.imageClick("PUBLIC:Prod/Gizmo/iPhonelocateButton.png", "20", "85");
+		
+		//textCheckpoint("look", "20", "90");
 		//we = (QAFExtendedWebElement) driver.findElement("maps.locate.button");
 	}
 	
