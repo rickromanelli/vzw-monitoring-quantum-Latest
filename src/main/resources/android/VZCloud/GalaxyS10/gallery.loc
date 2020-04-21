@@ -1,0 +1,5 @@
+gallery.menu=//*[@class="androidx.appcompat.widget.LinearLayoutCompat"]//*[@class="android.widget.FrameLayout"]
+gallery.menu.edit=//*[@text="Edit"]
+gallery.edit.all=//*[@resource-id="com.sec.android.gallery3d:id/select_all"]
+gallery.edit.delete=//*[@resource-id="com.sec.android.gallery3d:id/action_delete"]//*[@resource-id="com.sec.android.gallery3d:id/icon"]
+gallery.trash.back=//*[@content-desc="Navigate up"]

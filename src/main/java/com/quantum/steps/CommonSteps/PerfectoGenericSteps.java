@@ -150,6 +150,9 @@ public class PerfectoGenericSteps {
 
 		} else if (model.equals("Galaxy S8")) {
 			
+			String contactName = ConfigurationManager.getBundle().getString("contactDesc2");
+			
+			
 			if (textFindHaystack("Contacts", "20", "90", "0%", "0%", "100%", "100%")) {
 				
 				Map<String, Object> params1 = new HashMap<>();
@@ -170,22 +173,16 @@ public class PerfectoGenericSteps {
 			
 			Map<String, Object> params5 = new HashMap<>();
 			params5.put("label", "Search");
-			params5.put("text", "AP-DroidTurbo-AdHoc1");
+			params5.put("text", contactName);
 			params5.put("screen.top", "0%");
 			params5.put("screen.height", "34%");
 			params5.put("screen.left", "0%");
 			params5.put("screen.width", "100%");
 			Object result5 = driver.executeScript("mobile:edit-text:set", params5);
 			
-			Map<String, Object> params7 = new HashMap<>();
-			params7.put("label", "AP-DroidTurbo-AdHoc1");
-			params7.put("timeout", "20");
-			params7.put("threshold", "90");
-			params7.put("screen.top", "11%");
-			params7.put("screen.height", "89%");
-			params7.put("screen.left", "0%");
-			params7.put("screen.width", "100%");
-			Object result7 = driver.executeScript("mobile:button-text:click", params7);
+			we = (QAFExtendedWebElement) driver.findElement("contacts.result");
+			we.waitForPresent(20000);
+			we.click();
 			
 
 			

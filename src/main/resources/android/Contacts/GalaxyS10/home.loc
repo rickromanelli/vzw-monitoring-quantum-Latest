@@ -1,0 +1,2 @@
+home.addContact.btn=//*[@resource-id="com.samsung.android.contacts:id/menu_search"]
+home.search.box=//*[@resource-id="com.samsung.android.contacts:id/search_src_text"]
