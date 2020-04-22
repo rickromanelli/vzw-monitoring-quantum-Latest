@@ -43,6 +43,17 @@ public class VZCloudStepsCommon extends WebDriverTestCase {
 	public void iOpenCloudAppPhone() throws Exception {
 
 		cleanAndStartApp(false);
+		
+		we = (QAFExtendedWebElement) driver.findElement("menu.btn");
+		we.waitForPresent(20000);
+		we.click();
+		
+		we = (QAFExtendedWebElement) driver.findElement("menu.home");
+		we.waitForPresent(20000);
+		we.click();
+		
+		we = (QAFExtendedWebElement) driver.findElement("home.title");
+		we.waitForPresent(20000);
 
 	}
 
@@ -98,7 +109,7 @@ public class VZCloudStepsCommon extends WebDriverTestCase {
 
 			pas.waitFor(4);
 
-			if (!pgs.textFind("Trash is Empty", "30", "80")) {
+			if (!pgs.textFind("Trash is Empty", "10", "80")) {
 			we = (QAFExtendedWebElement) driver.findElement("photos.menu");
 			we.waitForPresent(20);
 			we.click();

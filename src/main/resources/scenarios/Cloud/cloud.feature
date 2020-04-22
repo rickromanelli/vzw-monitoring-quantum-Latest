@@ -4,7 +4,7 @@ Feature: Cloud Feature
 
 @mediaSyncAndroid
 Scenario: VZCloud_MediaSync_Android
-	Given I use default driver	
+	#Given I use default driver	
 	Then I toggle wifi "disabled"
 	Then I open VZCloud app phone
 	Then Transaction: "1 Cloud Started?" Description: "Opening cloud app" SLA: "60000" - OCR checkpoint: "Verizon Cloud" Timeout: "30" Threshold: "100"
