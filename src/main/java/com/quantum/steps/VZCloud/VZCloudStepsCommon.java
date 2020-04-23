@@ -206,6 +206,9 @@ public class VZCloudStepsCommon extends WebDriverTestCase {
 		pas.closeAppById("com.sec.android.gallery3d");
 		pas.startAppById("com.sec.android.gallery3d");
 		
+		
+		pas.waitFor(4);
+		
 		pgs.textClickHaystack("Pictures", "20", "80", "0%", "70%", "30%", "100%");
 
 		if (!pgs.textFind("No pictures", "8", "95")) {
@@ -214,7 +217,7 @@ public class VZCloudStepsCommon extends WebDriverTestCase {
 		we.waitForPresent(20);
 		we.click();
 
-	
+	    
 
 
 			/*pgs.textClick("Photos & Videos", "30", "90");
