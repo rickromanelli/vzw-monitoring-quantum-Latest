@@ -2,7 +2,7 @@
 Feature: Gizmo Feature 
 
 @gizmopalAndroid
-Scenario: GizmoPal Android Phone
+Scenario: GizmoPal_Android_Phone
 Given I go to the device home screen
 Then I toggle wifi "disabled"
 Then I initialize Gizmo app
