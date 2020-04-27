@@ -19,7 +19,7 @@ Scenario: VZ_Nav_Check_Gas_Feed_Android
 	Then I open VZNav app phone
 	Then Transaction "1 VZ Nav Launched?" description: "Opening VZ Nav App" SLA: "60000" - OCR Checkpoint: "Gas Stations" Timeout: "60" Threshold: "90"
 	Then I open Gas Stations iOSphone
-	Then Transaction "2 Gas Stations Loaded?" description: "Verifying gas stations loaded" SLA: "60000" - OCR Checkpoint: "Eleven" Timeout: "60" Threshold: "90"
+	Then Transaction "2 Gas Stations Loaded?" description: "Verifying gas stations loaded" SLA: "60000" - OCR Checkpoint: "Xtra Mart" Timeout: "60" Threshold: "80"
 	
 @vzNavRouteAddressPhone 
 Scenario: VZ_Nav_Route_Address_Android
