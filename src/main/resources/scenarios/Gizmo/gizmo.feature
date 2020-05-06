@@ -12,7 +12,7 @@ Then I click to show location Phone
 Then Transaction "2 Child Located?" description: "Did Child show correct location?" SLA: "60000" - OCR Checkpoint: "Shadybrook Dr" Timeout: "200" Threshold: "90"
 
 @gizmopaliPhone
-Scenario: GizmoPal iPhone
+Scenario: GizmoPal_iPhone
 #Then I toggle wifi "disabled"
 Given I go to the device home screen
 Then I initialize Gizmo app
