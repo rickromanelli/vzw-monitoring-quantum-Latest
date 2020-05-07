@@ -22,7 +22,13 @@ public class VZTonesStepsPhone {
 	 QAFExtendedWebElement we;
 	 PerfectoGenericSteps pgs = new PerfectoGenericSteps();
 
+	@Then("^I close all apps$")
+	public void closeAllAppsAndroid()
+	{
 	
+		
+		
+	}
 	
 	@Then("^I search for \"([^\"]*)\" phone$")
 	public void searchForTonePhone(String tone)
@@ -60,8 +66,20 @@ public class VZTonesStepsPhone {
 	@Then("^I navigate to jukeboxes phone$")
 	public void navigateJukeboxesPhone()
 	{
+		Map<String, Object> params1 = new HashMap<>();
+		params1.put("label", "My Jukeboxes");
+		params1.put("timeout", "30");
+		params1.put("threshold", "85");
+		Object result1 = driver.executeScript("mobile:button-text:click", params1);
+		
+		
+		
+		/*PerfectoApplicationSteps.waitFor(5);
 		we = (QAFExtendedWebElement) driver.findElement("myRBTs.myJukeboxes.btn");
-		we.click();
+		we.waitForPresent(30);
+		we.click();*/
+		
+		
 	}
 
 }
