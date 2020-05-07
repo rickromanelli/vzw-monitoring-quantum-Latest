@@ -57,9 +57,22 @@ public class VZTonesStepsPhone {
 	@Then("^I navigate to buy phone$")
 	public void navigateToBuyPhone()
 	{
-		we = (QAFExtendedWebElement) driver.findElement("whatsNew.info");
+		
+		Map<String, Object> params2 = new HashMap<>();
+		params2.put("label", "Ringback Tone");
+		params2.put("timeout", "30");
+		params2.put("threshold", "100");
+		params2.put("index", "1");
+		params2.put("label.direction", "right");
+		params2.put("label.offset", "35%");
+		Object result2 = driver.executeScript("mobile:button-text:click", params2);
+		
+		
+		
+		/*we = (QAFExtendedWebElement) driver.findElement("whatsNew.info");
 		we.waitForPresent(30);
-		we.click();
+		we.click();*/
+		
 		
 	}
 	
