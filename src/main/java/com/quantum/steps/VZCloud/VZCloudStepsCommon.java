@@ -186,9 +186,9 @@ public class VZCloudStepsCommon extends WebDriverTestCase {
 		pas.closeAppByIdIgnoreExceptions("com.sec.android.app.camera");
 
 		pas.startAppById("com.sec.android.app.camera");
-		
+		pas.waitFor(3);
 		pgs.textCheckpoint("SINGLE TAKE", "20", "80");
-		
+		pas.waitFor(3);
 	Map<String, Object> params2 = new HashMap<>();
 	params2.put("keySequence", "VOL_DOWN");
 	Object result2 = driver.executeScript("mobile:presskey", params2);
