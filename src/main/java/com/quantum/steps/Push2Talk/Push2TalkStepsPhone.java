@@ -29,6 +29,7 @@ public class Push2TalkStepsPhone {
 	QAFExtendedWebElement we2;
 	Push2TalkStepsCommon p2tc = new Push2TalkStepsCommon();
 	PerfectoGenericSteps pgs = new PerfectoGenericSteps();
+	PerfectoApplicationSteps pas = new PerfectoApplicationSteps();
 
 	public static QAFExtendedWebDriver getDriver() {
 		return new WebDriverTestBase().getDriver();
@@ -64,6 +65,110 @@ public class Push2TalkStepsPhone {
 		}
 	}
 
+	@Then("^I send Photo to DUT2$")
+	public void iSendPhotoToDUT2() {
+
+		we = (QAFExtendedWebElement) driver.findElement("call.photoButton");
+		we.waitForPresent(20000);
+		we.click();
+
+		pas.waitFor(5);
+
+		we = (QAFExtendedWebElement) driver.findElement("call.takePhoto");
+		we.waitForPresent(20000);
+		we.click();
+
+		pas.waitFor(5);
+
+		Map<String, Object> params2 = new HashMap<>();
+		params2.put("keySequence", "VOL_DOWN");
+		Object result2 = driver.executeScript("mobile:presskey", params2);
+		result2 = driver.executeScript("mobile:presskey", params2);
+
+		try {
+			pgs.textCheckpoint("Retry", "20", "80");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		we = (QAFExtendedWebElement) driver.findElement("call.okPhoto");
+		we.waitForPresent(20000);
+		we.click();
+
+		try {
+			pgs.textCheckpoint("Confirm", "20", "90");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		we = (QAFExtendedWebElement) getDriver().findElement("call.confirmOk");
+		we.waitForPresent(40000);
+		we.click();
+
+	}
+
+	@Then("^I delete messages on \"([^\"]*)\"$")
+	public void iDeleteMessages(String device) throws Exception {
+
+		String driverName = "perfecto";
+		if (device.equalsIgnoreCase("dut2")) {
+			driverName = "perfecto2";
+		}
+
+		PerfectoGenericSteps.switchToDriver(driverName);
+
+		Push2TalkStepsCommon.setPTTContactNames(driverName);
+		String cn1 = ConfigurationManager.getBundle().getString("contactName1");
+		String cn2 = ConfigurationManager.getBundle().getString("contactName2");
+
+		String cn = "";
+		if (device.equalsIgnoreCase("DUT1")) {
+			cn = cn2;
+		} else if (device.equalsIgnoreCase("DUT2")) {
+			cn = cn1;
+		}
+
+		Map<String, Object> params3 = new HashMap<>();
+		params3.put("label", "PUBLIC:Prod/PTTPlus/msgButton-iPhone7.png");
+		params3.put("timeout", "20");
+		params3.put("threshold", "90");
+		Object result3 = getDriver().executeScript("mobile:button-image:click", params3);
+
+		pgs.textCheckpoint("Enter Text", "20", "90");
+
+		pgs.textFindHaystack(cn, "30", "100", "0%", "12%", "16%", "36%");
+
+		Map<String, Object> params2 = new HashMap<>();
+		params2.put("label", cn);
+		params2.put("timeout", "20");
+		params2.put("threshold", "100");
+		params2.put("screen.top", "12%");
+		params2.put("screen.height", "16%");
+		params2.put("screen.left", "0%");
+		params2.put("screen.width", "36%");
+		params2.put("operation", "long");
+
+		while (pgs.textFindHaystack(cn, "30", "100", "0%", "12%", "16%", "36%")) {
+
+			pas.waitFor(5);
+
+			Object result2 = driver.executeScript("mobile:button-text:click", params2);
+
+			pas.waitFor(5);
+
+			pgs.textCheckpoint("Delete Message", "20", "90");
+			pgs.textClick("Delete Message", "20", "90");
+
+			pgs.textCheckpoint("Confirm", "20", "90");
+			pgs.textClick("Yes", "20", "100");
+
+			pas.waitFor(5);
+		}
+
+	}
+
 	@Then("^I search for PTT contact on \"([^\"]*)\"$")
 	public void isearchforp2tcontact(String device) {
 
@@ -84,28 +189,28 @@ public class Push2TalkStepsPhone {
 		 */
 
 		String model = DeviceUtils.getDeviceProperty("model");
-		/*if (model.equalsIgnoreCase("iPhone-7")) {
-
-			Map<String, Object> params3 = new HashMap<>();
-			params3.put("label", "PUBLIC:Prod/PTTPlus/ContactsBtniPhone7.png");
-			params3.put("timeout", "20");
-			params3.put("threshold", "90");
-			Object result3 = getDriver().executeScript("mobile:button-image:click", params3);
-
-		} else {*/
+		/*
+		 * if (model.equalsIgnoreCase("iPhone-7")) {
+		 * 
+		 * Map<String, Object> params3 = new HashMap<>(); params3.put("label",
+		 * "PUBLIC:Prod/PTTPlus/ContactsBtniPhone7.png"); params3.put("timeout", "20");
+		 * params3.put("threshold", "90"); Object result3 =
+		 * getDriver().executeScript("mobile:button-image:click", params3);
+		 * 
+		 * } else {
+		 */
 		String cn = "";
 		if (device.equalsIgnoreCase("DUT1")) {
 			cn = cn2;
 		} else if (device.equalsIgnoreCase("DUT2")) {
 			cn = cn1;
 		}
-		
-			iswitchToContactsTabPTT(device);
-		//}
+
+		iswitchToContactsTabPTT(device);
+		// }
 		model = DeviceUtils.getDeviceProperty("model");
-		
+
 		if (model.equalsIgnoreCase("iPhone-7")) {
-		
 
 			Map<String, Object> params1 = new HashMap<>();
 			params1.put("label", "Search");
@@ -114,19 +219,22 @@ public class Push2TalkStepsPhone {
 			params1.put("threshold", "90");
 			Object result1 = getDriver().executeScript("mobile:edit-text:set", params1);
 
-		} else if (model.equalsIgnoreCase("Galaxy S8") || model.equalsIgnoreCase("E6810")) {
-			
+		} else if (model.equalsIgnoreCase("Galaxy S8") || model.equalsIgnoreCase("Galaxy S10")
+				|| model.equalsIgnoreCase("E6810")) {
+
 			Map<String, Object> params1 = new HashMap<>();
 			params1.put("label", "Search");
 			params1.put("text", cn);
 			params1.put("timeout", "20");
 			params1.put("threshold", "90");
 			Object result1 = getDriver().executeScript("mobile:edit-text:set", params1);
-			
+
 		} else {
-			/*Map<String, Object> params2 = new HashMap<>();
-			params2.put("location", "263,762");
-			Object result2 = getDriver().executeScript("mobile:touch:tap", params2);*/
+			/*
+			 * Map<String, Object> params2 = new HashMap<>(); params2.put("location",
+			 * "263,762"); Object result2 = getDriver().executeScript("mobile:touch:tap",
+			 * params2);
+			 */
 
 			System.out.println((QAFExtendedWebElement) getDriver().findElement("home.search"));
 			we = (QAFExtendedWebElement) getDriver().findElement("home.search");
@@ -205,9 +313,7 @@ public class Push2TalkStepsPhone {
 		we.waitForPresent(20000);
 		we.click();
 	}
-	
-	
-	
+
 	@Then("^I click on phone contact on \"([^\"]*)\" iPhone$")
 	public void iClickOnPhoneContactp2tiPhone(String device) {
 		String driverName = "perfecto";
@@ -237,10 +343,6 @@ public class Push2TalkStepsPhone {
 		we.waitForPresent(20000);
 		we.click();
 	}
-	
-	
-	
-	
 
 	@Then("^I click on phone contact on \"([^\"]*)\"$")
 	public void iClickOnPhoneContactp2t(String device) {
@@ -284,7 +386,7 @@ public class Push2TalkStepsPhone {
 		PerfectoGenericSteps.switchToDriver(driverName);
 
 		String model = DeviceUtils.getDeviceProperty("model");
-		
+
 		try {
 			we = (QAFExtendedWebElement) driver.findElement("home.missedCall.decline");
 			we.waitForPresent(5000);
@@ -294,23 +396,21 @@ public class Push2TalkStepsPhone {
 		}
 
 		if (model.equals("iPhone-7")) {
-			
+
 			Map<String, Object> params3 = new HashMap<>();
 			params3.put("location", "50%,60%");
 			params3.put("operation", "down");
 			params3.put("duration", "6");
 			Object result3 = driver.executeScript("mobile:touch:tap", params3);
-			
-			
-			
+
 		} else {
-			
-		Map<String, Object> params1 = new HashMap<>();
-		params1.put("location", "50%,50%");
-		params1.put("operation", "down");
-		Object result1 = getDriver().executeScript("mobile:touch:tap", params1);
+
+			Map<String, Object> params1 = new HashMap<>();
+			params1.put("location", "50%,50%");
+			params1.put("operation", "down");
+			Object result1 = getDriver().executeScript("mobile:touch:tap", params1);
 		}
-		
+
 		/*
 		 * we = (QAFExtendedWebElement) driver.findElement("call.clickToCall");
 		 * we.waitForPresent(20000); we.click();
@@ -327,14 +427,11 @@ public class Push2TalkStepsPhone {
 
 		PerfectoGenericSteps.switchToDriver(driverName);
 
-		
 		Map<String, Object> params1 = new HashMap<>();
 		params1.put("location", "50%,50%");
 		params1.put("operation", "down");
 		Object result1 = getDriver().executeScript("mobile:touch:tap", params1);
 
-		
-		
 	}
 
 	@Then("^I click to end call on \"([^\"]*)\"$")
@@ -416,13 +513,15 @@ public class Push2TalkStepsPhone {
 		String model = DeviceUtils.getDeviceProperty("model");
 
 		if (model.equals("iPhone-7")) {
-		
-		  Map<String, Object> params1 = new HashMap<>(); params1.put("content", cn);
-		  params1.put("timeout", "30"); params1.put("threshold", "80"); ArrayList
-		  genericOptions2 = new ArrayList();
-		  genericOptions2.add("natural-language=true"); params1.put("ocr",
-		  genericOptions2); Object result1 =
-		  driver.executeScript("mobile:checkpoint:text", params1);
+
+			Map<String, Object> params1 = new HashMap<>();
+			params1.put("content", cn);
+			params1.put("timeout", "30");
+			params1.put("threshold", "80");
+			ArrayList genericOptions2 = new ArrayList();
+			genericOptions2.add("natural-language=true");
+			params1.put("ocr", genericOptions2);
+			Object result1 = driver.executeScript("mobile:checkpoint:text", params1);
 		}
 
 		try {
@@ -460,11 +559,11 @@ public class Push2TalkStepsPhone {
 		}
 
 		PerfectoGenericSteps.switchToDriver(driverName);
-		
+
 		String model = DeviceUtils.getDeviceProperty("model");
 
 		if (model.equals("iPhone-7")) {
-			
+
 			try {
 				we = (QAFExtendedWebElement) driver.findElement("home.missedCall.decline");
 				we.waitForPresent(5000);
@@ -472,31 +571,28 @@ public class Push2TalkStepsPhone {
 			} catch (Exception ex2) {
 
 			}
-			
+
 			try {
-				//pgs.imageClick("PUBLIC:Prod/PTTPlus/PTTCall-iPhone.png", "20", "85");
-				
-				/*Map<String, Object> params1 = new HashMap<>();
-				params1.put("label", "PUBLIC:Prod/PTTPlus/PTTCall-iPhone.png");
-				params1.put("timeout", "20");
-				params1.put("threshold", "80");
-				params1.put("operation", "long");
-				Object result1 = getDriver().executeScript("mobile:button-image:click", params1);
-				*/
+				// pgs.imageClick("PUBLIC:Prod/PTTPlus/PTTCall-iPhone.png", "20", "85");
+
+				/*
+				 * Map<String, Object> params1 = new HashMap<>(); params1.put("label",
+				 * "PUBLIC:Prod/PTTPlus/PTTCall-iPhone.png"); params1.put("timeout", "20");
+				 * params1.put("threshold", "80"); params1.put("operation", "long"); Object
+				 * result1 = getDriver().executeScript("mobile:button-image:click", params1);
+				 */
 				Map<String, Object> params1 = new HashMap<>();
 				params1.put("location", "50%, 60%");
 				params1.put("duration", "20");
 				Object result1 = driver.executeScript("mobile:touch:tap", params1);
-				
-				
-				
+
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		} else {
-			//PUBLIC:Prod/PTTPlus/PTTCall-iPhone.png
-			
+			// PUBLIC:Prod/PTTPlus/PTTCall-iPhone.png
+
 			try {
 				we = (QAFExtendedWebElement) driver.findElement("home.missedCall.decline");
 				we.waitForPresent(5000);
@@ -511,12 +607,8 @@ public class Push2TalkStepsPhone {
 			Object result5 = getDriver().executeScript("mobile:touch:tap", params5);
 		}
 		//
-		//Object result5 = getDriver().executeScript()
-		
-		
-		
-	
-		
+		// Object result5 = getDriver().executeScript()
+
 	}
 
 	@Then("^I stop sending audio on \"([^\"]*)\"$")

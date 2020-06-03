@@ -1,0 +1,4 @@
+home.available.txt=//*[@text="Available"]
+home.missedCall.decline=//*[@resource-id="ext-element-707"]
+home.search=//*[@resource-id="ext-uxsearchfield-2"]
+home.contacts=//*[@resource-id="ext-tab-3"]
