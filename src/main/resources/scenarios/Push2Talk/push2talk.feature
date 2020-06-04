@@ -212,7 +212,7 @@ Scenario: Push_to_Talk_image_Galaxy2iPhone
 	Then I search for PTT contact on "DUT1"
 	Then I click on phone contact on "DUT1" Turbo
 	Then I send Photo to DUT2
-	Then Transaction: "3 Image Received" on Device: "DUT2" Description: "Checking was image sent?" SLA: "10000" - OCR checkpoint: "(Image)" Timeout: "45" Threshold: "90"
+	Then Transaction: "3 Image Received" on Device: "DUT2" Description: "Checking was image sent?" SLA: "20000" - OCR checkpoint: "(Image)" Timeout: "45" Threshold: "90"
 	Then I search for PTT contact on "DUT2"
 	Then I click on phone contact on "DUT2" Turbo
 	Then I delete messages on "DUT2"
