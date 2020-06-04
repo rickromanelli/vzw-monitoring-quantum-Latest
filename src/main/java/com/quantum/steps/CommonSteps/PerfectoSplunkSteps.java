@@ -62,9 +62,9 @@ public class PerfectoSplunkSteps {
 		params1.put("content", text);
 		params1.put("source", "camera");
 		params1.put("timeout", timeout);
-		params1.put("measurement", "accurate");
+		//params1.put("measurement", "accurate");
 		params1.put("threshold", threshold);
-		params1.put("analysis", "automatic");
+		//params1.put("analysis", "automatic");
 		Object result1 = SplunkHelper.getQAFDriver().executeScript("mobile:checkpoint:text", params1);
 
 		if (result1.toString().contains("true")) {
