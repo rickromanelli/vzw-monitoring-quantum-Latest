@@ -198,7 +198,7 @@ Scenario: Push_to_Talk_iPhone2iPhone
 	Then I inject audio file "PUBLIC:Prod/PTTPlus/AdeleChorus.mp3" on "DUT1"
 	Then I send audio on "DUT1"	
 	Then I click to call on "DUT2"
-	Then Transaction "6 Call Received?" call received on "DUT1" SLA: "60000"
+	Then Transaction "6 Call Received?" call received on "DUT1" SLA: "100000"
 	Then I inject audio file "PUBLIC:Prod/VVM/VM2TXT3.mp3" on "DUT2"
 	Then I send audio on "DUT2"	
 	Then I stop sending audio on "DUT2"

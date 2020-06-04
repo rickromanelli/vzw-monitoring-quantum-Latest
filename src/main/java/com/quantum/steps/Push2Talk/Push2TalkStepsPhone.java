@@ -516,7 +516,7 @@ public class Push2TalkStepsPhone {
 
 			Map<String, Object> params1 = new HashMap<>();
 			params1.put("content", cn);
-			params1.put("timeout", "30");
+			params1.put("timeout", "40");
 			params1.put("threshold", "80");
 			ArrayList genericOptions2 = new ArrayList();
 			genericOptions2.add("natural-language=true");
