@@ -2,7 +2,7 @@
 Feature: PictureMe Feature 
 #Sample Test Scenario Description
 @callerID
-Scenario: Caller ID
+Scenario: Caller_ID
 	Then I open phone App on "DUT1"
 	#Then I open phone App on "DUT2"
 	Then I toggle power button on "DUT2"
