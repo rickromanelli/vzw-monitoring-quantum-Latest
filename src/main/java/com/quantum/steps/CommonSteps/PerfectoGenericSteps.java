@@ -1,7 +1,6 @@
 package com.quantum.steps.CommonSteps;
 
 import java.util.HashMap;
-
 import java.util.Map;
 
 import org.openqa.selenium.By;
@@ -13,6 +12,7 @@ import com.qmetry.qaf.automation.core.ConfigurationManager;
 import com.qmetry.qaf.automation.core.QAFTestBase;
 import com.qmetry.qaf.automation.core.TestBaseProvider;
 import com.qmetry.qaf.automation.keys.ApplicationProperties;
+
 import com.qmetry.qaf.automation.step.CommonStep;
 import com.qmetry.qaf.automation.step.QAFTestStepProvider;
 import com.qmetry.qaf.automation.ui.UiDriver;
@@ -300,10 +300,7 @@ public class PerfectoGenericSteps {
 		PerfectoGenericSteps.switchToDriver(driverName);
 
 		String model = DeviceUtils.getDeviceProperty("model");
-
-		//Map<String, Object> params19 = new HashMap<>();
-		//Object result19 = getDriver().executeScript("mobile:handset:ready", params19);
-
+		
 		switch (model) {
 
 		case "Z30":
@@ -323,8 +320,8 @@ public class PerfectoGenericSteps {
 			
 		case "9930":
 		
-		Map<String, Object> params1 = new HashMap<>();
-		Object result1 = driver.executeScript("mobile:handset:ready", params1);
+		Map<String, Object> params2 = new HashMap<>();
+		Object result2 = driver.executeScript("mobile:handset:ready", params2);
 
 		// toChar array #########################################################
 		String app = "phone";

@@ -24,6 +24,10 @@ public class PictureMeStepsPhone {
 	QAFExtendedWebDriver driver = new WebDriverTestBase().getDriver();
 	QAFExtendedWebElement we;
 	
+	public static QAFExtendedWebDriver getDriver() {
+		return new WebDriverTestBase().getDriver();
+	}
+	
 	@Then("^I toggle power button on \"([^\"]*)\"$")
 	public void togglePowerButton(String device) throws InterruptedException {
 		String driverName = "perfecto";
@@ -33,20 +37,37 @@ public class PictureMeStepsPhone {
 		
 		PerfectoGenericSteps.switchToDriver(driverName);
 			
-		
-		
 		Map<String, Object> params1 = new HashMap<>();
-		params1.put("keySequence", "POWER");
+		Object result1 = getDriver().executeScript("mobile:handset:ready", params1);
+		
+		
+		Map<String, Object> params2 = new HashMap<>();
+		params2.put("keySequence", "POWER");
 		
 		for(int i = 0; i < 3; i++) {
-			Object result1 = driver.executeScript("mobile:presskey", params1);
+			Object result3 = getDriver().executeScript("mobile:presskey", params2);
 			PerfectoApplicationSteps.waitFor(3);
 		}
 		
 		
 	}
 
+	@Then("^I go to home screen on \"([^\"]*)\"$")
+	public void iGoToHomeScreenOn(String device) {
 
+		String driverName = "perfecto";
+		if (device.equalsIgnoreCase("dut2")) {
+			driverName = "perfecto2";
+		}
+
+		PerfectoGenericSteps.switchToDriver(driverName);
+
+		Map<String, Object> params1 = new HashMap<>();
+		Object result1 = getDriver().executeScript("mobile:handset:ready", params1);
+		
+		
+
+	}
 
 	
 	@Then("^I go to cloud home phone$")

@@ -1,18 +1,38 @@
-/**
- * 
- */
 package com.quantum.steps.VVM;
 
 import java.util.HashMap;
 import java.util.Map;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.qmetry.qaf.automation.core.ConfigurationManager;
+import com.qmetry.qaf.automation.core.QAFTestBase;
+import com.qmetry.qaf.automation.core.TestBaseProvider;
+import com.qmetry.qaf.automation.keys.ApplicationProperties;
+
+import com.qmetry.qaf.automation.step.CommonStep;
 import com.qmetry.qaf.automation.step.QAFTestStepProvider;
+import com.qmetry.qaf.automation.ui.UiDriver;
 import com.qmetry.qaf.automation.ui.WebDriverTestBase;
+import com.qmetry.qaf.automation.ui.annotations.FindBy;
 import com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver;
 import com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement;
+import com.qmetry.qaf.automation.ui.webdriver.QAFWebElement;
+import com.quantum.listerners.SplunkHelper;
 import com.quantum.steps.PerfectoApplicationSteps;
-import com.quantum.steps.CommonSteps.PerfectoGenericSteps;
+import com.quantum.steps.PerfectoDeviceSteps;
+import com.quantum.steps.Push2Talk.Push2TalkStepsCommon;
 import com.quantum.utils.DeviceUtils;
+import com.quantum.utils.DriverUtils;
+
+
+import com.quantum.steps.CommonSteps.PerfectoGenericSteps;
+import com.qmetry.qaf.automation.core.ConfigurationManager;
+import com.qmetry.qaf.automation.core.QAFTestBase;
+import com.qmetry.qaf.automation.step.QAFTestStepProvider;
 
 import cucumber.api.java.en.Then;
 
@@ -22,6 +42,10 @@ public class VVMStepsPhone {
 	QAFExtendedWebElement we;
 	
 	PerfectoGenericSteps pgs = new PerfectoGenericSteps();
+	
+	public static QAFExtendedWebDriver getDriver() {
+		return new WebDriverTestBase().getDriver();
+	}
 
 	@Then("^I open Voicemail App on \"([^\"]*)\"$")
 	public void iOpenVoicemailAppOn(String device) throws Exception {
@@ -63,6 +87,9 @@ public class VVMStepsPhone {
 		we.click();
 
 	}
+
+	
+	
 
 	@Then("^I delete all voicemails on \"([^\"]*)\"$")
 	public void iDeleteVMsOn(String device) {
