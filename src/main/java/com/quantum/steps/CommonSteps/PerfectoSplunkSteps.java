@@ -149,7 +149,44 @@ public class PerfectoSplunkSteps {
 	
 	//on Device: \"([^\"]*)\"
 	
+	@Then("^Transaction \"([^\"]*)\" description: \"([^\"]*)\" SLA: \"([^\"]*)\" - OCR Checkpoint: \"([^\"]*)\" or \"([^\']*)\" Timeout: \"([^\"]*)\" Threshold: \"([^\"]*)\"$")
+	public void visualOCRTimerShortOr(String name, String desc, String SLA, String text, String orText, String timeout, String threshold)
+			throws Exception {
+
+		//SplunkHelper.testStepStart(name, desc);
+		startSplunkStep(name, desc);
+		Map<String, Object> params1 = new HashMap<>();
+		params1.put("content", text);
+		params1.put("source", "camera");
+		params1.put("timeout", timeout);
+		//params1.put("measurement", "accurate");
+		params1.put("threshold", threshold);
+		//params1.put("analysis", "automatic");
+		Object result1 = SplunkHelper.getQAFDriver().executeScript("mobile:checkpoint:text", params1);
+
+		startSplunkStep(name, desc);
+		Map<String, Object> params2 = new HashMap<>();
+		params2.put("content", orText);
+		params2.put("source", "camera");
+		params2.put("timeout", timeout);
+		//params1.put("measurement", "accurate");
+		params2.put("threshold", threshold);
+		//params1.put("analysis", "automatic");
+		Object result2 = SplunkHelper.getQAFDriver().executeScript("mobile:checkpoint:text", params2);
+
+		if (result1.toString().contains("true") || result2.toString().contains("true")) {
+
+		} else {
+
+			throw new Exception("Text not found!");
+
+		}
+
+		SplunkHelper.testStepEnd(Long.parseLong(SLA), name);
+
+	}
 	
+
 	
 	@Then("^Transaction: \"([^\"]*)\" on \"([^\"]*)\" Description: \"([^\"]*)\" SLA: \"([^\"]*)\" - Image checkpoint: \"([^\"]*)\" Timeout: \"([^\"]*)\" Threshold: \"([^\"]*)\"$")
 	public void visualImageTimer2Device(String name, String device, String desc, String SLA, String repo, String timeout, String threshold)
