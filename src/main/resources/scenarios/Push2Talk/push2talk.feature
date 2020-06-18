@@ -4,6 +4,8 @@ Feature: Push 2 Talk Feature
 
 @push2talkTurboToDuraForce
 Scenario: Push_to_Talk_Turbo2Duraforce
+	Then I toggle wifi "disabled" on "DUT1"
+	Then I toggle wifi "disabled" on "DUT2"
 	Then I open Push2Talk on "DUT1"
 	Then Transaction "1 PTT opened DUT1?" description: "Did PTT App open DUT1?" SLA: "60000" - OCR Checkpoint: "Available" Timeout: "30" Threshold: "90"
 	Then I open Push2Talk on "DUT2"	
@@ -29,6 +31,8 @@ Scenario: Push_to_Talk_Turbo2Duraforce
 	
 	@push2talkDuraForceToGalaxyS8
 Scenario: Push_to_Talk_DuraForce2GalaxyS8
+	Then I toggle wifi "disabled" on "DUT1"
+	Then I toggle wifi "disabled" on "DUT2"
 	Then I open Push2Talk on "DUT1"
 	Then Transaction "1 PTT opened DUT1?" description: "Did PTT App open DUT1?" SLA: "60000" - OCR Checkpoint: "Available" Timeout: "30" Threshold: "90"
 	Then I open Push2Talk on "DUT2"	
@@ -51,6 +55,8 @@ Scenario: Push_to_Talk_DuraForce2GalaxyS8
 	
 	@push2talkGalaxyS8ToDuraForce
 Scenario: Push_to_Talk_GalaxyS82DuraForce
+	Then I toggle wifi "disabled" on "DUT1"
+	Then I toggle wifi "disabled" on "DUT2"
 	Then I open Push2Talk on "DUT1"
 	Then Transaction "1 PTT opened DUT1?" description: "Did PTT App open DUT1?" SLA: "60000" - OCR Checkpoint: "Available" Timeout: "30" Threshold: "90"
 	Then I open Push2Talk on "DUT2"	
@@ -97,6 +103,8 @@ Scenario: Push_to_Talk_Turbo2Duraforce
 	
 	@push2talkGalaxy2Galaxy
 Scenario: Push_to_Talk_GalaxyS8_2_GalaxyS8
+	Then I toggle wifi "disabled" on "DUT1"
+	Then I toggle wifi "disabled" on "DUT2"
 	Then I open Push2Talk on "DUT1"
 	Then Transaction "1 PTT opened DUT1?" description: "Did PTT App open DUT1?" SLA: "60000" - OCR Checkpoint: "Available" Timeout: "30" Threshold: "90"
 	Then I open Push2Talk on "DUT2"	
@@ -125,6 +133,8 @@ Scenario: Push_to_Talk_iPhone2Duraforce
 	
 	@push2talkiPhoneToDuraForce
 Scenario: Push_to_Talk_iPhone2Duraforce
+	
+	Then I toggle wifi "disabled" on "DUT2"
 	Then I open Push2Talk on "DUT1"
 	Then Transaction "1 PTT opened DUT1?" description: "Did PTT App open DUT1?" SLA: "60000" - OCR Checkpoint: "Available" Timeout: "30" Threshold: "90"
 	Then I open Push2Talk on "DUT2"
@@ -145,6 +155,8 @@ Scenario: Push_to_Talk_iPhone2Duraforce
 	
 	@push2talkiPhoneToGalaxy
 Scenario: Push_to_Talk_iPhone2Galaxy
+	
+	Then I toggle wifi "disabled" on "DUT2"
 	Then I open Push2Talk on "DUT1"
 	Then Transaction "1 PTT opened DUT1?" description: "Did PTT App open DUT1?" SLA: "60000" - OCR Checkpoint: "Available" Timeout: "30" Threshold: "90"
 	Then I open Push2Talk on "DUT2"
@@ -165,6 +177,7 @@ Scenario: Push_to_Talk_iPhone2Galaxy
 	
 	@push2talkDuraForceToiPhone
 Scenario: Push_to_Talk_Duraforce2iPhone
+	Then I toggle wifi "disabled" on "DUT1"
 	Then I open Push2Talk on "DUT1"
 	Then Transaction "1 PTT opened DUT1?" description: "Did PTT App open DUT1?" SLA: "60000" - OCR Checkpoint: "Available" Timeout: "30" Threshold: "90"
 	Then I open Push2Talk on "DUT2"
@@ -205,6 +218,7 @@ Scenario: Push_to_Talk_iPhone2iPhone
 	
 	@pttimageS8toiPhone
 Scenario: Push_to_Talk_image_Galaxy2iPhone
+	Then I toggle wifi "disabled" on "DUT1"
 	Then I open Push2Talk on "DUT1"
 	Then Transaction "1 PTT opened DUT1?" description: "Did PTT App open DUT1?" SLA: "60000" - OCR Checkpoint: "Available" Timeout: "30" Threshold: "90"
 	Then I open Push2Talk on "DUT2"
