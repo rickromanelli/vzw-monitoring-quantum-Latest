@@ -4,6 +4,8 @@ Feature: VVM Feature
 
 @VM2Text
 Scenario: VM2Text_Android
+	Then I toggle wifi "disabled" on "DUT1"
+	Then I toggle wifi "disabled" on "DUT2"
 	Then I open Voicemail App on "DUT1"
 	Then I delete all voicemails on "DUT1" 
 	Then I open Voicemail App on "DUT2"
