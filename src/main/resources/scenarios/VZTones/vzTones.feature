@@ -16,7 +16,7 @@ Scenario: VZ_Tones_Search_Android
 	
 @vzTonesWhatsNew
 Scenario: VZ_Tones_Whats_New_Android
-	Then I toggle wifi "disabled" on "DUT1"
+	Then I toggle wifi "disabled"
 	Then I initialize VZTones app 	
 	Then Transaction "1 Tones Opened?" description: "Opening VZ Tones App" SLA: "60000" - OCR Checkpoint: "Ring" Timeout: "60" Threshold: "100"
 	Then I perform a text click "What's New" with a timeout of "20" and a threshold of "90"
