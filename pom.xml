@@ -10,6 +10,7 @@
 	<version>1.0-SNAPSHOT</version>
 
 
+	
 	<properties>
 		<testngXmlDir>src/main/resources/config</testngXmlDir>
 		<testngXmlFile></testngXmlFile>
@@ -33,6 +34,7 @@
 		<appPackage2></appPackage2>
 		<description></description>
 		<description2></description2>
+		<securityToken></securityToken>
 		<deviceName></deviceName>
 		<deviceName2></deviceName2>
 		<cloudURL>https://vzw.perfectomobile.com/nexperience/perfectomobile/wd/hub</cloudURL>
@@ -40,8 +42,9 @@
 		<deviceModel2></deviceModel2>
 		<app></app>
 		<monitorTag></monitorTag>
+
 	</properties>
-   
+
     
     
 	<build>
@@ -96,6 +99,7 @@
 						-Ddriver.capabilities.password=${password}
 						-Dapp=${app}
 						-DmonitorTag=${monitorTag}
+						-Ddriver.capabilities.securityToken=${securityToken}
 
 					</argLine>
 					<suiteXmlFiles>
