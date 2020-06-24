@@ -81,10 +81,15 @@ public class VVMStepsPhone {
 
 		PerfectoGenericSteps.switchToDriver(driverName);
 
-		we = (QAFExtendedWebElement) driver.findElement("call.clickToEndCall");
+		try {
+			we = (QAFExtendedWebElement) driver.findElement("call.clickToEndCall");
 
-		we.waitForPresent(20000);
-		we.click();
+			we.waitForPresent(20000);
+			we.click();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 
