@@ -240,8 +240,8 @@ public class VZCloudStepsCommon extends WebDriverTestCase {
 				we.waitForPresent(20);
 				we.click();
 
-				pgs.textFind("Move to Trash", "30", "70");
-				pgs.textClick("Move to Trash", "30", "70");
+				pgs.textFind("Move to Trash", "30", "90");
+				pgs.textClick("Move to Trash", "30", "90");
 
 				pas.waitFor(6);
 
