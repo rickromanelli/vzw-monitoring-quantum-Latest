@@ -151,23 +151,23 @@ public class VZCloudStepsCommon extends WebDriverTestCase {
 			we.click();
 			
 			we = (QAFExtendedWebElement) driver.findElement("menu.btn");
-			we.waitForPresent(20000);
+			we.waitForPresent(30000);
 			we.click();
 			
 			we = (QAFExtendedWebElement) driver.findElement("menu.home");
-			we.waitForPresent(20000);
+			we.waitForPresent(30000);
 			we.click();
 			
 			we = (QAFExtendedWebElement) driver.findElement("home.title");
-			we.waitForPresent(20000);
+			we.waitForPresent(30000);
 			
 			
 			we = (QAFExtendedWebElement) driver.findElement("menu.backupScreen");
-			we.waitForPresent(20000);
+			we.waitForPresent(30000);
 			we.click();
 			
 			we = (QAFExtendedWebElement) driver.findElement("menu.backupNow");
-			we.waitForPresent(20000);
+			we.waitForPresent(30000);
 			we.click();
 
 			
