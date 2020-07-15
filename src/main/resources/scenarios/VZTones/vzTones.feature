@@ -42,5 +42,5 @@ Scenario: VZ_Tones_Validate_Current_RBT_Android
 	Then I perform an Image click "PUBLIC:Prod/VZTones/Play_Button_Turbo2.png" with a timeout of "20" and a threshold of "90" haystack x: "0%" , y: "0%" , height: "34%" , width: "100%"
 	Then Transaction: "3 Check Audio" Description: "Checking if audio was played" SLA: "60000" Volume: "-120" Timeout: "16" Duration: "7"
 	Then I navigate to jukeboxes phone
-	Then Transaction: "4 Jukebox Exists?" Description: "Checking for Juke Perfecto" SLA: "60000" - OCR Checkpoint: "test-wronganswer" Timeout: "60" Threshold: "90"
+	Then Transaction: "4 Jukebox Exists?" Description: "Checking for Juke Perfecto" SLA: "60000" - OCR Checkpoint: "jukePerfecto" Timeout: "60" Threshold: "90"
 	
