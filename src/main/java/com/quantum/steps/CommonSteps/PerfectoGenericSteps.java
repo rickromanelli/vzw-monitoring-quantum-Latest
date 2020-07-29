@@ -33,6 +33,7 @@ import cucumber.api.java.en.Then;
 @QAFTestStepProvider
 public class PerfectoGenericSteps {
 
+	
 	QAFExtendedWebDriver driver = new WebDriverTestBase().getDriver();
 	QAFExtendedWebElement we;
 
@@ -148,7 +149,7 @@ public class PerfectoGenericSteps {
 			we.waitForPresent(20000);
 			we.click();
 
-		} else if (model.equals("Galaxy S8")) {
+		} else if (model.equals("Galaxy S8") || model.equals("Galaxy S10")) {
 			
 			String contactName = ConfigurationManager.getBundle().getString("contactDesc2");
 			
@@ -164,11 +165,11 @@ public class PerfectoGenericSteps {
 				
 			}
 			
-			/*we = (QAFExtendedWebElement) driver.findElement("call.contacts.search");
+			we = (QAFExtendedWebElement) driver.findElement("call.contacts.search");
 			we.waitForPresent(20000);
-			we.click();*/
+			we.click();
 			
-			imageClick("PUBLIC:Prod/Roaming/GalaxyS10SearchButton.png", "20", "85");
+			//imageClick("PUBLIC:Prod/Roaming/GalaxyS10SearchButton.png", "20", "85");
 			
 			
 			Map<String, Object> params5 = new HashMap<>();
@@ -178,9 +179,9 @@ public class PerfectoGenericSteps {
 			params5.put("screen.height", "34%");
 			params5.put("screen.left", "0%");
 			params5.put("screen.width", "100%");
-			Object result5 = driver.executeScript("mobile:edit-text:set", params5);
+			Object result5 = getDriver().executeScript("mobile:edit-text:set", params5);
 			
-			we = (QAFExtendedWebElement) driver.findElement("contacts.result");
+			we = (QAFExtendedWebElement) driver.findElement("call.contactsResult");
 			we.waitForPresent(20000);
 			we.click();
 			
@@ -908,9 +909,11 @@ public class PerfectoGenericSteps {
 		} else if (model.equals("Galaxy S8")) {
 			Map<String, Object> params = new HashMap<>();
 
-			params.put("automation", "os");
-			String res = (String) driver.executeScript("mobile:browser:open", params);
+			PerfectoApplicationSteps.closeAppByName("Chrome");
+			PerfectoApplicationSteps.closeAppByName("Chrome");
 
+			PerfectoApplicationSteps.startAppByName("Chrome");
+			
 			we = (QAFExtendedWebElement) driver.findElement("browser.addressBar");
 			we.waitForPresent(20000);
 
@@ -924,10 +927,35 @@ public class PerfectoGenericSteps {
 			params1.put("screen.height", "22%");
 			params1.put("screen.left", "57%");
 			params1.put("screen.width", "43%");
-			Object result1 = driver.executeScript("mobile:button-text:click", params1);
+			Object result1 = getDriver().executeScript("mobile:button-text:click", params1);
 			
 			
-			
+		} else if (model.equals("Galaxy S10")) {
+					Map<String, Object> params = new HashMap<>();
+
+					
+					PerfectoApplicationSteps.closeAppByName("Chrome");
+					PerfectoApplicationSteps.closeAppByName("Chrome");
+
+					PerfectoApplicationSteps.startAppByName("Chrome");
+					
+					we = (QAFExtendedWebElement) driver.findElement("browser.addressBar");
+					we.waitForPresent(20000);
+
+					we.click();
+					
+					
+					
+					we.sendKeys(url);Map<String, Object> params1 = new HashMap<>();
+					params1.put("label", "Go");
+					params1.put("timeout", "20");
+					params1.put("threshold", "100");
+					params1.put("screen.top", "78%");
+					params1.put("screen.height", "22%");
+					params1.put("screen.left", "57%");
+					params1.put("screen.width", "43%");
+					Object result1 = getDriver().executeScript("mobile:button-text:click", params1);
+					
 		} else {
 
 			Map<String, Object> params = new HashMap<>();

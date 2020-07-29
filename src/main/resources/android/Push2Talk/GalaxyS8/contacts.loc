@@ -1,1 +1,1 @@
-contacts.result=//*[@resource-id="ext-simplelistitem-4"]
+contacts.result=//*[@resource-id="com.samsung.android.contacts:id/contact_list_item_photo"]

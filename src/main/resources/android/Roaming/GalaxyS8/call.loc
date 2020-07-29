@@ -5,5 +5,6 @@ call.phNumField=//*[@resource-id="com.samsung.android.contacts:id/dialpad_spacer
 call.digit=//*[@label='%s']
 call.contacts=//*[@text="CONTACTS"]
 call.deleteDigit=//*[@resource-id="com.samsung.android.contacts:id/deleteButton"]
-call.contacts.search=//*[@resourceid="com.samsung.android.dialer:id/dialer_menu_search"]
+call.contacts.search=//*[@resource-id="com.samsung.android.contacts:id/menu_search"]
 call.contacts.searchField=//*[@resource-id="com.samsung.android.dialer:id/search_src_text"]
+call.contactsResult=//*[@resource-id="com.samsung.android.contacts:id/contact_list"]/android.widget.LinearLayout[2]
