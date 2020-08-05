@@ -80,12 +80,7 @@ public class PerfectoGenericSteps {
 			
 		} else if (model.equals("9930")) {
 			
-			//we.sendKeys(phNum);
-			
-	
-			
-	
-			
+		
 
 		} else if (model.equals("V20")) {
 
@@ -149,7 +144,7 @@ public class PerfectoGenericSteps {
 			we.waitForPresent(20000);
 			we.click();
 
-		} else if (model.equals("Galaxy S8") || model.equals("Galaxy S10")) {
+		} else if (model.equals("Galaxy S8") || model.equals("Galaxy S10") || model.equals("Moto Z2")) {
 			
 			String contactName = ConfigurationManager.getBundle().getString("contactDesc2");
 			
@@ -167,10 +162,7 @@ public class PerfectoGenericSteps {
 			
 			we = (QAFExtendedWebElement) driver.findElement("call.contacts.search");
 			we.waitForPresent(20000);
-			we.click();
-			
-			//imageClick("PUBLIC:Prod/Roaming/GalaxyS10SearchButton.png", "20", "85");
-			
+			we.click();	
 			
 			Map<String, Object> params5 = new HashMap<>();
 			params5.put("label", "Search");
@@ -185,17 +177,14 @@ public class PerfectoGenericSteps {
 			we.waitForPresent(20000);
 			we.click();
 			
-
-			
-			//String contactName = ConfigurationManager.getBundle().getString("contactDesc2");
-			//textClick(contactName, "20", "90");
 			PerfectoApplicationSteps.waitFor(3);
 			
+			if (!model.equals("Moto Z2")) {
 			we = (QAFExtendedWebElement) driver.findElement("call.callButton");
 			we.waitForPresent(20000);
 			we.click();
+			}
 			
-			//textClick("Call", "20", "90");
 
 
 			
@@ -371,18 +360,11 @@ public class PerfectoGenericSteps {
 
 			PerfectoApplicationSteps.startAppByName(phoneApp);
 
-			/*imageClick("PUBLIC:Prod/International/PhoneappButtonS8.png", "40", "85");
-
-			Map<String, Object> params1 = new HashMap<>();
-			params1.put("label", "Phone");
-			params1.put("timeout", "30");
-			params1.put("threshold", "90");
-			params1.put("label.direction", "below");
-			params1.put("label.offset", "5%");
-			Object result1 = driver.executeScript("mobile:button-text:click", params1);*/
+			
 
 			break;
-
+		
+			
 		default:
 			String phoneAppName = "Phone";
 			if (model.equals("V20")) {
@@ -398,7 +380,7 @@ public class PerfectoGenericSteps {
 			PerfectoApplicationSteps.startAppByName(phoneAppName);
 
 			we = (QAFExtendedWebElement) driver.findElement("call.contacts");
-			we.waitForPresent(20000);
+			we.waitForPresent(30000);
 			we.click();
 
 			break;
