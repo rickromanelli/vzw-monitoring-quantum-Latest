@@ -130,10 +130,10 @@ public class Push2TalkStepsPhone {
 			cn = cn1;
 		}
 
-		Map<String, Object> params3 = new HashMap<>();
+	/*	Map<String, Object> params3 = new HashMap<>();
 		params3.put("label", "PUBLIC:Prod/PTTPlus/msgButton-iPhone7.png");
 		params3.put("timeout", "20");
-		params3.put("threshold", "90");
+		params3.put("threshold", "70");
 		Object result3 = getDriver().executeScript("mobile:button-image:click", params3);
 
 		pgs.textCheckpoint("Enter Text", "20", "90");
@@ -163,8 +163,44 @@ public class Push2TalkStepsPhone {
 
 			pgs.textCheckpoint("Confirm", "20", "90");
 			pgs.textClick("Yes", "20", "100");
+			
+			
 
 			pas.waitFor(5);
+		}*/
+		
+		//we = (QAFExtendedWebElement) getDriver().findElement("home.history");
+		//we.waitForPresent(40000);
+		//we.click();
+		
+		Map<String, Object> params2 = new HashMap<>();
+		params2.put("label", "PUBLIC:Prod/PTTPlus/historyBtniPhone.png");
+		params2.put("timeout", "20");
+		params2.put("threshold", "90");
+		Object result2 = driver.executeScript("mobile:button-image:click", params2);
+		
+		
+		
+		if (!pgs.textFind("No history exists", "20", "90")) {
+			
+		
+		Map<String, Object> params1 = new HashMap<>();
+		params1.put("label", cn);
+		params1.put("timeout", "30");
+		params1.put("threshold", "80");
+		params1.put("operation", "long");
+		Object result1 = driver.executeScript("mobile:button-text:click", params1);
+		
+		pas.waitFor(5);
+
+		params1.put("label", "Delete all");
+		params1.put("timeout", "30");
+		params1.put("threshold", "80");
+		params1.put("operation", "long");
+		result1 = driver.executeScript("mobile:button-text:click", params1);
+		
+		pgs.textClick("Yes", "20", "100");
+		
 		}
 
 	}
@@ -310,7 +346,7 @@ public class Push2TalkStepsPhone {
 		 * 
 		 */
 		we = (QAFExtendedWebElement) driver.findElement("contacts.result");
-		we.waitForPresent(20000);
+		we.waitForPresent(60000);
 		we.click();
 	}
 
