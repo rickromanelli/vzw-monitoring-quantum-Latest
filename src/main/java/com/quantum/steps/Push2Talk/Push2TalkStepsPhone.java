@@ -486,17 +486,21 @@ public class Push2TalkStepsPhone {
 
 		} else if (model.equals("Galaxy S8")) {
 
+			if (ConfigurationManager.getBundle().getString("app").equalsIgnoreCase("Push2Talk")) {
+				
 			
-			we = (QAFExtendedWebElement) driver.findElement("call.clickToEndCall");
-			we.waitForPresent(20000);
-			we.click();
-			
-			/*try {
+			try {
 				pgs.imageClick("PUBLIC:Prod/PTTPlus/EndCallS8.png", "30", "90");
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
-			}*/
+			}
+			} else {
+				we = (QAFExtendedWebElement) driver.findElement("call.clickToEndCall");
+				we.waitForPresent(20000);
+				we.click();
+				
+			}
 		} else if (model.equals("E6810")) {
 			pgs.imageClick("PUBLIC:Prod/PTTPlus/EndCallDura.png", "30", "90");
 		} else {
