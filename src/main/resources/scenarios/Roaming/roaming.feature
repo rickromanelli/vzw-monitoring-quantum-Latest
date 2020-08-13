@@ -102,6 +102,8 @@ Scenario: Roaming_iPhone_Mexico
 	
 	@roamingGalaxyS10UK
 Scenario: Roaming_Galaxy_S10_UK
+	Then I toggle wifi "disabled" on "DUT1"
+	Then I toggle wifi "disabled" on "DUT2"
 	Then I open phone App on "DUT2"
 	Then I open phone App on "DUT1"
 	Then I call "DUT2" from "DUT1"
@@ -112,6 +114,8 @@ Scenario: Roaming_Galaxy_S10_UK
 	
 	@roamingGalaxyS10Brazil
 Scenario: Roaming_Galaxy_S10_Brazil
+	Then I toggle wifi "disabled" on "DUT1"
+	Then I toggle wifi "disabled" on "DUT2"
 	Then I open phone App on "DUT2"
 	Then I open phone App on "DUT1"
 	Then I call "DUT2" from "DUT1"
@@ -123,6 +127,8 @@ Scenario: Roaming_Galaxy_S10_Brazil
 	
 	@roamingGalaxyS8MX
 Scenario: Roaming_Galaxy_S8_Mexico
+	Then I toggle wifi "disabled" on "DUT1"
+	Then I toggle wifi "disabled" on "DUT2"
 	Then I open phone App on "DUT2"
 	Then I open phone App on "DUT1"
 	Then I call "DUT2" from "DUT1"
