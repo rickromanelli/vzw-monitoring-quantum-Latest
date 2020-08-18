@@ -60,7 +60,7 @@ public class Push2TalkStepsCommon extends WebDriverTestCase {
 			Map<String, Object> params1 = new HashMap<>();
 			params1.put("content", "available");
 			params1.put("source", "camera");
-			params1.put("timeout", "20");
+			params1.put("timeout", "40");
 			params1.put("threshold", "90");
 			Object result1 = SplunkHelper.getQAFDriver().executeScript("mobile:checkpoint:text", params1);
 
@@ -98,7 +98,7 @@ public class Push2TalkStepsCommon extends WebDriverTestCase {
 		
 	
 		we = (QAFExtendedWebElement) driver.findElement("home.available.txt");
-		we.waitForPresent(20000);
+		we.waitForPresent(40000);
 		}
 		
 		System.out.println("FFFFFFFFFFFFFFFFFFFFF:" + driverName);
