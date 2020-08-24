@@ -39,7 +39,7 @@ Scenario: VZCloud_Sync_Android
 	Then Transaction: "2 Contact backup success?" Description: "Confirm backup success" SLA: "60000" - OCR checkpoint: "Everything is backed up" Timeout: "200" Threshold: "100"
 	
 	@contactSyncGalaxyS10
-Scenario: VZCloud_Sync_GalaxyS10
+Scenario: VZCloud_ContactsSync_GalaxyS10
 	#Given I use default driver	
 	Then I toggle wifi "disabled"
 	Then I open Contacts Android Phone
@@ -60,7 +60,7 @@ Scenario: VZCloud_Sync_GalaxyS10
 	Then Transaction: "2 Contact backup success?" Description: "Confirm backup success" SLA: "60000" - OCR checkpoint: "Everything is backed up" Timeout: "200" Threshold: "100"
 	
 	@contactSyncMotoz2
-Scenario: VZCloud_Sync_MotoZ2
+Scenario: VZCloud_ContactsSync_MotoZ2
 	#Given I use default driver	
 	Then I toggle wifi "disabled"
 	Then I open Contacts Android Phone
