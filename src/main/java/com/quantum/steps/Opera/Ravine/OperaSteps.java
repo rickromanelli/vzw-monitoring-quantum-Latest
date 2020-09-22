@@ -151,11 +151,13 @@ public class OperaSteps extends WebDriverTestCase {
 		params1.put("keySequence", "OK");
 		result1 = driver.executeScript("mobile:presskey", params1);
 		
+		PerfectoApplicationSteps.waitFor(3);
+		
 		params1.put("keySequence", "DOWN");
 		
 		pgs.textFindHaystack("Accessing Secure", "20", "80", "0%", "0%", "100%", "100%");
 		
-		for (int i = 0; i < 18; ++i) {
+		for (int i = 0; i < 12; ++i) {
 			result1 = driver.executeScript("mobile:presskey", params1);
 		
 		}
