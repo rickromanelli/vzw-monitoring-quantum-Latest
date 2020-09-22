@@ -27,6 +27,6 @@ Feature: Opera Feature
 	Then I load Brew App Catalog	
 	Then Transaction "Brew app loaded?" description: "Checking to see if Opera Brew Loaded" SLA: "60000" - OCR Checkpoint: "SHOP APPS" Timeout: "30" Threshold: "80"
 	Then I open Tools and Applications
-	Then Transaction "Tools and Applications opened?" description: "Checking to see if Tools and Applications loaded " SLA: "60000" - OCR Checkpoint: "Book Club" Timeout: "30" Threshold: "80"
+	Then Transaction "Tools and Applications opened?" description: "Checking to see if Tools and Applications loaded " SLA: "60000" - OCR Checkpoint: "Just For You" Timeout: "30" Threshold: "80"
 	Then I go to Casio Home
 		
