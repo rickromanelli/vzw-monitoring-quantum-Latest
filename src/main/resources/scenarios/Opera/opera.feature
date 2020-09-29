@@ -17,7 +17,7 @@ Feature: Opera Feature
 	Then I open Opera App
 	Then Transaction "1 Opera App opened?" description: "Checking to see if Opera app opened." SLA: "60000" - OCR Checkpoint: "my web" Timeout: "60" Threshold: "90"
 	Then I open My Web 3 App
-	Then Transaction "1 My Web available?" description: "Checking to see if Opera ESPN opens" SLA: "60000" - OCR Checkpoint: "Email" Timeout: "60" Threshold: "90"
+	Then Transaction "1 My Web available?" description: "Checking to see if Opera ESPN opens" SLA: "60000" - OCR Checkpoint: "VZW Today" Timeout: "60" Threshold: "90"
 	
 	@brew
 	Scenario: Brew
