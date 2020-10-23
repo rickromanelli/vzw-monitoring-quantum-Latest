@@ -224,17 +224,18 @@ public class VZCloudStepsCommon extends WebDriverTestCase {
 			// pas.wait(5);
 			pgs.textFind("Flashbacks", "30", "90");
 
-			while (!pgs.textFind("No Photos", "8", "80")) {*/
+			while (!pgs.textFind("No Photos", "8", "80")) {
 
 				we = (QAFExtendedWebElement) driver.findElement("gallery.menu.edit");
 				we.waitForPresent(20);
 				we.click();
 
-				if (!pgs.imageFindHaystack("PUBLIC:Prod/Cloud/AllPhotosSelectedGallery-S10.png", "10", "90", "0", "0", "100%", "100%")) {
-				we = (QAFExtendedWebElement) driver.findElement("gallery.edit.all");
+*/
+				//if (!pgs.imageFindHaystack("PUBLIC:Prod/Cloud/AllPhotosSelectedGallery-S10.png", "10", "90", "0", "0", "100%", "100%")) {
+				we = (QAFExtendedWebElement) driver.findElement("gallery.select.all");
 				we.waitForPresent(20);
 				we.click();
-				}
+				//}
 
 				we = (QAFExtendedWebElement) driver.findElement("gallery.edit.delete");
 				we.waitForPresent(20);
@@ -265,6 +266,8 @@ public class VZCloudStepsCommon extends WebDriverTestCase {
 			pgs.textClick("Empty Trash", "10", "70");
 
 			}
+			
+			pas.waitFor(4);
 			
 			we = (QAFExtendedWebElement) driver.findElement("gallery.trash.back");
 			we.waitForPresent(20);
