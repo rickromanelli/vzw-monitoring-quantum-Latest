@@ -32,6 +32,27 @@ public class VZNavStepsPhone {
 	@Given("^I open VZNav app phone$")
 	public void iOpenVZNavAppPhone() throws Exception {
 		
+		try {
+			//	PerfectoApplicationSteps.closeAppByName("Verizon Tones");
+			//	PerfectoApplicationSteps.closeAppByName("Verizon Tones");
+				
+				Map<String, Object> params1 = new HashMap<>();
+				params1.put("keySequence", "APP_SWITCH");
+				Object result1 = driver.executeScript("mobile:presskey", params1);
+				
+				Map<String, Object> params2 = new HashMap<>();
+				params2.put("label", "Clear all");
+				params2.put("timeout", "30");
+				params2.put("threshold", "90");
+				Object result2 = driver.executeScript("mobile:button-text:click", params2);
+				
+				
+			
+			} catch (Exception ex) {
+
+			}
+			
+		
 		vzsc.cleanAndStartApp(false);
 
 		try {
@@ -49,6 +70,26 @@ public class VZNavStepsPhone {
 	@Given("^I initialize VZNav app phone$")
 	public void iInitializeVZNavAppPhone() throws Exception {
 
+		try {
+			//	PerfectoApplicationSteps.closeAppByName("Verizon Tones");
+			//	PerfectoApplicationSteps.closeAppByName("Verizon Tones");
+				
+				Map<String, Object> params1 = new HashMap<>();
+				params1.put("keySequence", "APP_SWITCH");
+				Object result1 = driver.executeScript("mobile:presskey", params1);
+				
+				Map<String, Object> params2 = new HashMap<>();
+				params2.put("label", "Close all");
+				params2.put("timeout", "30");
+				params2.put("threshold", "90");
+				Object result2 = driver.executeScript("mobile:button-text:click", params2);
+				
+				
+			
+			} catch (Exception ex) {
+
+			}
+			
 		vzsc.cleanAndStartApp(false);
 
 		try {
