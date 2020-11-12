@@ -54,8 +54,9 @@ Scenario: VZ_Nav_Route_Address_iPhone
 Scenario: VZ_Nav_Route_POI_Android 
 	#Given I use default driver 
 	Then I toggle wifi "disabled"
-	Then I set device location to "42.6285206,-71.306298"
+	#Then I set device location to "42.6285206,-71.306298"
 	Then I open VZNav app phone
+	Then I set device location to "42.6285206,-71.306298"
 	Then Transaction "1 VZ Nav Launched?" description: "Opening VZ Nav App" SLA: "60000" - OCR Checkpoint: "Gas Stations" Timeout: "60" Threshold: "90"
 	Then I search for POI "Mcdonalds" phone
 	Then Transaction "2 Find Place?" description: "Checking if found on map" SLA: "60000" - OCR Checkpoint: "Mcdonalds" Timeout: "60" Threshold: "90"
