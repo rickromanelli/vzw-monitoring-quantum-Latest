@@ -26,8 +26,8 @@ Scenario: VZ_Nav_Check_Gas_Feed_Android
 Scenario: VZ_Nav_Route_Address_Android
 	#Given I use default driver 
 	Then I toggle wifi "disabled"
-	Then I set device location to "42.6285206,-71.306298"
 	Then I open VZNav app phone
+	Then I set device location to "42.6285206,-71.306298"
 	Then Transaction "1 VZ Nav Launched?" description: "Opening VZ Nav App" SLA: "60000" - OCR Checkpoint: "Gas Stations" Timeout: "60" Threshold: "90"
 	Then I search for address "165 Massachusetts Ave " phone 
 	Then I perform an Image click "PUBLIC:Prod/VZNav/LocationMailboxIcon.png" with a timeout of "20" and a threshold of "85"
