@@ -345,6 +345,8 @@ public class Push2TalkStepsPhone {
 		 * driver.executeScript("mobile:button-text:click", params3);
 		 * 
 		 */
+		
+		
 		we = (QAFExtendedWebElement) driver.findElement("contacts.result");
 		we.waitForPresent(60000);
 		we.click();
@@ -368,13 +370,17 @@ public class Push2TalkStepsPhone {
 			cn = cn1.toString();
 		}
 
-		/*
-		 * Map<String, Object> params3 = new HashMap<>(); params3.put("label",
-		 * "Brigadier"); params3.put("timeout", "20"); params3.put("threshold", "80");
-		 * //params3.put("index", "2"); Object result3 =
-		 * driver.executeScript("mobile:button-text:click", params3);
-		 * 
-		 */
+		
+		 /* Map<String, Object> params3 = new HashMap<>(); 
+		  params3.put("label", cn); 
+		  params3.put("timeout", "20"); 
+		  params3.put("threshold", "80");
+		  params3.put("index", "2"); 
+		  Object result3 = driver.executeScript("mobile:button-text:click", params3);
+		 
+		*/
+		  
+		  
 		we = (QAFExtendedWebElement) driver.findElement("contacts.result");
 		we.waitForPresent(20000);
 		we.click();
