@@ -13,7 +13,7 @@ Scenario: VM2Text_Android
 	Then I open phone App on "DUT2"
 	Then I call "DUT1" from "DUT2"
 	Then I ignore call on "DUT1"
-	Then I inject audio message "PUBLIC:Prod/VVM/VM2TXT3.mp3" on "DUT2"
+	Then I inject audio message "PUBLIC:VM2TXT3.mp3" on "DUT2"
 	Then I end call on "DUT2"
 	Then I open Voicemail App on "DUT1"
 	Then Transaction: "1: Was message received?" Description: "Check for message with text" SLA: "30000" - Image checkpoint: "PUBLIC:Prod/VVM/LG_v20_MWI_With_Text.png" Timeout: "60" Threshold: "90"
