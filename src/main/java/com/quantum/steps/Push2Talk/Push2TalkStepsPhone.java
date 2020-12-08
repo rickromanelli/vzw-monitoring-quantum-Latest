@@ -174,7 +174,7 @@ public class Push2TalkStepsPhone {
 		//we.click();
 		
 		Map<String, Object> params2 = new HashMap<>();
-		params2.put("label", "PUBLIC:Prod/PTTPlus/historyBtniPhone.png");
+		params2.put("label", "PUBLIC:historyBtniPhone.png");
 		params2.put("timeout", "20");
 		params2.put("threshold", "90");
 		Object result2 = driver.executeScript("mobile:button-image:click", params2);
