@@ -72,7 +72,7 @@ Scenario: Push_to_Talk_GalaxyS82DuraForce
 	Then Transaction: "5 Audio Received?" on PTT Device: "DUT2" Description: "Audio Checkpoint" SLA: "60000" Volume: "-140" Timeout: "30" Duration: "9"
 	Then I stop sending audio on "DUT1"
 	Then I click to call on "DUT2"
-	Then Transaction "6 Call Received?" call received on "DUT1" SLA: "60000"
+	#Then Transaction "6 Call Received?" call received on "DUT1" SLA: "60000"
 	Then I stop sending audio on "DUT2"
 	
 	@push2talkDuraForcetoBrigadier
