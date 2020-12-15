@@ -130,48 +130,7 @@ public class Push2TalkStepsPhone {
 			cn = cn1;
 		}
 
-	/*	Map<String, Object> params3 = new HashMap<>();
-		params3.put("label", "PUBLIC:Prod/PTTPlus/msgButton-iPhone7.png");
-		params3.put("timeout", "20");
-		params3.put("threshold", "70");
-		Object result3 = getDriver().executeScript("mobile:button-image:click", params3);
 
-		pgs.textCheckpoint("Enter Text", "20", "90");
-
-		pgs.textFindHaystack(cn, "30", "100", "0%", "12%", "16%", "36%");
-
-		Map<String, Object> params2 = new HashMap<>();
-		params2.put("label", cn);
-		params2.put("timeout", "20");
-		params2.put("threshold", "100");
-		params2.put("screen.top", "12%");
-		params2.put("screen.height", "16%");
-		params2.put("screen.left", "0%");
-		params2.put("screen.width", "36%");
-		params2.put("operation", "long");
-
-		while (pgs.textFindHaystack(cn, "30", "100", "0%", "12%", "16%", "36%")) {
-
-			pas.waitFor(5);
-
-			Object result2 = driver.executeScript("mobile:button-text:click", params2);
-
-			pas.waitFor(5);
-
-			pgs.textCheckpoint("Delete Message", "20", "90");
-			pgs.textClick("Delete Message", "20", "90");
-
-			pgs.textCheckpoint("Confirm", "20", "90");
-			pgs.textClick("Yes", "20", "100");
-			
-			
-
-			pas.waitFor(5);
-		}*/
-		
-		//we = (QAFExtendedWebElement) getDriver().findElement("home.history");
-		//we.waitForPresent(40000);
-		//we.click();
 		
 		Map<String, Object> params2 = new HashMap<>();
 		params2.put("label", "PUBLIC:historyBtniPhone.png");
@@ -256,7 +215,7 @@ public class Push2TalkStepsPhone {
 			Object result1 = getDriver().executeScript("mobile:edit-text:set", params1);
 
 		} else if (model.equalsIgnoreCase("Galaxy S8") || model.equalsIgnoreCase("Galaxy S10")
-				|| model.equalsIgnoreCase("E6810")) {
+				|| model.equalsIgnoreCase("E6810") || model.equalsIgnoreCase("XP8800")) {
 
 			Map<String, Object> params1 = new HashMap<>();
 			params1.put("label", "Search");
@@ -490,6 +449,9 @@ public class Push2TalkStepsPhone {
 		if (model.equals("Z30")) {
 			pgs.textClick("End Call", "20", "90");
 
+		} else if (model.equals("iPhone-7")) {
+		
+			pgs.imageClick("PUBLIC:PTT_EndCallBtn-iPhone7.png", "30", "90");
 		} else if (model.equals("Galaxy S8")) {
 
 			if (ConfigurationManager.getBundle().getString("app").equalsIgnoreCase("Push2Talk")) {
@@ -505,9 +467,10 @@ public class Push2TalkStepsPhone {
 				we = (QAFExtendedWebElement) driver.findElement("call.clickToEndCall");
 				we.waitForPresent(20000);
 				we.click();
+			
 				
 			}
-		} else if (model.equals("E6810")) {
+		} else if (model.equals("E6810"))  {
 			pgs.imageClick("PUBLIC:Prod/PTTPlus/EndCallDura.png", "30", "90");
 		} else {
 			we = (QAFExtendedWebElement) driver.findElement("call.clickToEndCall");

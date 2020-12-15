@@ -129,14 +129,10 @@ public class Push2TalkStepsCommon extends WebDriverTestCase {
 		break;
 		case "613540154" : ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "4727");
 		break;
-		//Brig
-		case "990004220676039" : ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "2830");
+		//Sonim
+		case "B2F1C236" : ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "2755");
 		break;
-		case "990004220840726" : ConfigurationManager.getBundle().setProperty("contactName"  + dutNum, "0827");
-		break;
-		case "990004220844769" : ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "1226");
-		break;
-		case "990004220846798" : ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "2831");
+		case "B526DC05" : ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "3350");
 		break;
 		//S8
 		case "988B5C413545374847" : ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "5140");
