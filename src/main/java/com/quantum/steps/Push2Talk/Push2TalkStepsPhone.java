@@ -451,7 +451,7 @@ public class Push2TalkStepsPhone {
 
 		} else if (model.equals("iPhone-7")) {
 		
-			pgs.imageClick("PUBLIC:PTT_EndCallBtn-iPhone7.png", "30", "90");
+			pgs.imageClick("PUBLIC:PTT_EndCallBtn-iPhone.png", "30", "90");
 		} else if (model.equals("Galaxy S8")) {
 
 			if (ConfigurationManager.getBundle().getString("app").equalsIgnoreCase("Push2Talk")) {
