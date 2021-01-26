@@ -471,7 +471,9 @@ public class Push2TalkStepsPhone {
 				
 			}
 		} else if (model.equals("E6810"))  {
+			if(pgs.imageCheckPoint("PUBLIC:EndCallDura.png", "30", "90", false)) {
 			pgs.imageClick("PUBLIC:EndCallDura.png", "30", "90");
+			}
 		} else {
 			we = (QAFExtendedWebElement) driver.findElement("call.clickToEndCall");
 			we.waitForPresent(20000);
