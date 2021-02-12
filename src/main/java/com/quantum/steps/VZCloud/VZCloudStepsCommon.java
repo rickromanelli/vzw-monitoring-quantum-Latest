@@ -203,12 +203,16 @@ public class VZCloudStepsCommon extends WebDriverTestCase {
 	public void iDeletePhotosGallery() throws Exception {
 
 		
+	/*	pas.closeAppById("com.sec.android.gallery3d");
 		pas.closeAppById("com.sec.android.gallery3d");
-		pas.closeAppById("com.sec.android.gallery3d");
-		pas.startAppById("com.sec.android.gallery3d");
+		pas.startAppById("com.sec.android.gallery3d");*/
+		
+		PerfectoApplicationSteps.closeAppByName("Gallery");
+		PerfectoApplicationSteps.closeAppByName("Gallery");
+		PerfectoApplicationSteps.startAppByName("Gallery");
 		
 		
-		pas.waitFor(4);
+		PerfectoApplicationSteps.waitFor(4);
 		
 		pgs.textClickHaystack("Pictures", "20", "80", "0%", "70%", "30%", "100%");
 

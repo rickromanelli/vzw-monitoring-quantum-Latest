@@ -183,8 +183,8 @@ public void iClickVoicemailMessage(String device) throws InterruptedException {
 
 		PerfectoGenericSteps pgs = new PerfectoGenericSteps();
 
-		we.waitForPresent(60000);
-		PerfectoApplicationSteps.waitFor(13);
+		we.waitForPresent(10000);
+		PerfectoApplicationSteps.waitFor(18);
 		pgs.injectAudio(repo, device);
 		PerfectoApplicationSteps.waitFor(10);
 

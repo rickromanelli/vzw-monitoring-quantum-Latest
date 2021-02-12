@@ -143,7 +143,47 @@ public class PerfectoGenericSteps {
 			we = (QAFExtendedWebElement) driver.findElement("call.callButton");
 			we.waitForPresent(20000);
 			we.click();
+			
+		}	else if (model.equals("Galaxy S8") && ConfigurationManager.getBundle().getString("app").equalsIgnoreCase("VVM")) {
+				
+			String phoneApp = "Phone";
+		
+			try {
+				PerfectoApplicationSteps.closeAppByName(phoneApp);
+				PerfectoApplicationSteps.closeAppByName(phoneApp);
+			} catch (Exception ex) {
 
+			}
+
+			PerfectoApplicationSteps.startAppByName(phoneApp);
+
+			we = (QAFExtendedWebElement) driver.findElement("call.dailTab");
+			PerfectoApplicationSteps.waitFor(10);
+			if (we.isPresent()) {
+				we.click();	
+			}
+			
+
+			we = (QAFExtendedWebElement) driver.findElement("call.deleteDigit");
+			
+			for (int i = 0; i < phNums.length; ++i) {
+				if (we.isPresent()) {
+
+					we.click();
+				} else {
+					break;
+				}
+			}
+
+			we = (QAFExtendedWebElement) driver.findElement("call.phNumField");
+			we.waitForPresent(20000);
+			we.click();
+			we.sendKeys(phNum);
+
+			PerfectoApplicationSteps.waitFor(10);
+			we = (QAFExtendedWebElement) driver.findElement("call.callButton");
+			we.waitForPresent(20000);
+			we.click();
 		} else if (model.equals("Galaxy S8") || model.equals("Galaxy S10") || model.equals("Moto Z2")) {
 			
 			String contactName = ConfigurationManager.getBundle().getString("contactDesc2");
