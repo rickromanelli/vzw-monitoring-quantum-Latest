@@ -1,0 +1,5 @@
+inbox.trash=//*[@resource-id="com.lge.vvm:id/addBtnInboxDelete"]
+inbox.selectAll=//*[@resource-id="com.lge.vvm:id/titleicon"]
+inbox.delete=//*[@resource-id="com.lge.vvm:id/positive_btn"]
+inbox.yesDelete=//*[@resource-id="android:id/button1"]
+inbox.vmMessage=//*[@resource-id="com.lge.vvm:id/name"]
