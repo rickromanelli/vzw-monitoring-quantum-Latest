@@ -107,7 +107,7 @@ public class PerfectoGenericSteps {
 			we.waitForPresent(20000);
 			we.click();
 
-		} else if (model.equals("iPhone-7")) {
+		} else if (model.equals("iPhone-7") || (model.equals("iPhone-SE (2020)"))) {
 
 			String contactName = ConfigurationManager.getBundle().getString("contactDesc2");
 			textClick(contactName, "30", "80");
@@ -298,8 +298,12 @@ public class PerfectoGenericSteps {
 			if (driverName.contains("2")) {
 				ConfigurationManager.getBundle().setProperty("deviceCount", "2");
 				ConfigurationManager.getBundle().setProperty("reportURL2", DriverUtils.getDriver().getCapabilities().getCapability("testGridReportUrl"));
+			} else if (driverName.contains("2")) {
+				ConfigurationManager.getBundle().setProperty("deviceCount", "3");
+				ConfigurationManager.getBundle().setProperty("reportURL3", DriverUtils.getDriver().getCapabilities().getCapability("testGridReportUrl"));
+			
 			}
-			String envResources = ConfigurationManager.getBundle().getString(driverName + ".env.resources");
+				String envResources = ConfigurationManager.getBundle().getString(driverName + ".env.resources");
 			ConfigurationManager.getBundle().setProperty("env.resources", envResources);
 
 			//currentDriver = TestBaseProvider.instance().get().getBrowser();
@@ -1091,6 +1095,8 @@ public class PerfectoGenericSteps {
 		String driverName = "perfecto";
 		if (device.equalsIgnoreCase("dut2")) {
 			driverName = "perfecto2";
+		} else if (device.equalsIgnoreCase("dut3")) {
+			driverName = "perfecto3";
 		}
 
 		PerfectoGenericSteps.switchToDriver(driverName);
