@@ -156,7 +156,7 @@ public class PerfectoSplunkSteps {
 		//SplunkHelper.testStepStart(name, desc);
 		startSplunkStep(name, desc);
 		Map<String, Object> params1 = new HashMap<>();
-		params1.put("content", '"' + text + "," + orText + '"');
+		params1.put("content", "Apple, Shadybrook Dr");
 		params1.put("target", "any");
 		params1.put("timeout", timeout);
 		params1.put("threshold", threshold);
