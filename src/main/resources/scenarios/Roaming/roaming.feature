@@ -25,6 +25,7 @@ Scenario: Roaming_iPhone_UK
 	@roamingiPhoneseCA
 Scenario: Roaming_iPhoneSE_CA
 	Then I open phone App on "DUT2"
+	Then I close all apps
 	Then I open phone App on "DUT1"
 	Then I call "DUT2" from "DUT1"
 	Then Transaction: "1 Call succeeded?" on Device: "DUT2" Description: "Did DUT2 receive the call?" SLA: "60000" - OCR checkpoint: "Wireless caller" Timeout: "60" Threshold: "90"
