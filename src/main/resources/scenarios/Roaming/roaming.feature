@@ -27,7 +27,7 @@ Scenario: Roaming_iPhoneSE_CA
 	Then I open phone App on "DUT2"
 	Then I open phone App on "DUT1"
 	Then I call "DUT2" from "DUT1"
-	Then Transaction: "1 Call succeeded?" on Device: "DUT2" Description: "Did DUT2 receive the call?" SLA: "60000" - OCR checkpoint: "Wireless caller" Timeout: "60" Threshold: "90"
+	Then Transaction: "1 Call succeeded?" on Device: "DUT2" Description: "Did DUT2 receive the call?" SLA: "60000" - OCR checkpoint: "Incoming Call" Timeout: "60" Threshold: "90"
 	Then I click to end call on "DUT1"
 	Then I go to webpage: "google.com" on "DUT1"
 	Then Transaction "2 Did Webpage open?" description: "Google webpage opened" SLA: "90000" - OCR Checkpoint: "IMAGES" Timeout: "60" Threshold: "90"
