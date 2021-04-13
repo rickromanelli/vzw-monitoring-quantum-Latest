@@ -49,7 +49,7 @@ Scenario: Roaming_Moto_Z_Canada
 	Then I open phone App on "DUT2"
 	Then I open phone App on "DUT1"
 	Then I call "DUT2" from "DUT1"
-	Then Transaction: "1 Call succeeded?" on Device: "DUT2" Description: "Did DUT2 receive the call?" SLA: "60000" - OCR checkpoint: "Wireless caller" Timeout: "60" Threshold: "90"
+	Then Transaction: "1 Call succeeded?" on Device: "DUT2" Description: "Did DUT2 receive the call?" SLA: "60000" - OCR checkpoint: "Incoming call" Timeout: "60" Threshold: "90"
 	Then I click to end call on "DUT1"
 	Then I go to webpage: "google.com" on "DUT1"
 	Then Transaction "2 Did Webpage open?" description: "Google webpage opened" SLA: "60000" - OCR Checkpoint: "offered in" Timeout: "60" Threshold: "90"
