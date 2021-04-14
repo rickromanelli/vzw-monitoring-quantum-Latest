@@ -422,10 +422,14 @@ public class PerfectoGenericSteps {
 			}
 
 			PerfectoApplicationSteps.startAppByName(phoneAppName);
+			
+			
 
 			we = (QAFExtendedWebElement) driver.findElement("call.contacts");
 			we.waitForPresent(30000);
 			we.click();
+			
+			
 
 			break;
 		}

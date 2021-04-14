@@ -215,7 +215,7 @@ public class Push2TalkStepsPhone {
 			Object result1 = getDriver().executeScript("mobile:edit-text:set", params1);
 
 		} else if (model.equalsIgnoreCase("Galaxy S8") || model.equalsIgnoreCase("Galaxy S10")
-				|| model.equalsIgnoreCase("E6810") || model.equalsIgnoreCase("XP8800")) {
+				|| model.equalsIgnoreCase("E6810") || model.equalsIgnoreCase("XP8800") || model.equalsIgnoreCase("DuraForce Pro 2")) {
 
 			Map<String, Object> params1 = new HashMap<>();
 			params1.put("label", "Search");
@@ -446,6 +446,9 @@ public class Push2TalkStepsPhone {
 		PerfectoGenericSteps.switchToDriver(driverName);
 		String model = DeviceUtils.getDeviceProperty("model");
 
+		if (!pgs.textFind("Ready", "8", "80")) {
+			
+		
 		if (model.equals("Z30")) {
 			pgs.textClick("End Call", "20", "90");
 
@@ -478,6 +481,7 @@ public class Push2TalkStepsPhone {
 			we = (QAFExtendedWebElement) driver.findElement("call.clickToEndCall");
 			we.waitForPresent(20000);
 			we.click();
+		}
 		}
 	}
 
@@ -535,11 +539,12 @@ public class Push2TalkStepsPhone {
 			params1.put("content", cn);
 			params1.put("timeout", "40");
 			params1.put("threshold", "80");
-			ArrayList genericOptions2 = new ArrayList();
-			genericOptions2.add("natural-language=true");
-			params1.put("ocr", genericOptions2);
+			params1.put("index", "1");
+			//ArrayList genericOptions2 = new ArrayList();
+			//genericOptions2.add("natural-language=true");
+			//params1.put("ocr", genericOptions2);
 			Object result1 = driver.executeScript("mobile:checkpoint:text", params1);
-		}
+		} else {
 
 		try {
 			we1 = new QAFExtendedWebElement("//*[contains(@text,\"" + cn + "\")]");
@@ -556,6 +561,7 @@ public class Push2TalkStepsPhone {
 
 			}
 
+		}
 		}
 
 		SplunkHelper.testStepEnd(Long.parseLong(SLA), name);
