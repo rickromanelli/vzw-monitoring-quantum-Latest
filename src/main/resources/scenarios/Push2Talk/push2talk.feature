@@ -187,13 +187,13 @@ Scenario: Push_to_Talk_iPhone2Duraforce
 	Then I click to call on "DUT1"
 	Then Transaction "4 Call Received?" call received on "DUT2" SLA: "60000"
 	Then I inject audio file "PUBLIC:VM2TXT3.mp3" on "DUT1"
-	#Then I send audio on "DUT1"	
-	#Then I click to call on "DUT2"
-	#Then Transaction "6 Call Received?" call received on "DUT1" SLA: "60000"
-	#Then I inject audio file "PUBLIC:VM2TXT3.mp3" on "DUT2"
-	#Then I send audio on "DUT2"	
-	#Then I stop sending audio on "DUT2"
-	#Then I click to end call on "DUT2"
+	Then I send audio on "DUT1"	
+	Then I click to call on "DUT2"
+	Then Transaction "6 Call Received?" call received on "DUT1" SLA: "60000"
+	Then I inject audio file "PUBLIC:VM2TXT3.mp3" on "DUT2"
+	Then I send audio on "DUT2"	
+	Then I stop sending audio on "DUT2"
+	Then I click to end call on "DUT2"
 	
 		@push2talkDuraForcePro2toiPhone
 	Scenario: Push_to_Talk_DuraForcePro2_2iPhone
@@ -215,6 +215,9 @@ Scenario: Push_to_Talk_iPhone2Duraforce
 	#Then I send audio on "DUT2"	
 	#Then I stop sending audio on "DUT2"
 	Then I click to end call on "DUT2"
+	
+	
+	
 	
 	@push2talkDuraForceToiPhone
 Scenario: Push_to_Talk_Duraforce2iPhone
