@@ -446,7 +446,7 @@ public class Push2TalkStepsPhone {
 		PerfectoGenericSteps.switchToDriver(driverName);
 		String model = DeviceUtils.getDeviceProperty("model");
 
-		if (!pgs.textFind("Ready", "8", "80")) {
+		if (pgs.textFind("Ready", "8", "80")) {
 			
 		
 		if (model.equals("Z30")) {
