@@ -12,4 +12,4 @@ contact.confirmDelete.txt=//*[@resource-id="com.android.contacts:id/totalContact
 contact.home=//*[@text="FAVORITES"]
 contact.search.btn=//*[@resource-id="com.samsung.android.app.contacts:id/menu_search"]
 contact.search.box=//*[@resource-id="com.samsung.android.app.contacts:id/search_src_text"]
-contact.addContact.btn=//*[@resource-id="com.samsung.android.app.contacts:id/contact_list_floating_action_button"]
+contact.addContact.btn=//*[@resource-id="com.samsung.android.app.contacts:id/menu_create_contact"]
