@@ -60,8 +60,6 @@ public class VZCloudStepsCommon extends WebDriverTestCase {
 	@Given("^I delete photos in VZCloud$")
 	public void iDeletePhotosCloud() throws Exception {
 
-	
-
 		we = (QAFExtendedWebElement) driver.findElement("home.menu");
 		we.waitForPresent(20);
 		we.click();
@@ -131,15 +129,32 @@ public class VZCloudStepsCommon extends WebDriverTestCase {
 
 	}
 
-	@Given("^I backup photos from Gallery$")
-	public void backupPhotosGallery() throws Exception {
+	@Given("^I backup photos from Cloud$")
+	public void backupPhotosCloud() throws Exception {
 		
-		pas.closeAppByIdIgnoreExceptions("com.sec.android.gallery3d");
-		pas.closeAppByIdIgnoreExceptions("com.sec.android.gallery3d");
+		pas.closeAppByIdIgnoreExceptions("com.vcast.mediamanager");
+		pas.closeAppByIdIgnoreExceptions("com.vcast.mediamanager");
 
-		pas.startAppById("com.sec.android.gallery3d");
+		pas.startAppById("com.vcast.mediamanager");
 		
-		pgs.textClickHaystack("Pictures", "20", "80", "0%", "70%", "30%", "100%");
+		we = (QAFExtendedWebElement) driver.findElement("menu.btn");
+		we.waitForPresent(30000);
+		we.click();
+		
+		we = (QAFExtendedWebElement) driver.findElement("menu.home");
+		we.waitForPresent(30000);
+		we.click();
+		
+		we = (QAFExtendedWebElement) driver.findElement("menu.backupScreen");
+		we.waitForPresent(30000);
+		we.click();
+		
+		we = (QAFExtendedWebElement) driver.findElement("menu.backupNow");
+		we.waitForPresent(30000);
+		we.click();
+		
+		
+		/*pgs.textClickHaystack("Pictures", "20", "80", "0%", "70%", "30%", "100%");
 
 		if (!pgs.textFind("No pictures", "8", "95")) {
 			
@@ -177,7 +192,7 @@ public class VZCloudStepsCommon extends WebDriverTestCase {
 			
 		}
 		
-		
+		*/
 		
 	}
 	
@@ -254,7 +269,7 @@ public class VZCloudStepsCommon extends WebDriverTestCase {
 			
 		}
 
-			we = (QAFExtendedWebElement) driver.findElement("gallery.menu");
+			we = (QAFExtendedWebElement) driver.findElement("gallery.menuLower");
 			we.waitForPresent(20);
 			we.click();
 
