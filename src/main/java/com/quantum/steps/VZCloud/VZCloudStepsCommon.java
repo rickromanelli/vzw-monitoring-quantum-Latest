@@ -74,7 +74,7 @@ public class VZCloudStepsCommon extends WebDriverTestCase {
 			// pas.wait(5);
 			pgs.textFind("Flashbacks", "30", "90");
 
-			while (pgs.textFind("2020", "8", "70")) {
+			while (pgs.textFind("2021", "8", "70")) {
 
 				we = (QAFExtendedWebElement) driver.findElement("photos.menu");
 				we.waitForPresent(20);
