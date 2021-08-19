@@ -210,7 +210,7 @@ public class TestListener implements ISuiteListener, ITestListener {
 	@Override
 	public void onFinish(ISuite arg0) {
 		try {
-			//System.out.println(SplunkHelper.getCollector().commitSplunk());
+			System.out.println(SplunkHelper.getCollector().commitSplunk());
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
