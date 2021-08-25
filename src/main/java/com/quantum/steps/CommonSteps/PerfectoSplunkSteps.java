@@ -10,6 +10,7 @@ import com.qmetry.qaf.automation.core.ConfigurationManager;
 import com.qmetry.qaf.automation.step.QAFTestStepProvider;
 import com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebDriver;
 import com.quantum.listerners.SplunkHelper;
+import com.quantum.steps.PerfectoApplicationSteps;
 
 import cucumber.api.java.en.Then;
 
@@ -103,6 +104,8 @@ public class PerfectoSplunkSteps {
 
 		}
 
+		PerfectoApplicationSteps.waitFor(5);
+		
 		SplunkHelper.testStepEnd(Long.parseLong(SLA), name);
 
 	}
@@ -208,6 +211,8 @@ public class PerfectoSplunkSteps {
 			throw new Exception("Text not found!");
 
 		}
+		
+		
 		SplunkHelper.testStepEnd(Long.parseLong(SLA), name);
 
 	}
