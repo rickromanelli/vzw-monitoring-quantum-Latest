@@ -106,6 +106,8 @@ public class PerfectoSplunkSteps {
 		SplunkHelper.testStepEnd(Long.parseLong(SLA), name);
 
 	}
+	
+	
 
 	public void startSplunkStep(String name, String desc) throws Exception {
 		// TODO Auto-generated method stub
@@ -168,6 +170,66 @@ public class PerfectoSplunkSteps {
 		
 		
 		if (result1.toString().contains("true")) {
+
+		} else {
+
+			throw new Exception("Text not found!");
+
+		}
+
+		SplunkHelper.testStepEnd(Long.parseLong(SLA), name);
+
+	}
+	
+	@Then("^SF Transaction: \"([^\"]*)\" Description: \"([^\"]*)\" SLA: \"([^\"]*)\" - Image checkpoint: \"([^\"]*)\" Timeout: \"([^\"]*)\" Threshold: \"([^\"]*)\"$")
+	public void SFvisualImageTimer(String name, String desc, String SLA, String repo, String timeout, String threshold)
+			throws Exception {
+		
+	
+
+		//SplunkHelper.testStepStart(name, desc);
+		startSplunkStep(name, desc);
+		Map<String, Object> params1 = new HashMap<>();
+		params1.put("content", repo);
+		//params1.put("match", "identical");
+		//params1.put("source", "camera");
+		//params1.put("measurement", "accurate");
+		params1.put("timeout", timeout);
+		params1.put("threshold", threshold);
+		Object result1 = SplunkHelper.getQAFDriver().executeScript("mobile:checkpoint:image", params1);
+		//System.out.println("SomethingXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+		
+		String freeTime = ConfigurationManager.getBundle().getPropertyValue("freePhoneTime");
+		
+		if ((result1.toString().contains("true") && freeTime == "NO" ) || ((result1.toString().contains("false") && freeTime == "YES" ))) {
+
+		} else {
+
+			throw new Exception("Text not found!");
+
+		}
+		SplunkHelper.testStepEnd(Long.parseLong(SLA), name);
+
+	}
+	@Then("^SF Transaction \"([^\"]*)\" description: \"([^\"]*)\" SLA: \"([^\"]*)\" - OCR Checkpoint: \"([^\"]*)\" or \"([^\']*)\" Timeout: \"([^\"]*)\" Threshold: \"([^\"]*)\"$")
+	public void SFvisualOCRTimerPendingTOD(String name, String desc, String SLA, String text, String orText, String timeout, String threshold)
+			throws Exception {
+
+		//SplunkHelper.testStepStart(name, desc);
+		startSplunkStep(name, desc);
+		Map<String, Object> params1 = new HashMap<>();
+		params1.put("content", "Apple, Shadybrook Dr");
+		params1.put("target", "any");
+		params1.put("timeout", timeout);
+		params1.put("threshold", threshold);
+		params1.put("source", "camera");
+		params1.put("timeout", timeout);
+		
+		Object result1 = SplunkHelper.getQAFDriver().executeScript("mobile:checkpoint:text", params1);
+
+		String freeTime = ConfigurationManager.getBundle().getPropertyValue("freePhoneTime");
+		
+		if ((result1.toString().contains("true") || freeTime == "YES" ) || ((result1.toString().contains("false") || freeTime == "NO" ))) {
 
 		} else {
 

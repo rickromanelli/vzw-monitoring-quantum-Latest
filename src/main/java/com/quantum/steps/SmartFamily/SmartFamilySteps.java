@@ -109,9 +109,51 @@ public class SmartFamilySteps extends WebDriverTestCase {
 		
 			we.sendKeys("Pete");
 			
-			
-			
 			we = (QAFExtendedWebElement) driver.findElement("messages.pete");
+			we.waitForPresent(60000);
+			we.click();
+			
+			
+			if (pgs.textFind("Hello", "10", "100")) {
+			
+			
+			
+			we = (QAFExtendedWebElement) driver.findElement("messages.menu");
+			we.waitForPresent(60000);
+			we.click();
+			
+			we = (QAFExtendedWebElement) driver.findElement("messages.deleteMessages");
+			we.waitForPresent(60000);
+			we.click();
+			
+			we = (QAFExtendedWebElement) driver.findElement("messages.selectAllToSelete");
+			we.waitForPresent(60000);
+			we.click();
+			
+			
+			
+			we = (QAFExtendedWebElement) driver.findElement("messages.deleteButton");
+			we.waitForPresent(60000);
+			we.click();
+			
+
+			we = (QAFExtendedWebElement) driver.findElement("messages.moveToTrash");
+			we.waitForPresent(60000);
+			we.click();
+			
+
+			we = (QAFExtendedWebElement) driver.findElement("messages.pete");
+			we.waitForPresent(60000);
+			we.click();
+			
+			}
+			
+			we = (QAFExtendedWebElement) driver.findElement("messages.textField");
+			we.waitForPresent(60000);
+			
+			we.sendKeys("hello, pete");
+		
+			we = (QAFExtendedWebElement) driver.findElement("messages.sendMessage");
 			we.waitForPresent(60000);
 			we.click();
 			

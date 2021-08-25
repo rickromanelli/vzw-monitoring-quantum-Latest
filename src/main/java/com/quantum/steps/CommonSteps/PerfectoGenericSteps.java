@@ -909,18 +909,7 @@ public class PerfectoGenericSteps {
 
 		String model = DeviceUtils.getDeviceProperty("model");
 
-		if (model.equals("Z30")) {
-			iOpenBrowserAppOn(device);
-
-			Map<String, Object> params4 = new HashMap<>();
-			params4.put("label", "Type search or address");
-			params4.put("text", "google.com");
-			params4.put("timeout", "20");
-			Object result4 = driver.executeScript("mobile:edit-text:set", params4);
-
-			textClickHaystack("Go", "20", "90", "0%", "87%", "13%", "100%");
-
-		} else if (model.equals("Moto Z2")) {
+		if (model.equals("Moto Z2")) {
 			Map<String, Object> params = new HashMap<>();
 
 			params.put("automation", "os");
@@ -960,7 +949,7 @@ public class PerfectoGenericSteps {
 			Object result1 = getDriver().executeScript("mobile:button-text:click", params1);
 			
 			
-		} else if (model.equals("Galaxy S10")) {
+		} else if (model.equals("Galaxy S10") || model.equals("Galaxy S10e")) {
 					Map<String, Object> params = new HashMap<>();
 
 					
