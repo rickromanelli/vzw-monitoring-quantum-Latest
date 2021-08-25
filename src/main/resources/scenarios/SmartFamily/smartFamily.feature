@@ -6,7 +6,7 @@ Scenario: Smart_FamilyText_Limit
 	Then I toggle wifi "disabled" on "DUT1"
 	Then I toggle wifi "disabled" on "DUT2"
 	Then I open Smart Family App on "DUT1"
-	Then Transaction "1 Smart Family Launched?" description: "Opening Smart Family Parent App" SLA: "60000" - OCR Checkpoint: "Screen time today" Timeout: "60" Threshold: "90"
+	Then Transaction "1 Smart Family Launched?" description: "Opening Smart Family Parent App" SLA: "60000" - OCR Checkpoint: "Get Peace" Timeout: "60" Threshold: "90"
 	Then I tap to view child "1" on "DUT1"
 	Then I get device time on "DUT2" 
 	Then I send a text on "DUT2"
