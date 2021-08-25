@@ -37,5 +37,6 @@ Scenario: Smart_CheckScreenTime
 Scenario: Trusted_and_untrusted_phone_numbers
 	Then I toggle wifi "disabled" on "DUT1"
 	Then I toggle wifi "disabled" on "DUT2"
-	Then I get device time on "DUT2" 
-	Then I open Smart Family App on "DUT1"
+	Then I call a friend on "DUT1"
+	
+	

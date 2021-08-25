@@ -197,33 +197,13 @@ public class SmartFamilySteps extends WebDriverTestCase {
 			we.click();	
 		}
 		
-	
-			/*pgs.textClick("Pete", "30", "80");
-			PerfectoApplicationSteps.waitFor(3);
-			// textClick("Call Mobile", "20", "90");
-
-			//imageClick("PUBLIC:Prod/International/CallButtoniPhone7.png", "30", "90");
-			we = (QAFExtendedWebElement) driver.findElement("call.callButton");
-			we.waitForPresent(20000);
-			we.click();*/
-
 		
 
 			
 			String contactName = "Pete";
 			
 			
-		/*	if (pgs.textFindHaystack("Contacts", "20", "90", "0%", "0%", "100%", "100%")) {
-				
-				Map<String, Object> params1 = new HashMap<>();
-				params1.put("label", "Contacts");
-				params1.put("timeout", "20");
-				params1.put("threshold", "90");
-				Object result1 = driver.executeScript("mobile:button-text:click", params1);
-				
-				
-			}*/
-			
+
 			we = (QAFExtendedWebElement) driver.findElement("call.contacts.search");
 			we.waitForPresent(20000);
 			we.click();	
@@ -272,7 +252,7 @@ public class SmartFamilySteps extends WebDriverTestCase {
 		
 		int currentHour = phoneTime.getHour();
 		
-		if((currentHour > 15) && (currentHour < 18)) {
+		if((currentHour > 14) && (currentHour < 22)) {
 			System.out.println("Ok to use phone");
 			ConfigurationManager.getBundle().setProperty("freePhoneTime", "YES");
 		}
