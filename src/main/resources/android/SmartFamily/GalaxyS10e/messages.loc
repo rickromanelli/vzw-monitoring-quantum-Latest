@@ -2,4 +2,4 @@ messages.searchButton = //*[@resource-id="com.samsung.android.messaging:id/actio
 messages.searchField = //*[@resource-id="com.samsung.android.messaging:id/search_src_text"]
 messages.pete = //*[@resource-id="com.samsung.android.messaging:id/search_list_item"]
 messages.textField = //*[@resource-id="com.samsung.android.messaging:id/edit_panel"]
-messages.sendMessage = //*[@resource-id="com.samsung.android.messaging:id/send_button1"]
+messages.sendMessage = //*[@resource-id="com.samsung.android.messaging:id/send_button_container"]//*[@class="android.widget.RelativeLayout"]
