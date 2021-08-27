@@ -200,11 +200,10 @@ public class PerfectoSplunkSteps {
 		params1.put("timeout", timeout);
 		params1.put("threshold", threshold);
 		Object result1 = SplunkHelper.getQAFDriver().executeScript("mobile:checkpoint:image", params1);
-		//System.out.println("SomethingXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
 		
 		String freeTime = ConfigurationManager.getBundle().getPropertyValue("freePhoneTime");
 		
-		if ((result1.toString().contains("true") && freeTime == "NO" ) || ((result1.toString().contains("false") && freeTime == "YES" ))) {
+		if ((result1.toString().contains("true") && freeTime == "NO" ) || (result1.toString().contains("false") && freeTime == "YES" )) {
 
 		} else {
 
