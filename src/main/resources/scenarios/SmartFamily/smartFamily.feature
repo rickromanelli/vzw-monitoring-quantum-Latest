@@ -39,4 +39,19 @@ Scenario: Trusted_and_untrusted_phone_numbers
 	Then I toggle wifi "disabled" on "DUT2"
 	Then I call a friend on "DUT1"
 	
+@smartFamilyChildLocation
+Scenario: SmartFamily_Child_Location
+	Then I toggle wifi "disabled"
+	Then I open Smart Family App on "DUT1"
+	Then Transaction "1 Smart Family Launched?" description: "Opening Smart Family Parent App" SLA: "60000" - OCR Checkpoint: "Pause Internet" Timeout: "60" Threshold: "80"
+	Then I tap to view child "1" on "DUT1"
+	Then Transaction "2 Validate Location?" description: "location" SLA: "60000" - OCR Checkpoint: "Lowell" Timeout: "60" Threshold: "80"
+	Then I tap to view child "2" on "DUT1"
+	Then Transaction "3 Validate Location?" description: "location" SLA: "60000" - OCR Checkpoint: "Lowell" Timeout: "60" Threshold: "80"
+	
+	
+	
+	
+	
+	
 	
