@@ -30,13 +30,26 @@ public class SmartFamilySteps extends WebDriverTestCase {
 	PerfectoGenericSteps pgs = new PerfectoGenericSteps();
 
 	@Given("^I tap to view child \"([^\"]*)\" on \"([^\"]*)\"$")
-	public void TapToViewChild(String Child, String device) throws Exception {
+	public void TapToViewChild(String child, String device) throws Exception {
 
 		String driverName = "perfecto";
 		if (device.equalsIgnoreCase("dut2")) {
 			driverName = "perfecto2";
 		}
 
+		if (child.equalsIgnoreCase("1")) {
+			we = (QAFExtendedWebElement) driver.findElement("home.child1");
+			we.waitForPresent(60000);
+			we.click();
+			
+		} else if (child.equalsIgnoreCase("2")) {
+			we = (QAFExtendedWebElement) driver.findElement("home.child2");
+			we.waitForPresent(60000);
+			we.click();
+		} else {
+			
+		}
+		
 		
 		PerfectoGenericSteps.switchToDriver(driverName);
 
@@ -122,15 +135,24 @@ public class SmartFamilySteps extends WebDriverTestCase {
 			we.waitForPresent(60000);
 			we.click();
 			
+			////*[@resource-id="com.samsung.android.messaging:id/bubble_list_view"]/android.widget.LinearLayout[2]
+			
+			
 			we = (QAFExtendedWebElement) driver.findElement("messages.deleteMessages");
 			we.waitForPresent(60000);
 			we.click();
 			
-			we = (QAFExtendedWebElement) driver.findElement("messages.selectAllToSelete");
+			we = (QAFExtendedWebElement) driver.findElement("messages.2ndMessage");
+			we.waitForPresent(60000);
+			
+			
+			if (!pgs.textFind("1 Selected", "30", "80")) {
+			
+			we = (QAFExtendedWebElement) driver.findElement("messages.selectAllToDelete");
 			we.waitForPresent(60000);
 			we.click();
 			
-			
+			}
 			
 			we = (QAFExtendedWebElement) driver.findElement("messages.deleteButton");
 			we.waitForPresent(60000);
@@ -201,6 +223,71 @@ public class SmartFamilySteps extends WebDriverTestCase {
 
 			
 			String contactName = "Pete";
+			
+			
+
+			we = (QAFExtendedWebElement) driver.findElement("call.contacts.search");
+			we.waitForPresent(20000);
+			we.click();	
+			
+			Map<String, Object> params5 = new HashMap<>();
+			params5.put("label", "Search");
+			params5.put("text", contactName);
+			params5.put("screen.top", "0%");
+			params5.put("screen.height", "34%");
+			params5.put("screen.left", "0%");
+			params5.put("screen.width", "100%");
+			Object result5 = getDriver().executeScript("mobile:edit-text:set", params5);
+			
+			we = (QAFExtendedWebElement) driver.findElement("call.contactsResult");
+			we.waitForPresent(20000);
+			we.click();
+			
+			PerfectoApplicationSteps.waitFor(3);
+			
+			
+			we = (QAFExtendedWebElement) driver.findElement("call.callButton");
+			we.waitForPresent(20000);
+			we.click();
+		
+			
+
+
+
+	}
+
+	
+	@Given("^I call a forbidden friend on \"([^\"]*)\"$")
+	public void callaForbiddenFriend(String device) throws Exception {
+
+		String driverName = "perfecto";
+		if (device.equalsIgnoreCase("dut2")) {
+			driverName = "perfecto2";
+		}
+
+		PerfectoGenericSteps.switchToDriver(driverName);
+
+		String phoneApp = "Phone";
+		
+		try {
+			PerfectoApplicationSteps.closeAppByName(phoneApp);
+			PerfectoApplicationSteps.closeAppByName(phoneApp);
+		} catch (Exception ex) {
+
+		}
+		
+		PerfectoApplicationSteps.startAppByName(phoneApp);
+		
+		we = (QAFExtendedWebElement) driver.findElement("call.contacts");
+		PerfectoApplicationSteps.waitFor(10);
+		if (we.isPresent()) {
+			we.click();	
+		}
+		
+		
+
+			
+			String contactName = "Ted";
 			
 			
 

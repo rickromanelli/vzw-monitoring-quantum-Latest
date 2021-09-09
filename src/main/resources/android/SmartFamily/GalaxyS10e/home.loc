@@ -1,5 +1,2 @@
-home.available.txt=//*[@text="Available"]
-home.missedCall.decline=//*[@content-desc="Not now"]
-home.search=//*[@resource-id="ext-element-129"]
-home.contacts=//*[@resource-id="ext-element-100"]
-home.phoneApp.btn=//*[@content-desc="Phone"]
+home.child1=//*[@resource-id="com.verizon.familybase.parent:id/dashboard_actionbar_recycle_view"]/android.view.ViewGroup[1]
+home.child2=//*[@resource-id="com.verizon.familybase.parent:id/dashboard_actionbar_recycle_view"]/android.view.ViewGroup[2]

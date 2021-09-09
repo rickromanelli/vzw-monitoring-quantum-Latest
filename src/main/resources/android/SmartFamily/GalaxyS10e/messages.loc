@@ -5,6 +5,7 @@ messages.deleteButton=//*[@resource-id="com.samsung.android.messaging:id/delete"
 messages.searchButton = //*[@resource-id="com.samsung.android.messaging:id/action_search"]
 messages.searchField = //*[@resource-id="com.samsung.android.messaging:id/search_src_text"]
 messages.pete = //*[@resource-id="com.samsung.android.messaging:id/search_list_item"]
-messages.selectAllToSelete=//*[@resource-id="com.samsung.android.messaging:id/bubble_all_select_checkbox"]
+messages.selectAllToDelete=//*[@resource-id="com.samsung.android.messaging:id/bubble_all_select_checkbox"]
 messages.textField = //*[@resource-id="com.samsung.android.messaging:id/message_edit_text"]
+messages.2ndMessage = //*[@resource-id="com.samsung.android.messaging:id/bubble_list_view"]/android.widget.LinearLayout[2]
 messages.sendMessage = //*[@resource-id="com.samsung.android.messaging:id/send_button_container"]//*[@class="android.widget.RelativeLayout"]
