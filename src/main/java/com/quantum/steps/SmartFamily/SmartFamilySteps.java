@@ -56,6 +56,26 @@ public class SmartFamilySteps extends WebDriverTestCase {
 		
 			}
 	
+	
+	
+	
+	@Given("^I remain on webpage on \"([^\"]*)\"$")
+	public void RemainOnWebpage(String device) throws Exception {
+
+		String driverName = "perfecto";
+		if (device.equalsIgnoreCase("dut2")) {
+			driverName = "perfecto2";
+		}
+
+		PerfectoGenericSteps.switchToDriver(driverName);
+
+		
+		PerfectoApplicationSteps.waitFor(60);
+			}
+
+	
+	
+	
 	@Given("^I open Smart Family App on \"([^\"]*)\"$")
 	public void StartSmartFamily(String device) throws Exception {
 
