@@ -152,7 +152,33 @@ public class PerfectoSplunkSteps {
 
 	}
 	
-	//on Device: \"([^\"]*)\"
+	@Then("^SFScroll Transaction \"([^\"]*)\" description: \"([^\"]*)\" SLA: \"([^\"]*)\" - OCR Checkpoint: \"([^\"]*)\" Timeout: \"([^\"]*)\" Threshold: \"([^\"]*)\"$")
+	public void SFvisualOCRTimerScroll(String name, String desc, String SLA, String text, String timeout, String threshold)
+			throws Exception {
+
+		//SplunkHelper.testStepStart(name, desc);
+		startSplunkStep(name, desc);
+		Map<String, Object> params1 = new HashMap<>();
+		params1.put("content", text);
+		params1.put("source", "camera");
+		//params1.put("timeout", timeout);
+		params1.put("threshold", threshold);
+		params1.put("scrolling", "scroll");
+	    params1.put("next","SWIPE=(50%,85%),(50%,55%)");
+
+		Object result1 = SplunkHelper.getQAFDriver().executeScript("mobile:checkpoint:text", params1);
+
+		if (result1.toString().contains("true")) {
+
+		} else {
+
+			throw new Exception("Text not found!");
+
+		}
+
+		SplunkHelper.testStepEnd(Long.parseLong(SLA), name);
+
+	}
 	
 	@Then("^Transaction \"([^\"]*)\" description: \"([^\"]*)\" SLA: \"([^\"]*)\" - OCR Checkpoint: \"([^\"]*)\" or \"([^\']*)\" Timeout: \"([^\"]*)\" Threshold: \"([^\"]*)\"$")
 	public void visualOCRTimerShortOr(String name, String desc, String SLA, String text, String orText, String timeout, String threshold)
