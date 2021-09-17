@@ -25,7 +25,7 @@ Scenario: Smart_FamilyCallLimit
 	Then SFN Transaction: "Check for completed or blocked call" Description: "Did call go through to Blocked Number?" SLA: "6000" - Image checkpoint: "PUBLIC:TextDeniedCircle.png" Timeout: "60" Threshold: "80"
 	
 	@smartFamilyCheckScreenTime
-Scenario: Smart_CheckScreenTime
+Scenario: Smart_Family_CheckScreenTime
 	Then I toggle wifi "disabled" on "DUT1"
 	Then I toggle wifi "disabled" on "DUT2"
 	Then I get device time on "DUT2" 
