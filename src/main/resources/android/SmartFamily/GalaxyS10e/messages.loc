@@ -2,7 +2,7 @@ messages.menu=//*[@resource-id="com.samsung.android.messaging:id/composer_settin
 messages.deleteMessages=//*[@text="Delete messages"]
 messages.moveToTrash=//*[@resource-id="android:id/button1"]
 messages.deleteButton=//*[@resource-id="com.samsung.android.messaging:id/delete"]
-messages.searchButton = //*[@resource-id="com.samsung.android.messaging:id/action_search"]
+messages.searchButton =//*[@resource-id="com.samsung.android.messaging:id/action_search"]
 messages.searchField = //*[@resource-id="com.samsung.android.messaging:id/search_src_text"]
 messages.pete = //*[@resource-id="com.samsung.android.messaging:id/search_list_item"]
 messages.selectAllToDelete=//*[@resource-id="com.samsung.android.messaging:id/bubble_all_select_checkbox"]
