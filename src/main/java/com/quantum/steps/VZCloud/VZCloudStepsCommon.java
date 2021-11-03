@@ -85,12 +85,17 @@ public class VZCloudStepsCommon extends WebDriverTestCase {
 				we.click();
 
 				Map<String, Object> params1 = new HashMap<>();
-				params1.put("location", "224,741");
+				params1.put("location", "221,1016");
 				Object result1 = driver.executeScript("mobile:touch:tap", params1);
 
-				we = (QAFExtendedWebElement) driver.findElement("photos.selectmenu");
-				we.waitForPresent(20);
-				we.click();
+				try {
+					we = (QAFExtendedWebElement) driver.findElement("photos.selectmenu");
+					we.waitForPresent(20);
+					we.click();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 
 				pgs.textClick("Delete", "30", "70");
 				pgs.textFind("MOVE TO TRASH", "30", "70");
