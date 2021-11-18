@@ -93,6 +93,28 @@ public class SmartFamilySteps extends WebDriverTestCase {
 
 		}
 		PerfectoApplicationSteps.startAppByName("Smart Family");
+		
+		if(pgs.textFind("Aren't working at the moment.", "10", "80")) {
+			//fixConnection1();
+			throw new Exception("Child device disconnected!");
+		}
+	}
+	
+	public void fixConnection1() {
+		
+		we = (QAFExtendedWebElement) driver.findElement("home.fixbutton");
+		we.waitForPresent(20000);
+		we.click();
+		
+		we = (QAFExtendedWebElement) driver.findElement("home.fixConnection");
+		we.waitForPresent(20000);
+		we.click();
+		
+		we = (QAFExtendedWebElement) driver.findElement("home.fix.sendText");
+		we.waitForPresent(20000);
+		we.click();
+		
+		
 	}
 	
 	@Then("^I click on Friend on \"([^\"]*)\"$")

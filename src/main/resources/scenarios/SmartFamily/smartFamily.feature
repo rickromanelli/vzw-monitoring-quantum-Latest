@@ -59,6 +59,11 @@ Scenario: SmartFamily_Child_Location
 	Then I remain on webpage on "DUT2"
 	
 	
+	@smartFamilyChildConnectionLost
+Scenario: Trusted_and_untrusted_phone_numbers
+	Then I toggle wifi "disabled" on "DUT1"
+	Then I toggle wifi "disabled" on "DUT2"
+	Then I open Smart Family App on "DUT1"
 	
 	
 	
