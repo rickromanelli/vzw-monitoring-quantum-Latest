@@ -98,6 +98,12 @@ public class SmartFamilySteps extends WebDriverTestCase {
 			//fixConnection1();
 			throw new Exception("Child device disconnected!");
 		}
+		
+		if(pgs.textFind("Congratulations", "10", "80")) {
+			we = (QAFExtendedWebElement) driver.findElement("home.congratsOk");
+			we.waitForPresent(20000);
+			we.click();
+		}
 	}
 	
 	public void fixConnection1() {
