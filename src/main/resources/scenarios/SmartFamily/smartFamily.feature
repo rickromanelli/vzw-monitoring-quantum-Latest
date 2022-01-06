@@ -34,7 +34,7 @@ Scenario: Smart_Family_CheckScreenTime
 	Then Transaction "1 Smart Family Launched?" description: "Opening Smart Family Parent App" SLA: "60000" - OCR Checkpoint: "908.421." Timeout: "60" Threshold: "80"
 	Then I tap to view child "1" on "DUT1"
 	Then SFScroll Transaction "2 Screen time?" description: "Checking for Chrome" SLA: "60000" - OCR Checkpoint: "Chrome" Timeout: "60" Threshold: "90"
-	Then I tap to view child "1" on "DUT1"
+	Then I tap to view child "2" on "DUT1"
 	Then I go to webpage: "youtube.com" on "DUT2"
 	Then I remain on webpage on "DUT2"
 	
