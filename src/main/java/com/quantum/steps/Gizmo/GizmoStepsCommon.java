@@ -45,7 +45,7 @@ public class GizmoStepsCommon {
 		//we = (QAFExtendedWebElement) driver.findElement("menu.maps.button");
 		//we.click();
 		
-		pgs.imageClick("PUBLIC:Prod/Gizmo/MotoZ2-locateButton.png", "20", "85");
+		pgs.imageClick("PUBLIC:GalaxyA12-locateButton.png", "20", "85");
 	}
 	
 	@When("^I click to show location iPhone")
