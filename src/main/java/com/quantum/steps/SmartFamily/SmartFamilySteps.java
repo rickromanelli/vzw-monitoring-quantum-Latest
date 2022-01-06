@@ -36,6 +36,8 @@ public class SmartFamilySteps extends WebDriverTestCase {
 		if (device.equalsIgnoreCase("dut2")) {
 			driverName = "perfecto2";
 		}
+		
+		PerfectoGenericSteps.switchToDriver(driverName);
 
 		if (child.equalsIgnoreCase("1")) {
 			we = (QAFExtendedWebElement) driver.findElement("home.child1");
@@ -51,7 +53,7 @@ public class SmartFamilySteps extends WebDriverTestCase {
 		}
 		
 		
-		PerfectoGenericSteps.switchToDriver(driverName);
+
 
 		
 			}
@@ -106,7 +108,7 @@ public class SmartFamilySteps extends WebDriverTestCase {
 		}
 	}
 	
-	public void fixConnection1() {
+	public void fixConnection1() throws Exception {
 		
 		we = (QAFExtendedWebElement) driver.findElement("home.fixbutton");
 		we.waitForPresent(20000);
@@ -119,9 +121,56 @@ public class SmartFamilySteps extends WebDriverTestCase {
 		we = (QAFExtendedWebElement) driver.findElement("home.fix.sendText");
 		we.waitForPresent(20000);
 		we.click();
+		fixConnection2("DUT2");
 		
 		
 	}
+	
+	public void fixConnection2(String device) throws Exception {
+		
+		String driverName = "perfecto";
+		if (device.equalsIgnoreCase("dut2")) {
+			driverName = "perfecto2";
+		}
+
+		PerfectoGenericSteps.switchToDriver(driverName);
+		
+		try {
+			PerfectoApplicationSteps.closeAppByName("Messages");
+			PerfectoApplicationSteps.closeAppByName("Messages");
+		} catch (Exception ex) {
+
+		}
+		PerfectoApplicationSteps.startAppByName("Messages");
+		
+		pgs.textCheckpoint("Conversations", "30", "90");
+		
+		we = (QAFExtendedWebElement) driver.findElement("messages.searchButton");
+		we.waitForPresent(20000);
+		we.click();
+		
+		System.out.println((QAFExtendedWebElement) getDriver().findElement("messages.searchField"));
+		we = (QAFExtendedWebElement) getDriver().findElement("messages.searchField");
+		we.waitForPresent(20000);
+
+	
+		
+			we.sendKeys("900080002050");
+			
+			we = (QAFExtendedWebElement) driver.findElement("messages.smartFam");
+			we.waitForPresent(60000);
+			we.click();
+			
+			pgs.textClickHaystack("smartfamily.page.link", "20", "90", "0%", "63%", "37%", "100%");
+			
+			
+		
+		
+		//smartfamily.page.link
+		
+		
+	}
+	
 	
 	@Then("^I click on Friend on \"([^\"]*)\"$")
 	public void iClickOnFriend(String device) {
@@ -133,6 +182,7 @@ public class SmartFamilySteps extends WebDriverTestCase {
 		PerfectoGenericSteps.switchToDriver(driverName);
 
 
+		
 		
 	
 	}
