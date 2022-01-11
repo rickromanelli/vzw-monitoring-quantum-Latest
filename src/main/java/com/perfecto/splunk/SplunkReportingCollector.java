@@ -47,8 +47,7 @@ public class SplunkReportingCollector extends Reporting {
 		int secondaryCount = 1;
 		Gson gson = new GsonBuilder().enableComplexMapKeySerialization().disableHtmlEscaping().serializeNulls()
 				.create();
-		//Gson gson2 = new GsonBuilder().enableComplexMapKeySerialization().disableHtmlEscaping().
-		gson = new GsonBuilder().enableComplexMapKeySerialization().disableHtmlEscaping().serializeNulls().create();
+				gson = new GsonBuilder().enableComplexMapKeySerialization().disableHtmlEscaping().serializeNulls().create();
 		for (int i = 0; i < this.reportCollector.size(); i++) {
 			String jsonCompare = gson.toJson(this.reportCollector.get(i));
 			
@@ -67,9 +66,7 @@ public class SplunkReportingCollector extends Reporting {
 			} else if (jsonCompare.contains("\"testStatus\":\"Skip\"")) {
 				reportFinal.put("Secondary" + secondaryCount, oldValue);
 				secondaryCount = secondaryCount + 1;
-			//} else if (jsonCompare.contains("\"performanceStatus\":\"Fail\"")) {
-				//reportFinal.put("Secondary" + secondaryCount, oldValue);
-				//secondaryCount = secondaryCount + 1;
+		
 			} else if (!reportFinal.containsKey("Primary")) {
 				reportFinal.put("Primary", oldValue);
 			} else {
