@@ -1,0 +1,8 @@
+messages.newMessage=//*[@resource-id="com.samsung.android.messaging:id/fab_layout"]
+messages.recipientFrame=//*[@resource-id="com.samsung.android.messaging:id/bubble_list_view"]//*[@password="false"]
+messages.messageField=//*[@resource-id="com.samsung.android.messaging:id/edit_panel"]
+messages.sendButton=//*[@resource-id="com.samsung.android.messaging:id/send_buttons"]
+messages.menu=//*[@resource-id="com.samsung.android.messaging:id/composer_setting_button"]
+messages.deleteMessages=//*[@resource-id="com.samsung.android.messaging:id/composer_drawer_delete_conversation"]
+messages.selectAll2Delete=//*[@resource-id="com.samsung.android.messaging:id/bubble_all_select_checkbox"]
+messages.move2trashConfirm=//*[@resource-id="android:id/button1"]
