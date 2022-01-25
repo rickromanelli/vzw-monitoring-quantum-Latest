@@ -1,0 +1,6 @@
+menu.btn=//*[@content-desc="navigation menu"]
+menu.backupScreen=//*[@resource-id="com.vcast.mediamanager:id/status_icon"]
+menu.backupNow=//*[@resource-id="com.vcast.mediamanager:id/back_up_status"]
+menu.confirmDataUsage=//*[@resource-id="com.vcast.mediamanager:id/dialog_button_positive"]
+menu.confirmBackup=//*[@resource-id="com.vcast.mediamanager:id/backupStatusTextView"]
+menu.home=//*[@text="Home"]

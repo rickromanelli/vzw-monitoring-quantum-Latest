@@ -1,0 +1,6 @@
+photos.photo=//*[@resource-id="com.vcast.mediamanager:id/icon"]
+photos.menu=//*[@content-desc="OVERFLOW"]
+photos.select=//*[@text="Select Content"]
+photos.selectmenu=//*[@resource-id="com.vcast.mediamanager:id/action_mode_bar"]//*[@content-desc="OVERFLOW"]
+photos.menu.cloud=//*[@text="Verizon Cloud"]
+photos.trash.menu=//*[@content-desc="Verizon Cloud"]

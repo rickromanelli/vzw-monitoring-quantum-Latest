@@ -1,0 +1,3 @@
+home.title=//*[@resource-id="com.vcast.mediamanager:id/appTitle"]
+home.menu=//*[@content-desc="navigation menu"]
+home.home=//*[@text="Home"]
