@@ -3,6 +3,7 @@
  */
 package com.quantum.steps.CommonSteps;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -194,6 +195,9 @@ public class PerfectoSplunkSteps {
 		params1.put("threshold", threshold);
 		params1.put("source", "camera");
 		params1.put("timeout", timeout);
+		ArrayList genericOptions1 = new ArrayList();
+		genericOptions1.add("natural-language=true");
+		params1.put("ocr", genericOptions1);
 		
 		Object result1 = SplunkHelper.getQAFDriver().executeScript("mobile:checkpoint:text", params1);
 
