@@ -6,3 +6,8 @@ messages.menu=//*[@resource-id="com.samsung.android.messaging:id/composer_settin
 messages.deleteMessages=//*[@resource-id="com.samsung.android.messaging:id/composer_drawer_delete_conversation"]
 messages.selectAll2Delete=//*[@resource-id="com.samsung.android.messaging:id/bubble_all_select_checkbox"]
 messages.move2trashConfirm=//*[@resource-id="android:id/button1"]
+messages.deleteAll.hamburger=//*[@content-desc="More options"]
+messages.deleteAll.delete=//*[@text="Delete"]
+messages.deleteAll.selectAll=//*[@resource-id="com.samsung.android.messaging:id/select_all_checkbox"]
+messages.deleteAll.deleteAllButton=//*[@resource-id="com.samsung.android.messaging:id/delete"]
+messages.noMessages=//*[@resource-id="com.samsung.android.messaging:id/no_item_text"]

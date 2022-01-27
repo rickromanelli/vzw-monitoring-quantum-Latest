@@ -48,7 +48,6 @@ public class EmergencySteps extends WebDriverTestCase {
 		we.click();
 		
 		
-
 			
 			
 			we = (QAFExtendedWebElement) driver.findElement("messages.recipientFrame");
@@ -66,6 +65,7 @@ public class EmergencySteps extends WebDriverTestCase {
 			//params5.put("screen.width", "100%");
 			Object result5 = getDriver().executeScript("mobile:edit-text:set", params5);
 			
+			//iDelete922Messages();
 			
 			we = (QAFExtendedWebElement) driver.findElement("messages.messageField");
 			we.waitForPresent(60000);
@@ -99,8 +99,77 @@ public class EmergencySteps extends WebDriverTestCase {
 
 	}
 	
+	@Then("^I delete All messages")
+	public void iDeleteAllMessages() throws Exception {
+		
+		try {
+			PerfectoApplicationSteps.closeAppByName("Messages");
+			PerfectoApplicationSteps.closeAppByName("Messages");
+		} catch (Exception ex) {
+
+		}
+		PerfectoApplicationSteps.startAppByName("Messages");
+		
+		pgs.textCheckpoint("Conversations", "30", "90");
+		
+		we = (QAFExtendedWebElement) driver.findElement("messages.noMessages");
+		
+		
+		
+		if(we.isPresent()){
+			
+		} else {
+
+		we = (QAFExtendedWebElement) driver.findElement("messages.deleteAll.hamburger");
+		we.waitForPresent(60000);
+		we.click();
+		
+		we = (QAFExtendedWebElement) driver.findElement("messages.deleteAll.delete");
+		we.waitForPresent(60000);
+		we.click();
+		
+		
+		we = (QAFExtendedWebElement) driver.findElement("messages.deleteAll.deleteAllButton");
+		
+		
+		if(we.isPresent()){
+			
+			
+			
+		} else {
+			we = (QAFExtendedWebElement) driver.findElement("messages.deleteAll.selectAll");
+			we.waitForPresent(60000);
+			we.click();
+		}
+		
+		
+
+		
+		we = (QAFExtendedWebElement) driver.findElement("messages.deleteAll.deleteAllButton");
+		we.waitForPresent(60000);
+		we.click();
+		
+		we = (QAFExtendedWebElement) driver.findElement("messages.move2trashConfirm");
+		we.waitForPresent(60000);
+		we.click();
+		
+		}
+		
+		
+		try {
+			PerfectoApplicationSteps.closeAppByName("Messages");
+			PerfectoApplicationSteps.closeAppByName("Messages");
+		} catch (Exception ex) {
+
+		}
+
+	}
+	
 	@Then("^I delete 922 messages")
 	public void iDelete922Messages() throws Exception {
+		
+		
+		
 
 		we = (QAFExtendedWebElement) driver.findElement("messages.menu");
 		we.waitForPresent(60000);
