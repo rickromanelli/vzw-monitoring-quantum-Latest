@@ -5,6 +5,7 @@ package com.quantum.steps.Push2Talk;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import com.qmetry.qaf.automation.core.ConfigurationManager;
@@ -370,6 +371,15 @@ public class Push2TalkStepsPhone {
 		// params3.put("index", "2");
 		Object result3 = getDriver().executeScript("mobile:button-text:click", params3);
 
+		Map<String, Object> params33 = new HashMap<>();
+		params33.put("label", "Brigadier");
+		params33.put("timeout", "20");
+		params33.put("threshold", "80");
+		// params3.put("index", "2");
+		Object result33 = getDriver().executeScript("mobile:button-text:click", params33);
+		
+		 //DeviceUtils.getQAFDriver().executeScript("mobile:button-text:click", params33);
+
 		/*
 		 * we = (QAFExtendedWebElement) driver.findElement("contacts.result");
 		 * we.waitForPresent(20000); we.click();
@@ -497,15 +507,34 @@ public class Push2TalkStepsPhone {
 		PerfectoGenericSteps.switchToDriver(driverName);
 		PerfectoSplunkSteps pss = new PerfectoSplunkSteps();
 		pss.startSplunkStep(name, desc);
+		
+		
+		Map<String, Object> params = new HashMap<>();
+		Object audUrl = (String) SplunkHelper.getQAFDriver().executeScript("mobile:audio.recording:start", params);
 
-		Map<String, Object> params11 = new HashMap<>();
+		
+		Map<String, Object> params3 = new HashMap<>();
+		params3.put("deviceAudio", "URL");
+		params3.put("key", "PUBLIC:VM2TXT3.mp3");
+		params3.put("threshold", "3.0");
+		params3.put("profile", "voip");
+		params3.put("deviceAudio.silenceTrimming.type", "absolute");
+		params3.put("deviceAudio.silenceTrimming.level", "0");
+		params3.put("deviceAudio.calibration", "");
+		List<String> genericOptions3 = new ArrayList<>();
+		genericOptions3.add("");
+		//params3.put("generic", genericOptions3);
+		Object result3 = SplunkHelper.getQAFDriver().executeScript("mobile:audio:validation", params3);
+		
+
+		/*Map<String, Object> params11 = new HashMap<>();
 
 		params11.put("volume", volume);
 		params11.put("timeout", timeout);
 		params11.put("duration", duration);
-		Object result11 = SplunkHelper.getQAFDriver().executeScript("mobile:checkpoint:audio", params11);
+		Object result11 = SplunkHelper.getQAFDriver().executeScript("mobile:checkpoint:audio", params11);*/
 
-		if (!result11.toString().equals("true")) {
+		if (!result3.toString().equals("true")) {
 			throw new Exception("Audio wasn't received");
 		}
 

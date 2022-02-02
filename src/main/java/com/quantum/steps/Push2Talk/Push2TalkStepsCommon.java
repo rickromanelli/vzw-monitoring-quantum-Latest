@@ -23,8 +23,11 @@ import cucumber.api.java.en.Given;
 public class Push2TalkStepsCommon extends WebDriverTestCase {
 	QAFExtendedWebDriver driver = new WebDriverTestBase().getDriver();
 	QAFExtendedWebElement we;
+	
+	PerfectoGenericSteps pgs = new PerfectoGenericSteps();
 
 	public void cleanAndStartApp(boolean clean) {
+		
 
 		if (clean) {
 			PerfectoApplicationSteps.cleanAppByName("Push To Talk+");
@@ -96,10 +99,31 @@ public class Push2TalkStepsCommon extends WebDriverTestCase {
 			}
 		}
 		
+		}
+		
+		//Activation Required to be tested next time needed
+		
+	if(pgs.textFind("Activation Required", "30", "90")) {
+			
+			we = (QAFExtendedWebElement) driver.findElement("home.confirmYes");
+			we.waitForPresent(40000);
+			we.click();
+			
+			if(pgs.textFind("Customer Agreement", "30", "90")) {
+				pgs.imageClick("PUBLIC:PTTPlusAcceptConditions.png", "30", "90");
+				
+				if(pgs.textFind("Skip tutorial", "30", "90")) {
+					pgs.textClick("Skip tutorial", "30", "90");
+				}
+			}
+			
+			
+			//PUBLIC:PTTPlusAcceptConditions.png
+		}
 	
 		we = (QAFExtendedWebElement) driver.findElement("home.available.txt");
 		we.waitForPresent(40000);
-		}
+	
 		
 		System.out.println("FFFFFFFFFFFFFFFFFFFFF:" + driverName);
 		setPTTContactNames(driverName);
