@@ -18,6 +18,7 @@ import com.quantum.steps.CommonSteps.PerfectoGenericSteps;
 import com.quantum.utils.DeviceUtils;
 
 import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
 
 @QAFTestStepProvider
 public class Push2TalkStepsCommon extends WebDriverTestCase {
@@ -197,5 +198,29 @@ public class Push2TalkStepsCommon extends WebDriverTestCase {
 		System.out.println("Name2:" + ConfigurationManager.getBundle().getString("contactName2"));
 		
 	}
+	
+	@Then("^I click PTTPlus \"([^\"]*)\" on \"([^\"]*)\"$")
+	public void iclickPTTPlusGroups(String group, String device) throws Exception {
+		
+		String driverName = "perfecto";
+		if (device.equalsIgnoreCase("dut2")) {
+			driverName = "perfecto2";
+		}
+
+		PerfectoGenericSteps.switchToDriver(driverName);
+		
+		we = (QAFExtendedWebElement) driver.findElement("home.groups");
+		we.waitForPresent(20000);
+		we.click();
+	
+		
+		if(group.equalsIgnoreCase("ASP-ONE")) {
+			pgs.textClick("ASP-ONE", "20", "100");
+		} else { 
+			pgs.textClick("ASP-TWO", "20", "100");
+		}
+		
+	}
+
 
 }

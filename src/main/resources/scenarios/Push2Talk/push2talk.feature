@@ -398,7 +398,7 @@ Scenario: Push_to_Talk_image_Galaxy2iPhone
 	Then Transaction "1 PTT opened?" description: "Did PTT App open DUT1?" SLA: "60000" - OCR Checkpoint: "Available" Timeout: "30" Threshold: "90"
 	Then I open Push2Talk on "DUT2"	
 	Then Transaction "2 PTT opened?" description: "Did PTT App open DUT2?" SLA: "60000" - OCR Checkpoint: "Available" Timeout: "30" Threshold: "90"
-	Then I click PTT "ASP-TWO" on "DUT1"
+	Then I click PTTPlus "ASP-TWO" on "DUT1"
 	Then Transaction "3 Group visible?" description: "Did PTT group 2 show DUT2?" SLA: "60000" - OCR Checkpoint: "ASP-TWO" Timeout: "30" Threshold: "90"
 	Then I click to call on "DUT1"
 	Then Transaction "4 Call Received?" call received on "DUT2" SLA: "60000"
