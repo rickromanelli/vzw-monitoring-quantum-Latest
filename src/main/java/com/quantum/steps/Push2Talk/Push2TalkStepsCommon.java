@@ -103,7 +103,7 @@ public class Push2TalkStepsCommon extends WebDriverTestCase {
 		
 		//Activation Required to be tested next time needed
 		
-	if(pgs.textFind("Activation Required", "30", "90")) {
+	/*if(pgs.textFind("Activation Required", "30", "90")) {
 			
 			we = (QAFExtendedWebElement) driver.findElement("home.confirmYes");
 			we.waitForPresent(40000);
@@ -119,7 +119,7 @@ public class Push2TalkStepsCommon extends WebDriverTestCase {
 			
 			
 			//PUBLIC:PTTPlusAcceptConditions.png
-		}
+		}*/
 	
 		we = (QAFExtendedWebElement) driver.findElement("home.available.txt");
 		we.waitForPresent(40000);
