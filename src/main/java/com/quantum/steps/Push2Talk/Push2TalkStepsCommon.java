@@ -121,8 +121,8 @@ public class Push2TalkStepsCommon extends WebDriverTestCase {
 			//PUBLIC:PTTPlusAcceptConditions.png
 		}*/
 	
-		we = (QAFExtendedWebElement) driver.findElement("home.available.txt");
-		we.waitForPresent(40000);
+		//we = (QAFExtendedWebElement) driver.findElement("home.available.txt");
+		//we.waitForPresent(40000);
 	
 		
 		System.out.println("FFFFFFFFFFFFFFFFFFFFF:" + driverName);
