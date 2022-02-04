@@ -52,7 +52,7 @@ public class SmartFamilySteps extends WebDriverTestCase {
 			
 		}
 		
-		
+		//fixConnection1();
 
 
 		
@@ -437,7 +437,7 @@ public class SmartFamilySteps extends WebDriverTestCase {
 		
 		int currentHour = phoneTime.getHour();
 		
-		if((currentHour > 14) && (currentHour < 2)) {
+		if((currentHour > 14) || (currentHour < 2)) {
 			System.out.println("Ok to use phone");
 			ConfigurationManager.getBundle().setProperty("freePhoneTime", "YES");
 		}
