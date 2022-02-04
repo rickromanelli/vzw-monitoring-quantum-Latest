@@ -391,6 +391,24 @@ Scenario: Push_to_Talk_image_Galaxy2iPhone
 	#Then I click on phone contact on "DUT2" Turbo
 	Then I delete messages on "DUT2"
 	
+	@push2talkDuraForce2GalaxyGroup1
+	Scenario: Push_to_Talk_DuraForce_2_Galaxy_Group1
+	Then I open Push2Talk on "DUT1"
+	Then Transaction "1 PTT opened?" description: "Did PTT App open DUT1?" SLA: "60000" - OCR Checkpoint: "Available" Timeout: "30" Threshold: "90"
+	Then I open Push2Talk on "DUT2"	
+	Then Transaction "2 PTT opened?" description: "Did PTT App open DUT2?" SLA: "60000" - OCR Checkpoint: "Available" Timeout: "30" Threshold: "90"
+	Then I click PTTPlus "ASP-ONE" on "DUT1"
+	Then Transaction "3 Group visible?" description: "Did PTT group 1 show DUT2?" SLA: "60000" - OCR Checkpoint: "ASP-ONE" Timeout: "30" Threshold: "90"
+	Then I click to call on "DUT1"
+	Then Transaction "4 Call Received?" call received on "DUT2" SLA: "60000"
+	Then I click to call on "DUT2"
+	Then Transaction "6 Call Received?" call received on "DUT1" SLA: "100000"
+	Then I inject audio file "PUBLIC:VM2TXT3.mp3" on "DUT2"
+	Then I send audio on "DUT2"	
+	Then I stop sending audio on "DUT2"
+	Then I click to end call on "DUT2"
+	
+	
 	
 	@push2talkDuraForce2GalaxyGroup2
 	Scenario: Push_to_Talk_DuraForce_2_Galaxy_Group2
