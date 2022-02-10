@@ -226,7 +226,45 @@ public class PerfectoGenericSteps {
 			}
 			
 
+		} else if (model.equals("Galaxy A12")) {
+			String phoneApp = "Phone";
+			
+			try {
+				PerfectoApplicationSteps.closeAppByName(phoneApp);
+				PerfectoApplicationSteps.closeAppByName(phoneApp);
+			} catch (Exception ex) {
 
+			}
+
+			PerfectoApplicationSteps.startAppByName(phoneApp);
+
+			we = (QAFExtendedWebElement) driver.findElement("call.dailTab");
+			PerfectoApplicationSteps.waitFor(10);
+			if (we.isPresent()) {
+				we.click();	
+			}
+			
+
+			we = (QAFExtendedWebElement) driver.findElement("call.deleteDigit");
+			
+			for (int i = 0; i < phNums.length; ++i) {
+				if (we.isPresent()) {
+
+					we.click();
+				} else {
+					break;
+				}
+			}
+
+			we = (QAFExtendedWebElement) driver.findElement("call.phNumField");
+			we.waitForPresent(20000);
+			we.click();
+			we.sendKeys(phNum);
+
+			PerfectoApplicationSteps.waitFor(10);
+			we = (QAFExtendedWebElement) driver.findElement("call.callButton");
+			we.waitForPresent(20000);
+			we.click();
 			
 		} else {
 
@@ -337,20 +375,7 @@ public class PerfectoGenericSteps {
 		
 		switch (model) {
 
-		case "Z30":
-
-			try {
-				imageClick("PUBLIC:Prod/Util/Resets/Blackberry/BB10Call.png", "20", "85");
-				if (imageFindHaystack("PUBLIC:Prod/International/dialPadWhite.png", "30", "80", "0%", "43%", "57%",
-						"100%")) {
-
-					imageClick("PUBLIC:Prod/International/dialPadWhite.png", "20", "85");
-				}
-			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			break;
+		
 			
 		case "9930":
 		
@@ -386,7 +411,7 @@ public class PerfectoGenericSteps {
 			
 			break;
 
-		case "Galaxy S8":
+		case "Galaxy A12":
 
 			String phoneApp = "Contacts";
 			

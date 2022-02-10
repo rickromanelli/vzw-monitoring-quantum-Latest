@@ -1,0 +1,8 @@
+call.callButton=//*[@resource-id="com.samsung.android.dialer:id/dialButton"]
+call.clickToEndCall=//*[@resource-id="com.samsung.android.incallui:id/voice_disconnect_button"]
+call.speakerOff=//*[@content-desc="speaker off,"]
+call.dailTab=//*[@text="Keypad"]
+call.phNumField=//*[@resource-id="com.samsung.android.dialer:id/digits"]
+call.digit=//*[@resource-id='com.samsung.android.dialer:id/dialpad_key_number' and @text='%s']
+call.contacts=//*[translate(@text,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz') = 'contacts']
+
