@@ -26,6 +26,7 @@ Scenario: Roaming_iPhone_UK
 	@roamingiPhoneseCA
 Scenario: Roaming_iPhoneSE_CA
 	Then I open phone App on "DUT2"
+	Then I close application by name "Contacts"
 	Then I open phone App on "DUT1"
 	Then I call "DUT2" from "DUT1"
 	Then Transaction: "1 Call succeeded?" on Device: "DUT2" Description: "Did DUT2 receive the call?" SLA: "60000" - OCR checkpoint: "Incoming Call" Timeout: "60" Threshold: "90"
@@ -36,6 +37,7 @@ Scenario: Roaming_iPhoneSE_CA
 	@roamingiPhoneseMX
 Scenario: Roaming_iPhoneSE_MX
 	Then I open phone App on "DUT2"
+	Then I close application by name "Contacts"
 	Then I open phone App on "DUT1"
 	Then I call "DUT2" from "DUT1"
 	Then Transaction: "1 Call succeeded?" on Device: "DUT2" Description: "Did DUT2 receive the call?" SLA: "60000" - OCR checkpoint: "Incoming Call" Timeout: "60" Threshold: "90"
@@ -46,6 +48,7 @@ Scenario: Roaming_iPhoneSE_MX
 	@roamingiPhoneCA
 Scenario: Roaming_iPhone_Canada
 	Then I open phone App on "DUT2"
+	Then I close application by name "Contacts"
 	Then I open phone App on "DUT1"
 	Then I call "DUT2" from "DUT1"
 	Then Transaction: "1 Call succeeded?" on Device: "DUT2" Description: "Did DUT2 receive the call?" SLA: "60000" - OCR checkpoint: "Incoming Call" Timeout: "60" Threshold: "90"
@@ -53,18 +56,6 @@ Scenario: Roaming_iPhone_Canada
 	Then I go to webpage: "google.com" on "DUT1"
 	Then Transaction "2 Did Webpage open?" description: "Google webpage opened" SLA: "60000" - OCR Checkpoint: "IMAGES" Timeout: "60" Threshold: "90"
 
-@roamingMotoZCA
-Scenario: Roaming_Moto_Z_Canada
-	#Then I go to the device home screen
-	Then I open phone App on "DUT2"
-	Then I open phone App on "DUT1"
-	Then I call "DUT2" from "DUT1"
-	Then Transaction: "1 Call succeeded?" on Device: "DUT2" Description: "Did DUT2 receive the call?" SLA: "60000" - OCR checkpoint: "Incoming call" Timeout: "60" Threshold: "90"
-	Then I click to end call on "DUT1"
-	Then I go to webpage: "google.com" on "DUT1"
-	Then Transaction "2 Did Webpage open?" description: "Google webpage opened" SLA: "60000" - OCR Checkpoint: "IMAGES" Timeout: "60" Threshold: "90"
-	
-	
 @roamingiPhoneMX
 Scenario: Roaming_iPhone_Mexico
 	Then I open phone App on "DUT2"
@@ -75,21 +66,13 @@ Scenario: Roaming_iPhone_Mexico
 	Then I go to webpage: "google.com" on "DUT1"
 	Then Transaction "2 Did Webpage open?" description: "Google webpage opened" SLA: "60000" - OCR Checkpoint: "IMAGES" Timeout: "60" Threshold: "90"
 	
-	@roamingiPhoneBr
-	Scenario: Roaming_iPhone_Brazil
-	Then I open phone App on "DUT2"
-	Then I open phone App on "DUT1"
-	Then I call "DUT2" from "DUT1"
-	Then Transaction: "1 Call succeeded?" on Device: "DUT2" Description: "Did DUT2 receive the call?" SLA: "60000" - OCR checkpoint: "Incoming Call" Timeout: "30" Threshold: "90"
-	Then I click to end roaming call on "DUT1"
-	Then I go to webpage: "google.com" on "DUT1"
-	Then Transaction "2 Did Webpage open?" description: "Google webpage opened" SLA: "60000" - OCR Checkpoint: "IMAGES" Timeout: "60" Threshold: "90"
 	
 	@roamingGalaxyS10UK
 Scenario: Roaming_Galaxy_S10_UK
 	Then I toggle wifi "disabled" on "DUT1"
 	Then I toggle wifi "disabled" on "DUT2"
 	Then I open phone App on "DUT2"
+	Then I close application by name "Contacts"
 	Then I open phone App on "DUT1"
 	Then I call "DUT2" from "DUT1"
 	Then Transaction: "1 Call succeeded?" on Device: "DUT2" Description: "Did DUT2 receive the call?" SLA: "60000" - OCR checkpoint: "Incoming Call" Timeout: "30" Threshold: "90"
@@ -97,19 +80,7 @@ Scenario: Roaming_Galaxy_S10_UK
 	Then I go to webpage: "google.com" on "DUT1"
 	Then Transaction "2 Did Webpage open?" description: "Google webpage opened" SLA: "60000" - OCR Checkpoint: "IMAGES" Timeout: "60" Threshold: "90"
 	
-	@roamingGalaxyS10Brazil
-Scenario: Roaming_Galaxy_S10_Brazil
-	Then I toggle wifi "disabled" on "DUT1"
-	Then I toggle wifi "disabled" on "DUT2"
-	Then I open phone App on "DUT2"
-	Then I open phone App on "DUT1"
-	Then I call "DUT2" from "DUT1"
-	Then Transaction: "1 Call succeeded?" on Device: "DUT2" Description: "Did DUT2 receive the call?" SLA: "60000" - OCR checkpoint: "Incoming Call" Timeout: "30" Threshold: "90"
-	Then I click to end call on "DUT1"
-	Then I go to webpage: "google.com" on "DUT1"
-	Then Transaction "2 Did Webpage open?" description: "Google webpage opened" SLA: "60000" - OCR Checkpoint: "IMAGES" Timeout: "60" Threshold: "90"
-	
-	
+
 	@roamingGalaxyS8MX
 Scenario: Roaming_Galaxy_S8_Mexico
 	Then I toggle wifi "disabled" on "DUT1"
