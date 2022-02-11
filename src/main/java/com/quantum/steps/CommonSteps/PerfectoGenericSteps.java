@@ -410,10 +410,34 @@ public class PerfectoGenericSteps {
 			
 			
 			break;
+			
+		case "Galaxy S8":
+
+			String phoneApp = "Contacts";
+			
+			
+			//if (imageFindHaystack("PUBLIC:Prod/International/PhoneappButtonS8.png", "30", "90", "0%", "0%", "100%", "100%")) {
+			//	imageClick("PUBLIC:Prod/International/PhoneappButtonS8.png", "30", "90");
+			//}
+			
+			try {
+				PerfectoApplicationSteps.closeAppByName(phoneApp);
+				PerfectoApplicationSteps.closeAppByName(phoneApp);
+			} catch (Exception ex) {
+
+			}
+
+			PerfectoApplicationSteps.startAppByName(phoneApp);
+
+			
+
+			break;
+		
+
 
 		case "Galaxy A12":
 
-			String phoneApp = "Contacts";
+			phoneApp = "Contacts";
 			
 			
 			//if (imageFindHaystack("PUBLIC:Prod/International/PhoneappButtonS8.png", "30", "90", "0%", "0%", "100%", "100%")) {
