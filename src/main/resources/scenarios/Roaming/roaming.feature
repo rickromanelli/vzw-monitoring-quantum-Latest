@@ -15,7 +15,7 @@ Scenario: Roaming_iPhone_China
 	@roamingiPhoneUK
 Scenario: Roaming_iPhone_UK
 	Then I open phone App on "DUT2"
-	Then I close application by name "Phone"
+	Then I close application by name "Contacts"
 	Then I open phone App on "DUT1"
 	Then I call "DUT2" from "DUT1"
 	Then Transaction: "1 Call succeeded?" on Device: "DUT2" Description: "Did DUT2 receive the call?" SLA: "60000" - OCR checkpoint: "Incoming Call" Timeout: "60" Threshold: "90"
