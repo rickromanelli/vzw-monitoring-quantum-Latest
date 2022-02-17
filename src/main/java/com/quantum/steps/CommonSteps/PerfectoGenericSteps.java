@@ -998,7 +998,7 @@ public class PerfectoGenericSteps {
 			Object result1 = getDriver().executeScript("mobile:button-text:click", params1);
 			
 			
-		} else if (model.equals("Galaxy S10") || model.equals("Galaxy S10e")) {
+		} else if (model.equals("Galaxy S10") || model.equals("Galaxy S10e") || model.equals("Galaxy A12")) {
 					Map<String, Object> params = new HashMap<>();
 
 					
@@ -1017,7 +1017,7 @@ public class PerfectoGenericSteps {
 					we.sendKeys(url);Map<String, Object> params1 = new HashMap<>();
 					params1.put("label", "Go");
 					params1.put("timeout", "20");
-					params1.put("threshold", "100");
+					params1.put("threshold", "80");
 					params1.put("screen.top", "78%");
 					params1.put("screen.height", "22%");
 					params1.put("screen.left", "57%");
