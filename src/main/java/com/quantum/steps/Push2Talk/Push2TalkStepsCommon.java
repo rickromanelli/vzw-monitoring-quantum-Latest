@@ -167,8 +167,7 @@ public class Push2TalkStepsCommon extends WebDriverTestCase {
 		//S8
 		case "988B5C413545374847" : ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "5140");
 		break;
-		case "988B9A38575930324C" : ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "4924");
-		break;	
+		
 		case "988B5C3151455A4B58" : ConfigurationManager.getBundle().setProperty("contactName"  + dutNum, "5192");
 		break;
 		case "988B5A484145415247" : ConfigurationManager.getBundle().setProperty("contactName"  + dutNum, "9043");
@@ -190,6 +189,11 @@ public class Push2TalkStepsCommon extends WebDriverTestCase {
 		case "AB69BFE31667FD7BE05DB7B97B90A6FEFE7B9EBA" : ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "2413");
 		break;
 		case "C16BF6D623E5F282E53E44EBFE55ED63B6E0B43F" : ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "9460");
+		break;
+		//Galaxy A12
+		case "R58RA0EDD2N" : ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "4924");
+		break;
+		case "R58RA0EE3MJ" : ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "9460");
 		break;
 		default: break;
 		}
