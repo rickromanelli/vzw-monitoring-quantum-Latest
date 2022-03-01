@@ -1,4 +1,3 @@
-#ios
 call.callButton=//*[@label="mobile, Call"]
 call.clickToEndCall=//*[@label="End call"]
 call.speakerOff=//*[@content-desc="speaker off,"]
