@@ -1,0 +1,8 @@
+inbox.trash=//*[@resource-id="com.lge.vvm:id/addBtnInboxDelete"]
+inbox.selectAll=//*[@resource-id="com.samsung.vvm:id/navigation_bar"]
+inbox.delete=//*[@resource-id="com.samsung.vvm:id/bottom_delete"]
+inbox.yesDelete=//*[@resource-id="android:id/button1"]
+inbox.vmMessage=//*[@resource-id="com.samsung.vvm:id/message_item"]
+inbox.vmList=//*[@resource-id="android:id/list"]
+inbox.hamburger=//*[@content-desc="More options"]
+inbox.editList=//*[@text="Edit"]

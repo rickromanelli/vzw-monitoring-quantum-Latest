@@ -109,9 +109,17 @@ public class VVMStepsPhone {
 
 		PerfectoGenericSteps.switchToDriver(driverName);
 		
-		we = (QAFExtendedWebElement) driver.findElement("inbox.trash");
+		we = (QAFExtendedWebElement) driver.findElement("inbox.vmList");
 
 		if (we.isPresent()) {
+			
+			we = (QAFExtendedWebElement) driver.findElement("inbox.hamburger");
+			
+			we.waitForPresent(20000);
+			we.click();
+
+			we = (QAFExtendedWebElement) driver.findElement("inbox.editList");
+
 			we.waitForPresent(20000);
 			we.click();
 
@@ -124,7 +132,7 @@ public class VVMStepsPhone {
 
 			we.waitForPresent(20000);
 			we.click();
-
+			
 			we = (QAFExtendedWebElement) driver.findElement("inbox.yesDelete");
 
 			we.waitForPresent(20000);
@@ -137,7 +145,7 @@ public class VVMStepsPhone {
 	}
 
 	@Then("^I ignore call on \"([^\"]*)\"$")
-	public void iIgnoreCallOn(String device) {
+	public void iIgnoreCallOn(String device) throws Exception {
 
 		String driverName = "perfecto";
 		if (device.equalsIgnoreCase("dut2")) {
@@ -145,11 +153,28 @@ public class VVMStepsPhone {
 		}
 
 		PerfectoGenericSteps.switchToDriver(driverName);
+		
+		
+		pgs.textFind("Incoming Call", "40", "80");
+		
+		
+		/*Map<String, Object> params = new HashMap<>();
+		params.put("start", "563,1317");
+		params.put("end", "563,674");
+		params.put("duration", "3");
+		Object res = driver.executeScript("mobile:touch:swipe", params);
+		
+		Map<String, Object> params5 = new HashMap<>();
+		params5.put("label", "PUBLIC:ignoreButtonGalaxyA12.png");
+		params5.put("timeout", "60");
+		params5.put("threshold", "90");
+		Object result5 = getDriver().executeScript("mobile:button-image:click", params5);
 
-		we = (QAFExtendedWebElement) driver.findElement("call.ignore");
+*/
+		//we = (QAFExtendedWebElement) driver.findElement("call.ignore");
 
-		we.waitForPresent(20000);
-		we.click();
+		//we.waitForPresent(20000);
+		//we.click();
 
 	}
 
@@ -183,7 +208,7 @@ public void iClickVoicemailMessage(String device) throws InterruptedException {
 
 		PerfectoGenericSteps pgs = new PerfectoGenericSteps();
 
-		we.waitForPresent(6000);
+		we.waitForPresent(30000);
 		PerfectoApplicationSteps.waitFor(18);
 		pgs.injectAudio(repo, device);
 		PerfectoApplicationSteps.waitFor(10);
