@@ -182,10 +182,6 @@ public class Push2TalkStepsCommon extends WebDriverTestCase {
 		break;
 		case "31D4632F6CA8F7417734A08B8E1DF7C1995C0840" : ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "7493");
 		break;
-		case "FB9D601560B829B2B1AE615B86D5963DA80DE928" : ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "1379");
-		break;
-		case "233CFDB6B9E44FCFAC45562D37C92E5B8E84FA88" : ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "9869");
-		break;
 		
 		case "C16BF6D623E5F282E53E44EBFE55ED63B6E0B43F" : ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "9460");
 		break;
@@ -195,6 +191,13 @@ public class Push2TalkStepsCommon extends WebDriverTestCase {
 		case "R58RA0EE3MJ" : ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "9460");
 		break;
 		//iPhone 12 Mini
+		case "00008101-000D0C901AB9003A" : ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "9869");
+		break;
+		
+		case "00008101-001A3424140A001E" : ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "1379");
+		break;
+		
+		
 		case "00008101-000161E82242001E" : ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "2413");
 		break;
 		default: break;
