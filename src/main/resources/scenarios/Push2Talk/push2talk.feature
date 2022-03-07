@@ -406,7 +406,7 @@ Scenario: Push_to_Talk_image_Galaxy2iPhone
 	Then I click to end call on "DUT2"
 	
 	@push2talkDuraForce2iPhoneGroup1
-	Scenario: Push_to_Talk_DuraForce_2_Sonim_Group1
+	Scenario: Push_to_Talk_DuraForce_2_iPhone_Group1
 	Then I open Push2Talk on "DUT1"
 	Then Transaction "1 PTT opened?" description: "Did PTT App open DUT1?" SLA: "60000" - OCR Checkpoint: "Available" Timeout: "30" Threshold: "90"
 	Then I open Push2Talk on "DUT2"	
@@ -423,7 +423,7 @@ Scenario: Push_to_Talk_image_Galaxy2iPhone
 	Then I click to end call on "DUT2"
 	
 	@push2talkDuraForce2iPhoneGroup2
-	Scenario: Push_to_Talk_DuraForce_2_Sonim_Group2
+	Scenario: Push_to_Talk_DuraForce_2_iPhone_Group2
 	Then I open Push2Talk on "DUT1"
 	Then Transaction "1 PTT opened?" description: "Did PTT App open DUT1?" SLA: "60000" - OCR Checkpoint: "Available" Timeout: "30" Threshold: "90"
 	Then I open Push2Talk on "DUT2"	
