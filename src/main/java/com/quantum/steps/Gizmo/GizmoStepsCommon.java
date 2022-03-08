@@ -51,7 +51,7 @@ public class GizmoStepsCommon {
 	@When("^I click to show location iPhone")
 	public void showLocationiPhoneGizmoApp() throws Exception {
 		
-		pgs.imageClick("PUBLIC:Prod/Gizmo/iPhonelocateButton.png", "20", "85");
+		pgs.imageClick("PUBLIC:GizmoChildLocator-iPhone12Mini.png", "20", "85");
 		
 	}
 	
