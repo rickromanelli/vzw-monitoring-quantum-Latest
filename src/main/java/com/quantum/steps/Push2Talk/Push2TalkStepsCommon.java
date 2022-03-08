@@ -178,8 +178,7 @@ public class Push2TalkStepsCommon extends WebDriverTestCase {
 		case "R38MA0KD4JJ" : ConfigurationManager.getBundle().setProperty("contactName"  + dutNum, "8680");
 		break;
 		//iP7
-		case "9958153C7DC2380B9D68690989B7AC5E973964AB" : ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "1203");
-		break;
+		
 		case "31D4632F6CA8F7417734A08B8E1DF7C1995C0840" : ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "7493");
 		break;
 		
@@ -197,10 +196,17 @@ public class Push2TalkStepsCommon extends WebDriverTestCase {
 		case "00008101-001A3424140A001E" : ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "1379");
 		break;
 		
+		case "00008101-000C75800E80001E" : ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "1203");
+		break;
+		
+		case "00008101-000545642EF8001E" : ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "5262");
+		break;
 		
 		case "00008101-000161E82242001E" : ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "2413");
 		break;
 		default: break;
+		
+		
 		}
 	
 		System.out.println("Name1:" + ConfigurationManager.getBundle().getString("contactName1"));
