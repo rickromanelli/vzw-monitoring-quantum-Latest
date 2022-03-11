@@ -112,7 +112,7 @@ public class VVMStepsPhone {
 		//we = (QAFExtendedWebElement) driver.findElement("inbox.vmList");
 
 		
-		if (pgs.textFind("Unsaved", "20", "80")) {
+		if (pgs.textFind("908", "20", "100")) {
 			
 			we = (QAFExtendedWebElement) driver.findElement("inbox.hamburger");
 			
