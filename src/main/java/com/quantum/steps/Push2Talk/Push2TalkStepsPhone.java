@@ -120,7 +120,7 @@ public class Push2TalkStepsPhone {
 
 		PerfectoGenericSteps.switchToDriver(driverName);
 
-		Push2TalkStepsCommon.setPTTContactNames(driverName);
+		//PTTResponderCommon.setPTTContactNames(driverName);
 		String cn1 = ConfigurationManager.getBundle().getString("contactName1");
 		String cn2 = ConfigurationManager.getBundle().getString("contactName2");
 
@@ -134,7 +134,7 @@ public class Push2TalkStepsPhone {
 
 		
 		Map<String, Object> params2 = new HashMap<>();
-		params2.put("label", "PUBLIC:historyBtniPhone.png");
+		params2.put("label", "PUBLIC:historyBtniPhone12.png");
 		params2.put("timeout", "20");
 		params2.put("threshold", "90");
 		Object result2 = driver.executeScript("mobile:button-image:click", params2);
@@ -145,14 +145,14 @@ public class Push2TalkStepsPhone {
 			
 		
 		Map<String, Object> params1 = new HashMap<>();
-		params1.put("label", cn);
+		params1.put("label", "Image");
 		params1.put("timeout", "30");
 		params1.put("threshold", "80");
 		params1.put("operation", "long");
 		Object result1 = driver.executeScript("mobile:button-text:click", params1);
 		
 		pas.waitFor(5);
-
+		
 		params1.put("label", "Delete all");
 		params1.put("timeout", "30");
 		params1.put("threshold", "80");
@@ -161,10 +161,50 @@ public class Push2TalkStepsPhone {
 		
 		pgs.textClick("Yes", "20", "100");
 		
+	/*	//PUBLIC:iPhone12MessagePTT.png
+		Map<String, Object> params3 = new HashMap<>();
+		params3.put("label", "PUBLIC:iPhone12MessagePTT.png");
+		params3.put("timeout", "20");
+		params3.put("threshold", "90");
+		Object result3 = driver.executeScript("mobile:button-image:click", params3);
+		
+		//181,560
+		Map<String, Object> params4 = new HashMap<>();
+		params4.put("label", "Galaxy");
+		params4.put("timeout", "30");
+		params4.put("threshold", "80");
+		params4.put("screen.top", "15%");
+		params4.put("screen.height", "85%");
+		params4.put("screen.left", "0%");
+		params4.put("screen.width", "100%");
+		params4.put("Label Position", "Above");
+		params4.put("Label Offset", "7%");
+		Object result4 = driver.executeScript("mobile:button-text:click", params4);
+		
+		
+		pas.waitFor(5);
+		
+		result4 = driver.executeScript("mobile:button-text:click", params4);
+		
+		//181,560
+		
+		//PUBLIC:PTTImageTrashcan.png
+		Map<String, Object> params6 = new HashMap<>();
+		params6.put("label", "PUBLIC:PTTImageTrashcan.png");
+		params6.put("timeout", "20");
+		params6.put("threshold", "90");
+		Object result6 = driver.executeScript("mobile:button-image:click", params6);
+		
+		we = (QAFExtendedWebElement) getDriver().findElement("call.trashcanCofirm");
+		we.waitForPresent(40000);
+		we.click();*/
+
+		
+		
 		}
 
 	}
-
+	
 	@Then("^I search for PTT contact on \"([^\"]*)\"$")
 	public void isearchforp2tcontact(String device) {
 
@@ -685,4 +725,5 @@ public class Push2TalkStepsPhone {
 
 	}
 
+	
 }

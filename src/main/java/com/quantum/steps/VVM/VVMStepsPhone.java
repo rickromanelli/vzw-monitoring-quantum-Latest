@@ -159,18 +159,18 @@ public class VVMStepsPhone {
 		pgs.textFind("Incoming Call", "40", "80");
 		
 		
-		/*Map<String, Object> params = new HashMap<>();
+		Map<String, Object> params = new HashMap<>();
 		params.put("start", "563,1317");
 		params.put("end", "563,674");
 		params.put("duration", "3");
 		Object res = driver.executeScript("mobile:touch:swipe", params);
-		*/
+		/*
 		Map<String, Object> params5 = new HashMap<>();
 		params5.put("label", "PUBLIC:ignoreButtonGalaxyA12.png");
 		params5.put("timeout", "60");
 		params5.put("threshold", "90");
-		Object result5 = getDriver().executeScript("mobile:button-image:click", params5);
-
+		Object result5 = getDriver().executeScript("mobile:touch:swipe:click", params5);
+*/
 
 		//we = (QAFExtendedWebElement) driver.findElement("call.ignore");
 
