@@ -97,7 +97,7 @@ public class VVMStepsPhone {
 	
 
 	@Then("^I delete all voicemails on \"([^\"]*)\"$")
-	public void iDeleteVMsOn(String device) {
+	public void iDeleteVMsOn(String device) throws Exception {
 		//Current Devices LG V20
 		
 		
@@ -109,9 +109,10 @@ public class VVMStepsPhone {
 
 		PerfectoGenericSteps.switchToDriver(driverName);
 		
-		we = (QAFExtendedWebElement) driver.findElement("inbox.vmList");
+		//we = (QAFExtendedWebElement) driver.findElement("inbox.vmList");
 
-		if (we.isPresent()) {
+		
+		if (pgs.textFind("Unsaved", "20", "80")) {
 			
 			we = (QAFExtendedWebElement) driver.findElement("inbox.hamburger");
 			
