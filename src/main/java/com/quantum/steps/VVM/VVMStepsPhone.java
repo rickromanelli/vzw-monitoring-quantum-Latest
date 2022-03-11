@@ -164,14 +164,14 @@ public class VVMStepsPhone {
 		params.put("end", "563,674");
 		params.put("duration", "3");
 		Object res = driver.executeScript("mobile:touch:swipe", params);
-		
+		*/
 		Map<String, Object> params5 = new HashMap<>();
 		params5.put("label", "PUBLIC:ignoreButtonGalaxyA12.png");
 		params5.put("timeout", "60");
 		params5.put("threshold", "90");
 		Object result5 = getDriver().executeScript("mobile:button-image:click", params5);
 
-*/
+
 		//we = (QAFExtendedWebElement) driver.findElement("call.ignore");
 
 		//we.waitForPresent(20000);
