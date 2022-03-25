@@ -74,7 +74,7 @@ public class VZCloudStepsCommon extends WebDriverTestCase {
 			// pas.wait(5);
 			pgs.textFind("Flashbacks", "30", "90");
 
-			while (pgs.textFind("2021", "8", "70")) {
+			while (pgs.textFind("2022", "8", "70")) {
 
 				we = (QAFExtendedWebElement) driver.findElement("photos.menu");
 				we.waitForPresent(20);
@@ -83,11 +83,18 @@ public class VZCloudStepsCommon extends WebDriverTestCase {
 				we = (QAFExtendedWebElement) driver.findElement("photos.select");
 				we.waitForPresent(20);
 				we.click();
+				
+				we = (QAFExtendedWebElement) driver.findElement("photos.photo1");
+				we.waitForPresent(20);
+				we.click();
+				
+				
 
-				Map<String, Object> params1 = new HashMap<>();
-				params1.put("location", "221,1016");
-				Object result1 = driver.executeScript("mobile:touch:tap", params1);
-
+				/*
+				 * Map<String, Object> params1 = new HashMap<>(); params1.put("location",
+				 * "221,1016"); Object result1 = driver.executeScript("mobile:touch:tap",
+				 * params1);
+				 */
 				try {
 					we = (QAFExtendedWebElement) driver.findElement("photos.selectmenu");
 					we.waitForPresent(20);
@@ -208,7 +215,7 @@ public class VZCloudStepsCommon extends WebDriverTestCase {
 
 		pas.startAppById("com.sec.android.app.camera");
 		pas.waitFor(3);
-		pgs.textCheckpoint("SINGLE TAKE", "20", "80");
+		pgs.textCheckpoint("Portrait", "20", "80");
 		pas.waitFor(3);
 	Map<String, Object> params2 = new HashMap<>();
 	params2.put("keySequence", "VOL_DOWN");
