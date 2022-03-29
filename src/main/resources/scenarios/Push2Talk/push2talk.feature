@@ -455,5 +455,5 @@ Scenario: Push_to_Talk_image_Galaxy2iPhone
 	Then I inject audio file "PUBLIC:VM2TXT3.mp3" on "DUT2"
 	Then I send audio on "DUT2"	
 	Then I stop sending audio on "DUT2"
-	Then I click to end call on "DUT2"
+	#Then I click to end call on "DUT2"
 	
