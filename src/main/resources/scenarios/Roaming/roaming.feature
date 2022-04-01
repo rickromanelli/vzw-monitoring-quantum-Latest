@@ -23,6 +23,7 @@ Scenario: Roaming_iPhone_UK
 	Then I go to webpage: "google.com" on "DUT1"
 	Then Transaction "2 Did Webpage open?" description: "Google webpage opened" SLA: "90000" - OCR Checkpoint: "IMAGE" Timeout: "60" Threshold: "90"
 	
+	
 	@roamingiPhoneseCA
 Scenario: Roaming_iPhoneSE_CA
 	Then I open phone App on "DUT2"
@@ -92,6 +93,17 @@ Scenario: Roaming_Galaxy_A12_Germany
 	Then I click to end roaming call on "DUT1"
 	Then I go to webpage: "google.com" on "DUT1"
 	Then Transaction "2 Did Webpage open?" description: "Google webpage opened" SLA: "60000" - OCR Checkpoint: "IMAGES" Timeout: "60" Threshold: "90"
+	
+	@roamingiPhoneDE
+Scenario: Roaming_iPhone_DE
+	Then I open phone App on "DUT2"
+	Then I close application by name "Contacts"
+	Then I open phone App on "DUT1"
+	Then I call "DUT2" from "DUT1"
+	Then Transaction: "1 Call succeeded?" on Device: "DUT2" Description: "Did DUT2 receive the call?" SLA: "60000" - OCR checkpoint: "Incoming Call" Timeout: "60" Threshold: "90"
+	Then I click to end roaming call on "DUT1"
+	Then I go to webpage: "google.com" on "DUT1"
+	Then Transaction "2 Did Webpage open?" description: "Google webpage opened" SLA: "90000" - OCR Checkpoint: "IMAGE" Timeout: "60" Threshold: "90"
 	
 
 	@roamingGalaxyS8MX

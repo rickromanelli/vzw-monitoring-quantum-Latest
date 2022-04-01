@@ -107,7 +107,7 @@ public class PerfectoGenericSteps {
 			we.waitForPresent(20000);
 			we.click();
 
-		} else if (model.equals("iPhone-7") || (model.equals("iPhone-SE (2020)"))) {
+		} else if (model.equals("iPhone-7") || (model.equals("iPhone-SE (2020)")) || (model.equals("iPhone-12 Mini"))) {
 
 			String contactName = ConfigurationManager.getBundle().getString("contactDesc2");
 			textClick(contactName, "30", "80");
