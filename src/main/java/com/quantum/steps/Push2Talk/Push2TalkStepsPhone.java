@@ -59,6 +59,14 @@ public class Push2TalkStepsPhone {
 			params3.put("threshold", "90");
 			Object result3 = getDriver().executeScript("mobile:button-image:click", params3);
 
+		} else if (model.equalsIgnoreCase("Galaxy A12")) {
+
+			Map<String, Object> params3 = new HashMap<>();
+			params3.put("label", "PUBLIC:contactsTabA12Unclicked.png");
+			params3.put("timeout", "20");
+			params3.put("threshold", "90");
+			Object result3 = getDriver().executeScript("mobile:button-image:click", params3);
+
 		} else {
 			we = (QAFExtendedWebElement) getDriver().findElement("home.contacts");
 			we.waitForPresent(40000);
@@ -120,7 +128,7 @@ public class Push2TalkStepsPhone {
 
 		PerfectoGenericSteps.switchToDriver(driverName);
 
-		//PTTResponderCommon.setPTTContactNames(driverName);
+		// PTTResponderCommon.setPTTContactNames(driverName);
 		String cn1 = ConfigurationManager.getBundle().getString("contactName1");
 		String cn2 = ConfigurationManager.getBundle().getString("contactName2");
 
@@ -131,82 +139,95 @@ public class Push2TalkStepsPhone {
 			cn = cn1;
 		}
 
+		String deviceModel = DeviceUtils.getDeviceProperty("model");
 
-		
 		Map<String, Object> params2 = new HashMap<>();
-		params2.put("label", "PUBLIC:historyBtniPhone12.png");
+
+		switch (deviceModel) {
+
+		case "iPhone-12 Mini":
+			params2.put("label", "PUBLIC:historyBtniPhone12.png");
+			break;
+		case "Galaxy A12":
+			params2.put("label", "PUBLIC:historyBtnA12.png");
+			break;
+
+		default:
+			break;
+
+		}
+
 		params2.put("timeout", "20");
 		params2.put("threshold", "90");
 		Object result2 = driver.executeScript("mobile:button-image:click", params2);
-		
-		
-		
-		if (!pgs.textFind("No history exists", "20", "90")) {
+
+		if (!pgs.textFind("No history exists", "10", "80")) {
+			
+			Map<String, Object> params3 = new HashMap<>();
+			switch (deviceModel) {
+			case "iPhone-12 Mini":
+				params3.put("label", "PUBLIC:PTTMessageArrowiPhone12Mini.png");
+				break;
+				
+			case "Galaxy A12":
+				params3.put("label", "PUBLIC:PTTMessageArrowGalaxyA12.png");
+				break;
+				default:
+				break;
+				
+			}
+			
+			params3.put("timeout", "30");
+			params3.put("threshold", "90");
+			params3.put("operation", "long");
+			Object result3 = driver.executeScript("mobile:button-image:click", params3);
 			
 		
-		Map<String, Object> params1 = new HashMap<>();
-		params1.put("label", "Image");
-		params1.put("timeout", "30");
-		params1.put("threshold", "80");
-		params1.put("operation", "long");
-		Object result1 = driver.executeScript("mobile:button-text:click", params1);
-		
-		pas.waitFor(5);
-		
-		params1.put("label", "Delete all");
-		params1.put("timeout", "30");
-		params1.put("threshold", "80");
-		params1.put("operation", "long");
-		result1 = driver.executeScript("mobile:button-text:click", params1);
-		
-		pgs.textClick("Yes", "20", "100");
-		
-	/*	//PUBLIC:iPhone12MessagePTT.png
-		Map<String, Object> params3 = new HashMap<>();
-		params3.put("label", "PUBLIC:iPhone12MessagePTT.png");
-		params3.put("timeout", "20");
-		params3.put("threshold", "90");
-		Object result3 = driver.executeScript("mobile:button-image:click", params3);
-		
-		//181,560
-		Map<String, Object> params4 = new HashMap<>();
-		params4.put("label", "Galaxy");
-		params4.put("timeout", "30");
-		params4.put("threshold", "80");
-		params4.put("screen.top", "15%");
-		params4.put("screen.height", "85%");
-		params4.put("screen.left", "0%");
-		params4.put("screen.width", "100%");
-		params4.put("Label Position", "Above");
-		params4.put("Label Offset", "7%");
-		Object result4 = driver.executeScript("mobile:button-text:click", params4);
-		
-		
-		pas.waitFor(5);
-		
-		result4 = driver.executeScript("mobile:button-text:click", params4);
-		
-		//181,560
-		
-		//PUBLIC:PTTImageTrashcan.png
-		Map<String, Object> params6 = new HashMap<>();
-		params6.put("label", "PUBLIC:PTTImageTrashcan.png");
-		params6.put("timeout", "20");
-		params6.put("threshold", "90");
-		Object result6 = driver.executeScript("mobile:button-image:click", params6);
-		
-		we = (QAFExtendedWebElement) getDriver().findElement("call.trashcanCofirm");
-		we.waitForPresent(40000);
-		we.click();*/
+			
+			pas.waitFor(5);
 
-		
+			Map<String, Object> params1 = new HashMap<>();
+			params1.put("label", "Delete all");
+			params1.put("timeout", "30");
+			params1.put("threshold", "80");
+			params1.put("operation", "long");
+			Object result1 = driver.executeScript("mobile:button-text:click", params1);
+
+			pgs.textClick("Yes", "20", "100");
+			
+			pgs.textCheckpoint("No history exists", "60", "90");
+
 		
 		}
 
-	}
+		Map<String, Object> params4 = new HashMap<>();
+		params4.put("timeout", "30");
+		params4.put("threshold", "90");
+		
+		switch (deviceModel) {
+
+		case "iPhone-12 Mini":
+			params4.put("label", "PUBLIC:contactsTabiPhone12-Unclicked.png");
+			break;
+		case "Galaxy A12":
+			params4.put("label", "PUBLIC:contactsTabA12Unclicked.png");
+			break;
+
+		default:
+			break;
+			
+		}
+			
+			Object result4 = driver.executeScript("mobile:button-image:click", params4);
+		
 	
+	
+	
+		pgs.textCheckpoint("Available", "60", "90");
+	}
+
 	@Then("^I search for PTT contact on \"([^\"]*)\"$")
-	public void isearchforp2tcontact(String device) {
+	public void isearchforp2tcontact(String device) throws Exception {
 
 		String driverName = "perfecto";
 		if (device.equalsIgnoreCase("dut2")) {
@@ -242,8 +263,18 @@ public class Push2TalkStepsPhone {
 			cn = cn1;
 		}
 
-		iswitchToContactsTabPTT(device);
+		// iswitchToContactsTabPTT(device);
 		// }
+
+		/*
+		 * try { pas.closeAppByName("Push To Talk+");
+		 * pas.closeAppByName("Push To Talk+"); } catch (Exception ex) {
+		 * 
+		 * } pas.startAppByName("Push To Talk+");
+		 * 
+		 * pgs.textCheckpoint("Available", "30", "80");
+		 */
+
 		model = DeviceUtils.getDeviceProperty("model");
 
 		if (model.equalsIgnoreCase("iPhone-7")) {
@@ -255,8 +286,9 @@ public class Push2TalkStepsPhone {
 			params1.put("threshold", "90");
 			Object result1 = getDriver().executeScript("mobile:edit-text:set", params1);
 
-		} else if (model.equalsIgnoreCase("Galaxy S8") || model.equalsIgnoreCase("Galaxy S10")
-				|| model.equalsIgnoreCase("E6810") || model.equalsIgnoreCase("XP8800") || model.equalsIgnoreCase("DuraForce Pro 2")) {
+		} else if (model.equalsIgnoreCase("iPhone-12 Mini") || model.equalsIgnoreCase("Galaxy S10")
+				|| model.equalsIgnoreCase("Galaxy A12") || model.equalsIgnoreCase("XP8800")
+				|| model.equalsIgnoreCase("DuraForce Pro 2")) {
 
 			Map<String, Object> params1 = new HashMap<>();
 			params1.put("label", "Search");
@@ -321,7 +353,7 @@ public class Push2TalkStepsPhone {
 	}
 
 	@Then("^I click on phone contact on \"([^\"]*)\" Turbo$")
-	public void iClickOnPhoneContactp2tTurbo(String device) {
+	public void iClickOnPhoneContactp2tTurbo(String device) throws Exception {
 		String driverName = "perfecto";
 		if (device.equalsIgnoreCase("dut2")) {
 			driverName = "perfecto2";
@@ -344,12 +376,13 @@ public class Push2TalkStepsPhone {
 		 * //params3.put("index", "2"); Object result3 =
 		 * driver.executeScript("mobile:button-text:click", params3);
 		 * 
-		 */
-		
-		
+		 
+
 		we = (QAFExtendedWebElement) driver.findElement("contacts.result");
 		we.waitForPresent(60000);
-		we.click();
+		we.click(); */
+		
+		pgs.textClickIndex(cn, "20", "100", "2");
 	}
 
 	@Then("^I click on phone contact on \"([^\"]*)\" iPhone$")
@@ -370,17 +403,14 @@ public class Push2TalkStepsPhone {
 			cn = cn1.toString();
 		}
 
-		
-		 /* Map<String, Object> params3 = new HashMap<>(); 
-		  params3.put("label", cn); 
-		  params3.put("timeout", "20"); 
-		  params3.put("threshold", "80");
-		  params3.put("index", "2"); 
-		  Object result3 = driver.executeScript("mobile:button-text:click", params3);
-		 
-		*/
-		  
-		  
+		/*
+		 * Map<String, Object> params3 = new HashMap<>(); params3.put("label", cn);
+		 * params3.put("timeout", "20"); params3.put("threshold", "80");
+		 * params3.put("index", "2"); Object result3 =
+		 * driver.executeScript("mobile:button-text:click", params3);
+		 * 
+		 */
+
 		we = (QAFExtendedWebElement) driver.findElement("contacts.result");
 		we.waitForPresent(20000);
 		we.click();
@@ -417,8 +447,9 @@ public class Push2TalkStepsPhone {
 		params33.put("threshold", "80");
 		// params3.put("index", "2");
 		Object result33 = getDriver().executeScript("mobile:button-text:click", params33);
-		
-		 //DeviceUtils.getQAFDriver().executeScript("mobile:button-text:click", params33);
+
+		// DeviceUtils.getQAFDriver().executeScript("mobile:button-text:click",
+		// params33);
 
 		/*
 		 * we = (QAFExtendedWebElement) driver.findElement("contacts.result");
@@ -497,41 +528,38 @@ public class Push2TalkStepsPhone {
 		String model = DeviceUtils.getDeviceProperty("model");
 
 		if (pgs.textFind("Ready", "8", "80")) {
-			
-		
-		if (model.equals("Z30")) {
-			pgs.textClick("End Call", "20", "90");
 
-		} else if (model.equals("iPhone-7")) {
-		
-			pgs.imageClick("PUBLIC:PTT_EndCallBtn-iPhone.png", "30", "90");
-		} else if (model.equals("Galaxy S8")) {
+			if (model.equals("Z30")) {
+				pgs.textClick("End Call", "20", "90");
 
-			if (ConfigurationManager.getBundle().getString("app").equalsIgnoreCase("Push2Talk")) {
-				
-			
-			try {
-				pgs.imageClick("PUBLIC:Prod/PTTPlus/EndCallS8.png", "30", "90");
-			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+			} else if (model.equals("iPhone-7")) {
+
+				pgs.imageClick("PUBLIC:PTT_EndCallBtn-iPhone.png", "30", "90");
+			} else if (model.equals("Galaxy S8")) {
+
+				if (ConfigurationManager.getBundle().getString("app").equalsIgnoreCase("Push2Talk")) {
+
+					try {
+						pgs.imageClick("PUBLIC:Prod/PTTPlus/EndCallS8.png", "30", "90");
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+				} else {
+					we = (QAFExtendedWebElement) driver.findElement("call.clickToEndCall");
+					we.waitForPresent(20000);
+					we.click();
+
+				}
+			} else if (model.equals("E6810")) {
+				if (pgs.imageCheckPoint("PUBLIC:EndCallDura.png", "30", "90", false)) {
+					pgs.imageClick("PUBLIC:EndCallDura.png", "30", "90");
+				}
 			} else {
 				we = (QAFExtendedWebElement) driver.findElement("call.clickToEndCall");
 				we.waitForPresent(20000);
 				we.click();
-			
-				
 			}
-		} else if (model.equals("E6810"))  {
-			if(pgs.imageCheckPoint("PUBLIC:EndCallDura.png", "30", "90", false)) {
-			pgs.imageClick("PUBLIC:EndCallDura.png", "30", "90");
-			}
-		} else {
-			we = (QAFExtendedWebElement) driver.findElement("call.clickToEndCall");
-			we.waitForPresent(20000);
-			we.click();
-		}
 		}
 	}
 
@@ -547,12 +575,10 @@ public class Push2TalkStepsPhone {
 		PerfectoGenericSteps.switchToDriver(driverName);
 		PerfectoSplunkSteps pss = new PerfectoSplunkSteps();
 		pss.startSplunkStep(name, desc);
-		
-		
+
 		Map<String, Object> params = new HashMap<>();
 		Object audUrl = (String) SplunkHelper.getQAFDriver().executeScript("mobile:audio.recording:start", params);
 
-		
 		Map<String, Object> params3 = new HashMap<>();
 		params3.put("deviceAudio", "URL");
 		params3.put("key", "PUBLIC:VM2TXT3.mp3");
@@ -563,16 +589,17 @@ public class Push2TalkStepsPhone {
 		params3.put("deviceAudio.calibration", "");
 		List<String> genericOptions3 = new ArrayList<>();
 		genericOptions3.add("");
-		//params3.put("generic", genericOptions3);
+		// params3.put("generic", genericOptions3);
 		Object result3 = SplunkHelper.getQAFDriver().executeScript("mobile:audio:validation", params3);
-		
 
-		/*Map<String, Object> params11 = new HashMap<>();
-
-		params11.put("volume", volume);
-		params11.put("timeout", timeout);
-		params11.put("duration", duration);
-		Object result11 = SplunkHelper.getQAFDriver().executeScript("mobile:checkpoint:audio", params11);*/
+		/*
+		 * Map<String, Object> params11 = new HashMap<>();
+		 * 
+		 * params11.put("volume", volume); params11.put("timeout", timeout);
+		 * params11.put("duration", duration); Object result11 =
+		 * SplunkHelper.getQAFDriver().executeScript("mobile:checkpoint:audio",
+		 * params11);
+		 */
 
 		if (!result3.toString().equals("true")) {
 			throw new Exception("Audio wasn't received");
@@ -609,28 +636,28 @@ public class Push2TalkStepsPhone {
 			params1.put("timeout", "40");
 			params1.put("threshold", "80");
 			params1.put("index", "1");
-			//ArrayList genericOptions2 = new ArrayList();
-			//genericOptions2.add("natural-language=true");
-			//params1.put("ocr", genericOptions2);
+			// ArrayList genericOptions2 = new ArrayList();
+			// genericOptions2.add("natural-language=true");
+			// params1.put("ocr", genericOptions2);
 			Object result1 = driver.executeScript("mobile:checkpoint:text", params1);
 		} else {
 
-		try {
-			we1 = new QAFExtendedWebElement("//*[contains(@text,\"" + cn + "\")]");
-			we = (QAFExtendedWebElement) driver.findElementByXPath("//*[@text=\"" + cn + "\"]");
-			we1.waitForPresent(40000);
-
-		} catch (Exception ex) {
 			try {
-				/*
-				 * we2 = (QAFExtendedWebElement) driver.findElement("home.missedCall.decline");
-				 * we2.waitForPresent(10000); we2.click(); we1.waitForPresent(10000);
-				 */
-			} catch (Exception ex2) {
+				we1 = new QAFExtendedWebElement("//*[contains(@text,\"" + cn + "\")]");
+				we = (QAFExtendedWebElement) driver.findElementByXPath("//*[@text=\"" + cn + "\"]");
+				we1.waitForPresent(40000);
+
+			} catch (Exception ex) {
+				try {
+					/*
+					 * we2 = (QAFExtendedWebElement) driver.findElement("home.missedCall.decline");
+					 * we2.waitForPresent(10000); we2.click(); we1.waitForPresent(10000);
+					 */
+				} catch (Exception ex2) {
+
+				}
 
 			}
-
-		}
 		}
 
 		SplunkHelper.testStepEnd(Long.parseLong(SLA), name);
@@ -725,5 +752,4 @@ public class Push2TalkStepsPhone {
 
 	}
 
-	
 }

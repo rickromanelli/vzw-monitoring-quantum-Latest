@@ -59,7 +59,7 @@ public class Push2TalkStepsCommon extends WebDriverTestCase {
 		
 	String model = DeviceUtils.getDeviceProperty("model");
 		
-		if (model.equalsIgnoreCase("iPhone-7")) {
+		//if (model.equalsIgnoreCase("iPhone-7")) {
 			
 			Map<String, Object> params1 = new HashMap<>();
 			params1.put("content", "available");
@@ -85,7 +85,7 @@ public class Push2TalkStepsCommon extends WebDriverTestCase {
 			}
 			
 			
-		}else {
+	/*	}else {
 
 		try {
 			we = (QAFExtendedWebElement) driver.findElement("home.available.txt");
@@ -100,7 +100,7 @@ public class Push2TalkStepsCommon extends WebDriverTestCase {
 			}
 		}
 		
-		}
+		}*/
 		
 		//Activation Required to be tested next time needed
 		
@@ -159,10 +159,17 @@ public class Push2TalkStepsCommon extends WebDriverTestCase {
 		break;
 		case "510000441118" : ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "5379");
 		break;
+		case "510000440952" : ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "6993");
+		break;
+		
+		
+		
 		//Sonim
 		case "B2F1C236" : ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "2755");
 		break;
 		case "B526DC05" : ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "3350");
+		break;
+		case "4E07C485" : ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "0738");
 		break;
 		//S8
 		case "988B5C413545374847" : ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "5140");
@@ -238,6 +245,115 @@ public class Push2TalkStepsCommon extends WebDriverTestCase {
 		} else { 
 			pgs.textClick("ASP-TWO", "20", "100");
 		}
+		
+	}
+	
+	@Then("^I send PTT message on \"([^\"]*)\"$")
+	public void iclickPTTPlusMessage(String device) throws Exception {
+		
+		String driverName = "perfecto";
+		if (device.equalsIgnoreCase("dut2")) {
+			driverName = "perfecto2";
+		}
+
+		PerfectoGenericSteps.switchToDriver(driverName);
+		
+		//pgs.imageClick("PUBLIC:PTTMessageBtn_DuraFprce.png", "30", "80");
+		
+		//we = (QAFExtendedWebElement) driver.findElement("call.messagebtn");
+		//we.waitForPresent(20000);
+		//we.click();
+		
+		pgs.imageCheckPoint("PUBLIC:messageBtnA12.png", "10", "90", false);
+		
+		pgs.imageClick("PUBLIC:messageBtnA12.png", "10", "90");
+		
+		
+		
+		we = (QAFExtendedWebElement) driver.findElement("call.messageField");
+		we.waitForPresent(20000);
+		we.click();
+		
+		we = (QAFExtendedWebElement) driver.findElement("call.messageField");
+		we.waitForPresent(20000);
+		we.sendKeys("Location");
+		
+	
+		
+		String model = DeviceUtils.getDeviceProperty("model");
+
+		if (model.equalsIgnoreCase("Galaxy A12")) {
+		
+		pgs.imageClick("PUBLIC:A12-messageSendBtn.png", "30", "80");
+		}
+		
+		String deviceModel = DeviceUtils.getDeviceProperty("model");
+
+		Map<String, Object> params2 = new HashMap<>();
+
+		switch (deviceModel) {
+
+		case "iPhone-12 Mini":
+			params2.put("label", "PUBLIC:historyBtniPhone12.png");
+			break;
+		case "Galaxy A12":
+			params2.put("label", "PUBLIC:historyBtnA12.png");
+			break;
+
+		default:
+			break;
+		
+		}
+		
+		
+	}
+	
+	@Then("^I send PTT location on \"([^\"]*)\"$")
+	public void iclickPTTPlusLocation(String device) throws Exception {
+		
+		String driverName = "perfecto";
+		if (device.equalsIgnoreCase("dut2")) {
+			driverName = "perfecto2";
+		}
+
+		PerfectoGenericSteps.switchToDriver(driverName);
+		
+		
+		//360,255
+		
+		//pgs.imageClick("PUBLIC:PTTLocationBtn_Sonim.png", "30", "80");
+		pgs.imageClick("PUBLIC:PTTLocationBtn_iPhone12Mini.png", "30", "80");
+		
+		pgs.imageCheckPoint("PUBLIC:LocationSharebtn-iPhone12.png", "10", "90", false);
+		
+		pgs.imageClick("PUBLIC:LocationSharebtn-iPhone12.png", "10", "90");
+		
+		
+		
+		
+		
+	}
+		
+	@Then("^I view location on \"([^\"]*)\"$")
+	public void iViewPTTPlusLocation(String device) throws Exception {
+		
+		String driverName = "perfecto";
+		if (device.equalsIgnoreCase("dut2")) {
+			driverName = "perfecto2";
+		}
+
+		PerfectoGenericSteps.switchToDriver(driverName);
+		
+		
+		
+		
+		pgs.imageCheckPoint("PUBLIC:PTTLocationIcon-iPhone.png", "10", "90", false);
+		
+		pgs.imageClick("PUBLIC:PTTLocationIcon-iPhone.png", "10", "90");
+		
+		
+		
+		
 		
 	}
 
