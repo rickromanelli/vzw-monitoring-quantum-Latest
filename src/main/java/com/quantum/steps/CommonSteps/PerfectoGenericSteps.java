@@ -822,6 +822,23 @@ public class PerfectoGenericSteps {
 		return false;
 
 	}
+	
+	public boolean textFindIndex(String text, String timeout, String threshold, String index) throws Exception {
+
+		Map<String, Object> params6 = new HashMap<>();
+		params6.put("content", text);
+		params6.put("timeout", timeout);
+		params6.put("threshold", threshold);
+		params6.put("index", index);
+		Object result6 = getDriver().executeScript("mobile:text:find", params6);
+		if (result6.toString().contains("true")) {
+			return true;
+		}
+
+		return false;
+
+
+	}
 
 	public boolean imageFindHaystack(String imageRepo, String timeout, String threshold, String xstart, String ystart,
 			String height, String width) throws Exception {
@@ -1146,8 +1163,10 @@ public class PerfectoGenericSteps {
 		QAFExtendedWebDriver myDriver = getDriver();
 		Map params = new HashMap<>(); // Set the "wifi" value to turn off the Wifi
 		PerfectoApplicationSteps.switchNativeContext();
+		
+		String platform = DeviceUtils.getDeviceProperty("OS");
 
-		if (ConfigurationManager.getBundle().getString("platform").equalsIgnoreCase("android")) {
+		if (platform.equalsIgnoreCase("Android")) {
 			params.put("wifi", wifiValue);
 			myDriver.executeScript("mobile:network.settings:set", params); // Set the "wifi" value to turn the Wifi back
 																			// on params1.put("wifi", "enabled");
@@ -1162,8 +1181,8 @@ public class PerfectoGenericSteps {
 
 			
 			
-			if(textFind("Perfecto", "20","90")) {
-			we = (QAFExtendedWebElement) driver.findElement("settings.home.wifi.btn");
+			if(textFindIndex("Perfecto", "20","90","2")) {
+			we = (QAFExtendedWebElement) driver.findElement("//*[@value=\"Wi-Fi\"]");
 			we.waitForPresent(20000);
 			we.click();
 			
@@ -1172,7 +1191,7 @@ public class PerfectoGenericSteps {
 			//QAFWebElement switchOnOff = myDriver
 					//.findElementByXPath(ConfigurationManager.getBundle().getString("settings.wifi.toggle"));
 			
-			we = (QAFExtendedWebElement) driver.findElement("settings.wifi.toggle");
+			we = (QAFExtendedWebElement) driver.findElement("//*[@label=\"Wi-Fi\" and @value=\"1\"]");
 			we.waitForPresent(20000);
 
 			we.click();
