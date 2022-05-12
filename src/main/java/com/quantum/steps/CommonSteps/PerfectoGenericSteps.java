@@ -975,47 +975,7 @@ public class PerfectoGenericSteps {
 
 		String model = DeviceUtils.getDeviceProperty("model");
 
-		if (model.equals("Moto Z2")) {
-			Map<String, Object> params = new HashMap<>();
-
-			params.put("automation", "os");
-			String res = (String) driver.executeScript("mobile:browser:open", params);
-
-			we = (QAFExtendedWebElement) driver.findElement("browser.addressBar");
-			we.waitForPresent(20000);
-
-			we.click();
-			we.sendKeys(url);
-
-			Map<String, Object> params2 = new HashMap<>();
-			params2.put("key", "66");
-			Object result2 = driver.executeScript("mobile:key:event", params2);
-			
-		} else if (model.equals("Galaxy S8")) {
-			Map<String, Object> params = new HashMap<>();
-
-			PerfectoApplicationSteps.closeAppByName("Chrome");
-			PerfectoApplicationSteps.closeAppByName("Chrome");
-
-			PerfectoApplicationSteps.startAppByName("Chrome");
-			
-			we = (QAFExtendedWebElement) driver.findElement("browser.addressBar");
-			we.waitForPresent(20000);
-
-			we.click();
-			
-			we.sendKeys(url);Map<String, Object> params1 = new HashMap<>();
-			params1.put("label", "Go");
-			params1.put("timeout", "20");
-			params1.put("threshold", "100");
-			params1.put("screen.top", "78%");
-			params1.put("screen.height", "22%");
-			params1.put("screen.left", "57%");
-			params1.put("screen.width", "43%");
-			Object result1 = getDriver().executeScript("mobile:button-text:click", params1);
-			
-			
-		} else if (model.equals("Galaxy S10") || model.equals("Galaxy S10e") || model.equals("Galaxy A12")) {
+		if (model.equals("Galaxy S10") || model.equals("Galaxy S10e") || model.equals("Galaxy A12")) {
 					Map<String, Object> params = new HashMap<>();
 
 					
@@ -1025,7 +985,7 @@ public class PerfectoGenericSteps {
 					PerfectoApplicationSteps.startAppByName("Chrome");
 					
 					we = (QAFExtendedWebElement) driver.findElement("browser.addressBar");
-					we.waitForPresent(20000);
+					we.waitForPresent(40000);
 
 					we.click();
 					
@@ -1033,7 +993,7 @@ public class PerfectoGenericSteps {
 					
 					we.sendKeys(url);Map<String, Object> params1 = new HashMap<>();
 					params1.put("label", "Go");
-					params1.put("timeout", "20");
+					params1.put("timeout", "40");
 					params1.put("threshold", "80");
 					params1.put("screen.top", "78%");
 					params1.put("screen.height", "22%");
@@ -1049,7 +1009,7 @@ public class PerfectoGenericSteps {
 			String res = (String) driver.executeScript("mobile:browser:open", params);
 
 			we = (QAFExtendedWebElement) driver.findElement("browser.addressBar");
-			we.waitForPresent(20000);
+			we.waitForPresent(40000);
 
 			we.click();
 			we.sendKeys(url);
