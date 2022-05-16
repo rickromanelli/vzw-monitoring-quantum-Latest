@@ -190,7 +190,6 @@ public class Push2TalkStepsPhone {
 			params1.put("label", "Delete all");
 			params1.put("timeout", "30");
 			params1.put("threshold", "80");
-			params1.put("operation", "long");
 			Object result1 = driver.executeScript("mobile:button-text:click", params1);
 
 			pgs.textClick("Yes", "20", "100");
