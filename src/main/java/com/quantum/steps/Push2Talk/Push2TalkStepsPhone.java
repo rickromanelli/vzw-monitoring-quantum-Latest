@@ -192,7 +192,7 @@ public class Push2TalkStepsPhone {
 			params1.put("threshold", "80");
 			Object result1 = driver.executeScript("mobile:button-text:click", params1);
 
-			pgs.textClick("Yes", "20", "100");
+			pgs.textClick("Yes", "30", "100");
 			
 			pgs.textCheckpoint("No history exists", "60", "90");
 
