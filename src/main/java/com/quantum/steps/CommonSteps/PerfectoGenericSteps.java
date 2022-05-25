@@ -457,6 +457,27 @@ public class PerfectoGenericSteps {
 
 			break;
 		
+		case "Galaxy S10":
+
+			phoneApp = "Contacts";
+			
+			
+			//if (imageFindHaystack("PUBLIC:Prod/International/PhoneappButtonS8.png", "30", "90", "0%", "0%", "100%", "100%")) {
+			//	imageClick("PUBLIC:Prod/International/PhoneappButtonS8.png", "30", "90");
+			//}
+			
+			try {
+				PerfectoApplicationSteps.closeAppByName(phoneApp);
+				PerfectoApplicationSteps.closeAppByName(phoneApp);
+			} catch (Exception ex) {
+
+			}
+
+			PerfectoApplicationSteps.startAppByName(phoneApp);
+
+			
+
+			break;
 			
 		default:
 			String phoneAppName = "Phone";
@@ -1166,6 +1187,22 @@ public class PerfectoGenericSteps {
 		
 
 		}
+	}
+	
+	@Then("^I restart device \"([^\"]*)\"$")
+	public void restartDevice(String device) throws Exception {
+	
+		String driverName = "perfecto";
+		if (device.equalsIgnoreCase("dut2")) {
+			driverName = "perfecto2";
+		} else if (device.equalsIgnoreCase("dut3")) {
+			driverName = "perfecto3";
+		}
+
+		PerfectoGenericSteps.switchToDriver(driverName);
+
+		
+		
 	}
 
 }
