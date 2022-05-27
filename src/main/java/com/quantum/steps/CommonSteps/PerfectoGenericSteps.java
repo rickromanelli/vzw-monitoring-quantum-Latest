@@ -459,7 +459,7 @@ public class PerfectoGenericSteps {
 		
 		case "Galaxy S10":
 
-			phoneApp = "Contacts";
+			phoneApp = "Phone";
 			
 			
 			//if (imageFindHaystack("PUBLIC:Prod/International/PhoneappButtonS8.png", "30", "90", "0%", "0%", "100%", "100%")) {
