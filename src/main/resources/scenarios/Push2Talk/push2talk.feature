@@ -387,7 +387,7 @@ Scenario: Push_to_Talk_image_Galaxy2iPhone
 	#Then I click to end call on "DUT2"
 	
 	@push2talkText2Location
-	Scenario: Push_to_Talk_Text2Location
+	Scenario: Push_to_Talk_Text2Location_Galaxy2iPhone
 	Then I toggle wifi "disabled" on "DUT1"
 	Then I open Push2Talk on "DUT1"
 	Then Transaction "1 PTT opened?" description: "Did PTT open DUT1?" SLA: "60000" - OCR Checkpoint: "Available" Timeout: "30" Threshold: "90"
