@@ -150,6 +150,7 @@ public class Push2TalkStepsPhone {
 			break;
 		case "Galaxy A12":
 			params2.put("label", "PUBLIC:historyBtnA12.png");
+			break;
 		case "DuraForce Pro 2":
 			params2.put("label", "PUBLIC:historyBtnDuraForcePro2.png");
 			break;
