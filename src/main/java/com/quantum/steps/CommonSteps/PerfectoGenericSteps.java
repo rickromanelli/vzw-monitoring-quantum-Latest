@@ -1157,32 +1157,25 @@ public class PerfectoGenericSteps {
 			myDriver.executeScript("mobile:application:open", params);
 			myDriver.executeScript("mobile:application:close", params);
 			myDriver.executeScript("mobile:application:open", params);
-			// myDriver.findElementByXPath("//*[@value=\"Wi-Fi\"]").click();
-			//CommonStep.click("settings.home.wifi.btn");
-
 			
-			
-			if(textFindIndex("Perfecto", "20","90","2")) {
+			/*
+			 * Map<String, Object> params1 = new HashMap<>(); params1.put("content",
+			 * "Perfecto"); params1.put("timeout", "5"); params1.put("threshold", "90");
+			 * params1.put("screen.top", "41%"); params1.put("screen.left", "0%");
+			 * params1.put("screen.width", "100%"); params1.put("screen.height", "28%");
+			 * driver.executeScript("mobile:text:find", params1);
+			 */
+			if(textFindHaystack("Perfecto", "5", "90", "0%", "41%", "28%", "100%")) {
 			we = (QAFExtendedWebElement) driver.findElement("//*[@value=\"Wi-Fi\"]");
 			we.waitForPresent(20000);
 			we.click();
 			
-			//QAFExtendedWebElement switchOnOff = new QAFExtendedWebElement(String.format(ConfigurationManager.getBundle().getString("settings.wifi.toggle")));
-
-			//QAFWebElement switchOnOff = myDriver
-					//.findElementByXPath(ConfigurationManager.getBundle().getString("settings.wifi.toggle"));
 			
 			we = (QAFExtendedWebElement) driver.findElement("//*[@label=\"Wi-Fi\" and @value=\"1\"]");
 			we.waitForPresent(20000);
 
 			we.click();
-			/*// QAFWebElement switchOnOff = CommonStep ("settings.wifi.toggle");
-			String state = switchOnOff.getAttribute("value");
-			// System.out.println(myDriver.getPageSource());
-			if ((wifiValue.equals("disabled") && state.equals("1"))
-					|| (wifiValue.equals("enabled") && state.equals("0"))) {
-				switchOnOff.click();
-				switchOnOff.waitForAttribute("value", "0", 20);*/
+			
 			}
 		
 

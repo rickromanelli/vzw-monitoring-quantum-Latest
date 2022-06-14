@@ -146,10 +146,12 @@ public class Push2TalkStepsPhone {
 		switch (deviceModel) {
 
 		case "iPhone-12 Mini":
-			params2.put("label", "PUBLIC:historyBtniPhone12.png");
+			params2.put("label", "PUBLIC:history-BtniPhone123.png");
 			break;
 		case "Galaxy A12":
 			params2.put("label", "PUBLIC:historyBtnA12.png");
+		case "DuraForce Pro 2":
+			params2.put("label", "PUBLIC:historyBtnDuraForcePro2.png");
 			break;
 
 		default:
@@ -171,6 +173,10 @@ public class Push2TalkStepsPhone {
 				
 			case "Galaxy A12":
 				params3.put("label", "PUBLIC:PTTMessageArrowGalaxyA12.png");
+				break;
+				
+			case "DuraForce Pro 2":
+				params3.put("label", "PUBLIC:PTTMessageArrowDuraForce.png");
 				break;
 				default:
 				break;
@@ -213,6 +219,9 @@ public class Push2TalkStepsPhone {
 		case "Galaxy A12":
 			params4.put("label", "PUBLIC:contactsTabA12Unclicked.png");
 			break;
+		case "DuraForce Pro 2":
+			params4.put("label", "PUBLIC:contactsTabDuraforceUnclicked.png");
+			break;
 
 		default:
 			break;
@@ -224,7 +233,7 @@ public class Push2TalkStepsPhone {
 	
 	
 	
-		pgs.textCheckpoint("Available", "60", "90");
+		pgs.textCheckpoint("Search", "60", "90");
 	}
 
 	@Then("^I search for PTT contact on \"([^\"]*)\"$")
@@ -751,6 +760,69 @@ public class Push2TalkStepsPhone {
 	@Then("^I confirm audio$")
 	public void iConfirmAudiop2t(String device) {
 
+		
 	}
 
+	
+	@Then ("^I change status to \"([^\"]*)\" on \"([^\"]*)\"$")
+	public void changeStatusToOn(String status, String device) throws Exception {
+		String driverName = "perfecto";
+		if (device.equalsIgnoreCase("dut2")) {
+			driverName = "perfecto2";
+		}
+		
+
+		PerfectoGenericSteps.switchToDriver(driverName);
+		
+		if (pgs.textFind(status, "10", "90")) {
+			
+		} else {
+		
+		if (pgs.textFind("Available", "10", "90")) {
+			
+			pas.waitFor(3);
+		
+		Map<String, Object> params33 = new HashMap<>();
+		params33.put("label", "Available");
+		params33.put("timeout", "20");
+		params33.put("threshold", "90");
+		params33.put("label.direction", "Left");
+		params33.put("label.offset", "50%");
+		Object result33 = getDriver().executeScript("mobile:button-text:click", params33);
+		
+			
+				
+		
+		} else if (pgs.textFind("Do not disturb", "20", "90")) {
+			
+			pas.waitFor(3);
+			
+			Map<String, Object> params33 = new HashMap<>();
+			params33.put("label", "Do not disturb");
+			params33.put("timeout", "20");
+			params33.put("threshold", "90");
+			params33.put("label.direction", "Left");
+			params33.put("label.offset", "50%");
+			Object result33 = getDriver().executeScript("mobile:button-text:click", params33);
+			
+				
+					
+				
+		}
+			
+		pgs.textClick(status, "20", "90");
+		
+		pas.waitFor(3);
+		
+		pgs.textCheckpoint(status, "20", "90");
+		
+		
+	//pgs.textClickHaystack(status, "10", "90", "0%", "14%", "86%", "100%");
+		
+			
+		
+		}
+
+		
+	}
 }
