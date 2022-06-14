@@ -426,7 +426,7 @@ Scenario: Push_to_Talk_image_Galaxy2iPhone
 	Then Transaction: "4 DUT2 Unavailable?" on "DUT1" Description: "DND image?" SLA: "60000" - Image checkpoint: "PUBLIC:DoNotDisturbDuraFprcePro2.png" Timeout: "30" Threshold: "90"
 	Then I click on phone contact on "DUT1" Turbo
 	Then I send PTT message on "DUT1"
-	Then Transaction: "4 Message Received?" on Device: "DUT1" Description: "Text search" SLA: "60000" - OCR checkpoint: "Location" Timeout: "60" Threshold: "90"
+	Then Transaction: "4 Message Received?" on Device: "DUT2" Description: "Text search" SLA: "60000" - OCR checkpoint: "Location" Timeout: "60" Threshold: "90"
 	Then I change status to "Available" on "DUT2"
 	#Then I search for PTT contact on "DUT2"
 	#Then I click on phone contact on "DUT2" Turbo
