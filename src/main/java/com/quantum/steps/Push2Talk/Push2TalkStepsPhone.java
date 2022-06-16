@@ -141,18 +141,21 @@ public class Push2TalkStepsPhone {
 
 		String deviceModel = DeviceUtils.getDeviceProperty("model");
 
-		Map<String, Object> params2 = new HashMap<>();
+		//Map<String, Object> params2 = new HashMap<>();
 
 		switch (deviceModel) {
 
 		case "iPhone-12 Mini":
-			params2.put("label", "PUBLIC:histBtniPhone.png");
+			//params2.put("label", "PUBLIC:histBtniPhone.png");
+			pgs.imageClick("PUBLIC:histBtniPhone12Mini.png", "20", "90");
 			break;
 		case "Galaxy A12":
-			params2.put("label", "PUBLIC:historyBtnA12.png");
+			//params2.put("label", "PUBLIC:historyBtnA12.png");
+			pgs.imageClick("PUBLIC:historyBtnA12.png", "20", "90");
 			break;
 		case "DuraForce Pro 2":
-			params2.put("label", "PUBLIC:historyBtnDuraForcePro2.png");
+			//params2.put("label", "PUBLIC:historyBtnDuraForcePro2.png");
+			pgs.imageClick("PUBLIC:historyBtnDuraForcePro2.png", "20", "90");
 			break;
 
 		default:
@@ -160,24 +163,33 @@ public class Push2TalkStepsPhone {
 
 		}
 
-		params2.put("timeout", "20");
-		params2.put("threshold", "90");
-		Object result2 = driver.executeScript("mobile:button-image:click", params2);
+		//params2.put("timeout", "20");
+		//params2.put("threshold", "90");
+		//Object result2 = driver.executeScript("mobile:button-image:click", params2);
 
+		
 		if (!pgs.textFind("No history exists", "15", "80")) {
 			
 			Map<String, Object> params3 = new HashMap<>();
 			switch (deviceModel) {
 			case "iPhone-12 Mini":
 				params3.put("label", "PUBLIC:PTTMessageArrowiPhone12Mini.png");
+				
+				//pgs.imageClick("PUBLIC:PTTMessageArrowiPhone12Mini.png", "20", "90");
+				
 				break;
 				
 			case "Galaxy A12":
 				params3.put("label", "PUBLIC:PTTMessageArrowGalaxyA12.png");
+				//pgs.imageClick("PUBLIC:PTTMessageArrowGalaxyA12.png", "20", "90");
+				
 				break;
 				
 			case "DuraForce Pro 2":
 				params3.put("label", "PUBLIC:PTTMessageArrowDuraForce.png");
+				//pgs.imageClick("PUBLIC:PTTMessageArrowDuraForce.png", "20", "90");
+				
+				
 				break;
 				default:
 				break;
@@ -215,7 +227,7 @@ public class Push2TalkStepsPhone {
 		switch (deviceModel) {
 
 		case "iPhone-12 Mini":
-			params4.put("label", "PUBLIC:contactsTabiPhone12Mini-Unclicked.png");
+			params4.put("label", "PUBLIC:PTTcontactsiPhone12Mini-Unclicked.png");
 			break;
 		case "Galaxy A12":
 			params4.put("label", "PUBLIC:contactsTabA12Unclicked.png");
