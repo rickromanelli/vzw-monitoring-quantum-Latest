@@ -215,7 +215,7 @@ public class Push2TalkStepsPhone {
 		switch (deviceModel) {
 
 		case "iPhone-12 Mini":
-			params4.put("label", "PUBLIC:contactsTabiPhone12-Unclicked.png");
+			params4.put("label", "PUBLIC:contactsTabiPhone12Mini-Unclicked.png");
 			break;
 		case "Galaxy A12":
 			params4.put("label", "PUBLIC:contactsTabA12Unclicked.png");
