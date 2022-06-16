@@ -164,7 +164,7 @@ public class Push2TalkStepsPhone {
 		params2.put("threshold", "90");
 		Object result2 = driver.executeScript("mobile:button-image:click", params2);
 
-		if (!pgs.textFind("No history exists", "10", "80")) {
+		if (!pgs.textFind("No history exists", "15", "80")) {
 			
 			Map<String, Object> params3 = new HashMap<>();
 			switch (deviceModel) {
