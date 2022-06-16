@@ -146,7 +146,7 @@ public class Push2TalkStepsPhone {
 		switch (deviceModel) {
 
 		case "iPhone-12 Mini":
-			params2.put("label", "PUBLIC:historyBtniPhone12.png");
+			params2.put("label", "PUBLIC:histBtniPhone.png");
 			break;
 		case "Galaxy A12":
 			params2.put("label", "PUBLIC:historyBtnA12.png");
