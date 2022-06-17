@@ -407,7 +407,7 @@ public class Push2TalkStepsPhone {
 		we.waitForPresent(60000);
 		we.click(); */
 		
-		pgs.textClickIndex(cn, "20", "100", "2");
+		pgs.textClickIndex(cn, "20", "80", "2");
 	}
 
 	@Then("^I click on phone contact on \"([^\"]*)\" iPhone$")
