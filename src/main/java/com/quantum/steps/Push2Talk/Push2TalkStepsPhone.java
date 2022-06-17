@@ -222,7 +222,7 @@ public class Push2TalkStepsPhone {
 		}
 
 		Map<String, Object> params4 = new HashMap<>();
-		params4.put("timeout", "30");
+		params4.put("timeout", "45");
 		params4.put("threshold", "90");
 		params4.put("match", "Bounded");
 		
