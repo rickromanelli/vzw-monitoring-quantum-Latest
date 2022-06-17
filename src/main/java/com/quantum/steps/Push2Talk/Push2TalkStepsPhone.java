@@ -146,7 +146,7 @@ public class Push2TalkStepsPhone {
 		switch (deviceModel) {
 
 		case "iPhone-12 Mini":
-			params2.put("label", "PUBLIC:histBtniPhone.png");
+			params2.put("label", "PUBLIC:histBtniPhone12Mini.png");
 			//pgs.imageClick("PUBLIC:histBtniPhone12Mini.png", "20", "90");
 			break;
 		case "Galaxy A12":
@@ -163,7 +163,7 @@ public class Push2TalkStepsPhone {
 
 		}
 		params2.put("match", "Similar");
-		params2.put("timeout", "20");
+		params2.put("timeout", "40");
 		params2.put("threshold", "90");
 		Object result2 = driver.executeScript("mobile:button-image:click", params2);
 
