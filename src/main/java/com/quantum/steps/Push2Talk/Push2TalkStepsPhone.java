@@ -198,6 +198,7 @@ public class Push2TalkStepsPhone {
 			
 			params3.put("timeout", "30");
 			params3.put("threshold", "90");
+			params3.put("match", "Bounded");
 			params3.put("operation", "long");
 			Object result3 = driver.executeScript("mobile:button-image:click", params3);
 			
@@ -223,6 +224,7 @@ public class Push2TalkStepsPhone {
 		Map<String, Object> params4 = new HashMap<>();
 		params4.put("timeout", "30");
 		params4.put("threshold", "90");
+		params4.put("match", "Bounded");
 		
 		switch (deviceModel) {
 
