@@ -141,31 +141,31 @@ public class Push2TalkStepsPhone {
 
 		String deviceModel = DeviceUtils.getDeviceProperty("model");
 
-		//Map<String, Object> params2 = new HashMap<>();
+		Map<String, Object> params2 = new HashMap<>();
 
 		switch (deviceModel) {
 
 		case "iPhone-12 Mini":
-			//params2.put("label", "PUBLIC:histBtniPhone.png");
-			pgs.imageClick("PUBLIC:histBtniPhone12Mini.png", "20", "90");
+			params2.put("label", "PUBLIC:histBtniPhone.png");
+			//pgs.imageClick("PUBLIC:histBtniPhone12Mini.png", "20", "90");
 			break;
 		case "Galaxy A12":
-			//params2.put("label", "PUBLIC:historyBtnA12.png");
-			pgs.imageClick("PUBLIC:historyBtnA12.png", "20", "90");
+			params2.put("label", "PUBLIC:historyBtnA12.png");
+			//pgs.imageClick("PUBLIC:historyBtnA12.png", "20", "90");
 			break;
 		case "DuraForce Pro 2":
-			//params2.put("label", "PUBLIC:historyBtnDuraForcePro2.png");
-			pgs.imageClick("PUBLIC:historyBtnDuraForcePro2.png", "20", "90");
+			params2.put("label", "PUBLIC:historyBtnDuraForcePro2.png");
+			//pgs.imageClick("PUBLIC:historyBtnDuraForcePro2.png", "20", "90");
 			break;
 
 		default:
 			break;
 
 		}
-
-		//params2.put("timeout", "20");
-		//params2.put("threshold", "90");
-		//Object result2 = driver.executeScript("mobile:button-image:click", params2);
+		params2.put("match", "Similar");
+		params2.put("timeout", "20");
+		params2.put("threshold", "90");
+		Object result2 = driver.executeScript("mobile:button-image:click", params2);
 
 		
 		if (!pgs.textFind("No history exists", "15", "80")) {
