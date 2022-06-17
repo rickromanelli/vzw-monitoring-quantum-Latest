@@ -162,8 +162,8 @@ public class Push2TalkStepsPhone {
 			break;
 
 		}
-		params2.put("match", "Similar");
-		params2.put("timeout", "40");
+		params2.put("match", "Bounded");
+		params2.put("timeout", "30");
 		params2.put("threshold", "90");
 		Object result2 = driver.executeScript("mobile:button-image:click", params2);
 
