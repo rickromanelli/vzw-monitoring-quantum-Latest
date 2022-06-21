@@ -224,7 +224,7 @@ public class Push2TalkStepsPhone {
 		Map<String, Object> params4 = new HashMap<>();
 		params4.put("timeout", "45");
 		params4.put("threshold", "70");
-		//params4.put("match", "Bounded");
+		
 		
 		switch (deviceModel) {
 
@@ -264,23 +264,10 @@ public class Push2TalkStepsPhone {
 		Push2TalkStepsCommon.setPTTContactNames(driverName);
 		String cn1 = ConfigurationManager.getBundle().getString("contactName1");
 		String cn2 = ConfigurationManager.getBundle().getString("contactName2");
-		/*
-		 * Map<String, Object> params5 = new HashMap<>(); params5.put("location",
-		 * "510,327"); Object result5 = driver.executeScript("mobile:touch:tap",
-		 * params5);
-		 */
+		
 
 		String model = DeviceUtils.getDeviceProperty("model");
-		/*
-		 * if (model.equalsIgnoreCase("iPhone-7")) {
-		 * 
-		 * Map<String, Object> params3 = new HashMap<>(); params3.put("label",
-		 * "PUBLIC:Prod/PTTPlus/ContactsBtniPhone7.png"); params3.put("timeout", "20");
-		 * params3.put("threshold", "90"); Object result3 =
-		 * getDriver().executeScript("mobile:button-image:click", params3);
-		 * 
-		 * } else {
-		 */
+	
 		String cn = "";
 		if (device.equalsIgnoreCase("DUT1")) {
 			cn = cn2;
@@ -288,18 +275,7 @@ public class Push2TalkStepsPhone {
 			cn = cn1;
 		}
 
-		// iswitchToContactsTabPTT(device);
-		// }
-
-		/*
-		 * try { pas.closeAppByName("Push To Talk+");
-		 * pas.closeAppByName("Push To Talk+"); } catch (Exception ex) {
-		 * 
-		 * } pas.startAppByName("Push To Talk+");
-		 * 
-		 * pgs.textCheckpoint("Available", "30", "80");
-		 */
-
+		
 		model = DeviceUtils.getDeviceProperty("model");
 
 		if (model.equalsIgnoreCase("iPhone-7")) {
@@ -323,11 +299,7 @@ public class Push2TalkStepsPhone {
 			Object result1 = getDriver().executeScript("mobile:edit-text:set", params1);
 
 		} else {
-			/*
-			 * Map<String, Object> params2 = new HashMap<>(); params2.put("location",
-			 * "263,762"); Object result2 = getDriver().executeScript("mobile:touch:tap",
-			 * params2);
-			 */
+			
 
 			System.out.println((QAFExtendedWebElement) getDriver().findElement("home.search"));
 			we = (QAFExtendedWebElement) getDriver().findElement("home.search");
@@ -395,19 +367,7 @@ public class Push2TalkStepsPhone {
 			cn = cn1.toString();
 		}
 
-		/*
-		 * Map<String, Object> params3 = new HashMap<>(); params3.put("label",
-		 * "Brigadier"); params3.put("timeout", "20"); params3.put("threshold", "80");
-		 * //params3.put("index", "2"); Object result3 =
-		 * driver.executeScript("mobile:button-text:click", params3);
-		 * 
-		 
-
-		we = (QAFExtendedWebElement) driver.findElement("contacts.result");
-		we.waitForPresent(60000);
-		we.click(); */
-		
-		pgs.textClickIndex(cn, "20", "75", "2");
+		pgs.textClickHaystack(cn, "20", "75", "0%", "35%", "65%", "100%");
 	}
 
 	@Then("^I click on phone contact on \"([^\"]*)\" iPhone$")
@@ -686,12 +646,7 @@ public class Push2TalkStepsPhone {
 		}
 
 		SplunkHelper.testStepEnd(Long.parseLong(SLA), name);
-		/*
-		 * we = (QAFExtendedWebElement)
-		 * driver.findElement("phone.push2talk.callscreen.speakerOff");
-		 * we.waitForPresent(20000); we.click();
-		 */
-
+		
 	}
 
 	@Then("^I send audio on \"([^\"]*)\"$")
@@ -717,14 +672,7 @@ public class Push2TalkStepsPhone {
 			}
 
 			try {
-				// pgs.imageClick("PUBLIC:Prod/PTTPlus/PTTCall-iPhone.png", "20", "85");
-
-				/*
-				 * Map<String, Object> params1 = new HashMap<>(); params1.put("label",
-				 * "PUBLIC:Prod/PTTPlus/PTTCall-iPhone.png"); params1.put("timeout", "20");
-				 * params1.put("threshold", "80"); params1.put("operation", "long"); Object
-				 * result1 = getDriver().executeScript("mobile:button-image:click", params1);
-				 */
+				
 				Map<String, Object> params1 = new HashMap<>();
 				params1.put("location", "50%, 60%");
 				params1.put("duration", "20");
@@ -812,13 +760,6 @@ public class Push2TalkStepsPhone {
 			
 			pas.waitFor(3);
 			
-			/*
-			 * Map<String, Object> params33 = new HashMap<>(); params33.put("label",
-			 * "Do not disturb"); params33.put("timeout", "20"); params33.put("threshold",
-			 * "90"); params33.put("label.direction", "Left"); params33.put("label.offset",
-			 * "50%"); Object result33 =
-			 * getDriver().executeScript("mobile:button-text:click", params33);
-			 */
 			
 			pgs.textClick("Do not Disturb", "20", "90");
 					
@@ -830,10 +771,6 @@ public class Push2TalkStepsPhone {
 		pas.waitFor(3);
 		
 		pgs.textCheckpoint(status, "20", "90");
-		
-		
-	//pgs.textClickHaystack(status, "10", "90", "0%", "14%", "86%", "100%");
-		
 			
 		
 		}
