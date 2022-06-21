@@ -812,15 +812,15 @@ public class Push2TalkStepsPhone {
 			
 			pas.waitFor(3);
 			
-			Map<String, Object> params33 = new HashMap<>();
-			params33.put("label", "Do not disturb");
-			params33.put("timeout", "20");
-			params33.put("threshold", "90");
-			params33.put("label.direction", "Left");
-			params33.put("label.offset", "50%");
-			Object result33 = getDriver().executeScript("mobile:button-text:click", params33);
+			/*
+			 * Map<String, Object> params33 = new HashMap<>(); params33.put("label",
+			 * "Do not disturb"); params33.put("timeout", "20"); params33.put("threshold",
+			 * "90"); params33.put("label.direction", "Left"); params33.put("label.offset",
+			 * "50%"); Object result33 =
+			 * getDriver().executeScript("mobile:button-text:click", params33);
+			 */
 			
-				
+			pgs.textClick("Do not Disturb", "20", "90");
 					
 				
 		}
