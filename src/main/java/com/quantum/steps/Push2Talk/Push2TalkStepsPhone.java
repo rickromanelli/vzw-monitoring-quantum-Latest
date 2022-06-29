@@ -367,7 +367,21 @@ public class Push2TalkStepsPhone {
 			cn = cn1.toString();
 		}
 
-		pgs.textClickHaystack(cn, "20", "75", "0%", "31%", "69%", "100%");
+		
+	//natural-language=true
+		//pgs.textClickHaystack(cn, "20", "75", "0%", "31%", "69%", "100%");
+		ArrayList genericOptions2 = new ArrayList();
+		Map<String, Object> params6 = new HashMap<>();
+		params6.put("label", cn);
+		params6.put("timeout", "20");
+		params6.put("screen.top", "31%");
+		params6.put("screen.left", "0%");
+		params6.put("screen.height", "69%");
+		params6.put("screen.width", "100%");
+		params6.put("threshold", "75");
+		genericOptions2.add("natural-language=true");
+		params6.put("ocr", genericOptions2);
+		Object result6 = getDriver().executeScript("mobile:button-text:click", params6);
 	}
 
 	@Then("^I click on phone contact on \"([^\"]*)\" iPhone$")
