@@ -374,9 +374,9 @@ public class Push2TalkStepsPhone {
 		Map<String, Object> params6 = new HashMap<>();
 		params6.put("label", cn);
 		params6.put("timeout", "20");
-		params6.put("screen.top", "31%");
+		params6.put("screen.top", "33%");
 		params6.put("screen.left", "0%");
-		params6.put("screen.height", "69%");
+		params6.put("screen.height", "67%");
 		params6.put("screen.width", "100%");
 		params6.put("threshold", "75");
 		genericOptions2.add("natural-language=true");
