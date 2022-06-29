@@ -367,7 +367,7 @@ public class Push2TalkStepsPhone {
 			cn = cn1.toString();
 		}
 
-		pgs.textClickHaystack(cn, "20", "75", "0%", "35%", "65%", "100%");
+		pgs.textClickHaystack(cn, "20", "75", "0%", "31%", "69%", "100%");
 	}
 
 	@Then("^I click on phone contact on \"([^\"]*)\" iPhone$")
