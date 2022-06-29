@@ -1,7 +1,7 @@
 call.clickToCall=//*[@text="Call"]
 call.clickToEndCall=//*[@text="call end"]
 call.speakerOff=//*[@content-desc="speaker off,"]
-call.photoButton=//*[@resource-id="ext-button-111"]
+call.photoButton=//*[@resource-id="ext-element-839"]
 call.takePhoto=//*[@resource-id="ext-container-164"]
 call.okPhoto=//*[@text="OK"]
 call.confirmOk=//*[@resource-id="ext-button-139"]
