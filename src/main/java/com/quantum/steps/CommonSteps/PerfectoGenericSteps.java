@@ -33,7 +33,6 @@ import cucumber.api.java.en.Then;
 @QAFTestStepProvider
 public class PerfectoGenericSteps {
 
-	
 	QAFExtendedWebDriver driver = new WebDriverTestBase().getDriver();
 	QAFExtendedWebElement we;
 
@@ -77,10 +76,8 @@ public class PerfectoGenericSteps {
 			textClick(contactName, "20", "90");
 			PerfectoApplicationSteps.waitFor(3);
 			textClick("Call Mobile", "20", "90");
-			
+
 		} else if (model.equals("9930")) {
-			
-		
 
 		} else if (model.equals("V20")) {
 
@@ -114,11 +111,11 @@ public class PerfectoGenericSteps {
 			PerfectoApplicationSteps.waitFor(3);
 			// textClick("Call Mobile", "20", "90");
 
-			//imageClick("PUBLIC:Prod/International/CallButtoniPhone7.png", "30", "90");
+			// imageClick("PUBLIC:Prod/International/CallButtoniPhone7.png", "30", "90");
 			we = (QAFExtendedWebElement) driver.findElement("call.callButton");
 			we.waitForPresent(20000);
 			we.click();
-			
+
 		} else if (model.equals("Galaxy S7")) {
 			we = (QAFExtendedWebElement) driver.findElement("call.dailTab");
 			we.waitForPresent(20000);
@@ -143,11 +140,12 @@ public class PerfectoGenericSteps {
 			we = (QAFExtendedWebElement) driver.findElement("call.callButton");
 			we.waitForPresent(20000);
 			we.click();
-			
-		}	else if (model.equals("Galaxy S8") && ConfigurationManager.getBundle().getString("app").equalsIgnoreCase("VVM")) {
-				
+
+		} else if (model.equals("Galaxy S8")
+				&& ConfigurationManager.getBundle().getString("app").equalsIgnoreCase("VVM")) {
+
 			String phoneApp = "Phone";
-		
+
 			try {
 				PerfectoApplicationSteps.closeAppByName(phoneApp);
 				PerfectoApplicationSteps.closeAppByName(phoneApp);
@@ -160,12 +158,11 @@ public class PerfectoGenericSteps {
 			we = (QAFExtendedWebElement) driver.findElement("call.dailTab");
 			PerfectoApplicationSteps.waitFor(10);
 			if (we.isPresent()) {
-				we.click();	
+				we.click();
 			}
-			
 
 			we = (QAFExtendedWebElement) driver.findElement("call.deleteDigit");
-			
+
 			for (int i = 0; i < phNums.length; ++i) {
 				if (we.isPresent()) {
 
@@ -185,25 +182,23 @@ public class PerfectoGenericSteps {
 			we.waitForPresent(20000);
 			we.click();
 		} else if (model.equals("Galaxy S8") || model.equals("Galaxy S10") || model.equals("Moto Z2")) {
-			
+
 			String contactName = ConfigurationManager.getBundle().getString("contactDesc2");
-			
-			
+
 			if (textFindHaystack("Contacts", "20", "90", "0%", "0%", "100%", "100%")) {
-				
+
 				Map<String, Object> params1 = new HashMap<>();
 				params1.put("label", "Contacts");
 				params1.put("timeout", "20");
 				params1.put("threshold", "90");
 				Object result1 = driver.executeScript("mobile:button-text:click", params1);
-				
-				
+
 			}
-			
+
 			we = (QAFExtendedWebElement) driver.findElement("call.contacts.search");
 			we.waitForPresent(20000);
-			we.click();	
-			
+			we.click();
+
 			Map<String, Object> params5 = new HashMap<>();
 			params5.put("label", "Search");
 			params5.put("text", contactName);
@@ -212,23 +207,22 @@ public class PerfectoGenericSteps {
 			params5.put("screen.left", "0%");
 			params5.put("screen.width", "100%");
 			Object result5 = getDriver().executeScript("mobile:edit-text:set", params5);
-			
+
 			we = (QAFExtendedWebElement) driver.findElement("call.contactsResult");
 			we.waitForPresent(20000);
 			we.click();
-			
+
 			PerfectoApplicationSteps.waitFor(3);
-			
+
 			if (!model.equals("Moto Z2")) {
-			we = (QAFExtendedWebElement) driver.findElement("call.callButton");
-			we.waitForPresent(20000);
-			we.click();
+				we = (QAFExtendedWebElement) driver.findElement("call.callButton");
+				we.waitForPresent(20000);
+				we.click();
 			}
-			
 
 		} else if (model.equals("Galaxy A12")) {
 			String phoneApp = "Phone";
-			
+
 			try {
 				PerfectoApplicationSteps.closeAppByName(phoneApp);
 				PerfectoApplicationSteps.closeAppByName(phoneApp);
@@ -241,12 +235,11 @@ public class PerfectoGenericSteps {
 			we = (QAFExtendedWebElement) driver.findElement("call.dailTab");
 			PerfectoApplicationSteps.waitFor(10);
 			if (we.isPresent()) {
-				we.click();	
+				we.click();
 			}
-			
 
 			we = (QAFExtendedWebElement) driver.findElement("call.deleteDigit");
-			
+
 			for (int i = 0; i < phNums.length; ++i) {
 				if (we.isPresent()) {
 
@@ -265,7 +258,7 @@ public class PerfectoGenericSteps {
 			we = (QAFExtendedWebElement) driver.findElement("call.callButton");
 			we.waitForPresent(20000);
 			we.click();
-			
+
 		} else {
 
 			we = (QAFExtendedWebElement) driver.findElement("call.dailTab");
@@ -321,30 +314,30 @@ public class PerfectoGenericSteps {
 	 * QAFTestBase.STBArgs.browser_str.getFrom(args); return "string"; }
 	 */
 
-	
-	
 	@Then("^I switch to driver \"([^\"]*)\"$")
 	public static void switchToDriver(String driverName) {
 
 		String currentDriver = TestBaseProvider.instance().get().getDriverName();
 
 		System.out.println("^^^^^^^^^^^^^^^^^^^^^^^Pre-SwitchDriver" + currentDriver);
-		
+
 		try {
-			//TestBaseProvider.instance().get().setDriver(driverName + "RemoteDriver");
+			// TestBaseProvider.instance().get().setDriver(driverName + "RemoteDriver");
 			DriverUtils.switchToDriver(driverName);
 			if (driverName.contains("2")) {
 				ConfigurationManager.getBundle().setProperty("deviceCount", "2");
-				ConfigurationManager.getBundle().setProperty("reportURL2", DriverUtils.getDriver().getCapabilities().getCapability("testGridReportUrl"));
+				ConfigurationManager.getBundle().setProperty("reportURL2",
+						DriverUtils.getDriver().getCapabilities().getCapability("testGridReportUrl"));
 			} else if (driverName.contains("2")) {
 				ConfigurationManager.getBundle().setProperty("deviceCount", "3");
-				ConfigurationManager.getBundle().setProperty("reportURL3", DriverUtils.getDriver().getCapabilities().getCapability("testGridReportUrl"));
-			
+				ConfigurationManager.getBundle().setProperty("reportURL3",
+						DriverUtils.getDriver().getCapabilities().getCapability("testGridReportUrl"));
+
 			}
-				String envResources = ConfigurationManager.getBundle().getString(driverName + ".env.resources");
+			String envResources = ConfigurationManager.getBundle().getString(driverName + ".env.resources");
 			ConfigurationManager.getBundle().setProperty("env.resources", envResources);
 
-			//currentDriver = TestBaseProvider.instance().get().getBrowser();
+			// currentDriver = TestBaseProvider.instance().get().getBrowser();
 			currentDriver = TestBaseProvider.instance().get().getDriverName();
 			System.out.println("^^^^^^^^^^^^^^^^^^^^^^^Post-SwitchDriver" + currentDriver);
 
@@ -352,9 +345,7 @@ public class PerfectoGenericSteps {
 			System.out.println("^^^^^^^^^^^^^^^^^^^^^^^Failed to switch^^^^^^^^^^^^^^^^^^^^^^^");
 
 		}
-		
-		
-		
+
 		storePhNumber(driverName);
 		storeDeviceID(driverName);
 		storeDeviceDesc(driverName);
@@ -372,54 +363,50 @@ public class PerfectoGenericSteps {
 		PerfectoGenericSteps.switchToDriver(driverName);
 
 		String model = DeviceUtils.getDeviceProperty("model");
-		
+
 		switch (model) {
 
-		
-			
 		case "9930":
-		
-		Map<String, Object> params2 = new HashMap<>();
-		Object result2 = driver.executeScript("mobile:handset:ready", params2);
 
-		// toChar array #########################################################
-		String app = "phone";
-		// char[] appNameArray = app.toCharArray();
-		String[] appNameArray = app.toUpperCase().split("");
+			Map<String, Object> params2 = new HashMap<>();
+			Object result2 = driver.executeScript("mobile:handset:ready", params2);
 
-		Map<String, Object> params3 = new HashMap<>();
+			// toChar array #########################################################
+			String app = "phone";
+			// char[] appNameArray = app.toCharArray();
+			String[] appNameArray = app.toUpperCase().split("");
 
-		for (int i = 0; i < appNameArray.length; i++) {
+			Map<String, Object> params3 = new HashMap<>();
 
-			String letter = appNameArray[i];
-			System.out.println(letter);
-			System.out.println(i);
-			params3.put("keySequence", letter);
-			getDriver().executeScript("mobile:presskey", params3);
-			
-		}
-		
-		Map<String, Object> params11 = new HashMap<>();
-		params11.put("label", "Phone");
-		params11.put("timeout", "20");
-		params11.put("index", "2");
-		params11.put("label.direction", "below");
-		params11.put("label.offset", "11%");
-		Object result11 = driver.executeScript("mobile:button-text:click", params11);
-		
-			
-			
+			for (int i = 0; i < appNameArray.length; i++) {
+
+				String letter = appNameArray[i];
+				System.out.println(letter);
+				System.out.println(i);
+				params3.put("keySequence", letter);
+				getDriver().executeScript("mobile:presskey", params3);
+
+			}
+
+			Map<String, Object> params11 = new HashMap<>();
+			params11.put("label", "Phone");
+			params11.put("timeout", "20");
+			params11.put("index", "2");
+			params11.put("label.direction", "below");
+			params11.put("label.offset", "11%");
+			Object result11 = driver.executeScript("mobile:button-text:click", params11);
+
 			break;
-			
+
 		case "Galaxy S8":
 
 			String phoneApp = "Contacts";
-			
-			
-			//if (imageFindHaystack("PUBLIC:Prod/International/PhoneappButtonS8.png", "30", "90", "0%", "0%", "100%", "100%")) {
-			//	imageClick("PUBLIC:Prod/International/PhoneappButtonS8.png", "30", "90");
-			//}
-			
+
+			// if (imageFindHaystack("PUBLIC:Prod/International/PhoneappButtonS8.png", "30",
+			// "90", "0%", "0%", "100%", "100%")) {
+			// imageClick("PUBLIC:Prod/International/PhoneappButtonS8.png", "30", "90");
+			// }
+
 			try {
 				PerfectoApplicationSteps.closeAppByName(phoneApp);
 				PerfectoApplicationSteps.closeAppByName(phoneApp);
@@ -429,21 +416,17 @@ public class PerfectoGenericSteps {
 
 			PerfectoApplicationSteps.startAppByName(phoneApp);
 
-			
-
 			break;
-		
-
 
 		case "Galaxy A12":
 
 			phoneApp = "Contacts";
-			
-			
-			//if (imageFindHaystack("PUBLIC:Prod/International/PhoneappButtonS8.png", "30", "90", "0%", "0%", "100%", "100%")) {
-			//	imageClick("PUBLIC:Prod/International/PhoneappButtonS8.png", "30", "90");
-			//}
-			
+
+			// if (imageFindHaystack("PUBLIC:Prod/International/PhoneappButtonS8.png", "30",
+			// "90", "0%", "0%", "100%", "100%")) {
+			// imageClick("PUBLIC:Prod/International/PhoneappButtonS8.png", "30", "90");
+			// }
+
 			try {
 				PerfectoApplicationSteps.closeAppByName(phoneApp);
 				PerfectoApplicationSteps.closeAppByName(phoneApp);
@@ -453,19 +436,17 @@ public class PerfectoGenericSteps {
 
 			PerfectoApplicationSteps.startAppByName(phoneApp);
 
-			
-
 			break;
-		
+
 		case "Galaxy S10":
 
 			phoneApp = "Phone";
-			
-			
-			//if (imageFindHaystack("PUBLIC:Prod/International/PhoneappButtonS8.png", "30", "90", "0%", "0%", "100%", "100%")) {
-			//	imageClick("PUBLIC:Prod/International/PhoneappButtonS8.png", "30", "90");
-			//}
-			
+
+			// if (imageFindHaystack("PUBLIC:Prod/International/PhoneappButtonS8.png", "30",
+			// "90", "0%", "0%", "100%", "100%")) {
+			// imageClick("PUBLIC:Prod/International/PhoneappButtonS8.png", "30", "90");
+			// }
+
 			try {
 				PerfectoApplicationSteps.closeAppByName(phoneApp);
 				PerfectoApplicationSteps.closeAppByName(phoneApp);
@@ -475,10 +456,8 @@ public class PerfectoGenericSteps {
 
 			PerfectoApplicationSteps.startAppByName(phoneApp);
 
-			
-
 			break;
-			
+
 		default:
 			String phoneAppName = "Phone";
 			if (model.equals("V20")) {
@@ -492,14 +471,10 @@ public class PerfectoGenericSteps {
 			}
 
 			PerfectoApplicationSteps.startAppByName(phoneAppName);
-			
-			
 
 			we = (QAFExtendedWebElement) driver.findElement("call.contacts");
 			we.waitForPresent(30000);
 			we.click();
-			
-			
 
 			break;
 		}
@@ -705,7 +680,7 @@ public class PerfectoGenericSteps {
 		Object result5 = getDriver().executeScript("mobile:button-image:click", params5);
 
 	}
-	
+
 	@Then("^I perform an Image click \"([^\"]*)\" with a timeout of \"([^\"]*)\" and a threshold of \"([^\"]*)\" index of \"([^\"]*)\"$")
 	public void imageClickIndex(String repo, String timeout, String threshold, String index) throws Exception {
 
@@ -776,7 +751,7 @@ public class PerfectoGenericSteps {
 		Object result6 = getDriver().executeScript("mobile:button-text:click", params6);
 
 	}
-	
+
 	@Then("^I perform an Image click \"([^\"]*)\" with a timeout of \"([^\"]*)\" and a threshold of \"([^\"]*)\" haystack x: \"([^\"]*)\" , y: \"([^\"]*)\" , height: \"([^\"]*)\" , width: \"([^\"]*)\"$")
 	public void imageClickHaystack(String repo, String timeout, String threshold, String xstart, String ystart,
 			String height, String width) throws Exception {
@@ -828,7 +803,7 @@ public class PerfectoGenericSteps {
 		return false;
 
 	}
-	
+
 	public boolean textFind(String text, String timeout, String threshold) throws Exception {
 
 		Map<String, Object> params6 = new HashMap<>();
@@ -843,7 +818,7 @@ public class PerfectoGenericSteps {
 		return false;
 
 	}
-	
+
 	public boolean textFindIndex(String text, String timeout, String threshold, String index) throws Exception {
 
 		Map<String, Object> params6 = new HashMap<>();
@@ -857,7 +832,6 @@ public class PerfectoGenericSteps {
 		}
 
 		return false;
-
 
 	}
 
@@ -997,31 +971,29 @@ public class PerfectoGenericSteps {
 		String model = DeviceUtils.getDeviceProperty("model");
 
 		if (model.equals("Galaxy S10") || model.equals("Galaxy S10e") || model.equals("Galaxy A12")) {
-					Map<String, Object> params = new HashMap<>();
+			Map<String, Object> params = new HashMap<>();
 
-					
-					PerfectoApplicationSteps.closeAppByName("Chrome");
-					PerfectoApplicationSteps.closeAppByName("Chrome");
+			PerfectoApplicationSteps.closeAppByName("Chrome");
+			PerfectoApplicationSteps.closeAppByName("Chrome");
 
-					PerfectoApplicationSteps.startAppByName("Chrome");
-					
-					we = (QAFExtendedWebElement) driver.findElement("browser.addressBar");
-					we.waitForPresent(40000);
+			PerfectoApplicationSteps.startAppByName("Chrome");
 
-					we.click();
-					
-					
-					
-					we.sendKeys(url);Map<String, Object> params1 = new HashMap<>();
-					params1.put("label", "Go");
-					params1.put("timeout", "40");
-					params1.put("threshold", "80");
-					params1.put("screen.top", "78%");
-					params1.put("screen.height", "22%");
-					params1.put("screen.left", "57%");
-					params1.put("screen.width", "43%");
-					Object result1 = getDriver().executeScript("mobile:button-text:click", params1);
-					
+			we = (QAFExtendedWebElement) driver.findElement("browser.addressBar");
+			we.waitForPresent(40000);
+
+			we.click();
+
+			we.sendKeys(url);
+			Map<String, Object> params1 = new HashMap<>();
+			params1.put("label", "Go");
+			params1.put("timeout", "40");
+			params1.put("threshold", "80");
+			params1.put("screen.top", "78%");
+			params1.put("screen.height", "22%");
+			params1.put("screen.left", "57%");
+			params1.put("screen.width", "43%");
+			Object result1 = getDriver().executeScript("mobile:button-text:click", params1);
+
 		} else {
 
 			Map<String, Object> params = new HashMap<>();
@@ -1076,10 +1048,9 @@ public class PerfectoGenericSteps {
 
 		}
 	}
+
 	@Then("^I toggle wifi \"([^\"]*)\"$")
 	public void toggleWifiSingleDriver(String wifiValue) throws Exception {
-
-		
 
 		QAFExtendedWebDriver myDriver = getDriver();
 		Map params = new HashMap<>(); // Set the "wifi" value to turn off the Wifi
@@ -1095,40 +1066,22 @@ public class PerfectoGenericSteps {
 			myDriver.executeScript("mobile:application:open", params);
 			myDriver.executeScript("mobile:application:close", params);
 			myDriver.executeScript("mobile:application:open", params);
-			// myDriver.findElementByXPath("//*[@value=\"Wi-Fi\"]").click();
-			//CommonStep.click("settings.home.wifi.btn");
-			if(textFind("Perfecto", "20","90")) {
+			if (textFindHaystack("Perfecto", "20", "90", "0%", "35%", "65%", "100%")) {
+
 				we = (QAFExtendedWebElement) driver.findElement("settings.home.wifi.btn");
 				we.waitForPresent(20000);
 				we.click();
-				
-				//QAFExtendedWebElement switchOnOff = new QAFExtendedWebElement(String.format(ConfigurationManager.getBundle().getString("settings.wifi.toggle")));
 
-				//QAFWebElement switchOnOff = myDriver
-						//.findElementByXPath(ConfigurationManager.getBundle().getString("settings.wifi.toggle"));
-				
 				we = (QAFExtendedWebElement) driver.findElement("settings.wifi.toggle");
 				we.waitForPresent(20000);
 
 				we.click();
 			}
-			// QAFExtendedWebElement switchOnOff = new
-			// QAFExtendedWebElement(String.format(ConfigurationManager.getBundle().getString("settings.wifi.toggle")));
-
-			//QAFWebElement switchOnOff = myDriver
-					//.findElementByXPath(ConfigurationManager.getBundle().getString("settings.wifi.toggle"));
-			// QAFWebElement switchOnOff = CommonStep ("settings.wifi.toggle");
-			//String state = switchOnOff.getAttribute("value");
-			// System.out.println(myDriver.getPageSource());
-			//if ((wifiValue.equals("disabled") && state.equals("1"))
-					//|| (wifiValue.equals("enabled") && state.equals("0"))) {
-			//	switchOnOff.click();
-			//	switchOnOff.waitForAttribute("value", "0", 20);
-			}
 
 		}
-	
-	
+
+	}
+
 	@Then("^I toggle wifi \"([^\"]*)\" on \"([^\"]*)\"$")
 	public void toggleWifi(String wifiValue, String device) throws Exception {
 
@@ -1144,7 +1097,7 @@ public class PerfectoGenericSteps {
 		QAFExtendedWebDriver myDriver = getDriver();
 		Map params = new HashMap<>(); // Set the "wifi" value to turn off the Wifi
 		PerfectoApplicationSteps.switchNativeContext();
-		
+
 		String platform = DeviceUtils.getDeviceProperty("OS");
 
 		if (platform.equalsIgnoreCase("Android")) {
@@ -1157,7 +1110,7 @@ public class PerfectoGenericSteps {
 			myDriver.executeScript("mobile:application:open", params);
 			myDriver.executeScript("mobile:application:close", params);
 			myDriver.executeScript("mobile:application:open", params);
-			
+
 			/*
 			 * Map<String, Object> params1 = new HashMap<>(); params1.put("content",
 			 * "Perfecto"); params1.put("timeout", "5"); params1.put("threshold", "90");
@@ -1165,37 +1118,57 @@ public class PerfectoGenericSteps {
 			 * params1.put("screen.width", "100%"); params1.put("screen.height", "28%");
 			 * driver.executeScript("mobile:text:find", params1);
 			 */
-			if(textFindHaystack("Perfecto", "5", "90", "0%", "41%", "28%", "100%")) {
-			we = (QAFExtendedWebElement) driver.findElement("//*[@value=\"Wi-Fi\"]");
-			we.waitForPresent(20000);
-			we.click();
-			
-			
-			we = (QAFExtendedWebElement) driver.findElement("//*[@label=\"Wi-Fi\" and @value=\"1\"]");
-			we.waitForPresent(20000);
+			if (textFindHaystack("Perfecto", "5", "90", "0%", "41%", "28%", "100%")) {
+				we = (QAFExtendedWebElement) driver.findElement("//*[@value=\"Wi-Fi\"]");
+				we.waitForPresent(20000);
+				we.click();
 
-			we.click();
-			
+				we = (QAFExtendedWebElement) driver.findElement("//*[@label=\"Wi-Fi\" and @value=\"1\"]");
+				we.waitForPresent(20000);
+
+				we.click();
+
 			}
-		
 
 		}
 	}
-	
-	@Then("^I restart device \"([^\"]*)\"$")
-	public void restartDevice(String device) throws Exception {
-	
-		String driverName = "perfecto";
-		if (device.equalsIgnoreCase("dut2")) {
-			driverName = "perfecto2";
-		} else if (device.equalsIgnoreCase("dut3")) {
-			driverName = "perfecto3";
-		}
 
-		PerfectoGenericSteps.switchToDriver(driverName);
+	@Then("I set picker wheel$")
+	public void setPickerWheel() {
 
-		
-		
+		PerfectoApplicationSteps.startAppByName("Clock");
+
+		we = (QAFExtendedWebElement) driver.findElement("//*[@label=\"Alarm\"]");
+		we.waitForPresent(20000);
+		we.click();
+
+		we = (QAFExtendedWebElement) driver.findElement("//*[@label=\"Add\"]");
+		we.waitForPresent(20000);
+		we.click();
+
+		we = (QAFExtendedWebElement) driver.findElement("//*[@type=\"XCUIElementTypePickerWheel\"][1]");
+		we.waitForPresent(20000);
+
+		we.click();
+
+		DeviceUtils.pickerwheelStep(we, "next");
+
+	}
+
+	@Then("^I restart device$")
+	public void restartDevice() throws Exception {
+
+		/*
+		 * String driverName = "perfecto"; if (device.equalsIgnoreCase("dut2")) {
+		 * driverName = "perfecto2"; } else if (device.equalsIgnoreCase("dut3")) {
+		 * driverName = "perfecto3"; }
+		 */
+		// PerfectoGenericSteps.switchToDriver(driverName);
+		// DeviceUtils.pic
+
+		Map<String, Object> pars = new HashMap<>();
+		String reStr = (String) driver.executeScript("mobile:handset:reboot", pars);
+
 	}
 
 }
