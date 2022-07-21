@@ -131,7 +131,7 @@ Scenario: VZCloud_MediaSync_GalaxyA12
 	#Given I use default driver	
 	Then I toggle wifi "disabled"
 	Then I open VZCloud app phone
-	Then Transaction: "1 Cloud Started?" Description: "Opening cloud app" SLA: "60000" - OCR checkpoint: "Failure" Timeout: "30" Threshold: "100"
+	Then Transaction: "1 Cloud Started?" Description: "Opening cloud app" SLA: "60000" - OCR checkpoint: "Verizon Cloud" Timeout: "30" Threshold: "100"
 	Then I delete photos in VZCloud
 	#Then I delete photos in Gallery
 	Then I start application by id "com.sec.android.app.camera"
