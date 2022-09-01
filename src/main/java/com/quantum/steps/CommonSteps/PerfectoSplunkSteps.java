@@ -18,13 +18,11 @@ import cucumber.api.java.en.Then;
 @QAFTestStepProvider
 public class PerfectoSplunkSteps {
 
-	//@Then("^I perform a Splunk transaction using the name \"([^\"]*)\" and description of \"([^\"]*)\" with an SLA of \"([^\"]*)\" - I'm also utilizing an OCR checkpoint for the word \"([^\"]*)\" with a timeout of \"([^\"]*)\" and threshold of \"([^\"]*)\"$")
 	@Then("^Transaction: \"([^\"]*)\" Description: \"([^\"]*)\" SLA: \"([^\"]*)\" - OCR checkpoint: \"([^\"]*)\" Timeout: \"([^\"]*)\" Threshold: \"([^\"]*)\"$")
 	public void visualOCRTimer(String name, String desc, String SLA, String text, String timeout, String threshold)
 			throws Exception {
 		
 		startSplunkStep(name, desc);
-		//ConfigurationManager.getBundle().setProperty("splunk.transaction.number", transactionNumber);
 		Map<String, Object> params1 = new HashMap<>();
 		params1.put("content", text);
 		params1.put("source", "camera");
@@ -59,7 +57,6 @@ public class PerfectoSplunkSteps {
 		PerfectoGenericSteps.switchToDriver(driverName);
 		
 		startSplunkStep(name, desc);
-		//ConfigurationManager.getBundle().setProperty("splunk.transaction.number", transactionNumber);
 		Map<String, Object> params1 = new HashMap<>();
 		params1.put("content", text);
 		params1.put("source", "camera");
@@ -87,7 +84,6 @@ public class PerfectoSplunkSteps {
 		
 		String timestamp = ConfigurationManager.getBundle().getPropertyValue("timeStamp");
 		startSplunkStep(name, desc);
-		//ConfigurationManager.getBundle().setProperty("splunk.transaction.number", transactionNumber);
 		Map<String, Object> params1 = new HashMap<>();
 		params1.put("content", timestamp);
 		params1.put("source", "camera");
@@ -114,12 +110,10 @@ public class PerfectoSplunkSteps {
 	
 
 	public void startSplunkStep(String name, String desc) throws Exception {
-		// TODO Auto-generated method stub
 		
 		String transactionNumber = ConfigurationManager.getBundle().getString("splunk.transaction.number", "1");
 		System.out.println("TRANSACTION NUMBER: " + transactionNumber);
 		SplunkHelper.testStepStart(name, desc, transactionNumber);
-		//transactionNumber = String.valueOf(Integer.getInteger(transactionNumber) + 1);
 		int intTransactionNumber = (Integer.parseInt(transactionNumber) + 1);
 		ConfigurationManager.getBundle().setProperty("splunk.transaction.number", Integer.toString(intTransactionNumber));
 		
@@ -130,15 +124,12 @@ public class PerfectoSplunkSteps {
 	public void visualOCRTimerShort(String name, String desc, String SLA, String text, String timeout, String threshold)
 			throws Exception {
 
-		//SplunkHelper.testStepStart(name, desc);
 		startSplunkStep(name, desc);
 		Map<String, Object> params1 = new HashMap<>();
 		params1.put("content", text);
 		params1.put("source", "camera");
 		params1.put("timeout", timeout);
-		//params1.put("measurement", "accurate");
 		params1.put("threshold", threshold);
-		//params1.put("analysis", "automatic");
 		Object result1 = SplunkHelper.getQAFDriver().executeScript("mobile:checkpoint:text", params1);
 
 		if (result1.toString().contains("true")) {
@@ -157,12 +148,10 @@ public class PerfectoSplunkSteps {
 	public void SFvisualOCRTimerScroll(String name, String desc, String SLA, String text, String timeout, String threshold)
 			throws Exception {
 
-		//SplunkHelper.testStepStart(name, desc);
 		startSplunkStep(name, desc);
 		Map<String, Object> params1 = new HashMap<>();
 		params1.put("content", text);
 		params1.put("source", "camera");
-		//params1.put("timeout", timeout);
 		params1.put("threshold", threshold);
 		params1.put("scrolling", "scroll");
 	    params1.put("next","SWIPE=(50%,85%),(50%,55%)");
@@ -186,7 +175,6 @@ public class PerfectoSplunkSteps {
 			throws Exception {
 
 		String textAndOrText = text + ", " + orText;
-		//SplunkHelper.testStepStart(name, desc);
 		startSplunkStep(name, desc);
 		Map<String, Object> params1 = new HashMap<>();
 		params1.put("content", textAndOrText);
@@ -221,13 +209,10 @@ public class PerfectoSplunkSteps {
 		
 	
 
-		//SplunkHelper.testStepStart(name, desc);
+		
 		startSplunkStep(name, desc);
 		Map<String, Object> params1 = new HashMap<>();
 		params1.put("content", repo);
-		//params1.put("match", "identical");
-		//params1.put("source", "camera");
-		//params1.put("measurement", "accurate");
 		params1.put("timeout", timeout);
 		params1.put("threshold", threshold);
 		Object result1 = SplunkHelper.getQAFDriver().executeScript("mobile:checkpoint:image", params1);
@@ -253,13 +238,11 @@ public class PerfectoSplunkSteps {
 		
 	
 
-		//SplunkHelper.testStepStart(name, desc);
+		
 		startSplunkStep(name, desc);
 		Map<String, Object> params1 = new HashMap<>();
 		params1.put("content", repo);
-		//params1.put("match", "identical");
-		//params1.put("source", "camera");
-		//params1.put("measurement", "accurate");
+		
 		params1.put("timeout", timeout);
 		params1.put("threshold", threshold);
 		Object result1 = SplunkHelper.getQAFDriver().executeScript("mobile:checkpoint:image", params1);
@@ -284,7 +267,6 @@ public class PerfectoSplunkSteps {
 	public void SFvisualOCRTimerPendingTOD(String name, String desc, String SLA, String text, String orText, String timeout, String threshold)
 			throws Exception {
 
-		//SplunkHelper.testStepStart(name, desc);
 		startSplunkStep(name, desc);
 		Map<String, Object> params1 = new HashMap<>();
 		params1.put("content", "Apple, Shadybrook Dr");
@@ -323,17 +305,12 @@ public class PerfectoSplunkSteps {
 		
 		PerfectoGenericSteps.switchToDriver(driverName);
 
-		//SplunkHelper.testStepStart(name, desc);
 		startSplunkStep(name, desc);
 		Map<String, Object> params1 = new HashMap<>();
 		params1.put("content", repo);
-		//params1.put("match", "identical");
-		//params1.put("source", "camera");
-		//params1.put("measurement", "accurate");
 		params1.put("timeout", timeout);
 		params1.put("threshold", threshold);
 		Object result1 = SplunkHelper.getQAFDriver().executeScript("mobile:checkpoint:image", params1);
-		//System.out.println("SomethingXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
 		
 		if (result1.toString().contains("true")) {
 
@@ -353,17 +330,12 @@ public class PerfectoSplunkSteps {
 		
 	
 
-		//SplunkHelper.testStepStart(name, desc);
 		startSplunkStep(name, desc);
 		Map<String, Object> params1 = new HashMap<>();
 		params1.put("content", repo);
-		//params1.put("match", "identical");
-		//params1.put("source", "camera");
-		//params1.put("measurement", "accurate");
 		params1.put("timeout", timeout);
 		params1.put("threshold", threshold);
 		Object result1 = SplunkHelper.getQAFDriver().executeScript("mobile:checkpoint:image", params1);
-		//System.out.println("SomethingXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
 		
 		if (result1.toString().contains("true")) {
 
@@ -380,7 +352,6 @@ public class PerfectoSplunkSteps {
 	public void audioCheckpointTimer(String name, String desc, String SLA, String volume, String timeout, String duration)
 			throws Exception {
 
-		//SplunkHelper.testStepStart(name, desc);
 		startSplunkStep(name, desc);
 		Map<String, Object> params1 = new HashMap<>();
 		
@@ -404,7 +375,6 @@ public class PerfectoSplunkSteps {
 	public boolean imageNegativeCheckPoint(String name, String desc, String repo, String SLA, String threshold, boolean assertImage)
 			throws Exception {
 		
-		//SplunkHelper.testStepStart(name, desc);
 		startSplunkStep(name, desc);
 		Object result1 = null;
 		

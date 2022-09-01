@@ -56,6 +56,43 @@ public class VZCloudStepsCommon extends WebDriverTestCase {
 		we.waitForPresent(20000);
 
 	}
+	
+	@Then("^I verify backup$")
+	public void iVerifyBackup(){
+		PerfectoGenericSteps pgs = new PerfectoGenericSteps();
+		try {
+			pgs.textCheckpoint("All your files are synced", "400", "100");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	
+	@Then("^I backup phone from cloud app$")
+	public void ibackupPhone() throws Exception {
+		
+		PerfectoGenericSteps pgs = new PerfectoGenericSteps();
+		
+		if (pgs.textFind("ready to sync.", "10", "100")) {
+		
+		we = (QAFExtendedWebElement) driver.findElement("menu.backupNow");
+		we.waitForPresent(20000);
+		we.click();
+		
+		
+		
+		PerfectoApplicationSteps.waitFor(5);
+		
+		if(pgs.textFind("Just so you know", "10", "80") ) {
+			
+			we = (QAFExtendedWebElement) driver.findElement("menu.wifiWarning.yes");
+			we.waitForPresent(20000);
+			we.click();
+		}
+		}
+
+	}
 
 	@Given("^I delete photos in VZCloud$")
 	public void iDeletePhotosCloud() throws Exception {

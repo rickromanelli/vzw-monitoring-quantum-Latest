@@ -5,6 +5,7 @@ import java.util.Map;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -29,6 +30,7 @@ import com.quantum.utils.DeviceUtils;
 import com.quantum.utils.DriverUtils;
 
 import cucumber.api.java.en.Then;
+import io.appium.java_client.ScreenshotState;
 
 @QAFTestStepProvider
 public class PerfectoGenericSteps {
@@ -1132,6 +1134,8 @@ public class PerfectoGenericSteps {
 
 		}
 	}
+	
+	
 
 	@Then("I set picker wheel$")
 	public void setPickerWheel() {
@@ -1148,12 +1152,34 @@ public class PerfectoGenericSteps {
 
 		we = (QAFExtendedWebElement) driver.findElement("//*[@type=\"XCUIElementTypePickerWheel\"][1]");
 		we.waitForPresent(20000);
+		
+		String wheelValue = we.getText();
+		
+		System.out.println(wheelValue);
+		
+		//we.sendKeys(null)
+		
+		Map<String, Object> params1 = new HashMap<>();
+		params1.put("label", "Today");
+		params1.put("timeout", "10");
+		params1.put("threshold", "100");
+		params1.put("label.direction", "Above");
+		params1.put("label.offset", "5%");
+		Object result1 = getDriver().executeScript("mobile:button-text:click", params1);
+		
+		
+		
+		//we.click();
 
-		we.click();
-
-		DeviceUtils.pickerwheelStep(we, "next");
+		//DeviceUtils.pickerwheelStep(we, "next");
+		
+		
+		
+		//char day = i.charAt(0);
 
 	}
+	
+	
 
 	@Then("^I restart device$")
 	public void restartDevice() throws Exception {
@@ -1168,6 +1194,8 @@ public class PerfectoGenericSteps {
 
 		Map<String, Object> pars = new HashMap<>();
 		String reStr = (String) driver.executeScript("mobile:handset:reboot", pars);
+		
+		//DeviceUtils.assertVisualImg(reStr)
 
 	}
 
