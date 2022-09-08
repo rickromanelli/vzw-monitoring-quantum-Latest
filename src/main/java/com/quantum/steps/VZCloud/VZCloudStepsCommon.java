@@ -101,9 +101,10 @@ public class VZCloudStepsCommon extends WebDriverTestCase {
 		we.waitForPresent(20);
 		we.click();
 
-		we = (QAFExtendedWebElement) driver.findElement("home.home");
-		we.waitForPresent(20);
-		we.click();
+		/*
+		 * we = (QAFExtendedWebElement) driver.findElement("home.home");
+		 * we.waitForPresent(20); we.click();
+		 */
 
 		pgs.textClick("Photos & Videos", "30", "90");
 		if (!pgs.textFind("No Photos", "8", "80")) {
