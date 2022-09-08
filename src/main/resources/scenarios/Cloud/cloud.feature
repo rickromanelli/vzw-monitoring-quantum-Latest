@@ -36,7 +36,7 @@ Scenario: VZCloud_MediaSync_GalaxyA12
 	#Then I backup photos from Cloud
 	Then I open VZCloud app phone
 	Then I backup phone from cloud app
-	Then Transaction: "2 Contact backup success?" Description: "Confirm backup success" SLA: "60000" - OCR checkpoint: "All your files are synced" Timeout: "200" Threshold: "100"
+	Then Transaction: "2 Contact backup success?" Description: "Confirm backup success" SLA: "60000" - OCR checkpoint: "TEST FAILURE" Timeout: "200" Threshold: "100"
 	
 	
 	
