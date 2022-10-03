@@ -74,7 +74,7 @@ public class VZCloudStepsCommon extends WebDriverTestCase {
 		
 		PerfectoGenericSteps pgs = new PerfectoGenericSteps();
 		
-		if (pgs.textFind("ready to sync.", "10", "100")) {
+		if (pgs.textFind("Upload now", "10", "100")) {
 		
 		we = (QAFExtendedWebElement) driver.findElement("menu.backupNow");
 		we.waitForPresent(20000);
