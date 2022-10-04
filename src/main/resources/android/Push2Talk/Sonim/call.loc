@@ -1,3 +1,5 @@
 call.clickToCall=//*[@resource-id="ext-button-72"]
 call.clickToEndCall=//*[@text="call end"]
 call.speakerOff=//*[@content-desc="speaker off,"]
+call.messageField=//*[@resource-id="ext-container-172"]
+call.messageSendBtn=//*[@resource-id="ext-button-143"]
