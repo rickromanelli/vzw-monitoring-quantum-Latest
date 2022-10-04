@@ -1,3 +1,0 @@
-routeResult.address=//*[@resource-id="com.vznavigator.Generic:id/ltk_suk_explore_header"]
-routeResult.go=//*[@label="avatar"]
-routeResult.goTo=//*[@resource-id="com.vznavigator.Generic:id/goto_textview"]
