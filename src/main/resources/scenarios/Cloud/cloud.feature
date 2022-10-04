@@ -20,7 +20,7 @@ Scenario: VZCloud_ContactsSync_GalaxyA12
 	Then Transaction: "1 Cloud Started?" Description: "Opening cloud app" SLA: "60000" - OCR checkpoint: "Verizon Cloud" Timeout: "30" Threshold: "100"
 	#Then I open backup screen phone
 	Then I backup phone from cloud app
-	Then Transaction: "2 Contact backup success?" Description: "Confirm backup success" SLA: "60000" - OCR checkpoint: "All your files are synced" Timeout: "200" Threshold: "100"
+	Then Transaction: "2 Contact backup success?" Description: "Confirm backup success" SLA: "60000" - OCR checkpoint: "All your files are uploaded" Timeout: "200" Threshold: "100"
 	
 @mediaSyncGalaxyA12
 Scenario: VZCloud_MediaSync_GalaxyA12

@@ -32,6 +32,7 @@ public class EmergencySteps extends WebDriverTestCase {
 	@Given("^I send a text to NineTwoTwo")
 	public void sendText922() throws Exception {
 
+	
 		
 		try {
 			PerfectoApplicationSteps.closeAppByName("Messages");
@@ -90,6 +91,14 @@ public class EmergencySteps extends WebDriverTestCase {
 			we = (QAFExtendedWebElement) driver.findElement("messages.sendButton");
 			we.waitForPresent(60000);
 			we.click();
+			
+			
+			Map<String, Object> params1 = new HashMap<>();
+			params1.put("source", "Primary");
+			params1.put("key", "PUBLIC:screenshotTest.jpg");
+			params1.put("format", "jpg");
+			params1.put("report.resolution", "High");
+			Object result1 = getDriver().executeScript("mobile:screen:image", params1);
 			
 		
 			
@@ -191,8 +200,13 @@ public class EmergencySteps extends WebDriverTestCase {
 		we.click();
 		
 		
-		
-		
+		/*
+		 * Map<String, Object> params6 = new HashMap<>(); params6.put("source",
+		 * "Primary"); params6.put("key", "PUBLIC:screenshotTest.jpg");
+		 * params6.put("format", "jpg"); params6.put("report.resolution", "High");
+		 * //params5.put("screen.left", "0%"); //params5.put("screen.width", "100%");
+		 * Object result6 = getDriver().executeScript("mobile:screen:image", params6);
+		 */
 		
 
 	}

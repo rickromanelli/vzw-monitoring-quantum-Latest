@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>GizmoPal_iPhone failed builds</title>
+	<link rel="alternate" type="text/html" href="http://ec2-35-172-226-87.compute-1.amazonaws.com:8080/job/GizmoPal_iPhone/" />
+	<updated>2022-07-13T12:10:00Z</updated>
+	<author>
+		<name>Jenkins Server</name>
+	</author>
+	<id>urn:uuid:903deee0-7bfa-11db-9fe1-0800200c9a66</id>
+	<entry>
+		<title>GizmoPal_iPhone #20256 (1 test is still failing)</title>
+		<link rel="alternate" type="text/html" href="http://ec2-35-172-226-87.compute-1.amazonaws.com:8080/job/GizmoPal_iPhone/20256/" />
+		<id>tag:hudson.dev.java.net,2022:GizmoPal_iPhone:20256</id>
+		<published>2022-07-13T12:10:00Z</published>
+		<updated>2022-07-13T12:10:00Z</updated>
+	</entry>
+	<entry>
+		<title>GizmoPal_iPhone #20255 (1 test is still failing)</title>
+		<link rel="alternate" type="text/html" href="http://ec2-35-172-226-87.compute-1.amazonaws.com:8080/job/GizmoPal_iPhone/20255/" />
+		<id>tag:hudson.dev.java.net,2022:GizmoPal_iPhone:20255</id>
+		<published>2022-07-13T11:10:00Z</published>
+		<updated>2022-07-13T11:10:00Z</updated>
+	</entry>
+	<entry>
+		<title>GizmoPal_iPhone #20254 (1 test is still failing)</title>
+		<link rel="alternate" type="text/html" href="http://ec2-35-172-226-87.compute-1.amazonaws.com:8080/job/GizmoPal_iPhone/20254/" />
+		<id>tag:hudson.dev.java.net,2022:GizmoPal_iPhone:20254</id>
+		<published>2022-07-13T10:10:00Z</published>
+		<updated>2022-07-13T10:10:00Z</updated>
+	</entry>
+	<entry>
+		<title>GizmoPal_iPhone #20253 (1 test  started to fail)</title>
+		<link rel="alternate" type="text/html" href="http://ec2-35-172-226-87.compute-1.amazonaws.com:8080/job/GizmoPal_iPhone/20253/" />
+		<id>tag:hudson.dev.java.net,2022:GizmoPal_iPhone:20253</id>
+		<published>2022-07-13T09:10:00Z</published>
+		<updated>2022-07-13T09:10:00Z</updated>
+	</entry>
+</feed>

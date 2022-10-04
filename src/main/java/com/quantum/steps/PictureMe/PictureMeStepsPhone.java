@@ -96,20 +96,30 @@ public class PictureMeStepsPhone {
 	
 	@Then("^I backup phone$")
 	public void ibackupPhone() throws Exception {
+		PerfectoGenericSteps pgs = new PerfectoGenericSteps();
+		
 		we = (QAFExtendedWebElement) driver.findElement("menu.backupNow");
 		we.waitForPresent(20000);
 		we.click();
-
-
-
 		
+		
+		
+		PerfectoApplicationSteps.waitFor(5);
+		
+		if(pgs.textFind("Just so you know", "10", "80") ) {
+			
+			we = (QAFExtendedWebElement) driver.findElement("menu.wifiWarning.yes");
+			we.waitForPresent(20000);
+			we.click();
+		}
+
 	}
 	
 	@Then("^I confirm backup phone$")
 	public void iConfirmBackupPhone() throws Exception
 	{
 		PerfectoGenericSteps pgs = new PerfectoGenericSteps();
-		pgs.textCheckpoint("Everything is backed up", "400", "100");
+		pgs.textCheckpoint("All your files are synced", "400", "100");
 	}
 
 }
