@@ -1,0 +1,3 @@
+login.password=//*[@resource-id="com.verizon.familybase.parent:id/password_field"]
+login.passwordCompleted=//*[@text="••••••••"]
+login.signInButton=//*[@resource-id="com.verizon.familybase.parent:id/sign_in_button"]
