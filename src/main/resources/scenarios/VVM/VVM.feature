@@ -16,6 +16,5 @@ Scenario: VM2Text_Android
 	Then I open Voicemail App on "DUT1"
 	Then Transaction: "1: Was message received?" Description: "Check for message with text" SLA: "30000" - Image checkpoint: "PUBLIC:messageIconVVMGalaxyA12.png" Timeout: "60" Threshold: "90"
 	Then I click on voicemail message on "DUT1"
-	#Then Transaction: "2: Message text accurate?" Description: "check text for accuracy" SLA: "30000" - OCR checkpoint: "test voicemail 1234567" Timeout: "50" Threshold: "90"
-	Then Transaction: "2: Message text accurate?" Description: "check text for accuracy" SLA: "30000" - OCR checkpoint: "test failure" Timeout: "50" Threshold: "90"
+	Then Transaction: "2: Message text accurate?" Description: "check text for accuracy" SLA: "30000" - OCR checkpoint: "test voicemail 1234567" Timeout: "50" Threshold: "90"
 	
