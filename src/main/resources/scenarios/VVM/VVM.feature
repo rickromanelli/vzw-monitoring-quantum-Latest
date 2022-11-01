@@ -14,7 +14,7 @@ Scenario: VM2Text_Android
 	Then I inject audio message "PUBLIC:VM2TXT3.mp3" on "DUT2"
 	Then I end call on "DUT2"
 	Then I open Voicemail App on "DUT1"
-	Then Transaction: "1: Was message received?" Description: "Check for message with text" SLA: "30000" - Image checkpoint: "PUBLIC:messageIconGalaxyA12.png" Timeout: "60" Threshold: "90"
+	Then Transaction: "1: Was message received?" Description: "Check for message with text" SLA: "30000" - Image checkpoint: "PUBLIC:messageIconGalaxyA12.png" or Image checkpoint: "PUBLIC:messageIconGalaxyA12-Aqua.png" Timeout: "30" Threshold: "90"
 	Then I click on voicemail message on "DUT1"
 	Then Transaction: "2: Message text accurate?" Description: "check text for accuracy" SLA: "30000" - OCR checkpoint: "test voicemail 1234567" Timeout: "50" Threshold: "90"
 	
