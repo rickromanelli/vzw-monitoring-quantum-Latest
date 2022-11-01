@@ -348,6 +348,40 @@ public class PerfectoSplunkSteps {
 		SplunkHelper.testStepEnd(Long.parseLong(SLA), name);
 
 	}
+	
+	@Then("^Transaction: \"([^\"]*)\" Description: \"([^\"]*)\" SLA: \"([^\"]*)\" - Image checkpoint: \"([^\"]*)\" or Image checkpoint: \"([^\"]*)\" Timeout: \"([^\"]*)\" Threshold: \"([^\"]*)\"$")
+	public void visualImageTimerOr(String name, String desc, String SLA, String repo, String orRepo,String timeout, String threshold)
+			throws Exception {
+		
+	
+
+		startSplunkStep(name, desc);
+		Map<String, Object> params1 = new HashMap<>();
+		params1.put("content", repo);
+		params1.put("timeout", timeout);
+		params1.put("threshold", threshold);
+		Object result1 = SplunkHelper.getQAFDriver().executeScript("mobile:checkpoint:image", params1);
+		
+	
+		Map<String, Object> params2 = new HashMap<>();
+		params2.put("content", orRepo);
+		params2.put("timeout", timeout);
+		params2.put("threshold", threshold);
+		Object result2 = SplunkHelper.getQAFDriver().executeScript("mobile:checkpoint:image", params2);
+		
+		if (result1.toString().contains("true") || result2.toString().contains("true") ) {
+
+		} else {
+
+			throw new Exception("Image not found!");
+
+		}
+
+		SplunkHelper.testStepEnd(Long.parseLong(SLA), name);
+
+	}
+	
+	
 	@Then("^Transaction: \"([^\"]*)\" Description: \"([^\"]*)\" SLA: \"([^\"]*)\" Volume: \"([^\"]*)\" Timeout: \"([^\"]*)\" Duration: \"([^\"]*)\"$")
 	public void audioCheckpointTimer(String name, String desc, String SLA, String volume, String timeout, String duration)
 			throws Exception {
