@@ -54,7 +54,7 @@ public class VZCloudStepsCommon extends WebDriverTestCase {
 	public void iVerifyBackup() {
 		PerfectoGenericSteps pgs = new PerfectoGenericSteps();
 		try {
-			pgs.textCheckpoint("All your files are synced", "400", "100");
+			pgs.textCheckpoint("All your files are uploaded", "400", "100");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
