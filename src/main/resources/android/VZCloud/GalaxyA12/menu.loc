@@ -1,6 +1,6 @@
 menu.btn=//*[@content-desc="navigation menu"]
 menu.backupScreen=//*[@resource-id="com.vcast.mediamanager:id/status_icon"]
-menu.backupNow=//*[@resource-id="com.vcast.mediamanager:id/backup_compose_view"]/android.view.View[1]/android.view.View[3]
+menu.backupNow=//*[@class="android.widget.ScrollView"]//*[@class="android.widget.Button"]
 menu.confirmDataUsage=//*[@resource-id="com.vcast.mediamanager:id/dialog_button_positive"]
 menu.confirmBackup=//*[@resource-id="com.vcast.mediamanager:id/backupStatusTextView"]
 menu.home=//*[@text="Home"]
