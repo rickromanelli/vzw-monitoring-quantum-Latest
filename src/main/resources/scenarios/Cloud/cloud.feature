@@ -9,7 +9,7 @@ Scenario: VZCloud_ContactsSync_GalaxyA12
 	Then I open Contacts Android Phone
 	Then I delete contact "VZCloud Test"
 	Then I open VZCloud app phone
-	Then I open cloud menu phone
+	#Then I open cloud menu phone
 	Then I go to cloud home phone
 	#Then I open backup screen phone
 	Then I backup phone from cloud app
