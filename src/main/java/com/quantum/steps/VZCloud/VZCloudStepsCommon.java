@@ -44,16 +44,11 @@ public class VZCloudStepsCommon extends WebDriverTestCase {
 
 		cleanAndStartApp(false);
 		
-		we = (QAFExtendedWebElement) driver.findElement("menu.btn");
+		we = (QAFExtendedWebElement) driver.findElement("home.home");
 		we.waitForPresent(20000);
 		we.click();
 		
-		we = (QAFExtendedWebElement) driver.findElement("menu.home");
-		we.waitForPresent(20000);
-		we.click();
 		
-		we = (QAFExtendedWebElement) driver.findElement("home.title");
-		we.waitForPresent(20000);
 
 	}
 	
@@ -146,7 +141,7 @@ public class VZCloudStepsCommon extends WebDriverTestCase {
 				pgs.textFind("MOVE TO TRASH", "30", "70");
 				pgs.textClick("MOVE TO TRASH", "30", "70");
 
-				pas.waitFor(6);
+				pas.waitFor(8);
 
 			}
 
