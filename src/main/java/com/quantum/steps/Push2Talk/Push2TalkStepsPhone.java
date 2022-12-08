@@ -214,28 +214,35 @@ public class Push2TalkStepsPhone {
 
 			pas.waitFor(3);
 			
-			pgs.textClick("Yes", "30", "100");
+			//pgs.textClick("Yes", "30", "100");
+			
+			Map<String, Object> params4 = new HashMap<>();
+			params4.put("label", "Yes");
+			params4.put("timeout", "30");
+			params4.put("threshold", "100");
+			Object result4 = driver.executeScript("mobile:button-text:click", params4);
+
 			
 			pgs.textCheckpoint("No history exists", "60", "90");
 
 		
 		}
 
-		Map<String, Object> params4 = new HashMap<>();
-		params4.put("timeout", "45");
-		params4.put("threshold", "70");
+		Map<String, Object> params5 = new HashMap<>();
+		params5.put("timeout", "45");
+		params5.put("threshold", "70");
 		
 		
 		switch (deviceModel) {
 
 		case "iPhone-12 Mini":
-			params4.put("label", "PUBLIC:iPhone12MiniPTTcontacts-Unclicked.png");
+			params5.put("label", "PUBLIC:iPhone12MiniPTTcontacts-Unclicked.png");
 			break;
 		case "Galaxy A12":
-			params4.put("label", "PUBLIC:contactsTabA12Unclicked.png");
+			params5.put("label", "PUBLIC:contactsTabA12Unclicked.png");
 			break;
 		case "DuraForce Pro 2":
-			params4.put("label", "PUBLIC:contactsTabDuraforceUnclicked.png");
+			params5.put("label", "PUBLIC:contactsTabDuraforceUnclicked.png");
 			break;
 
 		default:
@@ -243,7 +250,7 @@ public class Push2TalkStepsPhone {
 			
 		}
 			
-			Object result4 = driver.executeScript("mobile:button-image:click", params4);
+			Object result5 = driver.executeScript("mobile:button-image:click", params5);
 		
 	
 	
