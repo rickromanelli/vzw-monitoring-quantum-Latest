@@ -32,7 +32,7 @@
         </classes>
     </test>
     
-     <test name="${app} ${platform} ${model}-B" enabled="false">
+     <test name="${app} ${platform} ${model}-B" enabled="true">
         <parameter name="env.resources" value="src/main/resources/${platform}/Common;src/main/resources/${platform}/${app}/${model}"/>
         <!--  <parameter name="perfecto.capabilities.deviceName" value="A5B5643625F8F0D369756F7761492D0CFF6BFC66" /> -->
         <parameter name="perfecto.capabilities.driverClass" value="io.appium.java_client.AppiumDriver"></parameter>
