@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Appium Demo Suite" verbose="0" thread-count="1" parallel="tests">
+<suite name="Appium Demo Suite" verbose="0" thread-count="2" parallel="tests">
     <listeners>
         <listener class-name="com.quantum.listerners.VZWQuantumReportiumListener" />
         <listener class-name="com.quantum.listerners.TestListener" /> 
