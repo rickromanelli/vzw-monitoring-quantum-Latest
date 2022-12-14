@@ -284,7 +284,7 @@ public class SmartFamilySteps extends WebDriverTestCase {
 			we.waitForPresent(60000);
 			we.click();
 			
-		
+		////*[@resource-id="com.samsung.android.messaging:id/end_buttons_container"]
 	}
 
 	@Given("^I call a friend on \"([^\"]*)\"$")
