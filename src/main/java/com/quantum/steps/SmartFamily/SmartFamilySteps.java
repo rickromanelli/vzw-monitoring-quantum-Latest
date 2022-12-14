@@ -166,7 +166,6 @@ public class SmartFamilySteps extends WebDriverTestCase {
 			
 		
 		
-		//smartfamily.page.link
 		
 		
 	}
@@ -204,7 +203,7 @@ public class SmartFamilySteps extends WebDriverTestCase {
 		} catch (Exception ex) {
 
 		}
-		PerfectoApplicationSteps.startAppByName("Messages");
+		PerfectoApplicationSteps.startAppById("com.samsung.android.messaging");
 		
 		pgs.textCheckpoint("Conversations", "30", "90");
 		
@@ -233,7 +232,6 @@ public class SmartFamilySteps extends WebDriverTestCase {
 			we.waitForPresent(60000);
 			we.click();
 			
-			////*[@resource-id="com.samsung.android.messaging:id/bubble_list_view"]/android.widget.LinearLayout[2]
 			
 			
 			we = (QAFExtendedWebElement) driver.findElement("messages.deleteMessages");
@@ -286,8 +284,7 @@ public class SmartFamilySteps extends WebDriverTestCase {
 			we.waitForPresent(60000);
 			we.click();
 			
-		//PUBLIC:TextDeniedCircle.png
-
+		////*[@resource-id="com.samsung.android.messaging:id/end_buttons_container"]
 	}
 
 	@Given("^I call a friend on \"([^\"]*)\"$")

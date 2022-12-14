@@ -1,0 +1,7 @@
+home.child1=//XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]
+home.child2=//XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]
+home.fixMessage=//*[@resource-id="com.verizon.familybase.parent:id/banner_text"]
+home.fixbutton=//*[@resource-id="com.verizon.familybase.parent:id/banner_urgent_action_button_1"]
+home.fixConnection=//*[@resource-id="com.verizon.familybase.parent:id/anchb_primary_button"]
+home.fix.sendText=//*[@resource-id="com.verizon.familybase.parent:id/btn_positive"]
+home.congratsOk=//*[@resource-id="com.verizon.familybase.parent:id/btn_positive"]
