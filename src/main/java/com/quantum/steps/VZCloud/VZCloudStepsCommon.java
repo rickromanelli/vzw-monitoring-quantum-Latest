@@ -82,6 +82,7 @@ public class VZCloudStepsCommon extends WebDriverTestCase {
 			}
 		}
 
+
 	}
 
 	@Given("^I delete photos in VZCloud$")
@@ -95,7 +96,7 @@ public class VZCloudStepsCommon extends WebDriverTestCase {
 		we.waitForPresent(20);
 		we.click();
 
-		//pgs.textClick("Photos & Videos", "30", "90");
+		// pgs.textClick("Photos & Videos", "30", "90");
 		if (!pgs.textFind("No Photos", "8", "80")) {
 
 			// pas.wait(5);
@@ -129,8 +130,7 @@ public class VZCloudStepsCommon extends WebDriverTestCase {
 				we = (QAFExtendedWebElement) driver.findElement("photos.trashcan");
 				we.waitForPresent(20);
 				we.click();
-				
-				
+
 				pgs.textFind("MOVE TO TRASH", "30", "70");
 				pgs.textClick("MOVE TO TRASH", "30", "70");
 
@@ -157,7 +157,7 @@ public class VZCloudStepsCommon extends WebDriverTestCase {
 			}
 
 		}
-		
+
 		/*
 		 * we = (QAFExtendedWebElement) driver.findElement("home.menu");
 		 * we.waitForPresent(20); we.click();
