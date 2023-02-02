@@ -216,14 +216,14 @@ public class Push2TalkStepsPhone {
 			
 			//pgs.textClick("Yes", "30", "100");
 			pgs.textClickHaystack("Yes", "20", "100", "9%", "37%", "24%", "79%");
+		
 			
-			/*
-			 * Map<String, Object> params4 = new HashMap<>(); params4.put("label", "Yes");
-			 * params4.put("timeout", "30"); params4.put("threshold", "100"); Object result4
-			 * = driver.executeScript("mobile:button-text:click", params4);
-			 * 
-			 */
-			
+			/*Map<String, Object> params4 = new HashMap<>();
+			params4.put("label", "Yes");
+			params4.put("timeout", "30");
+			params4.put("threshold", "100");
+			Object result4 = driver.executeScript("mobile:button-text:click", params4);*/
+
 			
 			pgs.textCheckpoint("No history exists", "60", "90");
 
