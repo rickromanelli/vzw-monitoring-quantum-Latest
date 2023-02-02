@@ -25,6 +25,8 @@ public class BISSteps extends WebDriverTestCase {
 	QAFExtendedWebDriver driver = new WebDriverTestBase().getDriver();
 	QAFExtendedWebElement we;
 	PerfectoGenericSteps pgs = new PerfectoGenericSteps();
+	
+	//test checkin
 
 	@Given("^I open \"([^\"]*)\" App$")
 	public void startAppBB(String app) throws Exception {
