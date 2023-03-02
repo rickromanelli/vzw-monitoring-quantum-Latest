@@ -215,7 +215,7 @@ public class Push2TalkStepsPhone {
 			pas.waitFor(3);
 			
 			//pgs.textClick("Yes", "30", "100");
-			pgs.textClickHaystack("Yes", "20", "100", "9%", "37%", "24%", "79%");
+			pgs.textClickHaystack("Yes", "20", "100", "0%", "52%", "48%%", "100%");
 			
 			
 			/*Map<String, Object> params4 = new HashMap<>();
