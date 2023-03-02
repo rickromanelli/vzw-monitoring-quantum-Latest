@@ -215,8 +215,13 @@ public class Push2TalkStepsPhone {
 			pas.waitFor(3);
 			
 			//pgs.textClick("Yes", "30", "100");
-			pgs.textClickHaystack("Yes", "20", "100", "0%", "52%", "48%%", "100%");
+			//pgs.textClickHaystack("Yes", "20", "100", "0%", "52%", "48%%", "100%");
 			
+			we = (QAFExtendedWebElement) driver.findElement("messages.confirm.yes");
+			we.waitForPresent(20000);
+			we.click();
+			
+			////*[@text="Yes"]
 			
 			/*Map<String, Object> params4 = new HashMap<>();
 			params4.put("label", "Yes");
