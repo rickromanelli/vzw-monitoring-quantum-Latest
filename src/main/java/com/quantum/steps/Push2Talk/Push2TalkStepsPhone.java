@@ -157,7 +157,12 @@ public class Push2TalkStepsPhone {
 			params2.put("label", "PUBLIC:historyBtnDuraForcePro2.png");
 			//pgs.imageClick("PUBLIC:historyBtnDuraForcePro2.png", "20", "90");
 			break;
-
+			//AP-GalaxyS10-pair1
+		case "AP-GalaxyS10-pair1":
+			params2.put("label", "PUBLIC:historyBtnGalaxyS10.png");
+			//pgs.imageClick("PUBLIC:historyBtnDuraForcePro2.png", "20", "90");
+			break;
+			
 		default:
 			break;
 
