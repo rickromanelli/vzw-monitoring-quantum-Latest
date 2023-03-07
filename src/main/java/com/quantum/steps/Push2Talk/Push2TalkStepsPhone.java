@@ -141,6 +141,8 @@ public class Push2TalkStepsPhone {
 
 		String deviceModel = DeviceUtils.getDeviceProperty("model");
 
+		pas.waitFor(5);
+		
 		Map<String, Object> params2 = new HashMap<>();
 
 		switch (deviceModel) {
@@ -171,7 +173,8 @@ public class Push2TalkStepsPhone {
 		params2.put("timeout", "30");
 		params2.put("threshold", "90");
 		Object result2 = driver.executeScript("mobile:button-image:click", params2);
-
+		
+		pas.waitFor(5);
 		
 		if (!pgs.textFind("No history exists", "15", "80")) {
 			
