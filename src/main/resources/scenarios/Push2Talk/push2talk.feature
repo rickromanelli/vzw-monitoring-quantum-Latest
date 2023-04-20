@@ -150,7 +150,7 @@ Scenario: Push_to_Talk_iPhone2Duraforce
 	Then I click to end call on "DUT2"
 	
 	@push2talkGalaxyS10toiPhone
-	Scenario: Push_to_Talk_Galaxy_S102iPhone
+	Scenario: Push_to_Talk_Galaxy2iPhone
 	Then I toggle wifi "disabled" on "DUT1"
 	Then I open Push2Talk on "DUT1"
 	Then Transaction "1 PTT opened DUT1?" description: "Did PTT App open DUT1?" SLA: "60000" - OCR Checkpoint: "Available" Timeout: "30" Threshold: "90"
