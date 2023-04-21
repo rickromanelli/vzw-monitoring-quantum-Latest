@@ -207,6 +207,34 @@ public class SmartFamilySteps extends WebDriverTestCase {
 		
 		pgs.textCheckpoint("Conversations", "30", "90");
 		
+		we = (QAFExtendedWebElement) driver.findElement("messages.menu");
+		we.waitForPresent(60000);
+		we.click();
+		
+		we = (QAFExtendedWebElement) driver.findElement("messages.deleteMessages");
+		we.waitForPresent(60000);
+		we.click();
+		
+		pgs.textCheckpoint("Select", "30", "90");
+
+		we = (QAFExtendedWebElement) driver.findElement("messages.selectAllToDelete");
+		we.waitForPresent(60000);
+		we.click();
+		
+		
+		we = (QAFExtendedWebElement) driver.findElement("messages.deleteAll");
+		we.waitForPresent(20000);
+		we.click();
+		
+		we = (QAFExtendedWebElement) driver.findElement("messages.moveToTrash");
+		we.waitForPresent(60000);
+		we.click();
+		
+		pgs.textCheckpoint("No conversations", "30", "90");
+		
+		
+		
+		
 		we = (QAFExtendedWebElement) driver.findElement("messages.searchButton");
 		we.waitForPresent(20000);
 		we.click();
@@ -224,47 +252,7 @@ public class SmartFamilySteps extends WebDriverTestCase {
 			we.click();
 			
 			
-			if (pgs.textFind("Hello", "10", "100")) {
 			
-			
-			
-			we = (QAFExtendedWebElement) driver.findElement("messages.menu");
-			we.waitForPresent(60000);
-			we.click();
-			
-			
-			
-			we = (QAFExtendedWebElement) driver.findElement("messages.deleteMessages");
-			we.waitForPresent(60000);
-			we.click();
-			
-			we = (QAFExtendedWebElement) driver.findElement("messages.2ndMessage");
-			we.waitForPresent(60000);
-			
-			
-			if (!pgs.textFind("1 Selected", "30", "80")) {
-			
-			we = (QAFExtendedWebElement) driver.findElement("messages.selectAllToDelete");
-			we.waitForPresent(60000);
-			we.click();
-			
-			}
-			
-			we = (QAFExtendedWebElement) driver.findElement("messages.deleteButton");
-			we.waitForPresent(60000);
-			we.click();
-			
-
-			we = (QAFExtendedWebElement) driver.findElement("messages.moveToTrash");
-			we.waitForPresent(60000);
-			we.click();
-			
-
-			we = (QAFExtendedWebElement) driver.findElement("messages.pete");
-			we.waitForPresent(60000);
-			we.click();
-			
-			}
 			
 			we = (QAFExtendedWebElement) driver.findElement("messages.textField");
 			we.waitForPresent(60000);
