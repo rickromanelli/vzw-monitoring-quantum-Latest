@@ -1,4 +1,4 @@
-messages.menu=//*[@resource-id="com.samsung.android.messaging:id/composer_setting_button"]
+messages.menu=//*[@content-desc="More options"]
 messages.deleteMessages=//*[@text="Delete"]
 messages.moveToTrash=//*[@resource-id="android:id/button1"]
 messages.deleteButton=//*[@resource-id="com.samsung.android.messaging:id/delete"]
