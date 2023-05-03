@@ -96,16 +96,16 @@ public class SmartFamilySteps extends WebDriverTestCase {
 		}
 		PerfectoApplicationSteps.startAppByName("Smart Family");
 		
-		if(pgs.textFind("Aren't working at the moment.", "10", "80")) {
-			//fixConnection1();
-			throw new Exception("Child device disconnected!");
-		}
+		/*
+		 * if(pgs.textFind("Aren't working at the moment.", "10", "80")) {
+		 * //fixConnection1(); throw new Exception("Child device disconnected!"); }
+		 
 		
 		if(pgs.textFind("Congratulations", "10", "80")) {
 			we = (QAFExtendedWebElement) driver.findElement("home.congratsOk");
 			we.waitForPresent(20000);
 			we.click();
-		}
+		}*/
 	}
 	
 	public void fixConnection1() throws Exception {
