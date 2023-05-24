@@ -252,7 +252,7 @@ public class Push2TalkStepsPhone {
 			Object result4 = driver.executeScript("mobile:button-text:click", params4);*/
 
 			
-			pgs.textCheckpoint("No history exists", "60", "90");
+			pgs.textCheckpoint("No history exists", "90", "90");
 
 		
 		}
