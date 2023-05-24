@@ -87,22 +87,21 @@ public class Push2TalkStepsPhone {
 		we.waitForPresent(20000);
 		we.click();
 
-		pas.waitFor(5);
+		pas.waitFor(10);
 		
-		Boolean voiceControl = false;
-		try {
-			 voiceControl = pgs.textFind("Voice control", "10", "90");
-				
-		} catch (Exception e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}
-		if(voiceControl=true) {
-			
-			we = (QAFExtendedWebElement) driver.findElement("call.camera.cancelVoiceControl");
-			we.waitForPresent(20000);
-			we.click();
-		}
+		/*
+		 * Boolean voiceControl = false; try { voiceControl =
+		 * pgs.textFind("Voice control", "10", "90");
+		 * 
+		 * } catch (Exception e1) { // TODO Auto-generated catch block
+		 * e1.printStackTrace(); }
+		 * 
+		 * if(voiceControl=true) {
+		 * 
+		 * we = (QAFExtendedWebElement)
+		 * driver.findElement("call.camera.cancelVoiceControl");
+		 * we.waitForPresent(20000); we.click(); }
+		 */
 
 		Map<String, Object> params2 = new HashMap<>();
 		params2.put("keySequence", "VOL_DOWN");

@@ -33,7 +33,16 @@ public class Push2TalkStepsCommon extends WebDriverTestCase {
 			PerfectoApplicationSteps.cleanAppByName("Push To Talk+");
 		}
 
+		
+try {
+			
+			PerfectoApplicationSteps.closeAppByName("Camera");
+			PerfectoApplicationSteps.closeAppByName("Camera");
+		} catch (Exception ex) {
+
+		}
 		try {
+			
 			PerfectoApplicationSteps.closeAppByName("Push To Talk+");
 			PerfectoApplicationSteps.closeAppByName("Push To Talk+");
 		} catch (Exception ex) {
