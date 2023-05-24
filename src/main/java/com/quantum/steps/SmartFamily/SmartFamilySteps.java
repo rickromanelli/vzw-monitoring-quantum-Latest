@@ -215,12 +215,16 @@ public class SmartFamilySteps extends WebDriverTestCase {
 		we.waitForPresent(60000);
 		we.click();
 		
-		pgs.textCheckpoint("Select", "30", "90");
-
-		we = (QAFExtendedWebElement) driver.findElement("messages.selectAllToDelete");
-		we.waitForPresent(60000);
-		we.click();
+		if(pgs.textFind("Select Conversations", "20", "90")) {
+			
+			we = (QAFExtendedWebElement) driver.findElement("messages.selectAllToDelete");
+			we.waitForPresent(60000);
+			we.click();
+			
+		}
 		
+		pgs.textCheckpoint("Selected", "30", "90");
+
 		
 		we = (QAFExtendedWebElement) driver.findElement("messages.deleteAll");
 		we.waitForPresent(20000);
