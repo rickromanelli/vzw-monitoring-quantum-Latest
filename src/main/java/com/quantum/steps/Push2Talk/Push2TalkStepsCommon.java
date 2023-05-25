@@ -148,7 +148,7 @@ try {
 			ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "0738");
 			break;
 		// S8
-		case "988B5C413545374847":
+		case "R58RA0ECS5A":
 			ConfigurationManager.getBundle().setProperty("contactName" + dutNum, "5140");
 			break;
 
