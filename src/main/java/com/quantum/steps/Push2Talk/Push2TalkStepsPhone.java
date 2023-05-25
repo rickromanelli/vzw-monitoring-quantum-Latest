@@ -166,7 +166,7 @@ public class Push2TalkStepsPhone {
 			//pgs.imageClick("PUBLIC:histBtniPhone12Mini.png", "20", "90");
 			break;
 		case "Galaxy A12":
-			params2.put("label", "PUBLIC:historyBtnA12.png");
+			params2.put("label", "PUBLIC:NewHistoryBtnA12.png");
 			//pgs.imageClick("PUBLIC:historyBtnA12.png", "20", "90");
 			break;
 		case "DuraForce Pro 2":
@@ -184,7 +184,7 @@ public class Push2TalkStepsPhone {
 
 		}
 		params2.put("match", "Bounded");
-		params2.put("timeout", "30");
+		params2.put("timeout", "60");
 		params2.put("threshold", "90");
 		Object result2 = driver.executeScript("mobile:button-image:click", params2);
 		

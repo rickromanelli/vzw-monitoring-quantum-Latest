@@ -390,11 +390,11 @@ Scenario: Push_to_Talk_image_Galaxy2iPhone
 	Scenario: Push_to_Talk_Text2Location_Galaxy2iPhone
 	Then I toggle wifi "disabled" on "DUT1"
 	Then I open Push2Talk on "DUT1"
-	Then Transaction "1 PTT opened?" description: "Did PTT open DUT1?" SLA: "60000" - OCR Checkpoint: "Available" Timeout: "30" Threshold: "90"
+	Then Transaction "1 PTT opened?" description: "Did PTT open DUT1?" SLA: "60000" - OCR Checkpoint: "Available" Timeout: "60" Threshold: "90"
 	Then I delete messages on "DUT1"
 	#Then I toggle wifi "disabled" on "DUT2"
 	Then I open Push2Talk on "DUT2"
-	Then Transaction "2 PTT opened?" description: "Did PTT open DUT2?" SLA: "60000" - OCR Checkpoint: "Available" Timeout: "30" Threshold: "90"
+	Then Transaction "2 PTT opened?" description: "Did PTT open DUT2?" SLA: "60000" - OCR Checkpoint: "Available" Timeout: "60" Threshold: "90"
 	Then I delete messages on "DUT2"
 	Then I search for PTT contact on "DUT1"
 	Then Transaction "3 DUT2 Available?" search for PTT Contact, "DUT2" timeout, "60" threshold, "90" haystack: x: "0%" , y: "20%" , height: "15%" , width: "100%" , SLA: "60000" 

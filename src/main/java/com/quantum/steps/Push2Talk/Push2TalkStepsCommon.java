@@ -72,7 +72,7 @@ try {
 		Map<String, Object> params1 = new HashMap<>();
 		params1.put("content", "Search");
 		params1.put("source", "camera");
-		params1.put("timeout", "60");
+		params1.put("timeout", "90");
 		params1.put("threshold", "90");
 		Object result1 = SplunkHelper.getQAFDriver().executeScript("mobile:checkpoint:text", params1);
 
