@@ -980,7 +980,7 @@ public class PerfectoGenericSteps {
 
 			PerfectoApplicationSteps.startAppByName("Chrome");
 
-			we = (QAFExtendedWebElement) driver.findElement("browser.addressBar");
+			we = (QAFExtendedWebElement) getDriver().findElement("browser.addressBar");
 			we.waitForPresent(40000);
 
 			we.click();
@@ -1001,9 +1001,9 @@ public class PerfectoGenericSteps {
 			Map<String, Object> params = new HashMap<>();
 
 			params.put("automation", "os");
-			String res = (String) driver.executeScript("mobile:browser:open", params);
+			String res = (String) getDriver().executeScript("mobile:browser:open", params);
 
-			we = (QAFExtendedWebElement) driver.findElement("browser.addressBar");
+			we = (QAFExtendedWebElement) getDriver().findElement("browser.addressBar");
 			we.waitForPresent(40000);
 
 			we.click();
