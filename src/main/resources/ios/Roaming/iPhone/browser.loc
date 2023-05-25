@@ -1,2 +1,4 @@
-browser.addressBar=//*[@label="Address"]
-browser.go=//*[@label="Go"]
+browser.addressBar=//XCUIElementTypeButton[@label="Address"]
+browser.clearAddressBar=//*[@label="Clear text"]
+browser.addressBarCleared=//*[@label="Address"]
+browser.go=//*[@label="go"]

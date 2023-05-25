@@ -975,8 +975,13 @@ public class PerfectoGenericSteps {
 		if (model.equals("Galaxy S10") || model.equals("Galaxy S10e") || model.equals("Galaxy A12")) {
 			Map<String, Object> params = new HashMap<>();
 
-			PerfectoApplicationSteps.closeAppByName("Chrome");
-			PerfectoApplicationSteps.closeAppByName("Chrome");
+			try {
+				PerfectoApplicationSteps.closeAppByName("Chrome");
+				PerfectoApplicationSteps.closeAppByName("Chrome");
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 
 			PerfectoApplicationSteps.startAppByName("Chrome");
 
@@ -997,18 +1002,44 @@ public class PerfectoGenericSteps {
 			Object result1 = getDriver().executeScript("mobile:button-text:click", params1);
 
 		} else {
+			
+			
+			try {
+				PerfectoApplicationSteps.closeAppByName("Safari");
+				PerfectoApplicationSteps.closeAppByName("Safari");
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				
+			}
 
-			Map<String, Object> params = new HashMap<>();
+			PerfectoApplicationSteps.startAppByName("Safari");
+			
+			
 
-			params.put("automation", "os");
-			String res = (String) getDriver().executeScript("mobile:browser:open", params);
-
-			we = (QAFExtendedWebElement) getDriver().findElement("browser.addressBar");
+			
+			
+			  we = (QAFExtendedWebElement) getDriver().findElement("browser.addressBar");
+			  we.waitForPresent(40000);
+			  we.click();
+			  
+			  we = (QAFExtendedWebElement) getDriver().findElement("browser.clearAddressBar");
+			  we.waitForPresent(40000);
+			  we.click();
+			  
+			  we = (QAFExtendedWebElement) getDriver().findElement("browser.addressBarCleared");
+			  we.waitForPresent(40000);
+			  we.sendKeys(url);
+			 
+			
+			
+			we = (QAFExtendedWebElement) getDriver().findElement("browser.go");
 			we.waitForPresent(40000);
 
 			we.click();
-			we.sendKeys(url);
-			we.sendKeys(Keys.ENTER);
+
+			
+			//we.sendKeys(url);
+			//we.sendKeys(Keys.ENTER);
 
 		}
 
