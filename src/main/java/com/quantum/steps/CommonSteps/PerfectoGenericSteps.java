@@ -1015,22 +1015,26 @@ public class PerfectoGenericSteps {
 			PerfectoApplicationSteps.startAppByName("Safari");
 			
 			
-
+			PerfectoApplicationSteps.waitFor(3);
 			
 			
 			  we = (QAFExtendedWebElement) getDriver().findElement("browser.addressBar");
 			  we.waitForPresent(40000);
 			  we.click();
 			  
+			  PerfectoApplicationSteps.waitFor(3);
+			  
 			  we = (QAFExtendedWebElement) getDriver().findElement("browser.clearAddressBar");
 			  we.waitForPresent(40000);
 			  we.click();
+			  
+			  PerfectoApplicationSteps.waitFor(3);
 			  
 			  we = (QAFExtendedWebElement) getDriver().findElement("browser.addressBarCleared");
 			  we.waitForPresent(40000);
 			  we.sendKeys(url);
 			 
-			
+			  PerfectoApplicationSteps.waitFor(3);
 			
 			we = (QAFExtendedWebElement) getDriver().findElement("browser.go");
 			we.waitForPresent(40000);
