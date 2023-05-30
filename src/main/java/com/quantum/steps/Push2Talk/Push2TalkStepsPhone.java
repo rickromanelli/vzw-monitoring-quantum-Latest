@@ -202,7 +202,7 @@ public class Push2TalkStepsPhone {
 				break;
 				
 			case "Galaxy A12":
-				params3.put("label", "PUBLIC:PTTMessageArrowGalaxyA12.png");
+				params3.put("label", "PUBLIC:NewPTTMessageArrowGalaxyA12.png");
 				//pgs.imageClick("PUBLIC:PTTMessageArrowGalaxyA12.png", "20", "90");
 				
 				break;
