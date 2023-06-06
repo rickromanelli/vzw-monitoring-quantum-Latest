@@ -5,7 +5,7 @@ Feature: PictureMe Feature
 Scenario: Caller_ID
 	#Then I toggle wifi "disabled" on "DUT1"
 	Then I open phone App on "DUT1"
-	#Then I open phone App on "DUT2"
+	Then I open phone App on "DUT2"
 	#Then I toggle wifi "disabled" on "DUT2"
 	#Then Transaction: "Did PictureMe image appear?" on "DUT2" Description: "Checking to see if Image was shown on DUT2" SLA: "5000" - Image checkpoint: "PUBLIC:historyBtnA12.png" Timeout: "3" Threshold: "85"
 	
