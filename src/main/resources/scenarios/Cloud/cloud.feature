@@ -5,7 +5,7 @@ Feature: Cloud Feature
 	@contactSyncGalaxyA12
 Scenario: VZCloud_ContactsSync_GalaxyA12
 	#Given I use default driver	
-	Then I toggle wifi "disabled"
+	#Then I toggle wifi "disabled"
 	Then I open Contacts Android Phone
 	Then I delete contact "VZCloud Test"
 	Then I open VZCloud app phone
@@ -25,7 +25,7 @@ Scenario: VZCloud_ContactsSync_GalaxyA12
 @mediaSyncGalaxyA12
 Scenario: VZCloud_MediaSync_GalaxyA12
 	#Given I use default driver	
-	Then I toggle wifi "disabled"
+	#Then I toggle wifi "disabled"
 	Then I open VZCloud app phone
 	Then Transaction: "1 Cloud Started?" Description: "Opening cloud app" SLA: "60000" - OCR checkpoint: "Verizon Cloud" Timeout: "30" Threshold: "100"
 	Then I delete photos in VZCloud
@@ -43,7 +43,7 @@ Scenario: VZCloud_MediaSync_GalaxyA12
 @mediaSyncGalaxyS10
 Scenario: VZCloud_MediaSync_GalaxyS10
 	#Given I use default driver	
-	Then I toggle wifi "disabled"
+	#Then I toggle wifi "disabled"
 	Then I open VZCloud app phone
 	Then Transaction: "1 Cloud Started?" Description: "Opening cloud app" SLA: "60000" - OCR checkpoint: "Verizon Cloud" Timeout: "30" Threshold: "100"
 	Then I delete photos in VZCloud
@@ -58,7 +58,7 @@ Scenario: VZCloud_MediaSync_GalaxyS10
 @contactSyncDroidTurbo
 Scenario: VZCloud_Sync_Android
 	#Given I use default driver	
-	Then I toggle wifi "disabled"
+	#Then I toggle wifi "disabled"
 	Then I open Contacts Android Phone
 	Then I delete contact "VZCloud Test"
 	Then I open VZCloud app phone
@@ -79,7 +79,7 @@ Scenario: VZCloud_Sync_Android
 	@contactSyncGalaxyS10
 Scenario: VZCloud_ContactsSync_GalaxyS10
 	#Given I use default driver	
-	Then I toggle wifi "disabled"
+	#Then I toggle wifi "disabled"
 	Then I open Contacts Android Phone
 	Then I delete contact "VZCloud Test"
 	Then I open VZCloud app phone
@@ -100,7 +100,7 @@ Scenario: VZCloud_ContactsSync_GalaxyS10
 	@contactSyncMotoz2
 Scenario: VZCloud_ContactsSync_MotoZ2
 	#Given I use default driver	
-	Then I toggle wifi "disabled"
+	#Then I toggle wifi "disabled"
 	Then I open Contacts Android Phone
 	Then I delete contact "VZCloud Test"
 	Then I open VZCloud app phone
@@ -122,7 +122,7 @@ Scenario: VZCloud_ContactsSync_MotoZ2
 	
 @contactSyncAndroidPhoneDC3
 Scenario: VZCloud_Sync_Android_DC3
-	Then I toggle wifi "disabled"
+	#Then I toggle wifi "disabled"
 	Then I open Contacts Android Phone
 	Then I delete contact "VZCloud Test" 
 	Then I open VZCloud app phone
